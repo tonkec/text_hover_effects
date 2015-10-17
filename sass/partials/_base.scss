@@ -1,0 +1,15 @@
+$default: 15px;
+
+@mixin paragraph-opt($font-size, $color) {
+	display: block;
+	width: 100%;
+	padding: $default;
+	position: relative;
+	z-index: 2;
+	text-decoration: none;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	font-size: $font-size;
+	color: $color; 
+}

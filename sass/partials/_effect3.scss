@@ -1,0 +1,38 @@
+@mixin left($hover-color, $underline-color, $underline-width) {
+  &:after {
+    content: "";
+    height: 2%;
+    bottom: 0%;
+    width: 3px;
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: -1;
+    background: transparent;
+    left: 25%;
+  }
+
+  &:hover {
+    border-bottom: 0px;
+    color: $hover-color;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
+    cursor: pointer;
+  }
+
+  &:hover:after {
+   background: $underline-color;
+   width: $underline-width;
+   -webkit-transition: width 1s ease;
+   -moz-transition: width 1s ease;
+   -ms-transition: width 1s ease;
+   -o-transition: width 1s ease;
+   transition: width 1s ease;
+ }
+}

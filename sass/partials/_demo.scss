@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+$default-color: #2C3E50;
+$default-width: 50%;
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: #1BA39C;
+  font-family: 'Source Sans Pro', Arial;
+}
+
+main {
+  width: 100%;
+  height: 100%;  
+}
+
+.col {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 0;  
+}
+
+p {
+   @include paragraph-opt(3em, $default-color);
+}
+
+.effect-1 {
+  @include underline(white,white, $default-width);
+}
+
+.effect-2 {
+  @include overline(white,white, $default-width);
+}
+
+.effect-3 {
+  @include left(white,white, $default-width);
+}
+
+.effect-4 {
+  @include right(white,white, $default-width);
+}
