@@ -1,0 +1,34 @@
+@mixin both-right {
+	@include animation-opt(pseudoafter, $default-underline-color, $default-width);
+	@include animation-opt(pseudobefore, $default-underline-color, $default-width);
+	
+	&:after {
+		height: 3%;
+		top: 0%;
+		width: 3px;
+		right: 25%;
+	}
+	
+	&:before {
+		height: 3%;
+		bottom: 0%;
+		width: 3px;
+		right: 25%;
+	}
+
+	&:hover:before {
+		-webkit-transition: $default-width 1s ease; 
+		-moz-transition: $default-width 1s ease; 
+		-ms-transition: $default-width 1s ease; 
+		-o-transition: $default-width 1s ease; 
+		transition: $default-width 1s ease; 
+	}
+
+	&:hover:after {
+		-webkit-transition: $default-width 1s ease; 
+		-moz-transition: $default-width 1s ease; 
+		-ms-transition: $default-width 1s ease; 
+		-o-transition: $default-width 1s ease; 
+		transition: $default-width 1s ease; 
+	}
+}

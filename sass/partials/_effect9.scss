@@ -1,0 +1,54 @@
+@mixin effect9 {
+
+	&:after {
+		content: "";
+		position: absolute;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		height: 3%;
+		top: 0%;
+		width: 3px;
+		left: 20%;
+		background: transparent; 
+
+	}
+
+	&:before {
+		background: transparent;
+		content: "";
+		position: absolute;
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		-ms-transition: all 0.5s ease;
+		-o-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		height: 3%;
+		top: 0%;
+		width: 3px;
+		right: 20%; 
+	}
+
+	&:hover:before {
+		background: #fff;
+		height: 100%; 
+		-webkit-transition: height 1s ease; 
+		-moz-transition: height 1s ease; 
+		-ms-transition: height 1s ease; 
+		-o-transition: height 1s ease; 
+		transition: height 1s ease; 
+	}
+
+	&:hover:after {
+		background: #fff;
+
+		height: 100%; 
+		-webkit-transition: height 1s ease; 
+		-moz-transition: height 1s ease; 
+		-ms-transition: height 1s ease; 
+		-o-transition: height 1s ease; 
+		transition: height 1s ease; 
+	}
+}

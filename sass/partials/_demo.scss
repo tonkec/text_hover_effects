@@ -1,7 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
 $default-color: #2C3E50;
+$default-underline-color: #fff;
+$default-hover-color: #fff;
 $default-width: 50%;
+$default-padding: 15px;
 
 html,
 body {
@@ -23,6 +26,14 @@ main {
   height: 100%;  
 }
 
+section {
+  height: 25%; 
+}
+
+.container {
+  padding: 0 10px;
+}
+
 .col {
   float: left;
   width: 25%;
@@ -31,21 +42,65 @@ main {
 }
 
 p {
-   @include paragraph-opt(3em, $default-color);
+   @include paragraph-opt(3em, $default-color, $default-hover-color);
 }
 
 .effect-1 {
-  @include underline(white,white, $default-width);
+  @include left-top;
 }
 
 .effect-2 {
-  @include overline(white,white, $default-width);
+  @include right-top;
 }
 
 .effect-3 {
-  @include left(white,white, $default-width);
+  @include left-bottom;
 }
 
 .effect-4 {
-  @include right(white,white, $default-width);
+  @include right-bottom;
+}
+
+.effect-5 {
+  @include both-right;
+}
+
+.effect-6 {
+  @include both-left;
+}
+
+.both-down {
+  @include both-down;
+}
+
+.effect-8 {
+  @include effect8;
+}
+
+.effect-9 {
+  @include effect9;
+}
+
+.effect-10 {
+  @include effect10;
+}
+
+.effect-11 {
+  @include effect11;
+}
+
+.fill-left {
+  @include fill-left;
+}
+
+.fill-right {
+  @include fill-right;
+}
+
+.fill-bottom {
+  @include fill-bottom;
+}
+
+.fill-up {
+  @include fill-up;
 }

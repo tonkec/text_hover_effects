@@ -17,6 +17,12 @@ main {
   width: 100%;
   height: 100%; }
 
+section {
+  height: 25%; }
+
+.container {
+  padding: 0 10px; }
+
 .col {
   float: left;
   width: 25%;
@@ -35,67 +41,441 @@ p {
   -webkit-box-sizing: border-box;
   font-size: 3em;
   color: #2C3E50; }
+  p:hover {
+    color: #fff;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    cursor: pointer; }
 
 .effect-1:after {
   content: "";
-  height: 2%;
-  left: 0;
-  bottom: 0;
-  width: 1px;
   position: absolute;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  right: 0;
-  margin: 0 auto; }
-
-.effect-1:hover {
-  color: white;
-  -webkit-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease;
-  -ms-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
-  transition: all 0.8s ease;
-  cursor: pointer; }
+  transition: all 0.5s ease; }
 
 .effect-1:hover:after {
   width: 50%;
-  background-color: white; }
+  background-color: #fff; }
+
+.effect-1:after {
+  height: 2%;
+  left: 25%;
+  top: 0;
+  width: 1px; }
 
 .effect-2:after {
   content: "";
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.effect-2:hover:after {
+  width: 50%;
+  background-color: #fff; }
+
+.effect-2:after {
+  height: 2%;
+  right: 25%;
+  top: 0;
+  width: 1px; }
+
+.effect-3:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.effect-3:hover:after {
+  width: 50%;
+  background-color: #fff; }
+
+.effect-3:after {
+  height: 2%;
+  width: 3px;
+  left: 25%;
+  bottom: 0; }
+
+.effect-4:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.effect-4:hover:after {
+  width: 50%;
+  background-color: #fff; }
+
+.effect-4:after {
+  height: 2%;
+  width: 3px;
+  right: 25%;
+  bottom: 0; }
+
+.effect-5:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.effect-5:hover:after {
+  width: 50%;
+  background-color: #fff; }
+
+.effect-5:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.effect-5:hover:before {
+  width: 50%;
+  background-color: #fff; }
+
+.effect-5:after {
+  height: 3%;
+  top: 0%;
+  width: 3px;
+  right: 25%; }
+
+.effect-5:before {
+  height: 3%;
+  bottom: 0%;
+  width: 3px;
+  right: 25%; }
+
+.effect-5:hover:before {
+  -webkit-transition: 50% 1s ease;
+  -moz-transition: 50% 1s ease;
+  -ms-transition: 50% 1s ease;
+  -o-transition: 50% 1s ease;
+  transition: 50% 1s ease; }
+
+.effect-5:hover:after {
+  -webkit-transition: 50% 1s ease;
+  -moz-transition: 50% 1s ease;
+  -ms-transition: 50% 1s ease;
+  -o-transition: 50% 1s ease;
+  transition: 50% 1s ease; }
+
+.effect-6:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.effect-6:hover:after {
+  width: 50%;
+  background-color: #fff; }
+
+.effect-6:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.effect-6:hover:before {
+  width: 50%;
+  background-color: #fff; }
+
+.effect-6:after {
+  height: 3%;
+  top: 0%;
+  width: 3px;
+  left: 25%; }
+
+.effect-6:before {
+  height: 3%;
+  bottom: 0%;
+  width: 3px;
+  left: 25%; }
+
+.effect-6:hover:before {
+  -webkit-transition: 50% 1s ease;
+  -moz-transition: 50% 1s ease;
+  -ms-transition: 50% 1s ease;
+  -o-transition: 50% 1s ease;
+  transition: 50% 1s ease; }
+
+.effect-6:hover:after {
+  -webkit-transition: 50% 1s ease;
+  -moz-transition: 50% 1s ease;
+  -ms-transition: 50% 1s ease;
+  -o-transition: 50% 1s ease;
+  transition: 50% 1s ease; }
+
+.both-down:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.both-down:hover:after {
+  width: 50%;
+  background-color: #fff; }
+
+.both-down:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.both-down:hover:before {
+  width: 50%;
+  background-color: #fff; }
+
+.both-down:after {
   height: 2%;
   left: 0;
-  top: 0;
-  width: 1px;
+  top: 0%;
+  width: 3px; }
+
+.both-down:hover:after {
+  width: 0;
+  height: 100%;
+  background: #fff; }
+
+.both-down:before {
+  height: 2%;
+  top: 0%;
+  width: 3px;
+  right: 0; }
+
+.both-down:hover:before {
+  width: 0;
+  height: 100%;
+  background: #fff; }
+
+.effect-8:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.effect-8:hover:after {
+  width: 50%;
+  background-color: #fff; }
+
+.effect-8:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.effect-8:hover:before {
+  width: 50%;
+  background-color: #fff; }
+
+.effect-8:after {
+  height: 3%;
+  top: 0%;
+  width: 3px;
+  left: 25%;
+  right: 25%;
+  margin: 0 auto; }
+
+.effect-8:before {
+  height: 3%;
+  bottom: 0%;
+  width: 3px;
+  left: 25%;
+  right: 25%;
+  margin: 0 auto; }
+
+.effect-8:hover:before {
+  -webkit-transition: 50% 1s ease;
+  -moz-transition: 50% 1s ease;
+  -ms-transition: 50% 1s ease;
+  -o-transition: 50% 1s ease;
+  transition: 50% 1s ease; }
+
+.effect-8:hover:after {
+  -webkit-transition: 50% 1s ease;
+  -moz-transition: 50% 1s ease;
+  -ms-transition: 50% 1s ease;
+  -o-transition: 50% 1s ease;
+  transition: 50% 1s ease; }
+
+.effect-9:after {
+  content: "";
   position: absolute;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  height: 3%;
+  top: 0%;
+  width: 3px;
+  left: 20%;
+  background: transparent; }
+
+.effect-9:before {
+  background: transparent;
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  height: 3%;
+  top: 0%;
+  width: 3px;
+  right: 20%; }
+
+.effect-9:hover:before {
+  background: #fff;
+  height: 100%;
+  -webkit-transition: height 1s ease;
+  -moz-transition: height 1s ease;
+  -ms-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease; }
+
+.effect-9:hover:after {
+  background: #fff;
+  height: 100%;
+  -webkit-transition: height 1s ease;
+  -moz-transition: height 1s ease;
+  -ms-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease; }
+
+.effect-10:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  height: 3%;
+  bottom: 0%;
+  width: 3px;
+  left: 20%; }
+
+.effect-10:before {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  height: 3%;
+  bottom: 0%;
+  width: 3px;
+  right: 20%; }
+
+.effect-10:hover:before {
+  background: #fff;
+  height: 100%;
+  -webkit-transition: height 1s ease;
+  -moz-transition: height 1s ease;
+  -ms-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease; }
+
+.effect-10:hover:after {
+  background: #fff;
+  height: 100%;
+  -webkit-transition: height 1s ease;
+  -moz-transition: height 1s ease;
+  -ms-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease; }
+
+.effect-11:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  height: 1px;
+  top: 0%;
+  width: 100%;
+  left: 0;
   right: 0;
   margin: 0 auto; }
 
-.effect-2:hover {
-  color: white;
-  -webkit-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease;
-  -ms-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
-  transition: all 0.8s ease;
-  cursor: pointer; }
-
-.effect-2:hover:after {
-  width: 50%;
-  background-color: white; }
-
-.effect-3:after {
+.effect-11:before {
   content: "";
-  height: 2%;
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  height: 1px;
   bottom: 0%;
+  width: 100%;
+  right: 0;
+  left: 0;
+  margin: 0 auto; }
+
+.effect-11:hover:before {
+  width: 0;
+  background: #fff;
+  -webkit-transition: width 1s ease;
+  -moz-transition: width 1s ease;
+  -ms-transition: width 1s ease;
+  -o-transition: width 1s ease;
+  transition: width 1s ease; }
+
+.effect-11:hover:after {
+  width: 0;
+  background: #fff;
+  -webkit-transition: width 1s ease;
+  -moz-transition: width 1s ease;
+  -ms-transition: width 1s ease;
+  -o-transition: width 1s ease;
+  transition: width 1s ease; }
+
+.fill-left:before {
+  content: "";
+  height: 100%;
+  top: 0%;
   width: 3px;
   position: absolute;
   -webkit-transition: all 0.2s ease;
@@ -105,31 +485,22 @@ p {
   transition: all 0.5s ease;
   z-index: -1;
   background: transparent;
-  left: 25%; }
+  left: 0; }
 
-.effect-3:hover {
-  border-bottom: 0px;
-  color: white;
-  -webkit-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease;
-  -ms-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
-  transition: all 0.8s ease;
-  cursor: pointer; }
-
-.effect-3:hover:after {
-  background: white;
-  width: 50%;
+.fill-left:hover:before {
+  background: #fff;
+  width: 100%;
+  color: #2c3e50;
   -webkit-transition: width 1s ease;
   -moz-transition: width 1s ease;
   -ms-transition: width 1s ease;
   -o-transition: width 1s ease;
   transition: width 1s ease; }
 
-.effect-4:after {
+.fill-right:before {
   content: "";
-  height: 2%;
-  bottom: 0%;
+  height: 100%;
+  top: 0%;
   width: 3px;
   position: absolute;
   -webkit-transition: all 0.2s ease;
@@ -139,23 +510,64 @@ p {
   transition: all 0.5s ease;
   z-index: -1;
   background: transparent;
-  right: 25%; }
+  right: 0; }
 
-.effect-4:hover {
-  border-bottom: 0px;
-  color: white;
-  -webkit-transition: all 0.8s ease;
-  -moz-transition: all 0.8s ease;
-  -ms-transition: all 0.8s ease;
-  -o-transition: all 0.8s ease;
-  transition: all 0.8s ease;
-  cursor: pointer; }
-
-.effect-4:hover:after {
-  background: white;
-  width: 50%;
+.fill-right:hover:before {
+  background: #fff;
+  width: 100%;
+  color: #2c3e50;
   -webkit-transition: width 1s ease;
   -moz-transition: width 1s ease;
   -ms-transition: width 1s ease;
   -o-transition: width 1s ease;
   transition: width 1s ease; }
+
+.fill-bottom:before {
+  content: "";
+  height: 3px;
+  top: 0%;
+  width: 100%;
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: -1;
+  background: transparent;
+  right: 0; }
+
+.fill-bottom:hover:before {
+  background: #fff;
+  height: 100%;
+  color: #2c3e50;
+  -webkit-transition: height 1s ease;
+  -moz-transition: height 1s ease;
+  -ms-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease; }
+
+.fill-up:before {
+  content: "";
+  height: 3px;
+  bottom: 0%;
+  width: 100%;
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: -1;
+  background: transparent;
+  right: 0; }
+
+.fill-up:hover:before {
+  background: #fff;
+  height: 100%;
+  color: #2c3e50;
+  -webkit-transition: height 1s ease;
+  -moz-transition: height 1s ease;
+  -ms-transition: height 1s ease;
+  -o-transition: height 1s ease;
+  transition: height 1s ease; }

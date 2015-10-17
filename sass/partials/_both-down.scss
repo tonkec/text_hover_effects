@@ -1,0 +1,30 @@
+@mixin both-down {
+	@include animation-opt(pseudoafter, $default-underline-color, $default-width);
+	@include animation-opt(pseudobefore, $default-underline-color, $default-width);
+	
+	&:after {
+		height: 2%;
+		left: 0;
+		top: 0%;
+		width: 3px;
+	}
+
+	&:hover:after {
+		width: 0; 
+		height: 100%;
+		background: #fff;
+	}
+
+	&:before {
+		height: 2%;
+		top: 0%;
+		width: 3px;
+		right: 0;
+	}
+
+	&:hover:before {
+		width: 0; 
+		height: 100%;
+		background: #fff;
+	}
+}

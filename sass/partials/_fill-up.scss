@@ -1,0 +1,30 @@
+@mixin fill-up{
+
+  &:before {
+    content: "";
+  height: 3px;
+  bottom: 0%;
+  width: 100%;
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  z-index: -1;
+  background: transparent;
+  right: 0;
+  }
+
+  &:hover:before {
+    background: #fff;
+  height: 100%;
+  color: #2c3e50;
+-webkit-transition: height 1s ease; 
+-moz-transition: height 1s ease; 
+-ms-transition: height 1s ease; 
+-o-transition: height 1s ease; 
+transition: height 1s ease; 
+   
+  }
+}

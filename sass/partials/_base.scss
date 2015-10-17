@@ -1,9 +1,7 @@
-$default: 15px;
-
-@mixin paragraph-opt($font-size, $color) {
+@mixin paragraph-opt($font-size, $color, $hover-color) {
 	display: block;
 	width: 100%;
-	padding: $default;
+	padding: $default-padding;
 	position: relative;
 	z-index: 2;
 	text-decoration: none;
@@ -12,4 +10,51 @@ $default: 15px;
 	-webkit-box-sizing: border-box;
 	font-size: $font-size;
 	color: $color; 
+	
+	&:hover {
+		color: $hover-color;
+		-webkit-transition: all .8s ease;
+		-moz-transition: all .8s ease;
+		-ms-transition: all .8s ease;
+		-o-transition: all .8s ease;
+		transition: all .8s ease;
+		cursor: pointer;
+	}
+}
+
+
+@mixin animation-opt($type, $underline-color, $underline-width) {
+	@if $type == pseudoafter {
+		&:after {
+			content: "";
+			position: absolute;
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-ms-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+		}
+
+		&:hover:after {
+			width: $underline-width;
+			background-color: $underline-color;
+		}
+	}
+
+	@else if $type == pseudobefore {
+		&:before {
+			content: "";
+			position: absolute;
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-ms-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+		}
+
+		&:hover:before {
+			width: $underline-width;
+			background-color: $underline-color;
+		}
+	}
 }
