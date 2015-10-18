@@ -1,53 +1,25 @@
 @mixin both-down {
-	&:after {
-		content: "";
-		position: absolute;
-		-webkit-transition: all 0.5s ease;
-		-moz-transition: all 0.5s ease;
-		-ms-transition: all 0.5s ease;
-		-o-transition: all 0.5s ease;
-		transition: all 0.5s ease;
-		height: 3%;
-		top: 0%;
-		width: 3px;
-		left: 0%;
-		background: transparent; 
+	 @include line-opt(pseudoafter, $default-underline-color, $small-width);
+    @include line-opt(pseudobefore, $default-underline-color, $small-width);
+    &:after {
+        height: 1%;
+        top: 0%;
+        width: 3px;
+        left: 0%;
+    }
 
-	}
+    &:before {
+        height: 1%;
+        top: 0%;
+        width: 3px;
+        right: 0%; 
+    }
 
-	&:before {
-		background: transparent;
-		content: "";
-		position: absolute;
-		-webkit-transition: all 0.5s ease;
-		-moz-transition: all 0.5s ease;
-		-ms-transition: all 0.5s ease;
-		-o-transition: all 0.5s ease;
-		transition: all 0.5s ease;
-		height: 3%;
-		top: 0%;
-		width: 3px;
-		right: 0%; 
-	}
+    &:hover:before {
+        height: 100%; 
+    }
 
-	&:hover:before {
-		background: #fff;
-		height: 100%; 
-		-webkit-transition: height 1s ease; 
-		-moz-transition: height 1s ease; 
-		-ms-transition: height 1s ease; 
-		-o-transition: height 1s ease; 
-		transition: height 1s ease; 
-	}
-
-	&:hover:after {
-		background: #fff;
-
-		height: 100%; 
-		-webkit-transition: height 1s ease; 
-		-moz-transition: height 1s ease; 
-		-ms-transition: height 1s ease; 
-		-o-transition: height 1s ease; 
-		transition: height 1s ease; 
-	}
+    &:hover:after {
+        height: 100%; 
+    }
 }

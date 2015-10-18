@@ -1,0 +1,19 @@
+@mixin linethrough-closing {
+	 @include line-opt(pseudoafter, $default-underline-color, $default-width);
+    @include line-opt(pseudobefore, $default-underline-color, $default-width);
+    &:after {
+        height: 10px;
+        top: 50%;
+        width: 3px;
+        left: 0%;
+        z-index: 9; 
+    }
+
+    &:before {
+        height: 10px;
+        top: 50%;
+        width: 3px;
+        right: 0%; 
+        z-index: 9; 
+    }
+}

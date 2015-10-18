@@ -5,16 +5,18 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center;
   background-color: #1BA39C;
   font-family: 'Source Sans Pro', Arial; }
 
 section {
-  height: 25%; }
+  height: 100%;
+  width: 100%; }
+
+.row {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  text-align: center; }
 
 .container {
   padding: 0 10px; }
@@ -25,8 +27,37 @@ section {
   text-align: center;
   padding: 0; }
 
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  width: auto;
+  margin: 5px;
+  padding: 15px;
+  background: #2C3E50;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1em;
+  -webkit-border-radius: 10%;
+  border: 1px solid #212F2F;
+  position: relative; }
+  .btn:focus {
+    outline: none;
+    bottom: -1px;
+    background: #f5f5f5;
+    color: #2C3E50;
+    -webkit-transition: background 1s ease, color 1s ease;
+    -moz-transition: background 1s ease, color 1s ease;
+    -ms-transition: background 1s ease, color 1s ease;
+    -o-transition: background 1s ease, color 1s ease;
+    transition: background 1s ease, color 1s ease; }
+
+.p-row {
+  margin-top: 100px;
+  text-align: center; }
+
 p {
-  display: block;
+  margin-top: 100px;
+  display: inline;
   width: 100%;
   padding: 15px;
   position: relative;
@@ -37,29 +68,39 @@ p {
   -webkit-box-sizing: border-box;
   font-size: 4em;
   color: #2C3E50;
-  font-weight: 700; }
+  font-weight: 700;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
   p:hover {
     color: #fff;
-    -webkit-transition: all 0.8s ease;
-    -moz-transition: all 0.8s ease;
-    -ms-transition: all 0.8s ease;
-    -o-transition: all 0.8s ease;
-    transition: all 0.8s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
     cursor: pointer; }
 
 .overline-left:after {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .overline-left:hover:after {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .overline-left:after {
   height: 2%;
@@ -70,16 +111,21 @@ p {
 .overline-right:after {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .overline-right:hover:after {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .overline-right:after {
   height: 2%;
@@ -90,16 +136,21 @@ p {
 .underline-left:after {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .underline-left:hover:after {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .underline-left:after {
   height: 2%;
@@ -110,16 +161,21 @@ p {
 .underline-right:after {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .underline-right:hover:after {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .underline-right:after {
   height: 2%;
@@ -130,30 +186,40 @@ p {
 .underline-closing:after {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .underline-closing:hover:after {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .underline-closing:before {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .underline-closing:hover:before {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .underline-closing:after {
   height: 3%;
@@ -170,30 +236,40 @@ p {
 .underline-opening:after {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .underline-opening:hover:after {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .underline-opening:before {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .underline-opening:hover:before {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .underline-opening:after {
   height: 3%;
@@ -214,30 +290,40 @@ p {
 .overline-closing:after {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .overline-closing:hover:after {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .overline-closing:before {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .overline-closing:hover:before {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .overline-closing:after {
   height: 3%;
@@ -254,30 +340,40 @@ p {
 .overline-opening:after {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .overline-opening:hover:after {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .overline-opening:before {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .overline-opening:hover:before {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .overline-opening:after {
   height: 3%;
@@ -298,30 +394,40 @@ p {
 .overline-left-underline-right:after {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .overline-left-underline-right:hover:after {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .overline-left-underline-right:before {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .overline-left-underline-right:hover:before {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .overline-left-underline-right:after {
   height: 3%;
@@ -338,30 +444,40 @@ p {
 .overline-right-underline-left:after {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .overline-right-underline-left:hover:after {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .overline-right-underline-left:before {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .overline-right-underline-left:hover:before {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .overline-right-underline-left:after {
   height: 3%;
@@ -378,30 +494,40 @@ p {
 .both-right:after {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .both-right:hover:after {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .both-right:before {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .both-right:hover:before {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .both-right:after {
   height: 3%;
@@ -432,30 +558,40 @@ p {
 .both-left:after {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .both-left:hover:after {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .both-left:before {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .both-left:hover:before {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .both-left:after {
   height: 3%;
@@ -486,76 +622,96 @@ p {
 .both-down:after {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  height: 3%;
-  top: 0%;
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.both-down:hover:after {
   width: 3px;
-  left: 0%;
-  background: transparent; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .both-down:before {
-  background: transparent;
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  height: 3%;
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.both-down:hover:before {
+  width: 3px;
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.both-down:after {
+  height: 1%;
+  top: 0%;
+  width: 3px;
+  left: 0%; }
+
+.both-down:before {
+  height: 1%;
   top: 0%;
   width: 3px;
   right: 0%; }
 
 .both-down:hover:before {
-  background: #fff;
-  height: 100%;
-  -webkit-transition: height 1s ease;
-  -moz-transition: height 1s ease;
-  -ms-transition: height 1s ease;
-  -o-transition: height 1s ease;
-  transition: height 1s ease; }
+  height: 100%; }
 
 .both-down:hover:after {
-  background: #fff;
-  height: 100%;
-  -webkit-transition: height 1s ease;
-  -moz-transition: height 1s ease;
-  -ms-transition: height 1s ease;
-  -o-transition: height 1s ease;
-  transition: height 1s ease; }
+  height: 100%; }
 
 .both-opening-horizontal:after {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .both-opening-horizontal:hover:after {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .both-opening-horizontal:before {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .both-opening-horizontal:hover:before {
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .both-opening-horizontal:after {
   height: 3%;
@@ -587,33 +743,103 @@ p {
   -o-transition: 100% 1s ease;
   transition: 100% 1s ease; }
 
+.both-closing-horizontal:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.both-closing-horizontal:hover:after {
+  width: 100%;
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.both-closing-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.both-closing-horizontal:hover:before {
+  width: 100%;
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.both-closing-horizontal:after {
+  height: 3%;
+  top: 0%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto; }
+
+.both-closing-horizontal:before {
+  height: 3%;
+  bottom: 0%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto; }
+
+.both-closing-horizontal:hover:before {
+  width: 0; }
+
+.both-closing-horizontal:hover:after {
+  width: 0; }
+
 .both-up:after {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .both-up:hover:after {
   width: 3px;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .both-up:before {
   content: "";
   position: absolute;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1; }
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .both-up:hover:before {
   width: 3px;
-  background-color: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .both-up:after {
   height: 3%;
@@ -628,25 +854,13 @@ p {
   right: 0%; }
 
 .both-up:hover:before {
-  background: #fff;
-  height: 100%;
-  -webkit-transition: height 1s ease;
-  -moz-transition: height 1s ease;
-  -ms-transition: height 1s ease;
-  -o-transition: height 1s ease;
-  transition: height 1s ease; }
+  height: 100%; }
 
 .both-up:hover:after {
-  background: #fff;
-  height: 100%;
-  -webkit-transition: height 1s ease;
-  -moz-transition: height 1s ease;
-  -ms-transition: height 1s ease;
-  -o-transition: height 1s ease;
-  transition: height 1s ease; }
+  height: 100%; }
 
 .fill-left {
-  display: block;
+  display: inline;
   width: 100%;
   padding: 15px;
   position: relative;
@@ -657,14 +871,19 @@ p {
   -webkit-box-sizing: border-box;
   font-size: 4em;
   color: #2C3E50;
-  font-weight: 700; }
+  font-weight: 700;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
   .fill-left:hover {
     color: #2C3E50;
-    -webkit-transition: all 0.8s ease;
-    -moz-transition: all 0.8s ease;
-    -ms-transition: all 0.8s ease;
-    -o-transition: all 0.8s ease;
-    transition: all 0.8s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
     cursor: pointer; }
   .fill-left:before {
     content: "";
@@ -691,7 +910,7 @@ p {
     transition: width 1s ease; }
 
 .fill-right {
-  display: block;
+  display: inline;
   width: 100%;
   padding: 15px;
   position: relative;
@@ -702,33 +921,38 @@ p {
   -webkit-box-sizing: border-box;
   font-size: 4em;
   color: #2C3E50;
-  font-weight: 700; }
+  font-weight: 700;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
   .fill-right:hover {
     color: #2C3E50;
-    -webkit-transition: all 0.8s ease;
-    -moz-transition: all 0.8s ease;
-    -ms-transition: all 0.8s ease;
-    -o-transition: all 0.8s ease;
-    transition: all 0.8s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
     cursor: pointer; }
   .fill-right:before {
     content: "";
     position: absolute;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    z-index: -1; }
+    z-index: -1;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
   .fill-right:hover:before {
     width: 100%;
     height: 100%;
     background-color: #fff;
-    -webkit-transition: 100% 1s ease, height 1s ease;
-    -moz-transition: 100% 1s ease, height 1s ease;
-    -ms-transition: 100% 1s ease, height 1s ease;
-    -o-transition: 100% 1s ease, height 1s ease;
-    transition: 100% 1s ease, height 1s ease; }
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
   .fill-right:before {
     height: 100%;
     top: 0%;
@@ -736,7 +960,7 @@ p {
     right: 0; }
 
 .fill-down {
-  display: block;
+  display: inline;
   width: 100%;
   padding: 15px;
   position: relative;
@@ -747,33 +971,38 @@ p {
   -webkit-box-sizing: border-box;
   font-size: 4em;
   color: #2C3E50;
-  font-weight: 700; }
+  font-weight: 700;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
   .fill-down:hover {
     color: #2C3E50;
-    -webkit-transition: all 0.8s ease;
-    -moz-transition: all 0.8s ease;
-    -ms-transition: all 0.8s ease;
-    -o-transition: all 0.8s ease;
-    transition: all 0.8s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
     cursor: pointer; }
   .fill-down:before {
     content: "";
     position: absolute;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    z-index: -1; }
+    z-index: -1;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
   .fill-down:hover:before {
     width: 100%;
     height: 100%;
     background-color: #fff;
-    -webkit-transition: 100% 1s ease, height 1s ease;
-    -moz-transition: 100% 1s ease, height 1s ease;
-    -ms-transition: 100% 1s ease, height 1s ease;
-    -o-transition: 100% 1s ease, height 1s ease;
-    transition: 100% 1s ease, height 1s ease; }
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
   .fill-down:before {
     height: 3px;
     top: 0%;
@@ -781,7 +1010,7 @@ p {
     right: 0; }
 
 .fill-up {
-  display: block;
+  display: inline;
   width: 100%;
   padding: 15px;
   position: relative;
@@ -792,33 +1021,38 @@ p {
   -webkit-box-sizing: border-box;
   font-size: 4em;
   color: #2C3E50;
-  font-weight: 700; }
+  font-weight: 700;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
   .fill-up:hover {
     color: #2C3E50;
-    -webkit-transition: all 0.8s ease;
-    -moz-transition: all 0.8s ease;
-    -ms-transition: all 0.8s ease;
-    -o-transition: all 0.8s ease;
-    transition: all 0.8s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
     cursor: pointer; }
   .fill-up:before {
     content: "";
     position: absolute;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    z-index: -1; }
+    z-index: -1;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
   .fill-up:hover:before {
     width: 100%;
     height: 100%;
     background-color: #fff;
-    -webkit-transition: 100% 1s ease, height 1s ease;
-    -moz-transition: 100% 1s ease, height 1s ease;
-    -ms-transition: 100% 1s ease, height 1s ease;
-    -o-transition: 100% 1s ease, height 1s ease;
-    transition: 100% 1s ease, height 1s ease; }
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
   .fill-up:before {
     height: 3px;
     bottom: 0%;
@@ -826,7 +1060,7 @@ p {
     right: 0; }
 
 .fill-top-left {
-  display: block;
+  display: inline;
   width: 100%;
   padding: 15px;
   position: relative;
@@ -837,33 +1071,38 @@ p {
   -webkit-box-sizing: border-box;
   font-size: 4em;
   color: #2C3E50;
-  font-weight: 700; }
+  font-weight: 700;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
   .fill-top-left:hover {
     color: #2C3E50;
-    -webkit-transition: all 0.8s ease;
-    -moz-transition: all 0.8s ease;
-    -ms-transition: all 0.8s ease;
-    -o-transition: all 0.8s ease;
-    transition: all 0.8s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
     cursor: pointer; }
   .fill-top-left:before {
     content: "";
     position: absolute;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    z-index: -1; }
+    z-index: -1;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
   .fill-top-left:hover:before {
     width: 100%;
     height: 100%;
     background-color: #fff;
-    -webkit-transition: 100% 1s ease, height 1s ease;
-    -moz-transition: 100% 1s ease, height 1s ease;
-    -ms-transition: 100% 1s ease, height 1s ease;
-    -o-transition: 100% 1s ease, height 1s ease;
-    transition: 100% 1s ease, height 1s ease; }
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
   .fill-top-left:before {
     height: 2%;
     top: 0%;
@@ -871,7 +1110,7 @@ p {
     left: 0; }
 
 .fill-top-right {
-  display: block;
+  display: inline;
   width: 100%;
   padding: 15px;
   position: relative;
@@ -882,33 +1121,38 @@ p {
   -webkit-box-sizing: border-box;
   font-size: 4em;
   color: #2C3E50;
-  font-weight: 700; }
+  font-weight: 700;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
   .fill-top-right:hover {
     color: #2C3E50;
-    -webkit-transition: all 0.8s ease;
-    -moz-transition: all 0.8s ease;
-    -ms-transition: all 0.8s ease;
-    -o-transition: all 0.8s ease;
-    transition: all 0.8s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
     cursor: pointer; }
   .fill-top-right:before {
     content: "";
     position: absolute;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    z-index: -1; }
+    z-index: -1;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
   .fill-top-right:hover:before {
     width: 100%;
     height: 100%;
     background-color: #fff;
-    -webkit-transition: 100% 1s ease, height 1s ease;
-    -moz-transition: 100% 1s ease, height 1s ease;
-    -ms-transition: 100% 1s ease, height 1s ease;
-    -o-transition: 100% 1s ease, height 1s ease;
-    transition: 100% 1s ease, height 1s ease; }
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
   .fill-top-right:before {
     height: 2%;
     top: 0%;
@@ -916,7 +1160,7 @@ p {
     right: 0; }
 
 .fill-bottom-left {
-  display: block;
+  display: inline;
   width: 100%;
   padding: 15px;
   position: relative;
@@ -927,33 +1171,38 @@ p {
   -webkit-box-sizing: border-box;
   font-size: 4em;
   color: #2C3E50;
-  font-weight: 700; }
+  font-weight: 700;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
   .fill-bottom-left:hover {
     color: #2C3E50;
-    -webkit-transition: all 0.8s ease;
-    -moz-transition: all 0.8s ease;
-    -ms-transition: all 0.8s ease;
-    -o-transition: all 0.8s ease;
-    transition: all 0.8s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
     cursor: pointer; }
   .fill-bottom-left:before {
     content: "";
     position: absolute;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    z-index: -1; }
+    z-index: -1;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
   .fill-bottom-left:hover:before {
     width: 100%;
     height: 100%;
     background-color: #fff;
-    -webkit-transition: 100% 1s ease, height 1s ease;
-    -moz-transition: 100% 1s ease, height 1s ease;
-    -ms-transition: 100% 1s ease, height 1s ease;
-    -o-transition: 100% 1s ease, height 1s ease;
-    transition: 100% 1s ease, height 1s ease; }
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
   .fill-bottom-left:before {
     height: 2%;
     bottom: 0%;
@@ -961,7 +1210,7 @@ p {
     left: 0; }
 
 .fill-bottom-right {
-  display: block;
+  display: inline;
   width: 100%;
   padding: 15px;
   position: relative;
@@ -972,180 +1221,546 @@ p {
   -webkit-box-sizing: border-box;
   font-size: 4em;
   color: #2C3E50;
-  font-weight: 700; }
+  font-weight: 700;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
   .fill-bottom-right:hover {
     color: #2C3E50;
-    -webkit-transition: all 0.8s ease;
-    -moz-transition: all 0.8s ease;
-    -ms-transition: all 0.8s ease;
-    -o-transition: all 0.8s ease;
-    transition: all 0.8s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
     cursor: pointer; }
   .fill-bottom-right:before {
     content: "";
     position: absolute;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-    z-index: -1; }
+    z-index: -1;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
   .fill-bottom-right:hover:before {
     width: 100%;
     height: 100%;
     background-color: #fff;
-    -webkit-transition: 100% 1s ease, height 1s ease;
-    -moz-transition: 100% 1s ease, height 1s ease;
-    -ms-transition: 100% 1s ease, height 1s ease;
-    -o-transition: 100% 1s ease, height 1s ease;
-    transition: 100% 1s ease, height 1s ease; }
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease; }
   .fill-bottom-right:before {
     height: 2%;
     bottom: 0%;
     width: 3px;
     right: 0; }
 
-.linethrough:after {
+.linethrough-opening:after {
   content: "";
-  height: 5px;
-  left: 0;
-  bottom: 45%;
-  width: 1px;
   position: absolute;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
   z-index: -1;
-  background: transparent;
-  right: 0;
-  margin: 0 auto; }
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
-.linethrough:hover:after {
+.linethrough-opening:hover:after {
   width: 100%;
-  background: #fff;
-  -webkit-transition: width 1s ease;
-  -moz-transition: width 1s ease;
-  -ms-transition: width 1s ease;
-  -o-transition: width 1s ease;
-  transition: width 1s ease; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.linethrough-opening:after {
+  height: 10px;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  right: 0;
+  margin: 0 auto;
+  z-index: 9; }
+
+.linethrough-closing:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.linethrough-closing:hover:after {
+  width: 100%;
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.linethrough-closing:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.linethrough-closing:hover:before {
+  width: 100%;
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.linethrough-closing:after {
+  height: 10px;
+  top: 50%;
+  width: 3px;
+  left: 0%;
+  z-index: 9; }
+
+.linethrough-closing:before {
+  height: 10px;
+  top: 50%;
+  width: 3px;
+  right: 0%;
+  z-index: 9; }
+
+.double-linethrough-opening:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.double-linethrough-opening:hover:after {
+  width: 100%;
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.double-linethrough-opening:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.double-linethrough-opening:hover:before {
+  width: 100%;
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.double-linethrough-opening:after {
+  height: 7px;
+  width: 3px;
+  left: 0%;
+  bottom: 0;
+  top: 44%;
+  right: 0;
+  margin: 0 auto;
+  z-index: 9; }
+
+.double-linethrough-opening:before {
+  height: 7px;
+  width: 3px;
+  left: 0%;
+  top: 54%;
+  right: 0;
+  margin: 0 auto;
+  z-index: 9; }
+
+.double-linethrough-left-right:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.double-linethrough-left-right:hover:after {
+  width: 100%;
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.double-linethrough-left-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.double-linethrough-left-right:hover:before {
+  width: 100%;
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.double-linethrough-left-right:after {
+  height: 7px;
+  width: 3px;
+  left: 0%;
+  bottom: 0;
+  top: 44%;
+  z-index: 9; }
+
+.double-linethrough-left-right:before {
+  height: 7px;
+  width: 3px;
+  right: 0%;
+  top: 54%;
+  z-index: 9; }
 
 .left-top:after {
   content: "";
-  height: 2%;
-  left: 0;
-  top: 0%;
-  width: 3px;
   position: absolute;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
   z-index: -1;
-  background: transparent; }
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .left-top:hover:after {
-  height: 100%;
-  background: #fff; }
+  width: 3px;
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .left-top:before {
   content: "";
-  height: 2%;
-  left: 0;
-  top: 0%;
-  width: 1px;
   position: absolute;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
   z-index: -1;
-  background: transparent;
-  right: 0;
-  margin: 0 auto; }
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .left-top:hover:before {
   width: 100%;
-  background: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.left-top:after {
+  height: 2%;
+  left: 0;
+  bottom: 0%;
+  width: 3px; }
+
+.left-top:hover:after {
+  height: 100%; }
+
+.left-top:before {
+  height: 2%;
+  top: 0%;
+  width: 1px;
+  right: 0;
+  margin: 0 auto; }
 
 .right-top:after {
   content: "";
-  height: 2%;
-  right: 0;
-  top: 0%;
-  width: 3px;
   position: absolute;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
   z-index: -1;
-  background: transparent; }
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .right-top:hover:after {
-  height: 100%;
-  background: #fff; }
+  width: 3px;
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .right-top:before {
   content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.right-top:hover:before {
+  width: 100%;
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.right-top:after {
+  height: 2%;
+  right: 0;
+  bottom: 0%;
+  width: 3px; }
+
+.right-top:hover:after {
+  height: 100%; }
+
+.right-top:before {
   height: 2%;
   left: 0;
   top: 0%;
   width: 1px;
-  position: absolute;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  z-index: -1;
-  background: transparent;
-  right: 0;
   margin: 0 auto; }
-
-.right-top:hover:before {
-  width: 100%;
-  background: #fff; }
 
 .left-bottom:after {
   content: "";
-  height: 2%;
-  left: 0;
-  width: 3px;
-  top: 0;
   position: absolute;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
   z-index: -1;
-  background: transparent; }
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .left-bottom:hover:after {
-  height: 100%;
-  background: #fff; }
+  width: 3px;
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .left-bottom:before {
   content: "";
-  height: 2%;
-  bottom: 0%;
-  width: 1px;
   position: absolute;
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
   z-index: -1;
-  background: transparent;
-  right: 0;
-  margin: 0 auto; }
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
 
 .left-bottom:hover:before {
   width: 100%;
-  background: #fff; }
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.left-bottom:after {
+  height: 2%;
+  left: 0;
+  width: 3px;
+  top: 0; }
+
+.left-bottom:hover:after {
+  height: 100%; }
+
+.left-bottom:before {
+  height: 2%;
+  bottom: 0%;
+  width: 1px;
+  right: 0;
+  margin: 0 auto; }
+
+.right-bottom:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.right-bottom:hover:after {
+  width: 3px;
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.right-bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.right-bottom:hover:before {
+  width: 100%;
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.right-bottom:after {
+  height: 2%;
+  right: 0;
+  top: 0%;
+  width: 3px; }
+
+.right-bottom:hover:after {
+  height: 100%; }
+
+.right-bottom:before {
+  height: 2%;
+  left: 0;
+  bottom: 0%;
+  width: 1px;
+  margin: 0 auto; }
+
+.double-underline-left:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.double-underline-left:hover:after {
+  width: 100%;
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.double-underline-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.double-underline-left:hover:before {
+  width: 100%;
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.double-underline-left:after {
+  height: 2%;
+  width: 3px;
+  left: 0%;
+  bottom: 0; }
+
+.double-underline-left:before {
+  height: 2%;
+  width: 3px;
+  left: 0%;
+  bottom: 15px; }
+
+.double-underline-right:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.double-underline-right:hover:after {
+  width: 100%;
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.double-underline-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.double-underline-right:hover:before {
+  width: 100%;
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.double-underline-right:after {
+  height: 2%;
+  width: 3px;
+  right: 0%;
+  bottom: 0; }
+
+.double-underline-right:before {
+  height: 2%;
+  width: 3px;
+  right: 0%;
+  bottom: 15px; }

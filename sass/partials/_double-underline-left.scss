@@ -1,0 +1,16 @@
+@mixin double-underline-left {
+	@include line-opt(pseudoafter, $default-underline-color, $default-width);
+	@include line-opt(pseudobefore, $default-underline-color, $default-width);
+	 &:after {
+    height: 2%; 
+    width: 3px; 
+    left: 0%; 
+    bottom: 0;
+  } 
+   &:before {
+    height: 2%; 
+    width: 3px; 
+    left: 0%; 
+    bottom: 15px;
+  } 
+}

@@ -1,0 +1,13 @@
+@mixin linethrough-opening {
+  @include line-opt(pseudoafter, $default-underline-color, $default-width);
+
+	&:after {
+  height:10px;
+  left: 0;
+ top: 50%;
+  width: 1px;
+  right: 0;
+  margin: 0 auto;
+  z-index: 9; 
+	}
+}

@@ -1,5 +1,5 @@
 @mixin paragraph-opt($font-size, $color, $hover-color) {
-	display: block;
+	display: inline;
 	width: 100%;
 	padding: $default-padding;
 	position: relative;
@@ -11,14 +11,19 @@
 	font-size: $font-size;
 	color: $color; 
 	font-weight: 700; 
+	-webkit-transition: all 1s ease; 
+	-moz-transition: all 1s ease; 
+	-ms-transition: all 1s ease; 
+	-o-transition: all 1s ease; 
+	transition: all 1s ease; 
 	
 	&:hover {
 		color: $hover-color;
-		-webkit-transition: all .8s ease;
-		-moz-transition: all .8s ease;
-		-ms-transition: all .8s ease;
-		-o-transition: all .8s ease;
-		transition: all .8s ease;
+		-webkit-transition: all 1s ease; 
+		-moz-transition: all 1s ease; 
+		-ms-transition: all 1s ease; 
+		-o-transition: all 1s ease; 
+		transition: all 1s ease; 
 		cursor: pointer;
 	}
 }
@@ -29,17 +34,22 @@
 		&:after {
 			content: "";
 			position: absolute;
-			-webkit-transition: all 0.5s ease;
-			-moz-transition: all 0.5s ease;
-			-ms-transition: all 0.5s ease;
-			-o-transition: all 0.5s ease;
-			transition: all 0.5s ease;
 			z-index: -1; 
+			-webkit-transition: all 1s ease; 
+			-moz-transition: all 1s ease; 
+			-ms-transition: all 1s ease; 
+			-o-transition: all 1s ease; 
+			transition: all 1s ease; 
 		}
 
 		&:hover:after {
 			width: $underline-width;
 			background-color: $underline-color;
+			-webkit-transition: all 1s ease; 
+			-moz-transition: all 1s ease; 
+			-ms-transition: all 1s ease; 
+			-o-transition: all 1s ease; 
+			transition: all 1s ease; 
 		}
 	}
 
@@ -47,17 +57,22 @@
 		&:before {
 			content: "";
 			position: absolute;
-			-webkit-transition: all 0.5s ease;
-			-moz-transition: all 0.5s ease;
-			-ms-transition: all 0.5s ease;
-			-o-transition: all 0.5s ease;
-			transition: all 0.5s ease;
 			z-index: -1; 
+			-webkit-transition: all 1s ease; 
+			-moz-transition: all 1s ease; 
+			-ms-transition: all 1s ease; 
+			-o-transition: all 1s ease; 
+			transition: all 1s ease; 
 		}
 
 		&:hover:before {
 			width: $underline-width;
 			background-color: $underline-color;
+			-webkit-transition: all 1s ease; 
+			-moz-transition: all 1s ease; 
+			-ms-transition: all 1s ease; 
+			-o-transition: all 1s ease; 
+			transition: all 1s ease; 
 		}
 	}
 }
@@ -67,23 +82,23 @@
 		&:after {
 			content: "";
 			position: absolute;
-			-webkit-transition: all 0.5s ease;
-			-moz-transition: all 0.5s ease;
-			-ms-transition: all 0.5s ease;
-			-o-transition: all 0.5s ease;
-			transition: all 0.5s ease;
 			z-index: -1; 
+			-webkit-transition: all 1s ease; 
+			-moz-transition: all 1s ease; 
+			-ms-transition: all 1s ease; 
+			-o-transition: all 1s ease; 
+			transition: all 1s ease; 
 		}
 
 		&:hover:after {
 			width: $width;
 			height: $height;
 			background-color: $background-color;
-			-webkit-transition: $width 1s ease, height 1s ease; 
-			-moz-transition: $width 1s ease, height 1s ease; 
-			-ms-transition: $width 1s ease, height 1s ease; 
-			-o-transition: $width 1s ease, height 1s ease; 
-			transition: $width 1s ease, height 1s ease; 
+			-webkit-transition: all 1s ease; 
+			-moz-transition: all 1s ease; 
+			-ms-transition: all 1s ease; 
+			-o-transition: all 1s ease; 
+			transition: all 1s ease;
 		}
 	}
 
@@ -91,23 +106,23 @@
 		&:before {
 			content: "";
 			position: absolute;
-			-webkit-transition: all 0.5s ease;
-			-moz-transition: all 0.5s ease;
-			-ms-transition: all 0.5s ease;
-			-o-transition: all 0.5s ease;
-			transition: all 0.5s ease;
 			z-index: -1; 
+			-webkit-transition: all 1s ease; 
+			-moz-transition: all 1s ease; 
+			-ms-transition: all 1s ease; 
+			-o-transition: all 1s ease; 
+			transition: all 1s ease; 
 		}
 
 		&:hover:before {
 			width: $width;
 			height: $height;
 			background-color: $background-color;
-			-webkit-transition: $width 1s ease, height 1s ease; 
-			-moz-transition: $width 1s ease, height 1s ease; 
-			-ms-transition: $width 1s ease, height 1s ease; 
-			-o-transition: $width 1s ease, height 1s ease; 
-			transition: $width 1s ease, height 1s ease; 
+			-webkit-transition: all 1s ease; 
+			-moz-transition: all 1s ease; 
+			-ms-transition: all 1s ease; 
+			-o-transition: all 1s ease; 
+			transition: all 1s ease;
 		}
 	}
 }

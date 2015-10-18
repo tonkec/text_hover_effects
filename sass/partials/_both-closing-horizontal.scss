@@ -1,0 +1,30 @@
+@mixin both-closing-horizontal {
+  @include line-opt(pseudoafter, $default-underline-color, $default-width);
+  @include line-opt(pseudobefore, $default-underline-color, $default-width);
+  
+  &:after {
+    height: 3%;
+    top: 0%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;  
+  }
+  
+  &:before {
+    height: 3%;
+    bottom: 0%;
+    width: 100%;
+    left:0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  &:hover:before {
+   width: 0; 
+  }
+
+  &:hover:after {
+  width: 0; 
+  }
+}

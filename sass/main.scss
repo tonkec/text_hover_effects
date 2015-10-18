@@ -6,6 +6,8 @@
 @import 'partials/underline-right';
 @import 'partials/underline-closing';
 @import 'partials/underline-opening';
+@import 'partials/double-underline-left';
+@import 'partials/double-underline-right';
 @import 'partials/overline-closing';
 @import 'partials/overline-opening';
 @import 'partials/overline-left-underline-right';
@@ -14,6 +16,7 @@
 @import 'partials/both-left';
 @import 'partials/both-down';
 @import 'partials/both-opening-horizontal';
+@import 'partials/both-closing-horizontal';
 @import 'partials/both-up';
 @import 'partials/fill-left';
 @import 'partials/fill-right';
@@ -23,8 +26,12 @@
 @import 'partials/fill-top-right';
 @import 'partials/fill-bottom-left';
 @import 'partials/fill-bottom-right';
-@import 'partials/linethrough';
+@import 'partials/linethrough-opening';
+@import 'partials/linethrough-closing';
+@import 'partials/double-linethrough-opening';
+@import 'partials/double-linethrough-left-right';
 @import 'partials/left-top';
 @import 'partials/right-top';
 @import 'partials/left-bottom';
+@import 'partials/right-bottom';
 @import 'partials/demo';

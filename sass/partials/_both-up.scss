@@ -16,22 +16,10 @@
     }
 
     &:hover:before {
-        background: #fff;
         height: 100%; 
-        -webkit-transition: height 1s ease; 
-        -moz-transition: height 1s ease; 
-        -ms-transition: height 1s ease; 
-        -o-transition: height 1s ease; 
-        transition: height 1s ease; 
     }
 
     &:hover:after {
-        background: #fff;
         height: 100%; 
-        -webkit-transition: height 1s ease; 
-        -moz-transition: height 1s ease; 
-        -ms-transition: height 1s ease; 
-        -o-transition: height 1s ease; 
-        transition: height 1s ease; 
     }
 }

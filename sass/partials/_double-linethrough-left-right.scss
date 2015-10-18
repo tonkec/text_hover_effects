@@ -1,0 +1,20 @@
+@mixin double-linethrough-left-right {
+   @include line-opt(pseudoafter, $default-underline-color, $default-width);
+    @include line-opt(pseudobefore, $default-underline-color, $default-width);
+    &:after {
+         height: 7px; 
+    width: 3px; 
+    left: 0%; 
+    bottom: 0;
+    top: 44%; 
+  z-index: 9;
+    }
+
+    &:before {
+        height: 7px; 
+    width: 3px; 
+    right: 0%; 
+    top: 54%; 
+  z-index: 9; 
+    }
+}

@@ -6,17 +6,22 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  align-items: center;
+ 
   background-color: #1BA39C;
   font-family: 'Source Sans Pro', Arial;
 }
 
 section {
-  height: 25%; 
+  height: 100%;
+  width: 100%;    
+}
+
+.row {
+width: 80%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center; 
+  
 }
 
 .container {
@@ -30,7 +35,42 @@ section {
   padding: 0;  
 }
 
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  width: auto; 
+  margin: 5px;
+  padding: 15px;
+  background:#2C3E50;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1em;  
+  -webkit-border-radius: 10%; 
+ 
+  border: 1px solid #212F2F; 
+  
+  position: relative; 
+  
+  &:focus {
+    outline: none; 
+    bottom: -1px;
+    background: #f5f5f5;
+    color: #2C3E50;
+    -webkit-transition: background 1s ease, color 1s ease; 
+    -moz-transition: background 1s ease, color 1s ease; 
+    -ms-transition: background 1s ease, color 1s ease; 
+    -o-transition: background 1s ease, color 1s ease; 
+    transition: background 1s ease, color 1s ease; 
+  }
+}
+
+.p-row {
+  margin-top: 100px;
+  text-align: center;  
+}
+
 p {
+  margin-top: 100px; 
    @include paragraph-opt(4em, $default-color, $default-hover-color);
 }
 
@@ -91,6 +131,10 @@ p {
   @include both-opening-horizontal;
 }
 
+.both-closing-horizontal {
+  @include both-closing-horizontal;
+}
+
 .both-up {
   @include both-up;
 }
@@ -135,10 +179,21 @@ p {
   @include fill-bottom-right;
 }
 
-.linethrough {
-  @include linethrough;
+.linethrough-opening {
+  @include linethrough-opening;
 }
 
+.linethrough-closing {
+  @include linethrough-closing;
+}
+
+.double-linethrough-opening {
+  @include double-linethrough-opening;
+}
+
+.double-linethrough-left-right {
+  @include double-linethrough-left-right;
+}
 .left-top {
   @include left-top;
 }
@@ -149,4 +204,16 @@ p {
 
 .left-bottom {
   @include left-bottom;
+}
+
+.right-bottom {
+  @include right-bottom;
+}
+
+.double-underline-left {
+  @include double-underline-left;
+}
+
+.double-underline-right {
+  @include double-underline-right;
 }
