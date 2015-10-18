@@ -1,11 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 
-$default-color: #2C3E50;
-$default-underline-color: #fff;
-$default-hover-color: #fff;
-$default-width: 50%;
-$default-padding: 15px;
-
 html,
 body {
   height: 100%;
@@ -19,11 +13,6 @@ body {
   align-items: center;
   background-color: #1BA39C;
   font-family: 'Source Sans Pro', Arial;
-}
-
-main {
-  width: 100%;
-  height: 100%;  
 }
 
 section {
@@ -42,30 +31,55 @@ section {
 }
 
 p {
-   @include paragraph-opt(3em, $default-color, $default-hover-color);
+   @include paragraph-opt(4em, $default-color, $default-hover-color);
 }
 
-.effect-1 {
-  @include left-top;
+.overline-left {
+  @include overline-left;
 }
 
-.effect-2 {
-  @include right-top;
+.overline-right {
+  @include overline-right;
 }
 
-.effect-3 {
-  @include left-bottom;
+.underline-left {
+  @include underline-left;
 }
 
-.effect-4 {
-  @include right-bottom;
+.underline-right {
+  @include underline-right;
 }
 
-.effect-5 {
+.underline-closing {
+  @include underline-closing;
+}
+
+.underline-opening {
+  @include underline-opening;
+}
+
+
+.overline-closing {
+  @include overline-closing;
+}
+
+.overline-opening {
+  @include overline-opening;
+}
+
+.overline-left-underline-right {
+  @include overline-left-underline-right;
+}
+
+.overline-right-underline-left {
+  @include overline-right-underline-left;
+}
+
+.both-right {
   @include both-right;
 }
 
-.effect-6 {
+.both-left {
   @include both-left;
 }
 
@@ -73,34 +87,66 @@ p {
   @include both-down;
 }
 
-.effect-8 {
-  @include effect8;
+.both-opening-horizontal {
+  @include both-opening-horizontal;
 }
 
-.effect-9 {
-  @include effect9;
-}
-
-.effect-10 {
-  @include effect10;
-}
-
-.effect-11 {
-  @include effect11;
+.both-up {
+  @include both-up;
 }
 
 .fill-left {
+  @include paragraph-opt(4em, $default-color, $default-color);
   @include fill-left;
 }
 
 .fill-right {
+  @include paragraph-opt(4em, $default-color, $default-color);
   @include fill-right;
 }
 
-.fill-bottom {
-  @include fill-bottom;
+.fill-down {
+  @include paragraph-opt(4em, $default-color, $default-color);
+  @include fill-down;
 }
 
 .fill-up {
+  @include paragraph-opt(4em, $default-color, $default-color);
   @include fill-up;
+}
+
+.fill-top-left {
+  @include paragraph-opt(4em, $default-color, $default-color);
+  @include fill-top-left;
+}
+
+.fill-top-right {
+  @include paragraph-opt(4em, $default-color, $default-color);
+  @include fill-top-right;
+}
+
+.fill-bottom-left {
+  @include paragraph-opt(4em, $default-color, $default-color);
+  @include fill-bottom-left;
+}
+
+.fill-bottom-right {
+  @include paragraph-opt(4em, $default-color, $default-color);
+  @include fill-bottom-right;
+}
+
+.linethrough {
+  @include linethrough;
+}
+
+.left-top {
+  @include left-top;
+}
+
+.right-top {
+  @include right-top;
+}
+
+.left-bottom {
+  @include left-bottom;
 }

@@ -10,6 +10,7 @@
 	-webkit-box-sizing: border-box;
 	font-size: $font-size;
 	color: $color; 
+	font-weight: 700; 
 	
 	&:hover {
 		color: $hover-color;
@@ -23,7 +24,7 @@
 }
 
 
-@mixin animation-opt($type, $underline-color, $underline-width) {
+@mixin line-opt($type, $underline-color, $underline-width) {
 	@if $type == pseudoafter {
 		&:after {
 			content: "";
@@ -33,6 +34,7 @@
 			-ms-transition: all 0.5s ease;
 			-o-transition: all 0.5s ease;
 			transition: all 0.5s ease;
+			z-index: -1; 
 		}
 
 		&:hover:after {
@@ -50,11 +52,62 @@
 			-ms-transition: all 0.5s ease;
 			-o-transition: all 0.5s ease;
 			transition: all 0.5s ease;
+			z-index: -1; 
 		}
 
 		&:hover:before {
 			width: $underline-width;
 			background-color: $underline-color;
+		}
+	}
+}
+
+@mixin rectangle-opt($type, $background-color, $width, $height) {
+	@if $type == pseudoafter {
+		&:after {
+			content: "";
+			position: absolute;
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-ms-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+			z-index: -1; 
+		}
+
+		&:hover:after {
+			width: $width;
+			height: $height;
+			background-color: $background-color;
+			-webkit-transition: $width 1s ease, height 1s ease; 
+			-moz-transition: $width 1s ease, height 1s ease; 
+			-ms-transition: $width 1s ease, height 1s ease; 
+			-o-transition: $width 1s ease, height 1s ease; 
+			transition: $width 1s ease, height 1s ease; 
+		}
+	}
+
+	@else if $type == pseudobefore {
+		&:before {
+			content: "";
+			position: absolute;
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-ms-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all 0.5s ease;
+			z-index: -1; 
+		}
+
+		&:hover:before {
+			width: $width;
+			height: $height;
+			background-color: $background-color;
+			-webkit-transition: $width 1s ease, height 1s ease; 
+			-moz-transition: $width 1s ease, height 1s ease; 
+			-ms-transition: $width 1s ease, height 1s ease; 
+			-o-transition: $width 1s ease, height 1s ease; 
+			transition: $width 1s ease, height 1s ease; 
 		}
 	}
 }

@@ -1,9 +1,45 @@
 @mixin right-top {
-  @include animation-opt(pseudoafter, $default-underline-color, $default-width);
   &:after {
+    content: "";
     height: 2%;
-    right: 25%;
-    top: 0;
-    width: 1px;     
+    right: 0;
+    top: 0%;
+    width: 3px;
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: -1;
+    background: transparent;
+  }
+
+  &:hover:after {
+    height: 100%;
+    background: #fff;
+  }
+
+  &:before {
+    content: "";
+    height: 2%;
+    left: 0;
+    top: 0%;
+    width: 1px;
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: -1;
+    background: transparent;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  &:hover:before {
+    width: 100%;
+    background: #fff;
   }
 }
