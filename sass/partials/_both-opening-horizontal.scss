@@ -1,0 +1,39 @@
+@mixin both-opening-horizontal {
+	@include line-opt(pseudoafter, $default-underline-color, $default-width);
+  @include line-opt(pseudobefore, $default-underline-color, $default-width);
+  
+  &:after {
+    height: 3%;
+    top: 0%;
+    width: 3px;
+    left: 0%;
+    right: 0%; 
+    margin: 0 auto; 
+
+  }
+  
+  &:before {
+    height: 3%;
+    bottom: 0%;
+    width: 3px;
+    left: 0%;
+    right: 0%;
+    margin: 0 auto; 
+  }
+
+  &:hover:before {
+    -webkit-transition: $default-width 1s ease; 
+    -moz-transition: $default-width 1s ease; 
+    -ms-transition: $default-width 1s ease; 
+    -o-transition: $default-width 1s ease; 
+    transition: $default-width 1s ease; 
+  }
+
+  &:hover:after {
+    -webkit-transition: $default-width 1s ease; 
+    -moz-transition: $default-width 1s ease; 
+    -ms-transition: $default-width 1s ease; 
+    -o-transition: $default-width 1s ease; 
+    transition: $default-width 1s ease; 
+  }
+}

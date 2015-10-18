@@ -1,0 +1,9 @@
+@mixin fill-top-right {
+  @include rectangle-opt(pseudobefore, $default-background-color, $default-width, $default-height);
+   &:before {
+  height: 2%;
+  top: 0%;
+  width: 3px;
+  right: 0;
+  }
+}

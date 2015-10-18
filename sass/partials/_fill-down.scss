@@ -1,0 +1,10 @@
+@mixin fill-down{
+  @include rectangle-opt(pseudobefore, $default-background-color, $default-width, $default-height);
+
+  &:before {
+  height: 3px;
+  top: 0%;
+  width: 100%;
+  right: 0;
+  }
+}
