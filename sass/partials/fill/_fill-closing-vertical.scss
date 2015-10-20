@@ -1,0 +1,14 @@
+@mixin fill-closing-vertical{
+	@include line-opt(pseudobefore, $max-width, $default-height, $max-width, $half-height);
+	@include line-opt(pseudoafter, $max-width, $default-height, $max-width, $half-height);
+
+	&:before {
+		top: 0%;
+		right: 0;
+	}
+
+	&:after {
+		bottom: 0%;
+		right: 0;
+	}
+}

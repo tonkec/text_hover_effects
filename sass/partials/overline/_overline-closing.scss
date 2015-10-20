@@ -1,0 +1,13 @@
+@mixin overline-closing {
+   @include line-opt(pseudoafter, $default-width, $default-height, $half-width, $default-height);
+  @include line-opt(pseudobefore, $default-width, $default-height, $half-width, $default-height);
+    &:after {
+        top: 0%;
+        left: 0%;
+    }
+
+    &:before {
+        top: 0%;
+        right: 0%; 
+    }
+}

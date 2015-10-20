@@ -1,0 +1,7 @@
+@mixin underline-left {
+  @include line-opt(pseudoafter, $default-width, $default-height, $max-width, $default-height);
+  &:after {
+    right: 0%; 
+    bottom: 0;
+  } 
+}

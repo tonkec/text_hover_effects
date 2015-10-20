@@ -1,0 +1,9 @@
+@mixin linethrough-left {
+  @include line-opt(pseudoafter, $default-width, $linethrough-height, $max-width, $linethrough-height);
+
+  &:after {
+  	right: 0;
+  	top: 50%; 
+  	z-index: 9; 
+  }
+}

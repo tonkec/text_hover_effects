@@ -1,0 +1,35 @@
+@mixin crossed-reversed {
+   @include line-opt(pseudoafter, $default-width, $default-height, $max-width, $default-height);
+    @include line-opt(pseudobefore, $default-width, $default-height, $max-width, $default-height);
+  
+  &:after {
+    top: 0%;
+    right: 0%;
+   -webkit-transform: rotate(-20deg); 
+    -moz-transform: rotate(-20deg); 
+    -ms-transform: rotate(-20deg); 
+    -o-transform: rotate(-20deg); 
+    transform: rotate(-20deg); 
+    -webkit-transform-origin: right center; 
+    -moz-transform-origin: right center; 
+    -ms-transform-origin: right center; 
+    -o-transform-origin: right center; 
+    transform-origin: right center; 
+  }
+  
+  &:before {
+    bottom: 0%;
+    right: 0%;
+     -webkit-transform: rotate(20deg); 
+    -moz-transform: rotate(20deg); 
+    -ms-transform: rotate(20deg); 
+    -o-transform: rotate(20deg); 
+    transform: rotate(20deg); 
+    -webkit-transform-origin: right center; 
+    -moz-transform-origin: right center; 
+    -ms-transform-origin: right center; 
+    -o-transform-origin: right center; 
+    transform-origin: right center; 
+    
+  }
+}

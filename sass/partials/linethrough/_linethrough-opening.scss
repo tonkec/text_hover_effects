@@ -1,0 +1,11 @@
+@mixin linethrough-opening {
+  @include line-opt(pseudoafter, $default-width, $linethrough-height, $max-width, $linethrough-height);
+
+  &:after {
+  	left: 0;
+  	top: 50%; 
+  	z-index: 9; 
+  	  right: 0;
+  margin: 0 auto;
+  }
+}

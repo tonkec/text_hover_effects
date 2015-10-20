@@ -1,0 +1,14 @@
+@mixin left-up-right-down {
+    @include line-opt(pseudoafter, $default-width, $default-height, $default-width, $max-height);
+    @include line-opt(pseudobefore, $default-width, $default-height, $default-width, $max-height);
+
+    &:after {
+        bottom: 0%;
+        left: 0%;
+    }
+
+    &:before {
+        top: 0%;
+        right: 0%; 
+    }
+}

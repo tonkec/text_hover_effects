@@ -1,0 +1,14 @@
+@mixin underline-closing {
+    
+  @include line-opt(pseudoafter, $default-width, $default-height, $half-width, $default-height);
+  @include line-opt(pseudobefore, $default-width, $default-height, $half-width, $default-height);
+    &:after {
+        bottom: 0%;
+        left: 0%;
+    }
+
+    &:before {
+        bottom: 0%;
+        right: 0%; 
+    }
+}

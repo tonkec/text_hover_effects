@@ -1,0 +1,14 @@
+@mixin both-left {
+    @include line-opt(pseudoafter, $default-width, $default-height, $max-width, $default-height);
+    @include line-opt(pseudobefore, $default-width, $default-height, $max-width, $default-height);
+  
+  &:after {
+    top: 0%;
+    right: 0%;
+  }
+  
+  &:before {
+    bottom: 0%;
+    right: 0%;
+  }
+}
