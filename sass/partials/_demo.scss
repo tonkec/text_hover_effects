@@ -323,6 +323,15 @@ p {
   @include double-underline-opening;
 }
 
+.double-underline-left-right {
+  @include double-underline-left-right;
+}
+
+.double-underline-right-left {
+  @include double-underline-right-left;
+}
+
+
 .double-linethrough-left {
   @include double-linethrough-left;
 }
@@ -473,6 +482,14 @@ p {
 
 .double-overline-right {
   @include double-overline-right;
+}
+
+.double-overline-left-right {
+  @include double-overline-left-right;
+}
+
+.double-overline-right-left {
+  @include double-overline-right-left;
 }
 
 .double-overline-opening {

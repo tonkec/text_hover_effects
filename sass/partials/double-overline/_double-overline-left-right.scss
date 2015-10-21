@@ -1,14 +1,14 @@
-@mixin double-overline-left {
+@mixin double-overline-left-right {
   @include line-opt(pseudoafter, $animation-height: $default-height);
   @include line-opt(pseudobefore, $animation-height: $default-height);
 
   &:after {
-    left: 0%; 
+    right: 0%; 
     top: 0;
   } 
 
   &:before {
-    right: 0%; 
+    left: 0%; 
     top: 10px;
   } 
 }

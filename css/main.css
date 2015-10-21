@@ -1989,6 +1989,66 @@ p {
   margin: 0 auto;
   left: 0; }
 
+.double-underline-left-right:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.double-underline-left-right:hover:after {
+  width: 100%;
+  height: 2%; }
+
+.double-underline-left-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.double-underline-left-right:hover:before {
+  width: 100%;
+  height: 2%; }
+
+.double-underline-left-right:after {
+  left: 0%;
+  bottom: 0; }
+
+.double-underline-left-right:before {
+  right: 0%;
+  bottom: 10px; }
+
+.double-underline-right-left:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.double-underline-right-left:hover:after {
+  width: 100%;
+  height: 2%; }
+
+.double-underline-right-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.double-underline-right-left:hover:before {
+  width: 100%;
+  height: 2%; }
+
+.double-underline-right-left:after {
+  right: 0%;
+  bottom: 0; }
+
+.double-underline-right-left:before {
+  left: 0%;
+  bottom: 10px; }
+
 .double-linethrough-left:after {
   content: "";
   position: absolute;
@@ -4074,7 +4134,7 @@ p {
   height: 2%; }
 
 .double-overline-left:after {
-  right: 0%;
+  left: 0%;
   top: 0; }
 
 .double-overline-left:before {
@@ -4109,6 +4169,66 @@ p {
 
 .double-overline-right:before {
   left: 0%;
+  top: 10px; }
+
+.double-overline-left-right:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.double-overline-left-right:hover:after {
+  width: 100%;
+  height: 2%; }
+
+.double-overline-left-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.double-overline-left-right:hover:before {
+  width: 100%;
+  height: 2%; }
+
+.double-overline-left-right:after {
+  right: 0%;
+  top: 0; }
+
+.double-overline-left-right:before {
+  left: 0%;
+  top: 10px; }
+
+.double-overline-right-left:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.double-overline-right-left:hover:after {
+  width: 100%;
+  height: 2%; }
+
+.double-overline-right-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.double-overline-right-left:hover:before {
+  width: 100%;
+  height: 2%; }
+
+.double-overline-right-left:after {
+  left: 0%;
+  top: 0; }
+
+.double-overline-right-left:before {
+  right: 0%;
   top: 10px; }
 
 .double-overline-opening:after {
