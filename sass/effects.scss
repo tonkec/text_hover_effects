@@ -6,6 +6,11 @@
 @import 'partials/overline/overline-closing';
 @import 'partials/overline/overline-opening';
 
+@import 'partials/double-overline/double-overline-left';
+@import 'partials/double-overline/double-overline-right';
+@import 'partials/double-overline/double-overline-opening';
+
+
 @import 'partials/underline/underline-left';
 @import 'partials/underline/underline-closing';
 @import 'partials/underline/underline-opening';
@@ -32,18 +37,15 @@
 @import 'partials/fill-corners/fill-bottom-left';
 @import 'partials/fill-corners/fill-bottom-right';
 
-@import 'partials/corners/left-top';
-@import 'partials/corners/right-top';
-@import 'partials/corners/left-bottom';
-@import 'partials/corners/right-bottom';
+@import 'partials/corners-close/left-top';
+@import 'partials/corners-close/right-top';
+@import 'partials/corners-close/left-bottom';
+@import 'partials/corners-close/right-bottom';
 
 @import 'partials/corners-expand/top-right';
 @import 'partials/corners-expand/top-left';
 @import 'partials/corners-expand/bottom-left';
 @import 'partials/corners-expand/bottom-right';
-
-@import 'partials/one-side-steps/top-then-right';
-
 
 @import 'partials/one-side/left-down';
 @import 'partials/one-side/left-up';
@@ -70,6 +72,8 @@
 
 @import 'partials/crossed/crossed';
 @import 'partials/crossed/crossed-reversed';
+@import 'partials/crossed/crossed-special';
 
-@import 'special';
-@import 'special-reversed';
+
+@import 'partials/special/special';
+@import 'partials/special/special-reversed';

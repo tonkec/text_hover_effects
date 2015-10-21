@@ -1,34 +1,47 @@
 @mixin crossed {
-	 @include line-opt(pseudoafter, $default-width, $default-height, $max-width, $default-height);
-    @include line-opt(pseudobefore, $default-width, $default-height, $max-width, $default-height);
-  
-  &:after {
-    top: 0%;
-    left: 0%;
-    -webkit-transform: rotate(20deg); 
-    -moz-transform: rotate(20deg); 
-    -ms-transform: rotate(20deg); 
-    -o-transform: rotate(20deg); 
-    transform: rotate(20deg); 
-    -webkit-transform-origin: left center; 
-    -moz-transform-origin: left center; 
-    -ms-transform-origin: left center; 
-    -o-transform-origin: left center; 
-    transform-origin: left center; 
+    @include line-opt(pseudoafter, $animation-height: $default-height);
+    @include line-opt(pseudobefore, $animation-height: $default-height);
+
+    &:after {
+      top: 50%;
+      left: 0%;
+      background: $color;
+      right: 0;
+      margin: 0 auto;
+      width: 0;
   }
-  
+
   &:before {
-    bottom: 0%;
-    left: 0%;
-    -webkit-transform: rotate(-20deg); 
-    -moz-transform: rotate(-20deg); 
-    -ms-transform: rotate(-20deg); 
-    -o-transform: rotate(-20deg); 
-    transform: rotate(-20deg); 
-    -webkit-transform-origin: left center; 
-    -moz-transform-origin: left center; 
-    -ms-transform-origin: left center; 
-    -o-transform-origin: left center; 
-    transform-origin: left center; 
-  }
+     top: 50%;
+     left: 0%;
+     right: 0;
+     margin: 0 auto;
+     background: $color;
+     width: 0;
+     
+ }
+
+ &:hover:after {
+   top: 50%;
+   left: 0%;
+   -webkit-transform: rotate(45deg); 
+   -moz-transform: rotate(45deg); 
+   -ms-transform: rotate(45deg); 
+   -o-transform: rotate(45deg); 
+   transform: rotate(45deg); 
+   right: 0;
+   margin: 0 auto;
+}
+
+&:hover:before {
+  bottom: 50%;
+  left: 0%;
+  -webkit-transform: rotate(-45deg); 
+  -moz-transform: rotate(-45deg); 
+  -ms-transform: rotate(-45deg); 
+  -o-transform: rotate(-45deg); 
+  transform: rotate(-45deg); 
+  right: 0;
+  margin: 0 auto;
+}
 }

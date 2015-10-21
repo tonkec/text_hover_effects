@@ -1,6 +1,6 @@
 @mixin both-opening-horizontal {
-  @include line-opt(pseudoafter, $default-width, $default-height, $max-width, $default-height);
-  @include line-opt(pseudobefore, $default-width, $default-height, $max-width, $default-height);
+      @include line-opt(pseudoafter, $animation-height: $default-height);
+    @include line-opt(pseudobefore, $animation-height: $default-height);
   
   &:after {
     top: 0%;

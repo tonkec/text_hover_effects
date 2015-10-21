@@ -1,0 +1,39 @@
+@mixin special-reversed {
+@include line-opt(pseudoafter, $max-width, $default-height, $max-width, $default-height);
+  @include line-opt(pseudobefore, $max-width, $default-height, $max-width, $default-height);
+ &:after {
+    top: 0%;
+    right: 0%;
+    background: $color;
+  }
+
+  &:before {
+    bottom: 0%;
+    right: 0;
+    background: $color;
+  }
+
+  &:hover:after {
+     top: 50%;
+    left: 0%;
+    -webkit-transform: rotate(-45deg); 
+    -moz-transform: rotate(-45deg); 
+    -ms-transform: rotate(-45deg); 
+    -o-transform: rotate(-45deg); 
+    transform: rotate(-45deg); 
+    right: 0;
+    margin: 0 auto;
+  }
+
+  &:hover:before {
+      bottom: 50%;
+    left: 0%;
+    -webkit-transform: rotate(45deg); 
+    -moz-transform: rotate(45deg); 
+    -ms-transform: rotate(45deg); 
+    -o-transform: rotate(45deg); 
+    transform: rotate(45deg); 
+        right: 0;
+    margin: 0 auto;
+  }
+}

@@ -1,55 +1,84 @@
-@mixin paragraph-opt($font-size, $color, $hover-color) {
+@mixin animation-opt($font-size: 4em, $color: #2C3E50, $hover-color: #fff, $animation-color: #fff, $animation-speed: 1s, $animation-easing: ease-in-out, $delay-after: 0s, $delay-before: 0s, $space-between: 10px) {
 	display: inline;
-	width: 100%;
-	padding: $default-padding;
 	position: relative;
 	z-index: 2;
 	text-decoration: none;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	font-size: $font-size;
-	color: $color; 
 	font-weight: 700; 
-	-webkit-transition: all 1s ease; 
-	-moz-transition: all 1s ease; 
-	-ms-transition: all 1s ease; 
-	-o-transition: all 1s ease; 
-	transition: all 1s ease; 
+	font-size: $font-size;
+	color: $color;
+	padding: $space-between;
+	
+	
+	-webkit-transition: all $animation-speed, $animation-easing; 
+	-moz-transition: all $animation-speed, $animation-easing; 
+	-ms-transition: all $animation-speed, $animation-easing; 
+	-o-transition: all $animation-speed, $animation-easing; 
+	transition: all $animation-speed, $animation-easing; 
 	
 	&:hover {
 		color: $hover-color;
-		-webkit-transition: all 1s ease; 
-		-moz-transition: all 1s ease; 
-		-ms-transition: all 1s ease; 
-		-o-transition: all 1s ease; 
-		transition: all 1s ease; 
+		-webkit-transition: all $animation-speed $animation-easing; 
+		-moz-transition: all $animation-speed $animation-easing; 
+		-ms-transition: all $animation-speed $animation-easing; 
+		-o-transition: all $animation-speed $animation-easing; 
+		transition: all $animation-speed $animation-easing; 
 		cursor: pointer;
 	}
+
+	/* backward animation */
+	&:before {
+		-webkit-transition: all $animation-speed $animation-easing $delay-before; 
+		-moz-transition: all $animation-speed $animation-easing $delay-before; 
+		-ms-transition: all $animation-speed $animation-easing $delay-before; 
+		-o-transition: all $animation-speed $animation-easing $delay-before; 
+		transition: all $animation-speed $animation-easing $delay-before; 
+	}
+	/* backward animation */
+	&:after {
+		-webkit-transition: all $animation-speed $animation-easing $delay-after; 
+		-moz-transition: all $animation-speed $animation-easing $delay-after; 
+		-ms-transition: all $animation-speed $animation-easing $delay-after; 
+		-o-transition: all $animation-speed $animation-easing $delay-after; 
+		transition: all $animation-speed $animation-easing $delay-after;
+	}
+
+	&:hover:after {
+		background-color: $animation-color;
+		-webkit-transition: all $animation-speed $animation-easing $delay-after; 
+		-moz-transition: all $animation-speed $animation-easing $delay-after; 
+		-ms-transition: all $animation-speed $animation-easing $delay-after; 
+		-o-transition: all $animation-speed $animation-easing $delay-after; 
+		transition: all $animation-speed $animation-easing $delay-after; 
+	}
+
+	&:hover:before {
+		background-color: $animation-color; 
+		-webkit-transition: all $animation-speed $animation-easing $delay-before; 
+		-moz-transition: all $animation-speed $animation-easing $delay-before; 
+		-ms-transition: all $animation-speed $animation-easing $delay-before; 
+		-o-transition: all $animation-speed $animation-easing $delay-before; 
+		transition: all $animation-speed $animation-easing $delay-before; 
+	}
+	
 }
 
 
-@mixin line-opt($type, $underline-color, $underline-width) {
+@mixin line-opt($type, $width: 3px, $height: 2%, $animation-width: 100%, $animation-height: 100%) {
 	@if $type == pseudoafter {
 		&:after {
 			content: "";
 			position: absolute;
 			z-index: -1; 
-			-webkit-transition: all 1s ease; 
-			-moz-transition: all 1s ease; 
-			-ms-transition: all 1s ease; 
-			-o-transition: all 1s ease; 
-			transition: all 1s ease; 
+			width: $width;
+			height: $height; 
 		}
 
 		&:hover:after {
-			width: $underline-width;
-			background-color: $underline-color;
-			-webkit-transition: all 1s ease; 
-			-moz-transition: all 1s ease; 
-			-ms-transition: all 1s ease; 
-			-o-transition: all 1s ease; 
-			transition: all 1s ease; 
+			width: $animation-width;
+			height: $animation-height; 
 		}
 	}
 
@@ -58,71 +87,13 @@
 			content: "";
 			position: absolute;
 			z-index: -1; 
-			-webkit-transition: all 1s ease; 
-			-moz-transition: all 1s ease; 
-			-ms-transition: all 1s ease; 
-			-o-transition: all 1s ease; 
-			transition: all 1s ease; 
+			width: $width;
+			height: $height; 
 		}
 
 		&:hover:before {
-			width: $underline-width;
-			background-color: $underline-color;
-			-webkit-transition: all 1s ease; 
-			-moz-transition: all 1s ease; 
-			-ms-transition: all 1s ease; 
-			-o-transition: all 1s ease; 
-			transition: all 1s ease; 
-		}
-	}
-}
-
-@mixin rectangle-opt($type, $background-color, $width, $height) {
-	@if $type == pseudoafter {
-		&:after {
-			content: "";
-			position: absolute;
-			z-index: -1; 
-			-webkit-transition: all 1s ease; 
-			-moz-transition: all 1s ease; 
-			-ms-transition: all 1s ease; 
-			-o-transition: all 1s ease; 
-			transition: all 1s ease; 
-		}
-
-		&:hover:after {
-			width: $width;
-			height: $height;
-			background-color: $background-color;
-			-webkit-transition: all 1s ease; 
-			-moz-transition: all 1s ease; 
-			-ms-transition: all 1s ease; 
-			-o-transition: all 1s ease; 
-			transition: all 1s ease;
-		}
-	}
-
-	@else if $type == pseudobefore {
-		&:before {
-			content: "";
-			position: absolute;
-			z-index: -1; 
-			-webkit-transition: all 1s ease; 
-			-moz-transition: all 1s ease; 
-			-ms-transition: all 1s ease; 
-			-o-transition: all 1s ease; 
-			transition: all 1s ease; 
-		}
-
-		&:hover:before {
-			width: $width;
-			height: $height;
-			background-color: $background-color;
-			-webkit-transition: all 1s ease; 
-			-moz-transition: all 1s ease; 
-			-ms-transition: all 1s ease; 
-			-o-transition: all 1s ease; 
-			transition: all 1s ease;
+			width: $animation-width;
+			height: $animation-height; 
 		}
 	}
 }

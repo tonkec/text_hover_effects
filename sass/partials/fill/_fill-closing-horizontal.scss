@@ -1,6 +1,7 @@
 @mixin fill-closing-horizontal{
-  @include line-opt(pseudobefore, $default-width, $max-height, $half-width, $max-height);
-  @include line-opt(pseudoafter, $default-width, $max-height, $half-width, $max-height);
+  @include line-opt(pseudoafter, $height: $max-height, $animation-width: $half-width);
+  @include line-opt(pseudobefore, $height: $max-height, $animation-width: $half-width);
+
 
   &:before {
   top: 0%;

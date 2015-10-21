@@ -1,5 +1,5 @@
 @mixin right-up {
-    @include line-opt(pseudoafter, $default-width, $default-height, $default-width, $max-height);
+    @include line-opt(pseudoafter, $animation-width: $default-width);
 
     &:after {
         bottom: 0%;

@@ -1,6 +1,7 @@
 @mixin fill-closing-vertical{
-	@include line-opt(pseudobefore, $max-width, $default-height, $max-width, $half-height);
-	@include line-opt(pseudoafter, $max-width, $default-height, $max-width, $half-height);
+	  @include line-opt(pseudobefore, $width: $max-width, $animation-height: $half-height);
+	  @include line-opt(pseudoafter, $width: $max-width, $animation-height: $half-height);
+
 
 	&:before {
 		top: 0%;

@@ -1,4 +1,4 @@
-@mixin top-left{
+@mixin right-top {
   @include line-opt(pseudoafter, $animation-height: $default-height);
   @include line-opt(pseudobefore, $animation-height: $max-height, $animation-width: $default-width);
   &:before {
@@ -7,7 +7,7 @@
   }
 
   &:after {
-      bottom: 0;
-      right: 0; 
+      top: 0;
+      left: 0; 
   }
 }

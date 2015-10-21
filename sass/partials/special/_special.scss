@@ -1,10 +1,22 @@
-@mixin crossed-reversed {
-   @include line-opt(pseudoafter, $default-width, $default-height, $max-width, $default-height);
-    @include line-opt(pseudobefore, $default-width, $default-height, $max-width, $default-height);
-  
-  &:after {
-    top: 50%;
-    right: 0%;
+@mixin special {
+  @include line-opt(pseudoafter, $width: $max-width, $animation-height: $default-height);
+    @include line-opt(pseudobefore,$width: $max-width, $animation-height: $default-height);
+
+	&:after {
+		top: 0%;
+		left: 0%;
+		background: $color;
+	}
+
+	&:before {
+		bottom: 0%;
+		left: 0;
+		background: $color;
+	}
+
+	&:hover:after {
+		 top: 50%;
+    left: 0%;
     -webkit-transform: rotate(45deg); 
     -moz-transform: rotate(45deg); 
     -ms-transform: rotate(45deg); 
@@ -12,11 +24,11 @@
     transform: rotate(45deg); 
     right: 0;
     margin: 0 auto;
-  }
-  
-  &:before {
-    bottom: 50%;
-    right: 0%;
+	}
+
+	&:hover:before {
+		  bottom: 50%;
+    left: 0%;
     -webkit-transform: rotate(-45deg); 
     -moz-transform: rotate(-45deg); 
     -ms-transform: rotate(-45deg); 
@@ -24,6 +36,5 @@
     transform: rotate(-45deg); 
         right: 0;
     margin: 0 auto;
-
-  }
+	}
 }

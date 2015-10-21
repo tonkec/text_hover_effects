@@ -17,12 +17,12 @@ aside {
   height: 100%; }
   aside.left {
     float: left;
-    width: 25%;
+    width: 20%;
     background: #2C3E50;
     overflow: auto; }
   aside.right {
     float: right;
-    width: 75%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -42,6 +42,14 @@ aside {
     background: #2C3E50;
     text-align: left;
     opacity: .8; }
+    .styles .item.current {
+      opacity: 1;
+      color: #1BA39C;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease; }
     .styles .item:hover,
     .styles .item:focus {
       opacity: 1;
@@ -58,35 +66,11 @@ aside {
       .styles .item.item-divider:hover {
         background: #2C3E50; }
 
-.select {
-  display: inline-block;
-  cursor: pointer;
-  width: auto;
-  padding: 12px;
-  background: #2C3E50;
-  color: #fff;
-  font-weight: 300;
-  font-size: 1.5em;
-  margin: 0 auto;
-  position: relative;
-  border: none; }
-  .select:focus {
-    outline: none; }
-
 h2 {
   color: #fff;
   text-align: center;
   font-size: 2em;
   margin: 15px 0; }
-
-.row {
-  width: 80%;
-  height: auto;
-  margin: 0 auto;
-  text-align: center; }
-
-.container {
-  padding: 0 10px; }
 
 .col {
   position: absolute;
@@ -110,43 +94,49 @@ a {
   font-size: 1.2em;
   color: #2C3E50;
   padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
   /* backward animation */
-  -webkit-transition: all 1s, ease;
-  -moz-transition: all 1s, ease;
-  -ms-transition: all 1s, ease;
-  -o-transition: all 1s, ease;
-  transition: all 1s, ease;
+  /* backward animation */
   float: right;
   margin-right: 15px; }
   a:hover {
     color: #fff;
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     cursor: pointer; }
-  a:after,
   a:before {
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  a:after {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   a:hover:after {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   a:hover:before {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   a:after {
     content: "";
     position: absolute;
@@ -162,109 +152,12 @@ a {
   a:focus {
     outline: none; }
 
-.a {
-  display: inline;
-  position: relative;
-  z-index: 2;
-  text-decoration: none;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  font-weight: 700;
-  font-size: 4em;
-  color: #2C3E50;
-  padding: 10px;
-  /* backward animation */
-  -webkit-transition: all 1s, ease;
-  -moz-transition: all 1s, ease;
-  -ms-transition: all 1s, ease;
-  -o-transition: all 1s, ease;
-  transition: all 1s, ease; }
-  .a:hover {
-    color: #fff;
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease;
-    cursor: pointer; }
-  .a:after,
-  .a:before {
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease; }
-  .a:hover:after {
-    background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
-  .a:hover:before {
-    background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
-  .a:after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 2%; }
-  .a:hover:after {
-    width: 100%;
-    height: 2%; }
-  .a:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 2%; }
-  .a:hover:before {
-    width: 100%;
-    height: 2%; }
-  .a:after {
-    top: 0%;
-    left: 0%;
-    background: #2C3E50; }
-  .a:before {
-    bottom: 0%;
-    left: 0;
-    background: #2C3E50; }
-  .a:hover:after {
-    -webkit-transform: rotate(20deg);
-    -moz-transform: rotate(20deg);
-    -ms-transform: rotate(20deg);
-    -o-transform: rotate(20deg);
-    transform: rotate(20deg);
-    -webkit-transform-origin: left center;
-    -moz-transform-origin: left center;
-    -ms-transform-origin: left center;
-    -o-transform-origin: left center;
-    transform-origin: left center; }
-  .a:hover:before {
-    -webkit-transform: rotate(-20deg);
-    -moz-transform: rotate(-20deg);
-    -ms-transform: rotate(-20deg);
-    -o-transform: rotate(-20deg);
-    transform: rotate(-20deg);
-    -webkit-transform-origin: left center;
-    -moz-transform-origin: left center;
-    -ms-transform-origin: left center;
-    -o-transform-origin: left center;
-    transform-origin: left center; }
-
 h1 {
   color: #fff;
   font-size: 1.4em;
   margin: 10px 20px; }
 
 p {
-  /*find defaults in defaults.scss*/
   display: inline;
   position: relative;
   z-index: 2;
@@ -276,41 +169,47 @@ p {
   font-size: 4em;
   color: #2C3E50;
   padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
   /* backward animation */
-  -webkit-transition: all 1s, ease;
-  -moz-transition: all 1s, ease;
-  -ms-transition: all 1s, ease;
-  -o-transition: all 1s, ease;
-  transition: all 1s, ease; }
+  /* backward animation */ }
   p:hover {
     color: #fff;
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     cursor: pointer; }
-  p:after,
   p:before {
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  p:after {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   p:hover:after {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   p:hover:before {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
 
 .special:after {
   content: "";
@@ -345,28 +244,126 @@ p {
   background: #2C3E50; }
 
 .special:hover:after {
-  -webkit-transform: rotate(20deg);
-  -moz-transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-  -o-transform: rotate(20deg);
-  transform: rotate(20deg);
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -ms-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center; }
+  top: 50%;
+  left: 0%;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: 0;
+  margin: 0 auto; }
 
 .special:hover:before {
-  -webkit-transform: rotate(-20deg);
-  -moz-transform: rotate(-20deg);
-  -ms-transform: rotate(-20deg);
-  -o-transform: rotate(-20deg);
-  transform: rotate(-20deg);
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -ms-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center; }
+  bottom: 50%;
+  left: 0%;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  right: 0;
+  margin: 0 auto; }
+
+.special-delay {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .special-delay:hover {
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .special-delay:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .special-delay:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .special-delay:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .special-delay:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .special-delay:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 2%; }
+  .special-delay:hover:after {
+    width: 100%;
+    height: 2%; }
+  .special-delay:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 2%; }
+  .special-delay:hover:before {
+    width: 100%;
+    height: 2%; }
+  .special-delay:after {
+    top: 0%;
+    left: 0%;
+    background: #2C3E50; }
+  .special-delay:before {
+    bottom: 0%;
+    left: 0;
+    background: #2C3E50; }
+  .special-delay:hover:after {
+    top: 50%;
+    left: 0%;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    right: 0;
+    margin: 0 auto; }
+  .special-delay:hover:before {
+    bottom: 50%;
+    left: 0%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    right: 0;
+    margin: 0 auto; }
 
 .special-reversed:after {
   content: "";
@@ -397,32 +394,30 @@ p {
 
 .special-reversed:before {
   bottom: 0%;
-  left: 0;
+  right: 0;
   background: #2C3E50; }
 
 .special-reversed:hover:after {
-  -webkit-transform: rotate(-20deg);
-  -moz-transform: rotate(-20deg);
-  -ms-transform: rotate(-20deg);
-  -o-transform: rotate(-20deg);
-  transform: rotate(-20deg);
-  -webkit-transform-origin: right center;
-  -moz-transform-origin: right center;
-  -ms-transform-origin: right center;
-  -o-transform-origin: right center;
-  transform-origin: right center; }
+  top: 50%;
+  left: 0%;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  right: 0;
+  margin: 0 auto; }
 
 .special-reversed:hover:before {
-  -webkit-transform: rotate(20deg);
-  -moz-transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-  -o-transform: rotate(20deg);
-  transform: rotate(20deg);
-  -webkit-transform-origin: right center;
-  -moz-transform-origin: right center;
-  -ms-transform-origin: right center;
-  -o-transform-origin: right center;
-  transform-origin: right center; }
+  bottom: 50%;
+  left: 0%;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: 0;
+  margin: 0 auto; }
 
 .overline-right:after {
   content: "";
@@ -498,6 +493,100 @@ p {
 .both-left:before {
   bottom: 0%;
   right: 0%; }
+
+.both-right:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.both-right:hover:after {
+  width: 100%;
+  height: 2%; }
+
+.both-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.both-right:hover:before {
+  width: 100%;
+  height: 2%; }
+
+.both-right:after {
+  top: 0%;
+  left: 0%; }
+
+.both-right:before {
+  bottom: 0%;
+  left: 0%; }
+
+.both-up:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.both-up:hover:after {
+  width: 3px;
+  height: 100%; }
+
+.both-up:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.both-up:hover:before {
+  width: 3px;
+  height: 100%; }
+
+.both-up:after {
+  bottom: 0%;
+  left: 0%; }
+
+.both-up:before {
+  bottom: 0%;
+  right: 0%; }
+
+.both-opening-horizontal:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.both-opening-horizontal:hover:after {
+  width: 100%;
+  height: 2%; }
+
+.both-opening-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.both-opening-horizontal:hover:before {
+  width: 100%;
+  height: 2%; }
+
+.both-opening-horizontal:after {
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  margin: 0 auto; }
+
+.both-opening-horizontal:before {
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+  margin: 0 auto; }
 
 .left-up-right-down:after {
   content: "";
@@ -661,41 +750,47 @@ p {
   font-size: 4em;
   color: #2C3E50;
   padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
   /* backward animation */
-  -webkit-transition: all 1s, ease;
-  -moz-transition: all 1s, ease;
-  -ms-transition: all 1s, ease;
-  -o-transition: all 1s, ease;
-  transition: all 1s, ease; }
+  /* backward animation */ }
   .fill-up:hover {
     color: #2C3E50;
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     cursor: pointer; }
-  .fill-up:after,
   .fill-up:before {
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .fill-up:after {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-up:hover:after {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-up:hover:before {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-up:before {
     content: "";
     position: absolute;
@@ -721,41 +816,47 @@ p {
   font-size: 4em;
   color: #2C3E50;
   padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
   /* backward animation */
-  -webkit-transition: all 1s, ease;
-  -moz-transition: all 1s, ease;
-  -ms-transition: all 1s, ease;
-  -o-transition: all 1s, ease;
-  transition: all 1s, ease; }
+  /* backward animation */ }
   .fill-down:hover {
     color: #2C3E50;
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     cursor: pointer; }
-  .fill-down:after,
   .fill-down:before {
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .fill-down:after {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-down:hover:after {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-down:hover:before {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-down:before {
     content: "";
     position: absolute;
@@ -781,41 +882,47 @@ p {
   font-size: 4em;
   color: #2C3E50;
   padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
   /* backward animation */
-  -webkit-transition: all 1s, ease;
-  -moz-transition: all 1s, ease;
-  -ms-transition: all 1s, ease;
-  -o-transition: all 1s, ease;
-  transition: all 1s, ease; }
+  /* backward animation */ }
   .fill-left:hover {
     color: #2C3E50;
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     cursor: pointer; }
-  .fill-left:after,
   .fill-left:before {
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .fill-left:after {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-left:hover:after {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-left:hover:before {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-left:before {
     content: "";
     position: absolute;
@@ -841,41 +948,47 @@ p {
   font-size: 4em;
   color: #2C3E50;
   padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
   /* backward animation */
-  -webkit-transition: all 1s, ease;
-  -moz-transition: all 1s, ease;
-  -ms-transition: all 1s, ease;
-  -o-transition: all 1s, ease;
-  transition: all 1s, ease; }
+  /* backward animation */ }
   .fill-right:hover {
     color: #2C3E50;
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     cursor: pointer; }
-  .fill-right:after,
   .fill-right:before {
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .fill-right:after {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-right:hover:after {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-right:hover:before {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-right:before {
     content: "";
     position: absolute;
@@ -901,41 +1014,47 @@ p {
   font-size: 4em;
   color: #2C3E50;
   padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
   /* backward animation */
-  -webkit-transition: all 1s, ease;
-  -moz-transition: all 1s, ease;
-  -ms-transition: all 1s, ease;
-  -o-transition: all 1s, ease;
-  transition: all 1s, ease; }
+  /* backward animation */ }
   .fill-top-left:hover {
     color: #2C3E50;
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     cursor: pointer; }
-  .fill-top-left:after,
   .fill-top-left:before {
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .fill-top-left:after {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-top-left:hover:after {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-top-left:hover:before {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-top-left:before {
     content: "";
     position: absolute;
@@ -961,41 +1080,47 @@ p {
   font-size: 4em;
   color: #2C3E50;
   padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
   /* backward animation */
-  -webkit-transition: all 1s, ease;
-  -moz-transition: all 1s, ease;
-  -ms-transition: all 1s, ease;
-  -o-transition: all 1s, ease;
-  transition: all 1s, ease; }
+  /* backward animation */ }
   .fill-top-right:hover {
     color: #2C3E50;
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     cursor: pointer; }
-  .fill-top-right:after,
   .fill-top-right:before {
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .fill-top-right:after {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-top-right:hover:after {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-top-right:hover:before {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-top-right:before {
     content: "";
     position: absolute;
@@ -1021,41 +1146,47 @@ p {
   font-size: 4em;
   color: #2C3E50;
   padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
   /* backward animation */
-  -webkit-transition: all 1s, ease;
-  -moz-transition: all 1s, ease;
-  -ms-transition: all 1s, ease;
-  -o-transition: all 1s, ease;
-  transition: all 1s, ease; }
+  /* backward animation */ }
   .fill-bottom-left:hover {
     color: #2C3E50;
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     cursor: pointer; }
-  .fill-bottom-left:after,
   .fill-bottom-left:before {
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .fill-bottom-left:after {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-bottom-left:hover:after {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-bottom-left:hover:before {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-bottom-left:before {
     content: "";
     position: absolute;
@@ -1081,41 +1212,47 @@ p {
   font-size: 4em;
   color: #2C3E50;
   padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
   /* backward animation */
-  -webkit-transition: all 1s, ease;
-  -moz-transition: all 1s, ease;
-  -ms-transition: all 1s, ease;
-  -o-transition: all 1s, ease;
-  transition: all 1s, ease; }
+  /* backward animation */ }
   .fill-bottom-right:hover {
     color: #2C3E50;
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     cursor: pointer; }
-  .fill-bottom-right:after,
   .fill-bottom-right:before {
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .fill-bottom-right:after {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-bottom-right:hover:after {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-bottom-right:hover:before {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-bottom-right:before {
     content: "";
     position: absolute;
@@ -1141,41 +1278,47 @@ p {
   font-size: 4em;
   color: #2C3E50;
   padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
   /* backward animation */
-  -webkit-transition: all 1s, ease;
-  -moz-transition: all 1s, ease;
-  -ms-transition: all 1s, ease;
-  -o-transition: all 1s, ease;
-  transition: all 1s, ease; }
+  /* backward animation */ }
   .fill-opening-horizontal:hover {
     color: #2C3E50;
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     cursor: pointer; }
-  .fill-opening-horizontal:after,
   .fill-opening-horizontal:before {
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .fill-opening-horizontal:after {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-opening-horizontal:hover:after {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-opening-horizontal:hover:before {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-opening-horizontal:before {
     content: "";
     position: absolute;
@@ -1203,50 +1346,47 @@ p {
   font-size: 4em;
   color: #2C3E50;
   padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
   /* backward animation */
-  -webkit-transition: all 1s, ease;
-  -moz-transition: all 1s, ease;
-  -ms-transition: all 1s, ease;
-  -o-transition: all 1s, ease;
-  transition: all 1s, ease; }
+  /* backward animation */ }
   .fill-closing-horizontal:hover {
     color: #2C3E50;
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     cursor: pointer; }
-  .fill-closing-horizontal:after,
   .fill-closing-horizontal:before {
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .fill-closing-horizontal:after {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-closing-horizontal:hover:after {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-closing-horizontal:hover:before {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
-  .fill-closing-horizontal:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 3px;
-    height: 100%; }
-  .fill-closing-horizontal:hover:before {
-    width: 50%;
-    height: 100%; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-closing-horizontal:after {
     content: "";
     position: absolute;
@@ -1254,6 +1394,15 @@ p {
     width: 3px;
     height: 100%; }
   .fill-closing-horizontal:hover:after {
+    width: 50%;
+    height: 100%; }
+  .fill-closing-horizontal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 100%; }
+  .fill-closing-horizontal:hover:before {
     width: 50%;
     height: 100%; }
   .fill-closing-horizontal:before {
@@ -1275,41 +1424,47 @@ p {
   font-size: 4em;
   color: #2C3E50;
   padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
   /* backward animation */
-  -webkit-transition: all 1s, ease;
-  -moz-transition: all 1s, ease;
-  -ms-transition: all 1s, ease;
-  -o-transition: all 1s, ease;
-  transition: all 1s, ease; }
+  /* backward animation */ }
   .fill-closing-vertical:hover {
     color: #2C3E50;
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     cursor: pointer; }
-  .fill-closing-vertical:after,
   .fill-closing-vertical:before {
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .fill-closing-vertical:after {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-closing-vertical:hover:after {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-closing-vertical:hover:before {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 0s;
-    -moz-transition: all 1s, ease, 0s;
-    -ms-transition: all 1s, ease, 0s;
-    -o-transition: all 1s, ease, 0s;
-    transition: all 1s, ease, 0s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .fill-closing-vertical:before {
     content: "";
     position: absolute;
@@ -1454,100 +1609,6 @@ p {
 .right-bottom:after {
   bottom: 0;
   left: 0; }
-
-.both-right:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 3px;
-  height: 2%; }
-
-.both-right:hover:after {
-  width: 100%;
-  height: 2%; }
-
-.both-right:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 3px;
-  height: 2%; }
-
-.both-right:hover:before {
-  width: 100%;
-  height: 2%; }
-
-.both-right:after {
-  top: 0%;
-  left: 0%; }
-
-.both-right:before {
-  bottom: 0%;
-  left: 0%; }
-
-.both-opening-horizontal:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 3px;
-  height: 2%; }
-
-.both-opening-horizontal:hover:after {
-  width: 100%;
-  height: 2%; }
-
-.both-opening-horizontal:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 3px;
-  height: 2%; }
-
-.both-opening-horizontal:hover:before {
-  width: 100%;
-  height: 2%; }
-
-.both-opening-horizontal:after {
-  top: 0%;
-  left: 0%;
-  right: 0%;
-  margin: 0 auto; }
-
-.both-opening-horizontal:before {
-  bottom: 0%;
-  left: 0%;
-  right: 0%;
-  margin: 0 auto; }
-
-.both-up:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 3px;
-  height: 2%; }
-
-.both-up:hover:after {
-  width: 3px;
-  height: 100%; }
-
-.both-up:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 3px;
-  height: 2%; }
-
-.both-up:hover:before {
-  width: 3px;
-  height: 100%; }
-
-.both-up:after {
-  bottom: 0%;
-  left: 0%; }
-
-.both-up:before {
-  bottom: 0%;
-  right: 0%; }
 
 .linethrough-opening:after {
   content: "";
@@ -2096,55 +2157,217 @@ p {
   right: 0;
   margin: 0 auto; }
 
-.crossed:after {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 3px;
-  height: 2%; }
+.crossed {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .crossed:hover {
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .crossed:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .crossed:after {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .crossed:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .crossed:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .crossed:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .crossed:hover:after {
+    width: 100%;
+    height: 2%; }
+  .crossed:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .crossed:hover:before {
+    width: 100%;
+    height: 2%; }
+  .crossed:after {
+    top: 50%;
+    left: 0%;
+    background: #2C3E50;
+    right: 0;
+    margin: 0 auto;
+    width: 0; }
+  .crossed:before {
+    top: 50%;
+    left: 0%;
+    right: 0;
+    margin: 0 auto;
+    background: #2C3E50;
+    width: 0; }
+  .crossed:hover:after {
+    top: 50%;
+    left: 0%;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    right: 0;
+    margin: 0 auto; }
+  .crossed:hover:before {
+    bottom: 50%;
+    left: 0%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    right: 0;
+    margin: 0 auto; }
 
-.crossed:hover:after {
-  width: 100%;
-  height: 2%; }
-
-.crossed:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: 3px;
-  height: 2%; }
-
-.crossed:hover:before {
-  width: 100%;
-  height: 2%; }
-
-.crossed:after {
-  top: 0%;
-  left: 0%;
-  -webkit-transform: rotate(20deg);
-  -moz-transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-  -o-transform: rotate(20deg);
-  transform: rotate(20deg);
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -ms-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center; }
-
-.crossed:before {
-  bottom: 0%;
-  left: 0%;
-  -webkit-transform: rotate(-20deg);
-  -moz-transform: rotate(-20deg);
-  -ms-transform: rotate(-20deg);
-  -o-transform: rotate(-20deg);
-  transform: rotate(-20deg);
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -ms-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center; }
+.crossed-delay {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .crossed-delay:hover {
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .crossed-delay:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .crossed-delay:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .crossed-delay:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .crossed-delay:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .crossed-delay:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .crossed-delay:hover:after {
+    width: 100%;
+    height: 2%; }
+  .crossed-delay:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .crossed-delay:hover:before {
+    width: 100%;
+    height: 2%; }
+  .crossed-delay:after {
+    top: 50%;
+    left: 0%;
+    background: #2C3E50;
+    right: 0;
+    margin: 0 auto;
+    width: 0; }
+  .crossed-delay:before {
+    top: 50%;
+    left: 0%;
+    right: 0;
+    margin: 0 auto;
+    background: #2C3E50;
+    width: 0; }
+  .crossed-delay:hover:after {
+    top: 50%;
+    left: 0%;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    right: 0;
+    margin: 0 auto; }
+  .crossed-delay:hover:before {
+    bottom: 50%;
+    left: 0%;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    right: 0;
+    margin: 0 auto; }
 
 .crossed-reversed:after {
   content: "";
@@ -2169,32 +2392,118 @@ p {
   height: 2%; }
 
 .crossed-reversed:after {
-  top: 0%;
+  top: 50%;
   right: 0%;
-  -webkit-transform: rotate(-20deg);
-  -moz-transform: rotate(-20deg);
-  -ms-transform: rotate(-20deg);
-  -o-transform: rotate(-20deg);
-  transform: rotate(-20deg);
-  -webkit-transform-origin: right center;
-  -moz-transform-origin: right center;
-  -ms-transform-origin: right center;
-  -o-transform-origin: right center;
-  transform-origin: right center; }
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  right: 0;
+  margin: 0 auto; }
 
 .crossed-reversed:before {
-  bottom: 0%;
+  bottom: 50%;
   right: 0%;
-  -webkit-transform: rotate(20deg);
-  -moz-transform: rotate(20deg);
-  -ms-transform: rotate(20deg);
-  -o-transform: rotate(20deg);
-  transform: rotate(20deg);
-  -webkit-transform-origin: right center;
-  -moz-transform-origin: right center;
-  -ms-transform-origin: right center;
-  -o-transform-origin: right center;
-  transform-origin: right center; }
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  right: 0;
+  margin: 0 auto; }
+
+.crossed-special:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.crossed-special:hover:after {
+  width: 100%;
+  height: 2%; }
+
+.crossed-special:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.crossed-special:hover:before {
+  width: 100%;
+  height: 2%; }
+
+.crossed-special:after {
+  top: 50%;
+  left: 0%;
+  background: #2C3E50;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: transform 1s ease 0s, width 1s ease 0.9s;
+  -moz-transition: transform 1s ease 0s, width 1s ease 0.9s;
+  -ms-transition: transform 1s ease 0s, width 1s ease 0.9s;
+  -o-transition: transform 1s ease 0s, width 1s ease 0.9s;
+  transition: transform 1s ease 0s, width 1s ease 0.9s; }
+
+.crossed-special:before {
+  top: 50%;
+  left: 0%;
+  right: 0;
+  margin: 0 auto;
+  background: #2C3E50;
+  width: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: transform 1s ease 0s, width 1s ease 0.9s;
+  -moz-transition: transform 1s ease 0s, width 1s ease 0.9s;
+  -ms-transition: transform 1s ease 0s, width 1s ease 0.9s;
+  -o-transition: transform 1s ease 0s, width 1s ease 0.9s;
+  transition: transform 1s ease 0s, width 1s ease 0.9s; }
+
+.crossed-special:hover:after {
+  width: 100%;
+  top: 50%;
+  left: 0%;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: width 1s ease 0s, transform 1s ease 0.9s;
+  -moz-transition: width 1s ease 0s, transform 1s ease 0.9s;
+  -ms-transition: width 1s ease 0s, transform 1s ease 0.9s;
+  -o-transition: width 1s ease 0s, transform 1s ease 0.9s;
+  transition: width 1s ease 0s, transform 1s ease 0.9s;
+  right: 0;
+  margin: 0 auto; }
+
+.crossed-special:hover:before {
+  width: 100%;
+  bottom: 50%;
+  left: 0%;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: width 1s ease 0s, transform 1s ease 0.9s;
+  -moz-transition: width 1s ease 0s, transform 1s ease 0.9s;
+  -ms-transition: width 1s ease 0s, transform 1s ease 0.9s;
+  -o-transition: width 1s ease 0s, transform 1s ease 0.9s;
+  transition: width 1s ease 0s, transform 1s ease 0.9s;
+  right: 0;
+  margin: 0 auto; }
 
 .double-underline-right-delayed {
   display: inline;
@@ -2208,41 +2517,47 @@ p {
   font-size: 4em;
   color: #2C3E50;
   padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
   /* backward animation */
-  -webkit-transition: all 1s, ease;
-  -moz-transition: all 1s, ease;
-  -ms-transition: all 1s, ease;
-  -o-transition: all 1s, ease;
-  transition: all 1s, ease; }
+  /* backward animation */ }
   .double-underline-right-delayed:hover {
     color: #fff;
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     cursor: pointer; }
-  .double-underline-right-delayed:after,
   .double-underline-right-delayed:before {
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .double-underline-right-delayed:after {
+    -webkit-transition: all 1s ease-in-out 1s;
+    -moz-transition: all 1s ease-in-out 1s;
+    -ms-transition: all 1s ease-in-out 1s;
+    -o-transition: all 1s ease-in-out 1s;
+    transition: all 1s ease-in-out 1s; }
   .double-underline-right-delayed:hover:after {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 2s;
-    -moz-transition: all 1s, ease, 2s;
-    -ms-transition: all 1s, ease, 2s;
-    -o-transition: all 1s, ease, 2s;
-    transition: all 1s, ease, 2s; }
+    -webkit-transition: all 1s ease-in-out 1s;
+    -moz-transition: all 1s ease-in-out 1s;
+    -ms-transition: all 1s ease-in-out 1s;
+    -o-transition: all 1s ease-in-out 1s;
+    transition: all 1s ease-in-out 1s; }
   .double-underline-right-delayed:hover:before {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 2s;
-    -moz-transition: all 1s, ease, 2s;
-    -ms-transition: all 1s, ease, 2s;
-    -o-transition: all 1s, ease, 2s;
-    transition: all 1s, ease, 2s; }
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
   .double-underline-right-delayed:after {
     content: "";
     position: absolute;
@@ -2267,6 +2582,88 @@ p {
   .double-underline-right-delayed:before {
     left: 0%;
     bottom: 10px; }
+
+.double-underline-opening-delayed {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .double-underline-opening-delayed:hover {
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .double-underline-opening-delayed:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .double-underline-opening-delayed:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .double-underline-opening-delayed:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .double-underline-opening-delayed:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .double-underline-opening-delayed:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .double-underline-opening-delayed:hover:after {
+    width: 100%;
+    height: 2%; }
+  .double-underline-opening-delayed:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .double-underline-opening-delayed:hover:before {
+    width: 100%;
+    height: 2%; }
+  .double-underline-opening-delayed:after {
+    right: 0%;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0; }
+  .double-underline-opening-delayed:before {
+    right: 0%;
+    bottom: 10px;
+    margin: 0 auto;
+    left: 0; }
 
 .top-right:after {
   content: "";
@@ -2388,7 +2785,7 @@ p {
   top: 0;
   left: 0; }
 
-.top-then-right {
+.left-bottom-delay {
   display: inline;
   position: relative;
   z-index: 2;
@@ -2400,62 +2797,1662 @@ p {
   font-size: 4em;
   color: #2C3E50;
   padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
   /* backward animation */
-  -webkit-transition: all 1s, ease;
-  -moz-transition: all 1s, ease;
-  -ms-transition: all 1s, ease;
-  -o-transition: all 1s, ease;
-  transition: all 1s, ease; }
-  .top-then-right:hover {
+  /* backward animation */ }
+  .left-bottom-delay:hover {
     color: #fff;
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     cursor: pointer; }
-  .top-then-right:after,
-  .top-then-right:before {
-    -webkit-transition: all 1s, ease;
-    -moz-transition: all 1s, ease;
-    -ms-transition: all 1s, ease;
-    -o-transition: all 1s, ease;
-    transition: all 1s, ease; }
-  .top-then-right:hover:after {
+  .left-bottom-delay:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .left-bottom-delay:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .left-bottom-delay:hover:after {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 5s;
-    -moz-transition: all 1s, ease, 5s;
-    -ms-transition: all 1s, ease, 5s;
-    -o-transition: all 1s, ease, 5s;
-    transition: all 1s, ease, 5s; }
-  .top-then-right:hover:before {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .left-bottom-delay:hover:before {
     background-color: #fff;
-    -webkit-transition: all 1s, ease, 2s;
-    -moz-transition: all 1s, ease, 2s;
-    -ms-transition: all 1s, ease, 2s;
-    -o-transition: all 1s, ease, 2s;
-    transition: all 1s, ease, 2s; }
-  .top-then-right:after {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .left-bottom-delay:after {
     content: "";
     position: absolute;
     z-index: -1;
     width: 3px;
     height: 2%; }
-  .top-then-right:hover:after {
+  .left-bottom-delay:hover:after {
     width: 100%;
     height: 2%; }
-  .top-then-right:before {
+  .left-bottom-delay:before {
     content: "";
     position: absolute;
     z-index: -1;
     width: 3px;
     height: 2%; }
-  .top-then-right:hover:before {
+  .left-bottom-delay:hover:before {
     width: 3px;
     height: 100%; }
-  .top-then-right:before {
+  .left-bottom-delay:before {
+    top: 0%;
+    left: 0; }
+  .left-bottom-delay:after {
+    bottom: 0;
+    right: 0; }
+
+.right-top-delay {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .right-top-delay:hover {
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .right-top-delay:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .right-top-delay:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .right-top-delay:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .right-top-delay:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .right-top-delay:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .right-top-delay:hover:after {
+    width: 100%;
+    height: 2%; }
+  .right-top-delay:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .right-top-delay:hover:before {
+    width: 3px;
+    height: 100%; }
+  .right-top-delay:before {
+    bottom: 0%;
+    right: 0; }
+  .right-top-delay:after {
+    top: 0;
+    left: 0; }
+
+.left-bottom-delay {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .left-bottom-delay:hover {
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .left-bottom-delay:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .left-bottom-delay:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .left-bottom-delay:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .left-bottom-delay:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .left-bottom-delay:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .left-bottom-delay:hover:after {
+    width: 100%;
+    height: 2%; }
+  .left-bottom-delay:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .left-bottom-delay:hover:before {
+    width: 3px;
+    height: 100%; }
+  .left-bottom-delay:before {
+    top: 0%;
+    left: 0; }
+  .left-bottom-delay:after {
+    bottom: 0;
+    right: 0; }
+
+.right-bottom-delay {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .right-bottom-delay:hover {
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .right-bottom-delay:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .right-bottom-delay:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .right-bottom-delay:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .right-bottom-delay:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .right-bottom-delay:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .right-bottom-delay:hover:after {
+    width: 100%;
+    height: 2%; }
+  .right-bottom-delay:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .right-bottom-delay:hover:before {
+    width: 3px;
+    height: 100%; }
+  .right-bottom-delay:before {
+    top: 0%;
+    right: 0; }
+  .right-bottom-delay:after {
+    bottom: 0;
+    left: 0; }
+
+.left-top-delay {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .left-top-delay:hover {
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .left-top-delay:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .left-top-delay:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .left-top-delay:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .left-top-delay:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .left-top-delay:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .left-top-delay:hover:after {
+    width: 100%;
+    height: 2%; }
+  .left-top-delay:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .left-top-delay:hover:before {
+    width: 3px;
+    height: 100%; }
+  .left-top-delay:before {
     bottom: 0%;
     left: 0; }
-  .top-then-right:after {
+  .left-top-delay:after {
+    top: 0;
+    right: 0; }
+
+.right-top-delay {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .right-top-delay:hover {
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .right-top-delay:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .right-top-delay:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .right-top-delay:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .right-top-delay:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .right-top-delay:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .right-top-delay:hover:after {
+    width: 100%;
+    height: 2%; }
+  .right-top-delay:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .right-top-delay:hover:before {
+    width: 3px;
+    height: 100%; }
+  .right-top-delay:before {
+    bottom: 0%;
+    right: 0; }
+  .right-top-delay:after {
+    top: 0;
+    left: 0; }
+
+.left-bottom-delay {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .left-bottom-delay:hover {
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .left-bottom-delay:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .left-bottom-delay:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .left-bottom-delay:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .left-bottom-delay:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .left-bottom-delay:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .left-bottom-delay:hover:after {
+    width: 100%;
+    height: 2%; }
+  .left-bottom-delay:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .left-bottom-delay:hover:before {
+    width: 3px;
+    height: 100%; }
+  .left-bottom-delay:before {
+    top: 0%;
+    left: 0; }
+  .left-bottom-delay:after {
+    bottom: 0;
+    right: 0; }
+
+.right-bottom-delay {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .right-bottom-delay:hover {
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .right-bottom-delay:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .right-bottom-delay:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .right-bottom-delay:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .right-bottom-delay:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .right-bottom-delay:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .right-bottom-delay:hover:after {
+    width: 100%;
+    height: 2%; }
+  .right-bottom-delay:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .right-bottom-delay:hover:before {
+    width: 3px;
+    height: 100%; }
+  .right-bottom-delay:before {
+    top: 0%;
+    right: 0; }
+  .right-bottom-delay:after {
+    bottom: 0;
+    left: 0; }
+
+.double-linethrough-left-delayed {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .double-linethrough-left-delayed:hover {
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .double-linethrough-left-delayed:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .double-linethrough-left-delayed:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .double-linethrough-left-delayed:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .double-linethrough-left-delayed:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .double-linethrough-left-delayed:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 7px; }
+  .double-linethrough-left-delayed:hover:after {
+    width: 100%;
+    height: 7px; }
+  .double-linethrough-left-delayed:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 7px; }
+  .double-linethrough-left-delayed:hover:before {
+    width: 100%;
+    height: 7px; }
+  .double-linethrough-left-delayed:after {
+    right: 0%;
+    top: 44%;
+    z-index: 9; }
+  .double-linethrough-left-delayed:before {
+    right: 0%;
+    bottom: 10px;
+    z-index: 9;
+    top: 54%; }
+
+.double-linethrough-right-delayed {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .double-linethrough-right-delayed:hover {
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .double-linethrough-right-delayed:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .double-linethrough-right-delayed:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .double-linethrough-right-delayed:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .double-linethrough-right-delayed:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .double-linethrough-right-delayed:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 7px; }
+  .double-linethrough-right-delayed:hover:after {
+    width: 100%;
+    height: 7px; }
+  .double-linethrough-right-delayed:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 7px; }
+  .double-linethrough-right-delayed:hover:before {
+    width: 100%;
+    height: 7px; }
+  .double-linethrough-right-delayed:after {
+    left: 0%;
+    top: 44%;
+    z-index: 9; }
+  .double-linethrough-right-delayed:before {
+    left: 0%;
+    bottom: 10px;
+    z-index: 9;
+    top: 54%; }
+
+.double-linethrough-left-right-delayed {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .double-linethrough-left-right-delayed:hover {
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .double-linethrough-left-right-delayed:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .double-linethrough-left-right-delayed:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .double-linethrough-left-right-delayed:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .double-linethrough-left-right-delayed:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .double-linethrough-left-right-delayed:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 7px; }
+  .double-linethrough-left-right-delayed:hover:after {
+    width: 100%;
+    height: 7px; }
+  .double-linethrough-left-right-delayed:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 7px; }
+  .double-linethrough-left-right-delayed:hover:before {
+    width: 100%;
+    height: 7px; }
+  .double-linethrough-left-right-delayed:after {
+    right: 0%;
+    top: 44%;
+    z-index: 9; }
+  .double-linethrough-left-right-delayed:before {
+    left: 0%;
+    bottom: 10px;
+    z-index: 9;
+    top: 54%; }
+
+.double-linethrough-right-left-delayed {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .double-linethrough-right-left-delayed:hover {
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .double-linethrough-right-left-delayed:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .double-linethrough-right-left-delayed:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .double-linethrough-right-left-delayed:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .double-linethrough-right-left-delayed:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .double-linethrough-right-left-delayed:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 7px; }
+  .double-linethrough-right-left-delayed:hover:after {
+    width: 100%;
+    height: 7px; }
+  .double-linethrough-right-left-delayed:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 7px; }
+  .double-linethrough-right-left-delayed:hover:before {
+    width: 100%;
+    height: 7px; }
+  .double-linethrough-right-left-delayed:after {
+    left: 0%;
+    top: 44%;
+    z-index: 9; }
+  .double-linethrough-right-left-delayed:before {
+    right: 0%;
+    bottom: 10px;
+    z-index: 9;
+    top: 54%; }
+
+.double-linethrough-opening-delayed {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .double-linethrough-opening-delayed:hover {
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .double-linethrough-opening-delayed:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .double-linethrough-opening-delayed:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .double-linethrough-opening-delayed:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .double-linethrough-opening-delayed:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .double-linethrough-opening-delayed:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 7px; }
+  .double-linethrough-opening-delayed:hover:after {
+    width: 100%;
+    height: 7px; }
+  .double-linethrough-opening-delayed:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 7px; }
+  .double-linethrough-opening-delayed:hover:before {
+    width: 100%;
+    height: 7px; }
+  .double-linethrough-opening-delayed:after {
+    left: 0;
+    top: 54%;
+    z-index: 9;
+    right: 0;
+    margin: 0 auto; }
+  .double-linethrough-opening-delayed:before {
+    left: 0;
+    top: 44%;
+    z-index: 9;
+    right: 0;
+    margin: 0 auto; }
+
+.fill-closing-horizontal-delayed {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .fill-closing-horizontal-delayed:hover {
+    color: #2C3E50;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .fill-closing-horizontal-delayed:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .fill-closing-horizontal-delayed:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .fill-closing-horizontal-delayed:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .fill-closing-horizontal-delayed:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .fill-closing-horizontal-delayed:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 100%; }
+  .fill-closing-horizontal-delayed:hover:after {
+    width: 50%;
+    height: 100%; }
+  .fill-closing-horizontal-delayed:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 100%; }
+  .fill-closing-horizontal-delayed:hover:before {
+    width: 50%;
+    height: 100%; }
+  .fill-closing-horizontal-delayed:before {
+    top: 0%;
+    left: 0; }
+  .fill-closing-horizontal-delayed:after {
+    top: 0%;
+    right: 0; }
+
+.both-left-delayed {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .both-left-delayed:hover {
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .both-left-delayed:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .both-left-delayed:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .both-left-delayed:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .both-left-delayed:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .both-left-delayed:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .both-left-delayed:hover:after {
+    width: 100%;
+    height: 2%; }
+  .both-left-delayed:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .both-left-delayed:hover:before {
+    width: 100%;
+    height: 2%; }
+  .both-left-delayed:after {
+    top: 0%;
+    right: 0%; }
+  .both-left-delayed:before {
+    bottom: 0%;
+    right: 0%; }
+
+.both-right-delayed {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .both-right-delayed:hover {
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .both-right-delayed:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .both-right-delayed:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .both-right-delayed:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .both-right-delayed:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .both-right-delayed:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .both-right-delayed:hover:after {
+    width: 100%;
+    height: 2%; }
+  .both-right-delayed:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .both-right-delayed:hover:before {
+    width: 100%;
+    height: 2%; }
+  .both-right-delayed:after {
+    top: 0%;
+    left: 0%; }
+  .both-right-delayed:before {
+    bottom: 0%;
+    left: 0%; }
+
+.double-overline-left:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.double-overline-left:hover:after {
+  width: 100%;
+  height: 2%; }
+
+.double-overline-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.double-overline-left:hover:before {
+  width: 100%;
+  height: 2%; }
+
+.double-overline-left:after {
+  right: 0%;
+  top: 0; }
+
+.double-overline-left:before {
+  right: 0%;
+  top: 10px; }
+
+.double-overline-right:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.double-overline-right:hover:after {
+  width: 100%;
+  height: 2%; }
+
+.double-overline-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.double-overline-right:hover:before {
+  width: 100%;
+  height: 2%; }
+
+.double-overline-right:after {
+  left: 0%;
+  top: 0; }
+
+.double-overline-right:before {
+  left: 0%;
+  top: 10px; }
+
+.double-overline-opening:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.double-overline-opening:hover:after {
+  width: 100%;
+  height: 2%; }
+
+.double-overline-opening:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.double-overline-opening:hover:before {
+  width: 100%;
+  height: 2%; }
+
+.double-overline-opening:after {
+  right: 0%;
+  top: 0;
+  margin: 0 auto;
+  left: 0; }
+
+.double-overline-opening:before {
+  right: 0%;
+  top: 10px;
+  margin: 0 auto;
+  left: 0; }
+
+.top-right-delay {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .top-right-delay:hover {
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .top-right-delay:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .top-right-delay:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .top-right-delay:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .top-right-delay:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .top-right-delay:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .top-right-delay:hover:after {
+    width: 100%;
+    height: 2%; }
+  .top-right-delay:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .top-right-delay:hover:before {
+    width: 3px;
+    height: 100%; }
+  .top-right-delay:before {
+    bottom: 0%;
+    left: 0; }
+  .top-right-delay:after {
+    bottom: 0;
+    left: 0; }
+
+.top-left-delay {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .top-left-delay:hover {
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .top-left-delay:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .top-left-delay:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .top-left-delay:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .top-left-delay:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .top-left-delay:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .top-left-delay:hover:after {
+    width: 100%;
+    height: 2%; }
+  .top-left-delay:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .top-left-delay:hover:before {
+    width: 3px;
+    height: 100%; }
+  .top-left-delay:before {
+    bottom: 0%;
+    right: 0; }
+  .top-left-delay:after {
+    bottom: 0;
+    right: 0; }
+
+.bottom-left-delay {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .bottom-left-delay:hover {
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .bottom-left-delay:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .bottom-left-delay:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .bottom-left-delay:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .bottom-left-delay:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .bottom-left-delay:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .bottom-left-delay:hover:after {
+    width: 100%;
+    height: 2%; }
+  .bottom-left-delay:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .bottom-left-delay:hover:before {
+    width: 3px;
+    height: 100%; }
+  .bottom-left-delay:before {
+    top: 0%;
+    right: 0; }
+  .bottom-left-delay:after {
+    top: 0;
+    right: 0; }
+
+.bottom-right-delay {
+  display: inline;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-weight: 700;
+  font-size: 4em;
+  color: #2C3E50;
+  padding: 10px;
+  -webkit-transition: all 1s, ease-in-out;
+  -moz-transition: all 1s, ease-in-out;
+  -ms-transition: all 1s, ease-in-out;
+  -o-transition: all 1s, ease-in-out;
+  transition: all 1s, ease-in-out;
+  /* backward animation */
+  /* backward animation */ }
+  .bottom-right-delay:hover {
+    color: #fff;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    cursor: pointer; }
+  .bottom-right-delay:before {
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .bottom-right-delay:after {
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .bottom-right-delay:hover:after {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0.5s;
+    -moz-transition: all 1s ease-in-out 0.5s;
+    -ms-transition: all 1s ease-in-out 0.5s;
+    -o-transition: all 1s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s; }
+  .bottom-right-delay:hover:before {
+    background-color: #fff;
+    -webkit-transition: all 1s ease-in-out 0s;
+    -moz-transition: all 1s ease-in-out 0s;
+    -ms-transition: all 1s ease-in-out 0s;
+    -o-transition: all 1s ease-in-out 0s;
+    transition: all 1s ease-in-out 0s; }
+  .bottom-right-delay:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .bottom-right-delay:hover:after {
+    width: 100%;
+    height: 2%; }
+  .bottom-right-delay:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 3px;
+    height: 2%; }
+  .bottom-right-delay:hover:before {
+    width: 3px;
+    height: 100%; }
+  .bottom-right-delay:before {
+    top: 0%;
+    left: 0; }
+  .bottom-right-delay:after {
     top: 0;
     left: 0; }

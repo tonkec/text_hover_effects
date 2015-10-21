@@ -1,6 +1,5 @@
 @mixin fill-up{
-  @include line-opt(pseudobefore, $max-width, $default-height, $max-width, $max-height);
-
+  @include line-opt(pseudobefore, $width: $max-width, $animation-height: $max-height);
   &:before {
     bottom: 0%;
     right: 0;

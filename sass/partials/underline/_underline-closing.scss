@@ -1,7 +1,7 @@
 @mixin underline-closing {
     
-  @include line-opt(pseudoafter, $default-width, $default-height, $half-width, $default-height);
-  @include line-opt(pseudobefore, $default-width, $default-height, $half-width, $default-height);
+ @include line-opt(pseudoafter, $animation-width: $half-width, $animation-height: $default-height);
+  @include line-opt(pseudobefore, $animation-width: $half-width, $animation-height: $default-height);
     &:after {
         bottom: 0%;
         left: 0%;

@@ -1,17 +1,17 @@
-@mixin double-underline-opening {
+@mixin double-overline-opening {
   @include line-opt(pseudoafter, $animation-height: $default-height);
   @include line-opt(pseudobefore, $animation-height: $default-height);
 
  &:after {
   right: 0%; 
-  bottom: 0;
+  top: 0;
   margin: 0 auto;
   left: 0; 
 } 
 
 &:before {
   right: 0%; 
-  bottom: 10px;
+  top: 10px;
   margin: 0 auto;
   left: 0;
 } 

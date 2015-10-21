@@ -6,194 +6,253 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
- 
   background-color: #1BA39C;
   font-family: 'Source Sans Pro', Arial;
 }
 
-section {
+main {
   height: 100%;
-  width: 100%;    
+  width: 100%;
+  overflow: hidden;  
 }
 
-.row {
-width: 80%;
-    height: auto;
-    margin: 0 auto;
-    text-align: center; 
+aside {
+  height: 100%;
   
-}
+  &.left {
+    float: left;
+    width: 20%; 
+    background: $color;
+    overflow: auto;
 
-.container {
-  padding: 0 10px;
-}
+  }
 
-.col {
-  float: left;
-  width: 25%;
-  text-align: center;
-  padding: 0;  
-}
-
-.btn {
-  display: inline-block;
-  cursor: pointer;
-  width: auto; 
-  margin: 5px;
-  padding: 15px;
-  background:#2C3E50;
-  color: #fff;
-  font-weight: 300;
-  font-size: 1em;  
-  -webkit-border-radius: 10%; 
- 
-  border: 1px solid #212F2F; 
-  
-  position: relative; 
-  
-  &:focus {
-    outline: none; 
-    bottom: -1px;
-    background: #f5f5f5;
-    color: #2C3E50;
-    -webkit-transition: background 1s ease, color 1s ease; 
-    -moz-transition: background 1s ease, color 1s ease; 
-    -ms-transition: background 1s ease, color 1s ease; 
-    -o-transition: background 1s ease, color 1s ease; 
-    transition: background 1s ease, color 1s ease; 
+  &.right {
+    float:right;
+    width: 80%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
+.styles {
+  list-style: none;
+  width: 100%;
+  margin: 0 auto; 
+  border-top: 1px solid rgba(225,225,225, .3); 
+
+  .item {
+    color: #fff;
+    font-size: 1.2em; 
+    font-weight: 300;
+    padding: 15px 0px; 
+    margin: 10px 50px;
+    cursor: pointer; 
+    background: $color;
+    text-align: left;
+    opacity: .8;
+    
+    &.current {
+      opacity: 1; 
+      color: #1BA39C;
+      -webkit-transition: all 1s ease; 
+      -moz-transition: all 1s ease; 
+      -ms-transition: all 1s ease; 
+      -o-transition: all 1s ease; 
+      transition: all 1s ease; 
+    }
+    &:hover,
+    &:focus {
+      opacity: 1;
+      -webkit-transition: opacity 1s ease; 
+      -moz-transition: opacity 1s ease; 
+      -ms-transition: opacity 1s ease; 
+      -o-transition: opacity 1s ease; 
+      transition: opacity 1s ease; 
+    }
+
+    &.item-divider {
+      cursor: auto;
+      text-transform: uppercase;
+      font-weight: 700;  
+      opacity: 1; 
+      &:hover {
+        background: $color;
+      }
+    }
+  }
+}
+
+
+
+h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  margin: 15px 0;  
+}
+
+.col {
+ position: absolute;
+ width: 100%; 
+}
+
 .p-row {
-  margin-top: 100px;
   text-align: center;  
 }
 
-p {
-  margin-top: 100px; 
-   @include paragraph-opt(4em, $default-color, $default-hover-color);
+a {
+  color: #fff;
+  top: 10px;
+  text-decoration:none;  
+  @include animation-opt($font-size: 1.2em);
+  @include underline-right;
+  float: right;
+  margin-right: 15px;
+  
+  &:focus {
+    outline: none;
+  }
 }
 
-.overline-left {
-  @include overline-left;
+
+h1 {
+  color: #fff;
+  font-size: 1.4em;  
+  margin: 10px 20px; 
 }
+
+p {
+  @include animation-opt();
+}
+
+.special {
+  @include special;
+}
+
+.special-delay {
+  @include animation-opt($delay-after: .5s);
+  @include special;
+}
+
+.special-reversed {
+  @include special-reversed;
+}
+
 
 .overline-right {
   @include overline-right;
-}
-
-.underline-left {
-  @include underline-left;
-}
-
-.underline-right {
-  @include underline-right;
-}
-
-.underline-closing {
-  @include underline-closing;
-}
-
-.underline-opening {
-  @include underline-opening;
-}
-
-
-.overline-closing {
-  @include overline-closing;
-}
-
-.overline-opening {
-  @include overline-opening;
-}
-
-.overline-left-underline-right {
-  @include overline-left-underline-right;
-}
-
-.overline-right-underline-left {
-  @include overline-right-underline-left;
-}
-
-.both-right {
-  @include both-right;
-}
-
-.both-left {
-  @include both-left;
 }
 
 .both-down {
   @include both-down;
 }
 
-.both-opening-horizontal {
-  @include both-opening-horizontal;
+.both-left {
+  @include both-left;
 }
 
-.both-closing-horizontal {
-  @include both-closing-horizontal;
+.both-right {
+  @include both-right;
 }
 
 .both-up {
   @include both-up;
 }
 
-.fill-left {
-  @include paragraph-opt(4em, $default-color, $default-color);
-  @include fill-left;
+.both-opening-horizontal {
+  @include both-opening-horizontal;
 }
 
-.fill-right {
-  @include paragraph-opt(4em, $default-color, $default-color);
-  @include fill-right;
+.left-up-right-down {
+  @include left-up-right-down;
 }
 
-.fill-down {
-  @include paragraph-opt(4em, $default-color, $default-color);
-  @include fill-down;
+.left-down-right-up {
+  @include left-down-right-up;
+}
+
+.left-down {
+  @include left-down;
+}
+
+.left-up {
+  @include left-up;
+}
+
+.right-up {
+  @include right-up;
+}
+
+.right-down {
+  @include right-down;
+}
+
+.overline-left {
+  @include overline-left;
+}
+
+.underline-left {
+  @include underline-left;
 }
 
 .fill-up {
-  @include paragraph-opt(4em, $default-color, $default-color);
-  @include fill-up;
+ @include animation-opt($hover-color: $color);
+ @include fill-up;
+}
+
+.fill-down {
+ @include animation-opt($hover-color: $color);
+ @include fill-down;
+}
+
+.fill-left {
+ @include animation-opt($hover-color: $color);
+ @include fill-left;
+}
+
+.fill-right {
+ @include animation-opt($hover-color: $color);
+ @include fill-right;
 }
 
 .fill-top-left {
-  @include paragraph-opt(4em, $default-color, $default-color);
-  @include fill-top-left;
+ @include animation-opt($hover-color: $color);
+ @include fill-top-left;
 }
 
 .fill-top-right {
-  @include paragraph-opt(4em, $default-color, $default-color);
-  @include fill-top-right;
+ @include animation-opt($hover-color: $color);
+ @include fill-top-right;
 }
 
 .fill-bottom-left {
-  @include paragraph-opt(4em, $default-color, $default-color);
-  @include fill-bottom-left;
+ @include animation-opt($hover-color: $color);
+ @include fill-bottom-left;
 }
 
 .fill-bottom-right {
-  @include paragraph-opt(4em, $default-color, $default-color);
-  @include fill-bottom-right;
+ @include animation-opt($hover-color: $color);
+ @include fill-bottom-right;
 }
 
-.linethrough-opening {
-  @include linethrough-opening;
+.fill-opening-horizontal {
+ @include animation-opt($hover-color: $color);
+ @include fill-opening-horizontal; 
 }
 
-.linethrough-closing {
-  @include linethrough-closing;
+.fill-closing-horizontal {
+ @include animation-opt($hover-color: $color);
+ @include fill-closing-horizontal; 
 }
 
-.double-linethrough-opening {
-  @include double-linethrough-opening;
+.fill-closing-vertical {
+ @include animation-opt($hover-color: $color);
+ @include fill-closing-vertical; 
 }
 
-.double-linethrough-left-right {
-  @include double-linethrough-left-right;
-}
+
 .left-top {
   @include left-top;
 }
@@ -210,10 +269,232 @@ p {
   @include right-bottom;
 }
 
+.linethrough-opening {
+  @include linethrough-opening;
+}
+
+.linethrough-closing {
+  @include linethrough-closing;
+}
+
+.linethrough-left {
+  @include linethrough-left;
+}
+
+.linethrough-right {
+  @include linethrough-right;
+}
+
+.underline-closing {
+  @include underline-closing;
+}
+
+.underline-opening {
+  @include underline-opening;
+}
+.underline-right {
+  @include underline-right;
+}
+.overline-closing {
+  @include overline-closing;
+}
+
+.overline-opening {
+  @include overline-opening;
+}
+
+.overline-left-underline-right {
+  @include overline-left-underline-right;
+}
+
+.overline-right-underline-left {
+  @include overline-right-underline-left;
+}
+
 .double-underline-left {
   @include double-underline-left;
 }
 
 .double-underline-right {
   @include double-underline-right;
+}
+
+.double-underline-opening {
+  @include double-underline-opening;
+}
+
+.double-linethrough-left {
+  @include double-linethrough-left;
+}
+
+.double-linethrough-right {
+  @include double-linethrough-right;
+}
+
+.double-linethrough-left-right {
+  @include double-linethrough-left-right;
+}
+
+.double-linethrough-right-left {
+  @include double-linethrough-right-left;
+}
+.double-linethrough-opening {
+  @include double-linethrough-opening;
+}
+
+.crossed {
+  @include animation-opt;
+  @include crossed;
+}
+
+.crossed-delay  {
+  @include animation-opt($delay-after: .5s);
+  @include crossed;
+}
+
+.crossed-reversed {
+  @include crossed-reversed;
+}
+
+.crossed-special {
+  @include crossed-special;
+
+}
+
+.double-underline-right-delayed {
+  @include animation-opt($delay-after: 1s);
+  @include double-underline-right;
+}
+
+.double-underline-opening-delayed {
+ @include animation-opt($delay-after: .5s);
+ @include double-underline-opening;
+}
+
+.top-right {
+  @include top-right;
+}
+
+.top-left {
+  @include top-left;
+}
+
+.bottom-left {
+  @include bottom-left;
+}
+
+.bottom-right {
+  @include bottom-right;
+}
+
+.left-bottom-delay {
+  @include animation-opt($delay-after: .5s);
+  @include left-bottom;
+}
+
+.right-top-delay {
+  @include animation-opt($delay-after: .5s);
+  @include right-top;
+}
+
+.left-bottom-delay {
+  @include animation-opt($delay-after: .5s);
+  @include left-bottom;
+}
+
+.right-bottom-delay {
+  @include animation-opt($delay-after: .5s);
+  @include right-bottom;
+}
+
+
+.left-top-delay {
+  @include animation-opt($delay-after: .5s);
+  @include left-top;
+}
+
+.right-top-delay {
+  @include animation-opt($delay-after: .5s);
+  @include right-top;
+}
+
+.left-bottom-delay {
+  @include animation-opt($delay-after: .5s);
+  @include left-bottom;
+}
+
+.right-bottom-delay {
+  @include animation-opt($delay-after: .5s);
+  @include right-bottom;
+}
+
+.double-linethrough-left-delayed {
+  @include animation-opt($delay-after: .5s);
+  @include double-linethrough-left;
+}
+
+.double-linethrough-right-delayed {
+  @include animation-opt($delay-after: .5s);
+  @include double-linethrough-right;
+}
+
+.double-linethrough-left-right-delayed {
+  @include animation-opt($delay-after: .5s);
+  @include double-linethrough-left-right;
+}
+
+.double-linethrough-right-left-delayed {
+  @include animation-opt($delay-after: .5s);
+  @include double-linethrough-right-left;
+}
+.double-linethrough-opening-delayed {
+  @include animation-opt($delay-after: .5s);
+  @include double-linethrough-opening;
+}
+
+.fill-closing-horizontal-delayed {
+ @include animation-opt($delay-after: .5s, $hover-color: $color);
+ @include fill-closing-horizontal; 
+}
+
+.both-left-delayed {
+  @include animation-opt($delay-after: .5s);
+  @include both-left;
+}
+
+.both-right-delayed {  
+  @include animation-opt($delay-after: .5s);
+  @include both-right;
+}
+
+.double-overline-left {
+  @include double-overline-left;
+}
+
+.double-overline-right {
+  @include double-overline-right;
+}
+
+.double-overline-opening {
+  @include double-overline-opening;
+}
+
+.top-right-delay {
+  @include animation-opt($delay-after: .5s);
+  @include top-right;
+}
+
+.top-left-delay {
+  @include animation-opt($delay-after: .5s);
+  @include top-left;
+}
+
+.bottom-left-delay {
+  @include animation-opt($delay-after: .5s);
+  @include bottom-left;
+}
+
+.bottom-right-delay {
+  @include animation-opt($delay-after: .5s);
+  @include bottom-right;
 }

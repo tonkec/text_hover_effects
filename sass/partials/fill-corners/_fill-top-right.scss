@@ -1,5 +1,5 @@
 @mixin fill-top-right {
-  @include line-opt(pseudobefore, $default-width, $default-height, $max-width, $max-height);
+  @include line-opt(pseudobefore);
    &:before {
   top: 0%;
   left: 0;

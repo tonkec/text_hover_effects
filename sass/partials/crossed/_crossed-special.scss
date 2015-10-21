@@ -1,0 +1,81 @@
+@mixin crossed-special {
+	 @include line-opt(pseudoafter, $animation-height: $default-height);
+    @include line-opt(pseudobefore, $animation-height: $default-height);
+
+    &:after {
+      top: 50%;
+      left: 0%;
+      background: $color;
+      right: 0;
+      margin: 0 auto;
+        width: 0;
+     -webkit-transform: rotate(0deg); 
+      -moz-transform: rotate(0deg); 
+      -ms-transform: rotate(0deg); 
+      -o-transform: rotate(0deg); 
+      transform: rotate(0deg); 
+      -webkit-transition: transform 1s ease 0s, width 1s ease .9s; 
+   -moz-transition: transform 1s ease 0s, width 1s ease .9s; 
+   -ms-transition: transform 1s ease 0s, width 1s ease .9s; 
+   -o-transition: transform 1s ease 0s, width 1s ease .9s; 
+   transition: transform 1s ease 0s, width 1s ease .9s; 
+
+  }
+
+  &:before {
+     top: 50%;
+     left: 0%;
+     right: 0;
+     margin: 0 auto;
+     background: $color;
+     width: 0;
+     -webkit-transform: rotate(0deg); 
+      -moz-transform: rotate(0deg); 
+      -ms-transform: rotate(0deg); 
+      -o-transform: rotate(0deg); 
+      transform: rotate(0deg); 
+   -webkit-transition: transform 1s ease 0s, width 1s ease .9s; 
+   -moz-transition: transform 1s ease 0s, width 1s ease .9s; 
+   -ms-transition: transform 1s ease 0s, width 1s ease .9s; 
+   -o-transition: transform 1s ease 0s, width 1s ease .9s; 
+   transition: transform 1s ease 0s, width 1s ease .9s; 
+
+ }
+
+ &:hover:after {
+ 	width: 100%; 
+   top: 50%;
+   left: 0%;
+   -webkit-transform: rotate(45deg); 
+   -moz-transform: rotate(45deg); 
+   -ms-transform: rotate(45deg); 
+   -o-transform: rotate(45deg); 
+   transform: rotate(45deg); 
+	-webkit-transition: width 1s ease 0s, transform 1s ease .9s; 
+	-moz-transition: width 1s ease 0s, transform 1s ease .9s; 
+	-ms-transition: width 1s ease 0s, transform 1s ease .9s; 
+	-o-transition: width 1s ease 0s, transform 1s ease .9s; 
+	transition: width 1s ease 0s, transform 1s ease .9s; 
+   right: 0;
+   margin: 0 auto;
+}
+
+&:hover:before {
+	width: 100%; 
+  bottom: 50%;
+  left: 0%;
+ -webkit-transform: rotate(-45deg); 
+  -moz-transform: rotate(-45deg); 
+  -ms-transform: rotate(-45deg); 
+  -o-transform: rotate(-45deg); 
+  transform: rotate(-45deg); 
+  -webkit-transition: width 1s ease 0s, transform 1s ease .9s; 
+	-moz-transition: width 1s ease 0s, transform 1s ease .9s; 
+	-ms-transition: width 1s ease 0s, transform 1s ease .9s; 
+	-o-transition: width 1s ease 0s, transform 1s ease .9s; 
+	transition: width 1s ease 0s, transform 1s ease .9s; 
+ 
+  right: 0;
+  margin: 0 auto;
+}
+}
