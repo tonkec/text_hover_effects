@@ -2,65 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Simple hover effect</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Text Hover Effect | Home</title>
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <section>
-    <div class="row buttons">
-      <button class="btn">overline-left</button>
-      <button class="btn">overline-right</button>
-      <button class="btn">underline-left</button>
-      <button class="btn">underline-right</button>
-      <button class="btn">overline-closing</button>
-      <button class="btn">overline-opening</button>
-      <button class="btn">underline-closing</button>
-      <button class="btn">underline-opening</button>
-      <button class="btn">overline-left-underline-right</button>
-      <button class="btn">overline-right-underline-left</button>
-      <button class="btn">both-down</button>
-      <button class="btn">both-up</button>
-      <button class="btn">both-left</button>
-      <button class="btn">both-right</button>
-      <button class="btn">both-opening-horizontal</button>
-      <button class="btn">both-closing-horizontal</button>
-      <button class="btn">fill-left</button>
-      <button class="btn">fill-right</button>
-      <button class="btn">fill-up</button>
-      <button class="btn">fill-down</button>
-      <button class="btn">fill-top-right</button>
-      <button class="btn">fill-top-left</button>
-      <button class="btn">fill-bottom-left</button>
-      <button class="btn">fill-bottom-right</button>
-      <button class="btn">left-bottom</button>
-      <button class="btn">left-top</button>
-      <button class="btn">right-top</button>
-      <button class="btn">right-bottom</button>
-      <button class="btn">linethrough-opening</button>
-      <button class="btn">linethrough-closing</button>
-      <button class="btn">double-linethrough-opening</button>
-      <button class="btn">double-linethrough-left-right</button>
-      <button class="btn">double-underline-left</button>
-      <button class="btn">double-underline-right</button>
-    </div>
-    
-  <div class="p-row">
-     <p id="p">Hover me</p> 
-  </div> 
- </section>
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <main>
+    <div class="main-col">
+      <h1 class="main-heading">Text Hover Effect</h1>
 
- <script>
- $(window).load(function(){
-  $(".btn").click(function(){
-    var text = $(this).text();
-    $("#p").removeAttr("class");
-    
-    setTimeout(function(){
-     $("#p").addClass(text);
-   }, 100)
-  });
- });
- </script>
+    </div>
+    <div class="col-anchors">
+     <h5 class="main-subheading">Sass mixin library. <br />A collection of effects for typography triggered on hover</h5>
+      <h5 class="main-subheading"></h5>
+     <a href="demo.html" class="btn">Demo</a>
+     <a href="documentation.html" class="btn">Docs</a>
+     <a href="http://github.com/tonkec" target="_blank" class="btn">Download</a>
+   </div>
+ </main>
 </body>
 </html>
