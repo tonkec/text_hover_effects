@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Hover Effect | Documentation</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/doc.css">
+</head>
+<body>
+  <main>
+
+    <aside class="left">
+
+      <ul class="styles">
+        <h2 class="list-heading">Documentation</h2>
+        <li class="item-doc" id="0">About</li>
+        <li class="item-doc" id="1">Getting Started</li>
+        <li class="item-doc" id="2">How To Use</li>
+        <li class="item-doc" id="3">Customize</li>
+        <li class="item-doc" id="4">Supported Elements</li>
+        <li class="item-doc" id="5">Under the hood</li>
+        <li class="item-doc" id="6">Mobile Support</li>
+        <li class="item-doc" id="7">Browser Suppport</li>
+        <li class="item-doc" id="8">Contributing</li>
+
+      </ul>
+    </aside>
+    <aside class="right">
+      <a href="" class="nav">Download</a>
+      <a href="demo.html" class="nav">Demo</a>
+      <a href="index.html" class="nav">Home</a>
+      <div class="main-container">
+
+       <div class="content active">
+         <h2 class="content-heading">About</h2>
+         <p class="content-paragraph"><em class="paragraph-em">Text Hover Effect</em> is a <em class="paragraph-em">Sass</em> mixin library that consists of effects for typography that are triggered on hover. Effects are made with pseudoelements <em class="paragraph-em">::after</em> and <em class="paragraph-em">::before</em>  and <em class="paragraph-em">CSS3 </em> transitions. There are over 50 effects you can choose from: <em class="effect-em overline-left">overline</em>, <em class="effect-em double-overline-left">doubleOverline</em>, <em class="effect-em underline-left">underline</em>, <em class="effect-em double-underline-left">doubleUnderline</em>, <em class="effect-em left-down">oneSide</em>, <em class="effect-em both-right">bothSide</em>, <em class="effect-em linethrough-left">linethrough</em>, <em class="effect-em double-linethrough-left">doubleLinethrough</em>, <em class="effect-em crossed-special">special</em>, <em class="effect-em fill-opening-horizontal">fills</em>, <em class="effect-em fill-top-left">fillCorners</em>, <em class="effect-em left-bottom">cornersClose</em>, <em class="effect-em bottom-right">cornersExpand</em>.</p>
+         <p class="content-paragraph">See <a class="anchor" href="demo.html">demo</a> for more</p>
+       </div><!--content-->
+
+       <div class="content">
+        <h2 class="content-heading">Getting Started</h2>
+        <p class="content-paragraph">Download or clone repo from Github and include effect.scss file. In order effects to work you need to have partials directory in your project directory on the same level as effect.scss file. Effects.scss imports all of the mixins. If you need only several effects, delete unnecessary imports. All effects must have _base.scss imported because it has transition-opt and line-opt mixins mandatory for all effects.</p>
+        <div class="content-container">
+          <pre class="full-width">
+           <code language="sass" data-lang="sass">
+             <em class="sass">
+              <em class="comment">/* style.scss */</em>
+
+               <em class="include">@import</em> "effects";
+             </em>
+             </code>
+           </pre>
+           <pre class="full-width">
+           <code language="sass" data-lang="sass">
+             <em class="sass">
+              <em class="comment">/* structure */</em>
+
+              |--partials/
+              |--effects.scss
+              |--style.scss
+             </em>
+             </code>
+           </pre>
+         </div><!--content-container-->
+       </div><!--content-->
+
+       <div class="content">
+         <h2 class="content-heading">How To Use</h2>
+         <p class="content-paragraph">After you have all the files downloaded, you are ready to use effects. Include <em class="effect-em underline-right">transition-opt</em> to  an element you wish to apply effect for. Then add <em class="effect-em underline-right">
+           transition</em>. For example:</p>
+           <div class="content-container">
+             <pre class="half-width">
+               <code language="sass" data-lang="sass">
+                 <em class="sass">
+                   .element { 
+                       <em class="include">@include</em> transition-opt;
+                       <em class="include">@include</em> underline-right;
+                 }</em> 
+               </code>
+             </pre>
+
+             <div class="result">
+               <em class="effect-demo">Result</em>
+             </div>
+           </div>
+           <p class="content-paragraph">Be careful with using <em class="effect-em underline-right">CSS #id</em> selector because it will overwrite several styles. It is recommended to use <em class="effect-em underline-right">classes</em> instead. </p>
+
+         </div><!--content-->
+         <div class="content">
+           <h2 class="content-heading">Customize</h2>
+           <p class="content-paragraph">Mixin <em class="effect-em underline-right">transition-opt</em> has several options. These are defaults</p>
+           <div class="content-container">
+            <pre class="full-width">
+             <code language="sass" data-lang="sass">
+               <em class="sass">
+                 .element { 
+                     <em class="include">@include</em> transition-opt(
+                     <em class="property">$font-size</em>: <em class="value">4em</em> ,
+                     <em class="property">$font-weight</em>: <em class="value">700</em>,
+                     <em class="property">$color</em>: <em class="value">#2C3E50</em>,
+                     <em class="property">$hover-color</em>: <em class="value">#FFF</em>,
+                     <em class="property">$border-after</em>: <em class="value">0%</em>,
+                     <em class="property">$border-before</em>: <em class="value">0%</em>,
+                     <em class="property">$display</em>: <em class="value">inline</em>,
+                     <em class="property">$transition-color</em>: <em class="value">#FFF</em>,
+                     <em class="property">$transition-speed</em>: <em class="value">1s</em>,
+                     <em class="property">$tranition-easing</em>: <em class="value">ease-in-out</em>,
+                     <em class="property">$delay-after</em>: <em class="value">0s</em>,
+                     <em class="property">$delay-before</em>: <em class="value">0s</em>,
+                     <em class="property">$padding</em>: <em class="value">10px</em>
+                 )};
+               </em>
+
+             </code>
+           </pre>
+         </div>
+         <p class="content-paragraph">Change whichever property you want but <em class="effect-em underline-right">be careful</em> with changing <em class="effect-em underline-right">display</em> property. It is recommended to use display: inline because then width of transition will be equal to the width of an element. If you change to display: block, it will change the width of transition and then you must change width and margin of an element. For example:</p>
+         <div class="content-container">
+           <pre class="half-width">
+             <code language="sass" data-lang="sass">
+               <em class="sass">
+                 .element { 
+                     <em class="property">width</em>: <em class="value">100%</em>;
+                     <em class="include">@include</em> transition-opt(
+                     <em class="property">$display</em>: <em class="value">block</em>
+                 )};
+               </em>
+             </code>
+           </pre>
+           <div class="result">
+             <em class="effect-demo block">Result</em>
+           </div>
+
+         </div>
+
+         <div class="content-container">
+           <pre class="half-width">
+             <code language="sass" data-lang="sass">
+               <em class="sass">
+                 .element { 
+                     <em class="property">width</em>: <em class="value">50%</em>;
+                     <em class="property">margin</em>: <em class="value">0 auto</em>;
+                     <em class="include">@include</em> transition-opt(
+                     <em class="property">$display</em>: <em class="value">block</em>
+                 )};
+               </em>
+             </code>
+           </pre>
+           <div class="result">
+             <em class="effect-demo block half-width">Result</em>
+           </div>
+         </div>
+       </div><!--content-->
+       <div class="content">
+         <h2 class="content-heading">Supported Elements</h2>
+         <p class="content-paragraph">List of supported elements: </p>
+         <div class="content-container">
+          <h1 class="text-effect h1">H1</h1>
+          <h2 class="text-effect h2">H2</h2>
+          <h3 class="text-effect h3">H3</h3>
+          <h4 class="text-effect h4">H4</h4>
+          <h5 class="text-effect h5">H5</h5>
+          <h6 class="text-effect h6">H6</h6>
+          <p class="text-effect p">p</p>
+          <a href="" class="text-effect a">a</a>
+          <span class="text-effect span">span</span>
+          <em class="text-effect em">em</em>
+          <b class="text-effect b">b</b>
+          <li class="text-effect li">li</li>
+        </div>
+        <p class="content-paragraph">Although library main elements are meant to be text, it could be used for several others elements such as: buttons, </p>
+        <div class="content-container">
+          <pre class="half-width">
+           <code language="sass" data-lang="sass">
+             <em class="sass">
+               button { 
+                   <em class="property">background-color</em>: <em class="value">#2C3E50</em>;
+                   <em class="property">border</em>: <em class="value">1px solid #2C3E50</em>;
+                   <em class="include">@include</em> transition-opt(
+                       <em class="property">$font-size</em>: <em class="value">3em</em>,
+                       <em class="property">$color</em>: <em class="value">#FFF</em>,
+                       <em class="property">$hover-color</em>: <em class="value">#2C3E50</em>,
+                       <em class="property">$transition-color</em>: <em class="value">#FFF</em>
+                   )
+                   <em class="include">@include</em> fill-closing-horizontal; 
+             };
+           </code>
+         </pre>
+         <div class="result">
+           <button class="button-result">Hover me</button>
+         </div>
+       </div>
+     </div><!--content-->
+     <div class="content">
+       <h2 class="content-heading">Under the hood</h2>
+       <p class="content-paragraph"></p>
+
+     </div><!--content-->
+     <div class="content">
+       <h2 class="content-heading">Mobile Support</h2>
+       <p class="content-paragraph"></p>
+
+     </div><!--content-->
+     <div class="content">
+       <h2 class="content-heading">Browser Support</h2>
+       <p class="content-paragraph"></p>
+
+     </div><!--content-->
+     <div class="content">
+       <h2 class="content-heading">Contributing</h2>
+       <p class="content-paragraph">All contributions are welcome! Feel free to create new animations or improve code. Create pull request.</p>
+
+     </div><!--content-->
+   </div><!--main-con-->
+ </aside>
+</main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+  $("li").click(function(){
+    $(this).addClass("active");
+    $("li").not($(this)).removeClass("active");
+    var listId = $(this).attr("id");
+    var content = $(".content");
+    var currentContent = content[listId];
+    $(content).not(currentContent).removeClass("active");
+    $(currentContent).addClass("active");
+  });
+</script>
+</body>
+</html>

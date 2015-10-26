@@ -1,0 +1,310 @@
+@import "effects";
+.center-align {
+	top: 50%;
+	position: relative;
+	-webkit-transform: translateY(-50%); 
+	-moz-transform: translateY(-50%); 
+	-ms-transform: translateY(-50%); 
+	-o-transform: translateY(-50%); 
+	transform: translateY(-50%);   
+}
+
+.content {
+	display: none;
+	color: #fff;
+	width: 100%;
+	margin: 0 auto; 
+	text-align: center; 
+}
+
+.main-container {
+	margin-top: 100px; 
+}
+
+.content-heading {
+	margin: 0 auto 40px;
+	text-align: center; 
+	@include transition-opt(
+		$font-size: 4em,
+		$font-weight: 700,
+		$color: #2C3E50
+		);
+	
+	@include underline-closing;
+}
+
+.content-paragraph {
+	font-size: 2em;
+	width: 80%;
+	text-align:justify;
+	margin: 50px auto 0;  
+	line-height: 1.6em;  
+	color: #2C3E50;
+	font-weight: 700; 
+}
+
+.paragraph-em {
+	color: #fff;
+	@include transition-opt(
+		$font-size: 1.2em,
+		$font-weight: 700,
+		$color: #2C3E50,
+		$padding: 2px
+		);
+	
+	@include underline-left;
+}
+
+.effect-em {
+	@include transition-opt(
+		$font-size: 1.2em,
+		$font-weight: 700,
+		$color: #2C3E50,
+		$padding: 2px
+		);
+	
+	&.double-linethrough-left {
+		@include double-linethrough-left($top:10px, $bottom: 10px)
+	}
+
+	&.fill-opening-horizontal {
+		@include transition-opt(
+			$font-size: 1.2em,
+			$font-weight: 700,
+			$color: #2C3E50,
+			$hover-color: #2C3E50,
+			$padding: 2px
+			);
+	}
+
+	&.fill-top-left {
+		@include transition-opt(
+			$font-size: 1.2em,
+			$font-weight: 700,
+			$color: #2C3E50,
+			$hover-color: #2C3E50,
+			$padding: 2px
+			);
+	}
+
+	&.left-bottom,
+	&.bottom-right,
+	&.left-down {
+		@include transition-opt(
+			$font-size: 1.2em,
+			$font-weight: 700,
+			$color: #2C3E50,
+			$padding: 4px
+			);
+	}
+}
+
+.active {
+	display: block;
+	color: #1BA39C;
+}
+
+.col-doc {
+	width: 50%; 
+	text-align: center;
+	margin: 0 auto; 
+	margin-top: 40px; 
+}
+
+
+.item-doc {
+	color: #fff;
+	font-weight: 300;
+
+	cursor: pointer; 
+	background: #2C3E50;
+	text-align: left;
+	opacity: .8;
+	padding: 5px 0;
+	margin: 5px 20px;
+	font-size: 1.2em; 
+	text-transform: uppercase; 
+
+	@media (min-width: 768px) {
+		font-size: 1.2em; 
+		padding: 15px 0px; 
+
+	}
+
+	@media (min-width: 980px) {
+		margin: 10px 30px;
+	}
+
+	@media (min-width: 1200px) {
+		margin: 10px 50px; 
+		font-size: 1.2em; 
+
+	}
+
+	&:hover,
+	&:focus {
+		opacity: 1;
+		-webkit-transition: opacity 1s ease; 
+		-moz-transition: opacity 1s ease; 
+		-ms-transition: opacity 1s ease; 
+		-o-transition: opacity 1s ease; 
+		transition: opacity 1s ease; 
+	}
+}
+
+.content-container {
+	display: table;
+	width: 80%;
+	margin: 20px auto; 
+}
+
+pre {
+	text-align: left; 
+	background: #f5f5f5;
+	margin: 20px; 
+	display: block;
+	
+	&.full-width {
+		width: 70%;
+		margin: 0 auto 20px; 
+	}
+	
+	&.half-width {
+		@media (min-width: 768px) {
+			width: 50%; 
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+	
+}
+
+.result {
+	width: 100%;
+	display: inline-block; 
+	text-align: center; 
+	margin-left: 20px;
+	@media (min-width: 768px) {
+		width: 50%; 
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+.sass {
+	font-size: 1.3em;
+	color:  #2C3E50;
+	font-weight: 500;   
+}
+
+.include {
+	color: #F22613;
+}
+
+.effect-demo {
+	margin: 0 auto;
+	@include transition-opt(
+		$font-size: 3em
+		);
+	@include underline-right; 
+	
+	&.block {
+		
+		width: 90%; 
+		@include transition-opt(
+			$font-size: 3em,
+			$display: block
+			);
+		
+		&.half-width {
+			width: 50%;
+			
+		}
+	}
+}
+
+.property {
+	color: orange;
+}
+
+.value {
+	color: #1BA39C;
+}
+
+.text-effect {
+	&.h1 {
+		@include transition-opt(
+			$font-size: 4em
+			);
+	}
+
+	&.h2 {
+		@include transition-opt(
+			$font-size: 3.5em
+			);
+	}
+
+	&.h3 {
+		@include transition-opt(
+			$font-size: 3em
+			);
+	}
+
+	&.h4 {
+		@include transition-opt(
+			$font-size: 2.5em
+			);
+	}
+
+	&.h5 {
+		@include transition-opt(
+			$font-size: 2em
+			);
+	}
+
+	&.h6 {
+		@include transition-opt(
+			$font-size: 1.5em
+			);
+	}
+
+	&.p,
+	&.a,
+	&.span,
+	&.em,
+	&.b,
+	&.li  {
+		@include transition-opt(
+			$font-size: 2em
+		);
+	}
+	
+	@include underline-closing;
+}
+
+.anchor {
+	@include transition-opt(
+		$font-size: 1.2em
+		);
+	
+	@include both-opening-horizontal;
+}
+
+.button-result {
+	background-color: #2C3E50;
+	border: 1px solid #2C3E50;
+	  
+	@include transition-opt(
+		$font-weight: 500,
+		$font-size: 1.5em,
+		$color: #fff,
+		$hover-color: #2C3E50,
+		$transition-color: #fff,
+		$padding: 20px
+	);
+	@include fill-closing-horizontal; 
+}
+
+.comment {
+	color: rgba(0,0,0,0.5);
+}
