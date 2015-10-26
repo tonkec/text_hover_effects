@@ -9,12 +9,12 @@
 <body>
   <main>
     <div class="col">
-      <a href="" target="_blank">Download</a>
-      <a href="documentation.html">Docs</a>
-      <a href="index.html" >Home</a>
+      <a class="nav" href="" target="_blank">Download</a>
+      <a class="nav"  href="documentation.html">Docs</a>
+      <a class="nav" href="index.html" >Home</a>
     </div>
     <aside class="left">
-      <h2>Text hover effects</h2>
+      <h2 class="list-heading">Text hover effects</h2>
       <ul class="styles">
        <li class="item item-divider">Underline</li>
        <li class="item current">underline-left</li>
@@ -86,7 +86,6 @@
        <li class="item">bottom-left</li>
        <li class="item">top-left</li>
        <li class="item">top-right</li>
-       <li class="item">top-then-right</li>
 
        <li class="item item-divider">Linethrough</li>
        <li class="item">linethrough-left</li>
@@ -118,7 +117,6 @@
        <li class="item">bottom-left-delay</li>
        <li class="item">top-left-delay</li>
        <li class="item">top-right-delay</li>
-       <li class="item">top-then-right-delay</li>
 
        <li class="item item-divider">Other Delay</li>
        <li class="item">crossed-delay</li>
@@ -151,7 +149,6 @@
 
    $("li").click(function(){
      var current = $(this);
-     console.log(current);
      $("li").not(current).removeClass("current");
      var newClass = $(this).text();
      $(current).addClass("current");

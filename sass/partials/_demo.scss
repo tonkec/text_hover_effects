@@ -13,7 +13,7 @@ body {
 main {
   height: 100%;
   width: 100%;
-  overflow: hidden;  
+  overflow: hidden; 
 }
 
 aside {
@@ -21,18 +21,27 @@ aside {
   
   &.left {
     float: left;
-    width: 20%; 
     background: $color;
     overflow: auto;
+    display: none;  
+
+    @media (min-width: 1200px) {
+      width: 20%; 
+      display: block;
+    }
 
   }
 
   &.right {
-    float:right;
+   float:right;
+   overflow: auto; 
+
+   
+      width: 100%; 
+  
+  @media(min-width: 1200px) {
     width: 80%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  }
   }
 }
 
@@ -44,15 +53,32 @@ aside {
 
   .item {
     color: #fff;
-    font-size: 1.2em; 
-    font-weight: 300;
-    padding: 15px 0px; 
-    margin: 10px 50px;
+        font-weight: 300;
+
     cursor: pointer; 
     background: $color;
     text-align: left;
     opacity: .8;
+    padding: 5px 0;
+      margin: 5px 20px;
+      font-size: 1em; 
     
+    @media (min-width: 768px) {
+       font-size: 1em; 
+    padding: 15px 0px; 
+   
+    }
+
+    @media (min-width: 980px) {
+       margin: 10px 30px;
+    }
+    
+    @media (min-width: 1200px) {
+      margin: 10px 50px; 
+             font-size: 1.2em; 
+
+    }
+
     &.current {
       opacity: 1; 
       color: #1BA39C;
@@ -86,7 +112,7 @@ aside {
 
 
 
-h2 {
+.list-heading {
   color: #fff;
   text-align: center;
   font-size: 2em;
@@ -99,14 +125,21 @@ h2 {
 }
 
 .p-row {
-  text-align: center;  
+  text-align: center; 
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%); 
+     -moz-transform: translateY(-50%); 
+     -ms-transform: translateY(-50%); 
+     -o-transform: translateY(-50%); 
+     transform: translateY(-50%);    
 }
 
-a {
+.nav {
   color: #fff;
   top: 10px;
   text-decoration:none;  
-  @include animation-opt($font-size: 1.2em);
+  @include transition-opt($font-size: 1.2em);
   @include underline-right;
   float: right;
   margin-right: 15px;
@@ -117,22 +150,31 @@ a {
 }
 
 
-h1 {
+.list-heading {
   color: #fff;
   font-size: 1.4em;  
   margin: 10px 20px; 
 }
 
-p {
-  @include animation-opt();
-}
+.p-row {
+  p {
+    @include transition-opt(
+      $font-size: 3em
+      );
 
-.special {
+    @media (min-width: 980px) {
+     @include transition-opt(
+      $font-size: 4em
+      );
+   }
+ }
+
+ .special {
   @include special;
 }
 
 .special-delay {
-  @include animation-opt($delay-after: .5s);
+  @include transition-opt($delay-after: .5s);
   @include special;
 }
 
@@ -198,57 +240,57 @@ p {
 }
 
 .fill-up {
- @include animation-opt($hover-color: $color);
+ @include transition-opt($hover-color: $color);
  @include fill-up;
 }
 
 .fill-down {
- @include animation-opt($hover-color: $color);
+ @include transition-opt($hover-color: $color);
  @include fill-down;
 }
 
 .fill-left {
- @include animation-opt($hover-color: $color);
+ @include transition-opt($hover-color: $color);
  @include fill-left;
 }
 
 .fill-right {
- @include animation-opt($hover-color: $color);
+ @include transition-opt($hover-color: $color);
  @include fill-right;
 }
 
 .fill-top-left {
- @include animation-opt($hover-color: $color);
+ @include transition-opt($hover-color: $color);
  @include fill-top-left;
 }
 
 .fill-top-right {
- @include animation-opt($hover-color: $color);
+ @include transition-opt($hover-color: $color);
  @include fill-top-right;
 }
 
 .fill-bottom-left {
- @include animation-opt($hover-color: $color);
+ @include transition-opt($hover-color: $color);
  @include fill-bottom-left;
 }
 
 .fill-bottom-right {
- @include animation-opt($hover-color: $color);
+ @include transition-opt($hover-color: $color);
  @include fill-bottom-right;
 }
 
 .fill-opening-horizontal {
- @include animation-opt($hover-color: $color);
+ @include transition-opt($hover-color: $color);
  @include fill-opening-horizontal; 
 }
 
 .fill-closing-horizontal {
- @include animation-opt($hover-color: $color);
+ @include transition-opt($hover-color: $color);
  @include fill-closing-horizontal; 
 }
 
 .fill-closing-vertical {
- @include animation-opt($hover-color: $color);
+ @include transition-opt($hover-color: $color);
  @include fill-closing-vertical; 
 }
 
@@ -352,12 +394,12 @@ p {
 }
 
 .crossed {
-  @include animation-opt;
+  @include transition-opt;
   @include crossed;
 }
 
 .crossed-delay  {
-  @include animation-opt($delay-after: .5s);
+  @include transition-opt($delay-after: .5s);
   @include crossed;
 }
 
@@ -371,12 +413,12 @@ p {
 }
 
 .double-underline-right-delayed {
-  @include animation-opt($delay-after: 1s);
+  @include transition-opt($delay-after: 1s);
   @include double-underline-right;
 }
 
 .double-underline-opening-delayed {
- @include animation-opt($delay-after: .5s);
+ @include transition-opt($delay-after: .5s);
  @include double-underline-opening;
 }
 
@@ -397,82 +439,82 @@ p {
 }
 
 .left-bottom-delay {
-  @include animation-opt($delay-after: .5s);
+  @include transition-opt($delay-after: .5s);
   @include left-bottom;
 }
 
 .right-top-delay {
-  @include animation-opt($delay-after: .5s);
+  @include transition-opt($delay-after: .5s);
   @include right-top;
 }
 
 .left-bottom-delay {
-  @include animation-opt($delay-after: .5s);
+  @include transition-opt($delay-after: .5s);
   @include left-bottom;
 }
 
 .right-bottom-delay {
-  @include animation-opt($delay-after: .5s);
+  @include transition-opt($delay-after: .5s);
   @include right-bottom;
 }
 
 
 .left-top-delay {
-  @include animation-opt($delay-after: .5s);
+  @include transition-opt($delay-after: .5s);
   @include left-top;
 }
 
 .right-top-delay {
-  @include animation-opt($delay-after: .5s);
+  @include transition-opt($delay-after: .5s);
   @include right-top;
 }
 
 .left-bottom-delay {
-  @include animation-opt($delay-after: .5s);
+  @include transition-opt($delay-after: .5s);
   @include left-bottom;
 }
 
 .right-bottom-delay {
-  @include animation-opt($delay-after: .5s);
+  @include transition-opt($delay-after: .5s);
   @include right-bottom;
 }
 
 .double-linethrough-left-delayed {
-  @include animation-opt($delay-after: .5s);
+  @include transition-opt($delay-after: .5s);
   @include double-linethrough-left;
 }
 
 .double-linethrough-right-delayed {
-  @include animation-opt($delay-after: .5s);
+  @include transition-opt($delay-after: .5s);
   @include double-linethrough-right;
 }
 
 .double-linethrough-left-right-delayed {
-  @include animation-opt($delay-after: .5s);
+  @include transition-opt($delay-after: .5s);
   @include double-linethrough-left-right;
 }
 
 .double-linethrough-right-left-delayed {
-  @include animation-opt($delay-after: .5s);
+  @include transition-opt($delay-after: .5s);
   @include double-linethrough-right-left;
 }
 .double-linethrough-opening-delayed {
-  @include animation-opt($delay-after: .5s);
+  @include transition-opt($delay-after: .5s);
   @include double-linethrough-opening;
 }
 
 .fill-closing-horizontal-delayed {
- @include animation-opt($delay-after: .5s, $hover-color: $color);
+ @include transition-opt($delay-after: .5s, $hover-color: $color);
  @include fill-closing-horizontal; 
 }
 
 .both-left-delayed {
-  @include animation-opt($delay-after: .5s);
+  @include transition-opt($delay-after: .5s);
   @include both-left;
 }
 
 .both-right-delayed {  
-  @include animation-opt($delay-after: .5s);
+  @include transition-opt($delay-after: .5s);
   @include both-right;
 }
 
@@ -497,21 +539,23 @@ p {
 }
 
 .top-right-delay {
-  @include animation-opt($delay-after: .5s);
+  @include transition-opt($delay-after: .5s);
   @include top-right;
 }
 
 .top-left-delay {
-  @include animation-opt($delay-after: .5s);
+  @include transition-opt($delay-after: .5s);
   @include top-left;
 }
 
 .bottom-left-delay {
-  @include animation-opt($delay-after: .5s);
+  @include transition-opt($delay-after: .5s);
   @include bottom-left;
 }
 
 .bottom-right-delay {
-  @include animation-opt($delay-after: .5s);
+  @include transition-opt($delay-after: .5s);
   @include bottom-right;
+}
+
 }
