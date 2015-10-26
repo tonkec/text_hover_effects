@@ -1,16 +1,16 @@
-@mixin double-linethrough-left {
-   @include line-opt(pseudoafter, $height: $linethrough-height, $animation-height: $linethrough-height);
-  @include line-opt(pseudobefore, $height: $linethrough-height, $animation-height: $linethrough-height);
+@mixin double-linethrough-left($top: 45%, $bottom: 45%) {
+   @include line-opt(pseudoafter, $height: $linethrough-height, $transition-height: $linethrough-height);
+  @include line-opt(pseudobefore, $height: $linethrough-height, $transition-height: $linethrough-height);
 
   &:after {
     right: 0%; 
-    top: 44%;
+    top: $top;
     z-index: 9; 
   } 
 
   &:before {
     right: 0%; 
-    bottom: 10px;
+    bottom: $bottom;
     z-index: 9;
     top: 54%;  
   } 

@@ -1,5 +1,5 @@
 @mixin overline-left {
-  @include line-opt(pseudoafter, $animation-height: $default-height);
+  @include line-opt(pseudoafter, $transition-height: $default-height);
   &:after {
     right: 0%;
     top: 0;

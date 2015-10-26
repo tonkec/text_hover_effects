@@ -1,6 +1,6 @@
 @mixin top-right {
-  @include line-opt(pseudoafter, $animation-height: $default-height);
-  @include line-opt(pseudobefore, $animation-height: $max-height, $animation-width: $default-width);
+  @include line-opt(pseudoafter, $transition-height: $default-height);
+  @include line-opt(pseudobefore, $transition-height: $max-height, $transition-width: $default-width);
   &:before {
       bottom: 0%;
       left: 0;

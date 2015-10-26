@@ -1,72 +1,79 @@
-@mixin animation-opt($font-size: 4em, $color: #2C3E50, $hover-color: #fff, $animation-color: #fff, $animation-speed: 1s, $animation-easing: ease-in-out, $delay-after: 0s, $delay-before: 0s, $space-between: 10px) {
-	display: inline;
+@mixin transition-opt($font-size: 4em, $font-weight: 700, $color: #2C3E50, $hover-color: #fff, $border-after: 0%, $border-before: 0%, $display: inline, $transition-color: #fff, $transition-speed: 1s, $transition-easing: ease-in-out, $delay-after: 0s, $delay-before: 0s, $padding: 10px) {
+	display: $display;
 	position: relative;
 	z-index: 2;
 	text-decoration: none;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	font-weight: 700; 
+	font-weight: $font-weight; 
 	font-size: $font-size;
 	color: $color;
-	padding: $space-between;
-	
-	
-	-webkit-transition: all $animation-speed, $animation-easing; 
-	-moz-transition: all $animation-speed, $animation-easing; 
-	-ms-transition: all $animation-speed, $animation-easing; 
-	-o-transition: all $animation-speed, $animation-easing; 
-	transition: all $animation-speed, $animation-easing; 
-	
-	&:hover {
+	padding: $padding;
+	-webkit-transition: color $transition-speed $transition-easing; 
+		-moz-transition: color $transition-speed $transition-easing; 
+		-ms-transition: color $transition-speed $transition-easing; 
+		-o-transition: color $transition-speed $transition-easing; 
+		transition: color $transition-speed $transition-easing; 
+
+	&:hover,
+	&:focus {
 		color: $hover-color;
-		-webkit-transition: all $animation-speed $animation-easing; 
-		-moz-transition: all $animation-speed $animation-easing; 
-		-ms-transition: all $animation-speed $animation-easing; 
-		-o-transition: all $animation-speed $animation-easing; 
-		transition: all $animation-speed $animation-easing; 
+		-webkit-transition: color $transition-speed $transition-easing; 
+		-moz-transition: color $transition-speed $transition-easing; 
+		-ms-transition: color $transition-speed $transition-easing; 
+		-o-transition: color $transition-speed $transition-easing; 
+		transition: color $transition-speed $transition-easing; 
 		cursor: pointer;
 	}
 
-	/* backward animation */
+	/* backward transition */
 	&:before {
-		-webkit-transition: all $animation-speed $animation-easing $delay-before; 
-		-moz-transition: all $animation-speed $animation-easing $delay-before; 
-		-ms-transition: all $animation-speed $animation-easing $delay-before; 
-		-o-transition: all $animation-speed $animation-easing $delay-before; 
-		transition: all $animation-speed $animation-easing $delay-before; 
+		-webkit-border-radius: $border-before; 
+		 border-radius: $border-before;  
+		-webkit-transition: all $transition-speed $transition-easing $delay-before; 
+		-moz-transition: all $transition-speed $transition-easing $delay-before; 
+		-ms-transition: all $transition-speed $transition-easing $delay-before; 
+		-o-transition: all $transition-speed $transition-easing $delay-before; 
+		transition: all $transition-speed $transition-easing $delay-before; 
 	}
-	/* backward animation */
+	/* backward transition */
 	&:after {
-		-webkit-transition: all $animation-speed $animation-easing $delay-after; 
-		-moz-transition: all $animation-speed $animation-easing $delay-after; 
-		-ms-transition: all $animation-speed $animation-easing $delay-after; 
-		-o-transition: all $animation-speed $animation-easing $delay-after; 
-		transition: all $animation-speed $animation-easing $delay-after;
+		-webkit-border-radius: $border-after; 
+		 border-radius: $border-after;  
+		-webkit-transition: all $transition-speed $transition-easing $delay-after; 
+		-moz-transition: all $transition-speed $transition-easing $delay-after; 
+		-ms-transition: all $transition-speed $transition-easing $delay-after; 
+		-o-transition: all $transition-speed $transition-easing $delay-after; 
+		transition: all $transition-speed $transition-easing $delay-after;
 	}
 
-	&:hover:after {
-		background-color: $animation-color;
-		-webkit-transition: all $animation-speed $animation-easing $delay-after; 
-		-moz-transition: all $animation-speed $animation-easing $delay-after; 
-		-ms-transition: all $animation-speed $animation-easing $delay-after; 
-		-o-transition: all $animation-speed $animation-easing $delay-after; 
-		transition: all $animation-speed $animation-easing $delay-after; 
+	&:hover:after,
+	&:focus:after  {
+		outline: 0;
+		background-color: $transition-color;
+		-webkit-transition: all $transition-speed $transition-easing $delay-after; 
+		-moz-transition: all $transition-speed $transition-easing $delay-after; 
+		-ms-transition: all $transition-speed $transition-easing $delay-after; 
+		-o-transition: all $transition-speed $transition-easing $delay-after; 
+		transition: all $transition-speed $transition-easing $delay-after; 
 	}
 
-	&:hover:before {
-		background-color: $animation-color; 
-		-webkit-transition: all $animation-speed $animation-easing $delay-before; 
-		-moz-transition: all $animation-speed $animation-easing $delay-before; 
-		-ms-transition: all $animation-speed $animation-easing $delay-before; 
-		-o-transition: all $animation-speed $animation-easing $delay-before; 
-		transition: all $animation-speed $animation-easing $delay-before; 
+	&:hover:before,
+	&:focus:before {
+		outline: 0;
+		background-color: $transition-color; 
+		-webkit-transition: all $transition-speed $transition-easing $delay-before; 
+		-moz-transition: all $transition-speed $transition-easing $delay-before; 
+		-ms-transition: all $transition-speed $transition-easing $delay-before; 
+		-o-transition: all $transition-speed $transition-easing $delay-before; 
+		transition: all $transition-speed $transition-easing $delay-before; 
 	}
 	
 }
 
 
-@mixin line-opt($type, $width: 3px, $height: 2%, $animation-width: 100%, $animation-height: 100%) {
+@mixin line-opt($type, $width: 3px, $height: 2%, $transition-width: 100%, $transition-height: 100%) {
 	@if $type == pseudoafter {
 		&:after {
 			content: "";
@@ -77,8 +84,8 @@
 		}
 
 		&:hover:after {
-			width: $animation-width;
-			height: $animation-height; 
+			width: $transition-width;
+			height: $transition-height; 
 		}
 	}
 
@@ -92,8 +99,8 @@
 		}
 
 		&:hover:before {
-			width: $animation-width;
-			height: $animation-height; 
+			width: $transition-width;
+			height: $transition-height; 
 		}
 	}
 }

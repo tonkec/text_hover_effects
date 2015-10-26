@@ -1,6 +1,6 @@
 @mixin overline-closing {
-  @include line-opt(pseudoafter, $animation-width: $half-width, $animation-height: $default-height);
-  @include line-opt(pseudobefore, $animation-width: $half-width, $animation-height: $default-height);
+  @include line-opt(pseudoafter, $transition-width: $half-width, $transition-height: $default-height);
+  @include line-opt(pseudobefore, $transition-width: $half-width, $transition-height: $default-height);
     &:after {
         top: 0%;
         left: 0%;

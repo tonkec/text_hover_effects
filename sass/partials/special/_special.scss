@@ -1,6 +1,6 @@
 @mixin special {
-  @include line-opt(pseudoafter, $width: $max-width, $animation-height: $default-height);
-    @include line-opt(pseudobefore,$width: $max-width, $animation-height: $default-height);
+  @include line-opt(pseudoafter, $width: $max-width, $transition-height: $default-height);
+    @include line-opt(pseudobefore,$width: $max-width, $transition-height: $default-height);
 
 	&:after {
 		top: 0%;

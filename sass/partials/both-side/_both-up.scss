@@ -1,6 +1,6 @@
 @mixin both-up {
-      @include line-opt(pseudoafter, $animation-width: $default-width);
-    @include line-opt(pseudobefore, $animation-width: $default-width);
+      @include line-opt(pseudoafter, $transition-width: $default-width);
+    @include line-opt(pseudobefore, $transition-width: $default-width);
 
     &:after {
         bottom: 0%;
