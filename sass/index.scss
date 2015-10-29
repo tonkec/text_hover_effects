@@ -1,7 +1,20 @@
- @import "main";
- main {
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import "partials/effects";
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #1BA39C;
+  font-family: 'Source Sans Pro', Arial;
+}
+
+main {
   height: 100%;
   width: 100%;
+  overflow: hidden; 
 }
 
 .main-col {
@@ -11,17 +24,25 @@
 }
 
 .col-anchors {
-  width: 100%;
+  width: 90%;
   text-align: center;
   height: auto;  
   position: relative;
-  top: 35%;
-  -webkit-transform: translateY(-50%); 
-  -moz-transform: translateY(-50%); 
-  -ms-transform: translateY(-50%); 
-  -o-transform: translateY(-50%); 
-  transform: translateY(-50%);   
+  margin: 0 auto;
   
+  @media (min-width: 768px) {
+    width: 100%; 
+  }  
+}
+
+.container {
+  position: relative;
+  top: 40%;
+  -webkit-transform: translateY(-50%); 
+   -moz-transform: translateY(-50%); 
+   -ms-transform: translateY(-50%); 
+   -o-transform: translateY(-50%); 
+   transform: translateY(-50%);  
 }
 
 .btn {
@@ -44,10 +65,6 @@
     );
   
   @include fill-closing-horizontal;
-
-  @media (min-width: 480px) {
-
-  }
   @media (min-width: 768px) {
     width: auto; 
     margin: 0 10px;
@@ -58,9 +75,7 @@
      $hover-color: $color,
      $font-weight: 500,
      $padding: 20px 50px
-     
-     )   
-
+     );   
   }
 }
 
@@ -84,7 +99,6 @@
     @include transition-opt(
       $font-size: 3em,
       $delay-after: .5s
-
       );
   }
 
@@ -92,12 +106,29 @@
     @include transition-opt(
       $font-size: 4em,
       $delay-after: .5s
-
       );
   }
 }
 
 .main-subheading {
-  font-size: 2em; 
+  font-size: 1.5em; 
   margin-top: 40px; 
+  
+  @media (min-width: 480px) {
+    font-size: 1.7em; 
+  }
+  
+  @media (min-width: 768px) {
+    font-size: 2.2em; 
+  }
+}
+
+.subheading-em {
+  line-height: 1.6em; 
+  @include transition-opt(
+    $font-size: 1.2em,
+    $padding: 5px
+  );
+  
+  @include underline-closing;
 }
