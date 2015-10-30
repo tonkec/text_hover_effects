@@ -1,0 +1,29 @@
+@import 'partials/effects';
+@import 'demo_layout';
+@import 'css-classes';
+
+.col {
+ position: absolute;
+ width: 100%; 
+}
+
+.p-row {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  @include transition-opt(
+    $font-size: 3em
+    );
+
+  @media (min-width: 980px) {
+   @include transition-opt(
+    $font-size: 4em
+    );
+ }
+}  
+

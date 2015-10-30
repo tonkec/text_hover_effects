@@ -1,13 +1,6 @@
-@import "effects";
-.center-align {
-	top: 50%;
-	position: relative;
-	-webkit-transform: translateY(-50%); 
-	-moz-transform: translateY(-50%); 
-	-ms-transform: translateY(-50%); 
-	-o-transform: translateY(-50%); 
-	transform: translateY(-50%);   
-}
+@import "partials/effects";
+@import "css-classes";
+@import 'demo_layout';
 
 .content {
 	display: none;
@@ -17,91 +10,88 @@
 	text-align: center; 
 }
 
+.content-small-heading {
+	text-align:left;
+	color: red;
+}
+
+.content-active {
+	display: block;
+}
+
 .main-container {
-	margin-top: 100px; 
+	height: 100%; 
+}
+
+.small-margin {
+	margin-top: 100px;
+	padding-bottom: 20px; 
 }
 
 .content-heading {
-	margin: 0 auto 40px;
-	text-align: center; 
 	@include transition-opt(
-		$font-size: 4em,
+		$font-size: 3.5em,
 		$font-weight: 700,
 		$color: #2C3E50
 		);
 	
+	@media (min-width: 768px) {
+		@include transition-opt(
+			$font-size: 4em,
+			$font-weight: 700,
+			$color: #2C3E50
+			);
+	}
+
 	@include underline-closing;
+
+}
+
+.content-small-heading {
+	color: #fff;
+	font-size: 2em;
+	margin-left: 40px;
+	margin-top: 40px; 
+	font-weight: 400;
+	width: 25%; 
+	@include transition-opt(
+		$font-size: 2em,
+		$display: block
+		); 
+	
+	@include left-bottom;  
 }
 
 .content-paragraph {
-	font-size: 2em;
+	font-size: 1.5em; 
 	width: 80%;
-	text-align:justify;
 	margin: 50px auto 0;  
 	line-height: 1.6em;  
 	color: #2C3E50;
-	font-weight: 700; 
+	font-weight: 700;
+	text-align: justify; 
+	@media (min-width: 480px) {
+		font-size: 1.6em;  
+	}
+
+	@media (min-width: 768px) {
+		font-size: 2em;
+	}
 }
 
-.paragraph-em {
-	color: #fff;
-	@include transition-opt(
-		$font-size: 1.2em,
-		$font-weight: 700,
-		$color: #2C3E50,
-		$padding: 2px
-		);
-	
-	@include underline-left;
+.pseudo-em {
+	color: #3FC380;
 }
 
 .effect-em {
+	white-space: nowrap;
+	overflow: hidden;
 	@include transition-opt(
 		$font-size: 1.2em,
 		$font-weight: 700,
 		$color: #2C3E50,
-		$padding: 2px
+		$padding: 5px
 		);
-	
-	&.double-linethrough-left {
-		@include double-linethrough-left($top:10px, $bottom: 10px)
-	}
-
-	&.fill-opening-horizontal {
-		@include transition-opt(
-			$font-size: 1.2em,
-			$font-weight: 700,
-			$color: #2C3E50,
-			$hover-color: #2C3E50,
-			$padding: 2px
-			);
-	}
-
-	&.fill-top-left {
-		@include transition-opt(
-			$font-size: 1.2em,
-			$font-weight: 700,
-			$color: #2C3E50,
-			$hover-color: #2C3E50,
-			$padding: 2px
-			);
-	}
-
-	&.left-bottom,
-	&.bottom-right,
-	&.left-down {
-		@include transition-opt(
-			$font-size: 1.2em,
-			$font-weight: 700,
-			$color: #2C3E50,
-			$padding: 4px
-			);
-	}
-}
-
-.active {
-	display: block;
-	color: #1BA39C;
 }
 
 .col-doc {
@@ -111,44 +101,25 @@
 	margin-top: 40px; 
 }
 
-
 .item-doc {
 	color: #fff;
 	font-weight: 300;
-
 	cursor: pointer; 
-	background: #2C3E50;
+	background: $color;
 	text-align: left;
-	opacity: .8;
-	padding: 5px 0;
-	margin: 5px 20px;
-	font-size: 1.2em; 
+	font-size: 1.6em;
+	line-height: 2em;
+	margin-left: 25px;
 	text-transform: uppercase; 
-
-	@media (min-width: 768px) {
-		font-size: 1.2em; 
-		padding: 15px 0px; 
-
-	}
-
-	@media (min-width: 980px) {
-		margin: 10px 30px;
-	}
-
-	@media (min-width: 1200px) {
-		margin: 10px 50px; 
-		font-size: 1.2em; 
-
-	}
 
 	&:hover,
 	&:focus {
-		opacity: 1;
-		-webkit-transition: opacity 1s ease; 
-		-moz-transition: opacity 1s ease; 
-		-ms-transition: opacity 1s ease; 
-		-o-transition: opacity 1s ease; 
-		transition: opacity 1s ease; 
+		color: #1BA39C;
+		-webkit-transition: color 1s ease; 
+		-moz-transition: color 1s ease; 
+		-ms-transition: color 1s ease; 
+		-o-transition: color 1s ease; 
+		transition: color 1s ease; 
 	}
 }
 
@@ -166,7 +137,7 @@ pre {
 	
 	&.full-width {
 		width: 70%;
-		margin: 0 auto 20px; 
+		margin: 20px auto; 
 	}
 	
 	&.half-width {
@@ -192,9 +163,13 @@ pre {
 }
 
 .sass {
-	font-size: 1.3em;
+	font-size: 1em;
 	color:  #2C3E50;
-	font-weight: 500;   
+	font-weight: 500; 
+	
+	@media (min-width: 768px) {
+		font-size: 1.1em; 
+	}  
 }
 
 .include {
@@ -206,7 +181,6 @@ pre {
 	@include transition-opt(
 		$font-size: 3em
 		);
-	@include underline-right; 
 	
 	&.block {
 		
@@ -236,36 +210,43 @@ pre {
 		@include transition-opt(
 			$font-size: 4em
 			);
+		
+		@media (min-width: 600px) {
+			@include transition-opt(
+				$font-size: 4em
+			);
+		}
+		
 	}
 
 	&.h2 {
 		@include transition-opt(
 			$font-size: 3.5em
-			);
+		);
 	}
 
 	&.h3 {
 		@include transition-opt(
 			$font-size: 3em
-			);
+		);
 	}
 
 	&.h4 {
 		@include transition-opt(
 			$font-size: 2.5em
-			);
+		);
 	}
 
 	&.h5 {
 		@include transition-opt(
 			$font-size: 2em
-			);
+		);
 	}
 
 	&.h6 {
 		@include transition-opt(
 			$font-size: 1.5em
-			);
+		);
 	}
 
 	&.p,
@@ -276,24 +257,28 @@ pre {
 	&.li  {
 		@include transition-opt(
 			$font-size: 2em
-		);
+			);
 	}
 	
 	@include underline-closing;
+	
+	@media (min-width: 768px) {
+		@include transition-opt(
+			$display: inline
+			)
+	}
 }
 
 .anchor {
 	@include transition-opt(
 		$font-size: 1.2em
 		);
-	
-	@include both-opening-horizontal;
 }
 
 .button-result {
 	background-color: #2C3E50;
 	border: 1px solid #2C3E50;
-	  
+
 	@include transition-opt(
 		$font-weight: 500,
 		$font-size: 1.5em,
@@ -301,10 +286,24 @@ pre {
 		$hover-color: #2C3E50,
 		$transition-color: #fff,
 		$padding: 20px
-	);
+		);
 	@include fill-closing-horizontal; 
 }
 
 .comment {
 	color: rgba(0,0,0,0.5);
+}
+
+.list-heading {
+	color: #fff;
+	font-size: 1.4em;  
+	margin: 0 auto; 
+	text-align: center;
+	padding: 20px 0;
+	font-weight: 700;
+	border-bottom: 1px solid rgba(225,225,225,0.5);
+
+	@media (min-width: 980px) {
+		font-size: 2em; 
+	} 
 }

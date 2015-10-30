@@ -1,0 +1,246 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #1BA39C;
+  font-family: 'Source Sans Pro', Arial;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; 
+}
+
+aside {
+  height: 100%;
+  
+  &.left {
+    float: left;
+    background: $color;
+    overflow: auto;
+    display: none;  
+    left: -999px;
+    width: 100%;
+    
+    @media (min-width: 700px) {
+      width: 50%; 
+    }
+    
+    @media (min-width: 980px) {
+      width: 40%; 
+    } 
+    @media (min-width: 1200px) {
+      width: 30%; 
+      display: block;
+      left: 0; 
+    }
+
+    @media (min-width: 1400px) {
+      width: 25%; 
+    }
+  }
+
+  &.right {
+   float:right;
+   overflow: auto; 
+   width: 100%; 
+
+    @media(min-width: 1200px) {
+      width: 70%; 
+    }
+
+    @media (min-width: 1400px) {
+      width: 75%; 
+    }
+  }
+}
+
+.open-menu {
+  display: block !important;
+  position: absolute;
+  width: 30%;  
+  z-index: 9999; 
+  left: 0 !important;
+}
+
+.btn {
+  background-color: $color;
+  -webkit-box-shadow: none;
+  box-shadow: none;  
+  text-decoration: none;  
+  margin: 10px; 
+  display: block;
+  width: 80%;
+  z-index: -1; 
+  @include transition-opt(
+    $display:block,
+    $color: #fff,
+    $font-weight: 300,
+    $font-size: 2em,
+    $hover-color: $color
+    );
+  
+  @include fill-closing-vertical;
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.overlay {
+ background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+ left: 0;
+ right: 0;
+ top: 0;
+ bottom: 0;
+ display: none;
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ z-index: 9;   
+}
+
+.show-overlay {
+  display: block;
+   @media (min-width: 1200px) {
+  display: none;
+ }  
+}
+
+.close {
+  color: #FFF;
+  position: absolute;
+  left: 20px;
+  top: 14px;
+  cursor: pointer;
+  font-size: 2em;
+  font-weight: 700; 
+  &:hover {
+    color: #1BA39C;
+    -webkit-transition: all 2s ease; 
+    -moz-transition: all 2s ease; 
+    -ms-transition: all 2s ease; 
+    -o-transition: all 2s ease; 
+    transition: all 2s ease; 
+  }
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.nav-container {
+  position: absolute;
+  right: 20px;
+  top: 10px; 
+  width: auto;
+}
+
+.nav {
+  color: #fff;
+  top: 10px;
+  text-decoration:none;  
+  @include transition-opt($font-size: 1em);
+  @include underline-right;
+     
+  &:focus {
+    outline: none;
+  }
+
+  @media (min-width: 480px) {
+    @include transition-opt($font-size: 1.2em);
+  }
+}
+
+.menu {
+  color: #fff;
+  top: 10px;
+  text-decoration:none;  
+  @include transition-opt($font-size: 1em);
+  @include underline-right;
+  position: absolute;
+  left: 10px;
+}
+
+.list-heading {
+  color: #fff;
+  font-size: 1.4em;  
+  margin: 0 auto; 
+  text-align: center;
+  padding: 20px 0;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(225,225,225,0.5);
+  
+  @media (min-width: 980px) {
+    font-size: 2em; 
+  } 
+}
+
+.item-divider {
+  cursor: auto;
+  text-transform: uppercase;
+  font-weight: 700;  
+  opacity: 1; 
+  margin: 40px 15px;
+  color: #fff;
+  font-size: 2em; 
+}
+
+.styles {
+  list-style: none;
+  width: 100%;
+  margin: 0 auto; 
+  border-top: 1px solid rgba(225,225,225, .3); 
+
+  .item {
+    color: #fff;
+    font-weight: 300;
+    cursor: pointer; 
+    background: $color;
+    text-align: left;
+    font-size: 1.6em;
+    line-height: 2em;
+    margin-left: 25px;
+    
+    &:hover,
+    &:focus {
+      color: #1BA39C;
+      -webkit-transition: color 1s ease; 
+      -moz-transition: color 1s ease; 
+      -ms-transition: color 1s ease; 
+      -o-transition: color 1s ease; 
+      transition: color 1s ease; 
+    }
+
+    &.item-active {
+     opacity: 1; 
+     color: #1BA39C;
+     -webkit-transition: all 1s ease; 
+     -moz-transition: all 1s ease; 
+     -ms-transition: all 1s ease; 
+     -o-transition: all 1s ease; 
+     transition: all 1s ease; 
+   }
+ }
+}
+
+.vertical-align {
+  position: relative;
+  top: 40%;
+  -webkit-transform: translateY(-50%); 
+  -moz-transform: translateY(-50%); 
+  -ms-transform: translateY(-50%); 
+  -o-transform: translateY(-50%); 
+  transform: translateY(-50%); 
+}
+
+.hidden-sm {
+  display: block;
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
