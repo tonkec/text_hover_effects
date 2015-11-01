@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
 @import "partials/effects";
 
 html,
@@ -39,80 +38,68 @@ main {
   position: relative;
   top: 40%;
   -webkit-transform: translateY(-50%); 
-   -moz-transform: translateY(-50%); 
-   -ms-transform: translateY(-50%); 
-   -o-transform: translateY(-50%); 
-   transform: translateY(-50%);  
+  -moz-transform: translateY(-50%); 
+  -ms-transform: translateY(-50%); 
+  -o-transform: translateY(-50%); 
+  transform: translateY(-50%);  
 }
 
 .btn {
   background-color: $color;
   -webkit-box-shadow: none;
   box-shadow: none;  
-  padding: 20px;
-  text-decoration: none;  
-  margin-bottom: 10px; 
-  display: block;
   width: 80%;
   margin: 20px auto 0;
-  z-index: -1; 
+  color: #fff;
+  font-weight: 300;
+  font-size: 2em;
   @include transition-opt(
     $display:block,
-    $color: #fff,
-    $font-weight: 300,
-    $font-size: 2em,
     $hover-color: $color
-    );
+  );
   
   @include fill-closing-horizontal;
   @media (min-width: 768px) {
     width: auto; 
     margin: 0 10px;
+    font-size: 2em;
     @include transition-opt(
      $display: inline-block,
-     $font-size: 2em,
-     $color: #fff,
-     $hover-color: $color,
-     $font-weight: 500,
-     $padding: 20px 50px
+     $padding: 20px 50px,
+     $hover-color: $color
      );   
   }
 }
 
 .main-heading {
   width: 60%; 
+  font-size: 2em;
+  font-weight: 700;
+  color: $color; 
   @include transition-opt(
-    $font-size: 2em,
     $delay-after: .5s
     );
   
   @include double-underline-opening;
   
   @media (min-width: 480px) {
-    @include transition-opt(
-      $font-size: 2.5em,
-      $delay-after: .5s
-      );
+    font-size: 2.5em;
   } 
 
   @media (min-width: 600px) {
-    @include transition-opt(
-      $font-size: 3em,
-      $delay-after: .5s
-      );
+    font-size: 3em; 
   }
 
   @media (min-width: 980px) {
-    @include transition-opt(
-      $font-size: 4em,
-      $delay-after: .5s
-      );
-  }
+   font-size: 4em;
+  } 
 }
 
 .main-subheading {
   font-size: 1.5em; 
   margin-top: 40px; 
+  color: $color;
+  font-weight: 500; 
   
   @media (min-width: 480px) {
     font-size: 1.7em; 
@@ -125,10 +112,12 @@ main {
 
 .subheading-em {
   line-height: 1.6em; 
+  font-size: 1.2em;
+  font-weight: 700;
+  color: $color; 
   @include transition-opt(
-    $font-size: 1.2em,
     $padding: 5px
-  );
+    );
   
   @include underline-closing;
 }

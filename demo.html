@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Text Hover Effect | Demo</title>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/demo.css">
+  <link rel="stylesheet" href="css/demo.min.css">
 </head>
 <body>
   <main>
@@ -25,6 +26,7 @@
        <li class="item">double-underline-opening</li>
        <li class="item">double-underline-left-right</li>
        <li class="item">double-underline-right-left</li>
+
        <li class="item-divider">Overline</li>
        <li class="item">overline-left</li>
        <li class="item">overline-right</li>
@@ -37,10 +39,6 @@
        <li class="item">double-overline-opening</li>
        <li class="item">double-overline-left-right</li>
        <li class="item">double-overline-right-left</li>
-
-       <li class="item-divider">Overline and underline</li>
-       <li class="item">overline-left-underline-right</li>
-       <li class="item">overline-right-underline-left</li>
 
        <li class="item-divider">One Side</li>
        <li class="item">left-down</li>
@@ -56,6 +54,8 @@
        <li class="item">left-up-right-down</li>
        <li class="item">left-down-right-up</li>
        <li class="item">both-opening-horizontal</li>
+       <li class="item">overline-left-underline-right</li>
+       <li class="item">overline-right-underline-left</li>
 
        <li class="item-divider">Fills</li>
        <li class="item">fill-left</li>
@@ -97,12 +97,6 @@
        <li class="item">double-linethrough-right-left</li>
        <li class="item">double-linethrough-opening</li>
 
-       <li class="item-divider">Special</li>
-       <li class="item">crossed</li>
-       <li class="item">special</li>
-       <li class="item">special-reversed</li>
-       <li class="item">crossed-special</li>
-
        <li class="item-divider">Corners Close Delay</li>
        <li class="item">left-bottom-delay</li>
        <li class="item">left-top-delay</li>
@@ -116,8 +110,6 @@
        <li class="item">top-right-delay</li>
 
        <li class="item-divider">Other Delay</li>
-       <li class="item">crossed-delay</li>
-       <li class="item">special-delay</li>
        <li class="item">double-underline-right-delayed</li>
        <li class="item">double-underline-opening-delayed</li>
        <li class="item">double-linethrough-left-delayed</li>
@@ -131,18 +123,16 @@
      </ul>
    </aside>
    <aside class="right">
-   <a href="" class="nav menu">Menu</a>
-
-      <div class="nav-container">
-        <a href="index.html" class="nav">Home</a>
-        <a href="documentation.html" class="nav">Docs</a>
-        <a href="" class="nav">Download</a>
-      </div>
-   <a href="" class="nav menu">Menu</a>
+   <div class="nav-container">
+    <a href="" class="nav menu">Menu</a>
+    <div class="container-right">
+      <a href="documentation.html" class="nav">Docs</a>
+      <a href="" class="nav">Download</a>
+    </div>
+  </div>
     <div class="p-row">
-     <p class="underline-left" id="p">Hover me</p> 
+     <p class="underline-right" id="p">Hover me</p> 
    </div> 
-
  </aside>
 </main>
 

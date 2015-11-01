@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Text Hover Effect | Documentation</title>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/doc.css">
+  <link rel="stylesheet" href="css/doc.min.css">
 </head>
 <body>
   <main>
@@ -26,12 +27,13 @@
       </ul>
     </aside>
     <aside class="right">
-      <a href="" class="nav menu">Menu</a>
 
       <div class="nav-container">
-        <a href="index.html" class="nav">Home</a>
-        <a href="demo.html" class="nav">Demo</a>
-        <a href="" class="nav">Download</a>
+        <a href="" class="nav menu">Menu</a>
+        <div class="container-right">
+            <a href="demo.html" class="nav">Demo</a>
+            <a href="" class="nav">Download</a>
+        </div>
       </div>
       <div class="main-container">
 
@@ -42,6 +44,7 @@
 
        <div class="content small-margin">
         <h2 class="content-heading">Getting Started</h2>
+        <h3 class="content-small-heading">1. The Sass Way</h3>
         <p class="content-paragraph">Download or clone repo from Github and include <em class="effect-em underline-right">effect.scss</em> file. In order effects to work you need to have partials directory in your project directory on the same level as effect.scss file. Effects.scss imports all of the mixins. If you need only several effects, delete unnecessary imports. All effects must have _base.scss imported because it has <em class="effect-em underline-right">transition-opt</em> and <em class="effect-em underline-right">line-opt</em> mixins mandatory for all effects.</p>
         <div class="content-container">
           <pre class="full-width">
@@ -65,58 +68,63 @@
         </code>
       </pre>
     </div><!--content-container-->
+    <h3 class="content-small-heading">2. The CSS Way</h3>
+    <div class="content-paragraph">The effects are also available in CSS code. You can start using them after downloading. The CSS code is in the CSS/effects directory. Choose the effect you would like to apply, then copy and paste the code and you are good to go!</div>
+
   </div><!--content-->
 
   <div class="content small-margin">
    <h2 class="content-heading">How To Use</h2>
    <h3 class="content-small-heading">1. The Sass Way</h3>
-   <p class="content-paragraph">After you have all the files downloaded, you are ready to use effects. Include <em class="effect-em underline-right">transition-opt</em> to  an element you wish to apply effect for. Then add <em class="effect-em underline-right">effect</em>. For example:</p>
+   <p class="content-paragraph">After you have all the files downloaded, you are ready to use effects. Include <em class="effect-em underline-right">transition-opt</em> to  an element you wish to apply effect to. Then add <em class="effect-em underline-right">effect</em>. For example:</p>
    <div class="content-container">
      <pre class="half-width">
        <code language="sass" data-lang="sass">
          <em class="sass">
            .element { 
-           <em class="include">@include</em> transition-opt;
-           <em class="include">@include</em> underline-right;
+               <em class="include">@include</em> transition-opt;
+               <em class="include">@include</em> underline-left;
          }</em> 
        </code>
      </pre>
 
      <div class="result">
-       <em class="effect-demo underline-right">Result</em>
+       <em class="effect-demo underline-left">Result</em>
      </div>
    </div>
    <p class="content-paragraph">Be careful with using <em class="effect-em underline-right">CSS #id</em> selector because it will overwrite several styles. It is recommended to use <em class="effect-em underline-right">classes</em> instead. </p>
 
    <h3 class="content-small-heading">2. The CSS Way</h3>
-   <p class="content-paragraph">CSS styles are also available. After you cloned/downloaded repo from Github, you can use them as well. All the CSS files are included in CSS/effects directory. Choose one you want and copy and paste the code into your project file. Add class to your element and you are good to go!</p>
-   <pre class="full-width">
-     <code language="sass" data-lang="sass">
-       <em class="sass">
-         .underline-left:<em class="include">after</em> { 
-         <em class="property">content</em>: <em class="value">""</em>;
-         <em class="property">position</em>: <em class="value">absolute</em>;
-         <em class="property">z-index</em>: <em class="value">-1</em>;
-         <span class="property">width</span>: <em class="value">3px</em>;
-       }
+   <p class="content-paragraph">CSS styles are also available. After you cloned/downloaded repo from Github, you can use them as well. All the CSS files are included in the CSS/effects directory. Choose one you want and copy and paste the code into your project file. Add class to your element and you are good to go!</p>
+    <div class="content-container">
+     <pre class="half-width">
+       <code language="sass" data-lang="sass">
+         <em class="sass">
+          .underline-left:<em class="include">after</em> { 
+             <em class="property">content</em>: <em class="value">""</em>;
+             <em class="property">position</em>: <em class="value">absolute</em>;
+             <em class="property">z-index</em>: <em class="value">-1</em>;
+             <span class="property">width</span>: <em class="value">3px</em>;
+          }
 
-       .underline-left:<em class="include">after</em> {
-       <em class="property">right</em>: <em class="value">0</em>;
-       <em class="property">bottom</em>: <em class="value">0</em>;
-     }
+          .underline-left:<em class="include">after</em> {
+              <em class="property">right</em>: <em class="value">0</em>;
+              <em class="property">bottom</em>: <em class="value">0</em>;
+          }
 
-     .underline-left:<em class="include">hover</em>:<em class="include">after</em> {
-     <em class="property">width</em>: <em class="value">100%</em>;
-     <em class="property">height</em>: <em class="value">2%</em>;
-   }   
- </em> 
-</code>
-</pre>
+          .underline-left:<em class="include">hover</em>:<em class="include">after</em> {
+              <em class="property">width</em>: <em class="value">100%</em>;
+              <em class="property">height</em>: <em class="value">2%</em>;
+          }   
+        </em>  
+       </code>
+     </pre>
 
-<div class="full-width result">
- <em class="effect-demo underline-left">Result</em>
-</div>
-</div><!--content-->
+     <div class="result">
+       <em class="effect-demo underline-left">Result</em>
+     </div>
+   </div>
+  </div><!--content-->
 
 
 <div class="content small-margin">
@@ -127,38 +135,50 @@
    <code language="sass" data-lang="sass">
      <em class="sass">
        .element { 
-       <em class="include">@include</em> transition-opt(
-       <em class="property">$font-size</em>: <em class="value">4em</em> ,
-       <em class="property">$font-weight</em>: <em class="value">700</em>,
-       <em class="property">$color</em>: <em class="value">#2C3E50</em>,
-       <em class="property">$hover-color</em>: <em class="value">#FFF</em>,
-       <em class="property">$border-after</em>: <em class="value">0%</em>,
-       <em class="property">$border-before</em>: <em class="value">0%</em>,
-       <em class="property">$display</em>: <em class="value">inline</em>,
-       <em class="property">$transition-color</em>: <em class="value">#FFF</em>,
-       <em class="property">$transition-speed</em>: <em class="value">1s</em>,
-       <em class="property">$tranition-easing</em>: <em class="value">ease-in-out</em>,
-       <em class="property">$delay-after</em>: <em class="value">0s</em>,
-       <em class="property">$delay-before</em>: <em class="value">0s</em>,
-       <em class="property">$padding</em>: <em class="value">10px</em>
+           <em class="include">@include</em> transition-opt(
+
+               <em class="property">$hover-color</em>: <em class="value">#FFF</em>, 
+               <em class="comment">/* sets color of element when hovered */</em>
+               
+               <em class="property">$display</em>: <em class="value">inline</em>,
+               <em class="comment">/* sets display property */</em>
+               
+               <em class="property">$transition-color</em>: <em class="value">#FFF</em>,
+               <em class="comment">/* sets color of transition */</em>
+               
+               <em class="property">$transition-speed</em>: <em class="value">1s</em>,
+               <em class="comment">/* sets speed of transition */</em>
+               
+               <em class="property">$tranition-easing</em>: <em class="value">ease-in-out</em>,
+               <em class="comment">/* sets easing of transition */</em>
+               
+               <em class="property">$delay-after</em>: <em class="value">0s</em>,
+               <em class="comment">/* sets transition delay for ::after */</em>
+               
+               <em class="property">$delay-before</em>: <em class="value">0s</em>,
+               <em class="comment">/* sets transition delay for ::before */</em>
+               
+               <em class="property">$padding</em>: <em class="value">10px</em>
+               <em class="comment">/* sets space between transition and element */</em>
+       
        )};
      </em>
 
    </code>
  </pre>
 </div>
-<p class="content-paragraph">Change whichever property you want but <em class="effect-em underline-right">be careful</em> with changing <em class="effect-em underline-right">display</em> property. It is recommended to use display: inline because then width of transition will be equal to the width of an element. If you change to display: block, it will change the width of transition and then you must change width and margin of an element. For example:</p>
+<p class="content-paragraph">Change whichever property you want, but be careful with changing <em class="effect-em underline-right">display</em> property. It is recommended to use display: inline because then width of the transition will be equal to the width of an element. If you change to display: block, it will change the width of transition and then you must change the width and margin of an element. For example:</p>
 <div class="content-container">
  <pre class="half-width">
    <code language="sass" data-lang="sass">
      <em class="sass">
        .element { 
-       <em class="property">width</em>: <em class="value">100%</em>;
-       <em class="include">@include</em> transition-opt(
-       <em class="property">$display</em>: <em class="value">block</em>
-       )
+           <em class="property">width</em>: <em class="value">100%</em>;
+           <em class="include">@include</em> transition-opt(
+              <em class="property">$display</em>: <em class="value">block</em>
+           )
 
-       <em class="include">@include</em> underline-right;
+           <em class="include">@include</em> underline-right;
      };
    </em>
  </code>
@@ -174,13 +194,13 @@
    <code language="sass" data-lang="sass">
      <em class="sass">
        .element { 
-       <em class="property">width</em>: <em class="value">50%</em>;
-       <em class="property">margin</em>: <em class="value">0 auto</em>;
-       <em class="include">@include</em> transition-opt(
-       <em class="property">$display</em>: <em class="value">block</em>
-       )
+           <em class="property">width</em>: <em class="value">50%</em>;
+           <em class="property">margin</em>: <em class="value">0 auto</em>;
+           <em class="include">@include</em> transition-opt(
+              <em class="property">$display</em>: <em class="value">block</em>
+           )
 
-       <em class="include">@include</em> underline-right;
+           <em class="include">@include</em> underline-right;
      };
    </em>
  </code>
@@ -208,19 +228,19 @@
   <b class="text-effect b">b</b>
   <li class="text-effect li">li</li>
 </div>
-<p class="content-paragraph">Although library main elements are meant to be text, it could be used for several others elements such as buttons. </p>
+<p class="content-paragraph">Although library main elements are meant to be text, it could be used for several other elements such as buttons. </p>
 <div class="content-container">
   <pre class="half-width">
    <code language="sass" data-lang="sass">
      <em class="sass">
        button { 
-       <em class="property">background-color</em>: <em class="value">#2C3E50</em>;
-       <em class="property">border</em>: <em class="value">1px solid #2C3E50</em>;
-       <em class="include">@include</em> transition-opt(
-       <em class="property">$font-size</em>: <em class="value">3em</em>,
-       <em class="property">$color</em>: <em class="value">#FFF</em>,
-       <em class="property">$hover-color</em>: <em class="value">#2C3E50</em>,
-       <em class="property">$transition-color</em>: <em class="value">#FFF</em>
+           <em class="property">background-color</em>: <em class="value">#2C3E50</em>;
+           <em class="property">border</em>: <em class="value">1px solid #2C3E50</em>;
+           <em class="property">font-size</em>: <em class="value">3em</em>;
+           <em class="property">color</em>: <em class="value">#fff</em>;
+           <em class="include">@include</em> transition-opt(
+               <em class="property">$hover-color</em>: <em class="value">#2C3E50</em>,
+               <em class="property">$transition-color</em>: <em class="value">#FFF</em>
        )
 
        <em class="include">@include</em> fill-closing-horizontal; 
@@ -237,23 +257,22 @@
 <div class="content small-margin">
  <h2 class="content-heading">Under the hood</h2>
  <p class="content-paragraph">All transitions are made with pseudoelements <em class="effect-em underline-opening">::before</em> and <em class="effect-em underline-opening">::after</em>. Each element that has transition-opt mixin included will have those two pseudoelements. Mixin transition-opt sets the base for transition. It allows you to set the options. It triggers hover and focus event. You can see code in <em class="effect-em overline-opening">_base.scss</em></p>
- <p class="content-paragraph"> Each transition includes <em class="effect-em underline-right">line-opt</em> mixin which sets width and height of pseudoelements. Default width is 3px, and default height is 2%. Line-opt depends on type of transition. Some transitions have only one pseudoelement. Line-opt mixin allows to choose which pseudoelement should be created for particular transition. For example, <em class="effect-em overline-left">overline-left</em> transiton is created with ::after</p>
+ <p class="content-paragraph"> Each transition includes <em class="effect-em underline-right">line-opt</em> mixin, which sets width and height of pseudoelements. The default width is 3px, and default height is 2%. Line-opt depends on the type of transition. Some transitions have only one pseudoelement. Line-opt mixin allows to choose which pseudoelement should be created for particular transition. For example, <em class="effect-em overline-left">overline-left</em> transition is created only with ::after pseudoelement.</p>
  <div class="content-container">
   <pre class="half-width">
    <code language="sass" data-lang="sass">
      <em class="sass">
       <em class="include">@mixin overline-left</em> {
-      <em class="include">@include</em> line-opt(
-      pseudoafter,
-      $transition-height: $height
-      );
+          <em class="include">@include</em> line-opt(
+              pseudoafter,
+              <em class="property">$transition-height</em>: <em class="value">$height</em>
+          );
 
-      <em class="include">&amp;</em>:<em class="pseudo-em">after</em> {
-      <em class="property">right</em>: <em class="value">0%</em>;
-      <em class="property">top</em>: <em class="value">0%</em>;
+          <em class="include">&amp;</em>:<em class="pseudo-em">after</em> {
+              <em class="property">right</em>: <em class="value">0%</em>;
+              <em class="property">top</em>: <em class="value">0%</em>;
+          } 
     } 
-
-  }
 </em>
 </code>
 </pre>
@@ -261,7 +280,7 @@
  <em class="effect-demo overline-left">Result</em>          
 </div>
 </div><!--content-container-->
-<p class="content-paragraph">First we define mixin overline-left. Then we include line-opt mixin and define type of pseudoelement which is here pseudoafter. After that, we define transition width. Since default transition-width in line-opt is 100% we do not need to set it explicitly. But default transition-height in line-opt is also 100% and we do not want that. We want it to remain the same. That is why we set it to height of an element which is 2%.</p>
+<p class="content-paragraph">First, we define mixin overline-left. Then we include line-opt mixin and define the type of pseudoelement which is here pseudoafter. After that, we define the transition width. Since the default transition-width in line-opt is 100%, we do not need to set it explicitly. But default transition-height in line-opt is also 100% and we do not want that. We want it to remain the same. That is why we set it to the height of an element which is 2%.</p>
 
 <p class="content-paragraph">Some transitions needs to have both pseudoelements such as<em class="effect-em overline-closing">overline-closing</em>. Pseudoelements are positioned differently.</p>
 <div class="content-container">
@@ -269,37 +288,36 @@
    <code language="sass" data-lang="sass">
      <em class="sass">
       <em class="include">@mixin overline-closing</em> {
-      <em class="include">@include</em> line-opt(
-      pseudoafter,
-      $transition-height: $height,
-      $transition-width: $half-width
-      );
+          <em class="include">@include</em> line-opt(
+              pseudoafter,
+             <em class="property">$transition-height</em>: <em class="value">$height</em>,
+             <em class="property">$transition-width</em>: <em class="value">$half-width</em> 
+          );
 
-      <em class="include">@include</em> line-opt(
-      pseudobefore,
-      $transition-height: $height,
-      $transition-width: $half-width
-      );
+          <em class="include">@include</em> line-opt(
+              pseudobefore,
+              <em class="property">$height</em>: <em class="value">$height</em>,
+              <em class="property">$transition-width</em>: <em class="value">$half-width</em>
+          );
 
-      <em class="include">&amp;</em>:<em class="pseudo-em">after</em> {
-      <em class="property">left</em>: <em class="value">0%</em>;
-      <em class="property">top</em>: <em class="value">0%</em>;
-    }
+        <em class="include">&amp;</em>:<em class="pseudo-em">after</em> {
+          <em class="property">left</em>: <em class="value">0%</em>;
+          <em class="property">top</em>: <em class="value">0%</em>;
+        } 
 
-    <em class="include">&amp;</em>:<em class="pseudo-em">before</em> {
-    <em class="property">right</em>: <em class="value">0%</em>;
-    <em class="property">top</em>: <em class="value">0%</em>;
-  } 
-
-}
-</em>
-</code>
-</pre>
+        <em class="include">&amp;</em>:<em class="pseudo-em">before</em> {
+          <em class="property">right</em>: <em class="value">0%</em>;
+          <em class="property">top</em>: <em class="value">0%</em>;
+        } 
+      }
+      </em>
+    </code>
+  </pre>
 <div class="result">
  <em class="effect-demo overline-closing">Result</em>          
 </div>
 </div><!--content-container-->
-<p class="content-paragraph">Line-opt also sets the width and height of pseudoelement on hover and focus, that is, width and height of transition. Since default display property is set to inline, transition width or height will never be wider or higher than element's width or height. That is why transitions vary in maximum height or width. In other words, when hovered or focused, some pseudoelements have only maximum height, maximum width and some have both. For example, <em class="effect-em underline-right">underline-right</em> transition has maximum width set to 100%, while height is set to default, that is 2%. Some have maximum height set to 100%, while width is set to default, that is 3px. For example, <em class="effect-em left-up">left-up</em></p>
+<p class="content-paragraph">Line-opt also sets the width and height of pseudoelement on hover and focus, that is, width and height of transition. Since default display property is set to inline, transition width or height will never be wider or higher than the element's width or height. That is why transitions vary in maximum height or width. In other words, when hovered or focused, some pseudoelements have only maximum height, maximum width and some have both. For example, <em class="effect-em underline-right">underline-right</em> transition has maximum width set to 100%, while height is set to default, that is 2%. Some have maximum height set to 100%, while width is set to default, that is 3px. For example, <em class="effect-em left-up">left-up</em></p>
 
 </div><!--content-->
 
@@ -311,7 +329,7 @@
 
 <div class="content vertical-align">
  <h2 class="content-heading">Browser Support</h2>
- <p class="content-paragraph">Effects are supported in <em class="effect-em both-opening-horizontal">Chrome</em> and <em class="effect-em both-opening-horizontal">Firefofox</em></p>
+ <p class="content-paragraph">Effects are supported in <em class="effect-em both-opening-horizontal">Chrome</em> and <em class="effect-em both-opening-horizontal">Firefox</em></p>
 
 </div><!--content-->
 <div class="content vertical-align">

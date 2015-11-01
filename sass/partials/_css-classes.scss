@@ -1,187 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-
-html,
-body {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  background-color: #1BA39C;
-  font-family: 'Source Sans Pro', Arial;
-}
-
-main {
-  height: 100%;
-  width: 100%;
-  overflow: hidden; 
-}
-
-aside {
-  height: 100%;
-  
-  &.left {
-    float: left;
-    background: $color;
-    overflow: auto;
-    display: none;  
-
-    @media (min-width: 1200px) {
-      width: 20%; 
-      display: block;
-    }
-
-  }
-
-  &.right {
-   float:right;
-   overflow: auto; 
-
-   
-      width: 100%; 
-  
-  @media(min-width: 1200px) {
-    width: 80%; 
-  }
-  }
-}
-
-.styles {
-  list-style: none;
-  width: 100%;
-  margin: 0 auto; 
-  border-top: 1px solid rgba(225,225,225, .3); 
-
-  .item {
-    color: #fff;
-        font-weight: 300;
-
-    cursor: pointer; 
-    background: $color;
-    text-align: left;
-    opacity: .8;
-    padding: 5px 0;
-      margin: 5px 20px;
-      font-size: 1em; 
-    
-    @media (min-width: 768px) {
-       font-size: 1em; 
-    padding: 15px 0px; 
-   
-    }
-
-    @media (min-width: 980px) {
-       margin: 10px 30px;
-    }
-    
-    @media (min-width: 1200px) {
-      margin: 10px 50px; 
-             font-size: 1.2em; 
-
-    }
-
-    &.current {
-      opacity: 1; 
-      color: #1BA39C;
-      -webkit-transition: all 1s ease; 
-      -moz-transition: all 1s ease; 
-      -ms-transition: all 1s ease; 
-      -o-transition: all 1s ease; 
-      transition: all 1s ease; 
-    }
-    &:hover,
-    &:focus {
-      opacity: 1;
-      -webkit-transition: opacity 1s ease; 
-      -moz-transition: opacity 1s ease; 
-      -ms-transition: opacity 1s ease; 
-      -o-transition: opacity 1s ease; 
-      transition: opacity 1s ease; 
-    }
-
-    &.item-divider {
-      cursor: auto;
-      text-transform: uppercase;
-      font-weight: 700;  
-      opacity: 1; 
-      &:hover {
-        background: $color;
-      }
-    }
-  }
-}
-
-
-
-.list-heading {
-  color: #fff;
-  text-align: center;
-  font-size: 2em;
-  margin: 15px 0;  
-}
-
-.col {
- position: absolute;
- width: 100%; 
-}
-
-.p-row {
-  text-align: center; 
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%); 
-     -moz-transform: translateY(-50%); 
-     -ms-transform: translateY(-50%); 
-     -o-transform: translateY(-50%); 
-     transform: translateY(-50%);    
-}
-
-.nav {
-  color: #fff;
-  top: 10px;
-  text-decoration:none;  
-  @include transition-opt($font-size: 1.2em);
-  @include underline-right;
-  float: right;
-  margin-right: 15px;
-  
-  &:focus {
-    outline: none;
-  }
-}
-
-
-.list-heading {
-  color: #fff;
-  font-size: 1.4em;  
-  margin: 10px 20px; 
-}
-
-.p-row {
-  p {
-    @include transition-opt(
-      $font-size: 3em
-      );
-
-    @media (min-width: 980px) {
-     @include transition-opt(
-      $font-size: 4em
-      );
-   }
- }
-
- .special {
-  @include special;
-}
-
-.special-delay {
-  @include transition-opt($delay-after: .5s);
-  @include special;
-}
-
-.special-reversed {
-  @include special-reversed;
-}
-
+@import 'partials/effects';
 
 .overline-right {
   @include overline-right;
@@ -239,6 +56,18 @@ aside {
   @include underline-left;
 }
 
+.underline-closing {
+  @include underline-closing;
+}
+
+.underline-opening {
+  @include underline-opening;
+}
+
+.underline-right {
+  @include underline-right;
+}
+
 .fill-up {
  @include transition-opt($hover-color: $color);
  @include fill-up;
@@ -294,7 +123,6 @@ aside {
  @include fill-closing-vertical; 
 }
 
-
 .left-top {
   @include left-top;
 }
@@ -327,16 +155,6 @@ aside {
   @include linethrough-right;
 }
 
-.underline-closing {
-  @include underline-closing;
-}
-
-.underline-opening {
-  @include underline-opening;
-}
-.underline-right {
-  @include underline-right;
-}
 .overline-closing {
   @include overline-closing;
 }
@@ -373,7 +191,6 @@ aside {
   @include double-underline-right-left;
 }
 
-
 .double-linethrough-left {
   @include double-linethrough-left;
 }
@@ -389,37 +206,9 @@ aside {
 .double-linethrough-right-left {
   @include double-linethrough-right-left;
 }
+
 .double-linethrough-opening {
   @include double-linethrough-opening;
-}
-
-.crossed {
-  @include transition-opt;
-  @include crossed;
-}
-
-.crossed-delay  {
-  @include transition-opt($delay-after: .5s);
-  @include crossed;
-}
-
-.crossed-reversed {
-  @include crossed-reversed;
-}
-
-.crossed-special {
-  @include crossed-special;
-
-}
-
-.double-underline-right-delayed {
-  @include transition-opt($delay-after: 1s);
-  @include double-underline-right;
-}
-
-.double-underline-opening-delayed {
- @include transition-opt($delay-after: .5s);
- @include double-underline-opening;
 }
 
 .top-right {
@@ -436,6 +225,36 @@ aside {
 
 .bottom-right {
   @include bottom-right;
+}
+
+.double-overline-left {
+  @include double-overline-left;
+}
+
+.double-overline-right {
+  @include double-overline-right;
+}
+
+.double-overline-left-right {
+  @include double-overline-left-right;
+}
+
+.double-overline-right-left {
+  @include double-overline-right-left;
+}
+
+.double-overline-opening {
+  @include double-overline-opening;
+}
+
+.double-underline-right-delayed {
+  @include transition-opt($delay-after: 1s);
+  @include double-underline-right;
+}
+
+.double-underline-opening-delayed {
+ @include transition-opt($delay-after: .5s);
+ @include double-underline-opening;
 }
 
 .left-bottom-delay {
@@ -457,7 +276,6 @@ aside {
   @include transition-opt($delay-after: .5s);
   @include right-bottom;
 }
-
 
 .left-top-delay {
   @include transition-opt($delay-after: .5s);
@@ -518,26 +336,6 @@ aside {
   @include both-right;
 }
 
-.double-overline-left {
-  @include double-overline-left;
-}
-
-.double-overline-right {
-  @include double-overline-right;
-}
-
-.double-overline-left-right {
-  @include double-overline-left-right;
-}
-
-.double-overline-right-left {
-  @include double-overline-right-left;
-}
-
-.double-overline-opening {
-  @include double-overline-opening;
-}
-
 .top-right-delay {
   @include transition-opt($delay-after: .5s);
   @include top-right;
@@ -556,6 +354,4 @@ aside {
 .bottom-right-delay {
   @include transition-opt($delay-after: .5s);
   @include bottom-right;
-}
-
 }
