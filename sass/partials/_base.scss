@@ -1,4 +1,4 @@
-@mixin transition-opt($font-size: 4em, $font-weight: 700, $color: #2C3E50, $hover-color: #fff, $border-after: 0%, $border-before: 0%, $display: inline, $transition-color: #fff, $transition-speed: 1s, $transition-easing: ease-in-out, $delay-after: 0s, $delay-before: 0s, $padding: 10px) {
+@mixin transition-opt($hover-color: #fff, $display: inline, $transition-color: #fff, $transition-speed: 1s, $transition-easing: ease-in-out, $delay-after: 0s, $delay-before: 0s, $padding: 10px) {
 	display: $display;
 	position: relative;
 	z-index: 2;
@@ -6,10 +6,9 @@
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	font-weight: $font-weight; 
-	font-size: $font-size;
-	color: $color;
 	padding: $padding;
+	white-space: nowrap;
+	overflow: hidden;
 	-webkit-transition: color $transition-speed $transition-easing; 
 		-moz-transition: color $transition-speed $transition-easing; 
 		-ms-transition: color $transition-speed $transition-easing; 
@@ -18,6 +17,7 @@
 
 	&:hover,
 	&:focus {
+		outline: 0;
 		color: $hover-color;
 		-webkit-transition: color $transition-speed $transition-easing; 
 		-moz-transition: color $transition-speed $transition-easing; 
@@ -29,8 +29,6 @@
 
 	/* backward transition */
 	&:before {
-		-webkit-border-radius: $border-before; 
-		 border-radius: $border-before;  
 		-webkit-transition: all $transition-speed $transition-easing $delay-before; 
 		-moz-transition: all $transition-speed $transition-easing $delay-before; 
 		-ms-transition: all $transition-speed $transition-easing $delay-before; 
@@ -39,8 +37,6 @@
 	}
 	/* backward transition */
 	&:after {
-		-webkit-border-radius: $border-after; 
-		 border-radius: $border-after;  
 		-webkit-transition: all $transition-speed $transition-easing $delay-after; 
 		-moz-transition: all $transition-speed $transition-easing $delay-after; 
 		-ms-transition: all $transition-speed $transition-easing $delay-after; 
@@ -83,7 +79,8 @@
 			height: $height; 
 		}
 
-		&:hover:after {
+		&:hover:after,
+		&:focus:after {
 			width: $transition-width;
 			height: $transition-height; 
 		}
@@ -98,7 +95,8 @@
 			height: $height; 
 		}
 
-		&:hover:before {
+		&:hover:before,
+		&:focus:before  {
 			width: $transition-width;
 			height: $transition-height; 
 		}
