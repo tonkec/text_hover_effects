@@ -1,0 +1,29 @@
+.underline-closing:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.underline-closing:hover:after {
+  width: 50%;
+  height: 2%; }
+
+.underline-closing:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.underline-closing:hover:before {
+  width: 50%;
+  height: 2%; }
+
+.underline-closing:after {
+  bottom: 0%;
+  left: 0%; }
+
+.underline-closing:before {
+  bottom: 0%;
+  right: 0%; }

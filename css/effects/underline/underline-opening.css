@@ -1,0 +1,33 @@
+.underline-opening:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.underline-opening:hover:after {
+  width: 100%;
+  height: 2%; }
+
+.underline-opening:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.underline-opening:hover:before {
+  width: 100%;
+  height: 2%; }
+
+.underline-opening:after {
+  bottom: 0%;
+  left: 0%;
+  right: 0;
+  margin: 0 auto; }
+
+.underline-opening:before {
+  bottom: 0%;
+  right: 0%;
+  left: 0;
+  margin: 0 auto; }

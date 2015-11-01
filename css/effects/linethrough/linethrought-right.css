@@ -1,0 +1,15 @@
+.linethrough-right:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 5px; }
+
+.linethrough-right:hover:after {
+  width: 100%;
+  height: 5px; }
+
+.linethrough-right:after {
+  left: 0;
+  top: 50%;
+  z-index: 9; }

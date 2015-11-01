@@ -1,0 +1,29 @@
+.double-overline-left-right:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.double-overline-left-right:hover:after {
+  width: 100%;
+  height: 2%; }
+
+.double-overline-left-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.double-overline-left-right:hover:before {
+  width: 100%;
+  height: 2%; }
+
+.double-overline-left-right:after {
+  right: 0%;
+  top: 0; }
+
+.double-overline-left-right:before {
+  left: 0%;
+  top: 10px; }

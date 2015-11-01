@@ -1,0 +1,29 @@
+.both-down:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.both-down:hover:after {
+  width: 3px;
+  height: 100%; }
+
+.both-down:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.both-down:hover:before {
+  width: 3px;
+  height: 100%; }
+
+.both-down:after {
+  top: 0%;
+  left: 0%; }
+
+.both-down:before {
+  top: 0%;
+  right: 0%; }

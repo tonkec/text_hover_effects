@@ -1,0 +1,14 @@
+.underline-right:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.underline-right:hover:after {
+  width: 100%;
+  height: 2%; }
+
+.underline-right:after {
+  left: 0;
+  bottom: 0; }

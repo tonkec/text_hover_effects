@@ -1,0 +1,14 @@
+.left-down:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.left-down:hover:after {
+  width: 3px;
+  height: 100%; }
+
+.left-down:after {
+  top: 0%;
+  left: 0%; }

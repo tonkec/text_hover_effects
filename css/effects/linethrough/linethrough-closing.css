@@ -1,0 +1,31 @@
+.linethrough-closing:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 5px; }
+
+.linethrough-closing:hover:after {
+  width: 50%;
+  height: 5px; }
+
+.linethrough-closing:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 5px; }
+
+.linethrough-closing:hover:before {
+  width: 50%;
+  height: 5px; }
+
+.linethrough-closing:after {
+  left: 0;
+  top: 50%;
+  z-index: 9; }
+
+.linethrough-closing:before {
+  top: 50%;
+  right: 0%;
+  z-index: 9; }

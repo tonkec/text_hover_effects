@@ -1,0 +1,29 @@
+.overline-closing:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.overline-closing:hover:after {
+  width: 50%;
+  height: 2%; }
+
+.overline-closing:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.overline-closing:hover:before {
+  width: 50%;
+  height: 2%; }
+
+.overline-closing:after {
+  top: 0%;
+  left: 0%; }
+
+.overline-closing:before {
+  top: 0%;
+  right: 0%; }

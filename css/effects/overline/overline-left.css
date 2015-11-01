@@ -1,0 +1,14 @@
+.overline-left:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 2%; }
+
+.overline-left:hover:after {
+  width: 100%;
+  height: 2%; }
+
+.overline-left:after {
+  right: 0%;
+  top: 0; }
