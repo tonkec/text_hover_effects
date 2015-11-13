@@ -1,0 +1,13 @@
+@mixin both-down {
+  @include line-opt(pseudoafter, $transition-width: $default-width);
+  @include line-opt(pseudobefore, $transition-width: $default-width);
+  &:after {
+    top: 0%;
+    left: 0%;
+  }
+
+  &:before {
+    top: 0%;
+    right: 0%; 
+   }
+}
