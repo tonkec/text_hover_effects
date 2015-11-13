@@ -1,0 +1,12 @@
+@mixin move-up {
+  @include line-opt(pseudoafter, $width: $max-width, $transition-height: $default-height);
+  
+  &:after {
+    bottom: 50%;
+    left: 0; 
+  }
+
+  &:hover:after {
+    bottom: 100%;
+  }
+}

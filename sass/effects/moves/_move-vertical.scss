@@ -1,0 +1,22 @@
+@mixin move-vertical {
+  @include line-opt(pseudoafter, $width: $max-width, $transition-height: $default-height);
+  @include line-opt(pseudobefore, $width: $max-width, $transition-height: $default-height);
+  
+  &:after {
+    top: 50%;
+    left: 0;
+  }
+
+  &:hover:after {
+    top: 0;
+  }
+
+  &:before {
+    bottom: 50%;
+    left: 0;
+  }
+
+  &:hover:before {
+    bottom: 0;
+  }
+}

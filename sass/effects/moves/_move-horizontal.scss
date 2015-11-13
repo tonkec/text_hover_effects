@@ -1,0 +1,22 @@
+@mixin move-horizontal {
+  @include line-opt(pseudoafter, $height: $max-height, $transition-width: $default-width);
+  @include line-opt(pseudobefore, $height: $max-height, $transition-width: $default-width);
+  
+  &:after {
+    top: 0;
+    right: 50%;
+  }
+
+  &:hover:after {
+    right: 0;
+  }
+
+  &:before {
+    top: 0;
+    left: 50%;
+  }
+
+  &:hover:before {
+    left: 0;
+  }
+}

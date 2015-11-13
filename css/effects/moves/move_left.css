@@ -1,0 +1,14 @@
+.move-left:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 3px;
+  height: 100%; }
+.move-left:hover:after, .move-left:focus:after {
+  width: 3px;
+  height: 100%; }
+.move-left:after {
+  top: 0;
+  left: 50%; }
+.move-left:hover:after {
+  left: 0; }
