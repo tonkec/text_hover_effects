@@ -1,0 +1,9 @@
+@import "../sass/css-classes";
+
+/* include transition-opt mixin to initialize effects,
+to get the basic styles for effects */
+p {
+	top: 50px;
+	left: 50px;  
+	@include transition-opt();
+}
