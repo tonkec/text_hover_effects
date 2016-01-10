@@ -1,0 +1,13 @@
+@mixin overline-right-underline-left {
+    @include line-opt(pseudoafter, $transition-height: $default-height);
+    @include line-opt(pseudobefore, $transition-height: $default-height);
+   &:after {
+    top: 0%;
+    left: 0%;
+    }
+
+    &:before {
+        bottom: 0%;
+        right: 0%; 
+    }
+}
