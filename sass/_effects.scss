@@ -1,81 +1,81 @@
 @import 'base';
 @import 'defaults';
 
-@import 'partials/overline/overline-right';
-@import 'partials/overline/overline-left';
-@import 'partials/overline/overline-closing';
-@import 'partials/overline/overline-opening';
+@import 'effects/overline/overline-right';
+@import 'effects/overline/overline-left';
+@import 'effects/overline/overline-closing';
+@import 'effects/overline/overline-opening';
 
-@import 'partials/double-overline/double-overline-left';
-@import 'partials/double-overline/double-overline-right';
-@import 'partials/double-overline/double-overline-opening';
-@import 'partials/double-overline/double-overline-left-right';
-@import 'partials/double-overline/double-overline-right-left';
+@import 'effects/double-overline/double-overline-left';
+@import 'effects/double-overline/double-overline-right';
+@import 'effects/double-overline/double-overline-opening';
+@import 'effects/double-overline/double-overline-left-right';
+@import 'effects/double-overline/double-overline-right-left';
 
-@import 'partials/underline/underline-left';
-@import 'partials/underline/underline-closing';
-@import 'partials/underline/underline-opening';
-@import 'partials/underline/underline-right';
+@import 'effects/underline/underline-left';
+@import 'effects/underline/underline-closing';
+@import 'effects/underline/underline-opening';
+@import 'effects/underline/underline-right';
 
-@import 'partials/both-side/both-right';
-@import 'partials/both-side/both-opening-horizontal';
-@import 'partials/both-side/both-up';
-@import 'partials/both-side/both-down';
-@import 'partials/both-side/both-left';
-@import 'partials/both-side/left-up-right-down';
-@import 'partials/both-side/left-down-right-up';
+@import 'effects/both-side/both-right';
+@import 'effects/both-side/both-opening-horizontal';
+@import 'effects/both-side/both-up';
+@import 'effects/both-side/both-down';
+@import 'effects/both-side/both-left';
+@import 'effects/both-side/left-up-right-down';
+@import 'effects/both-side/left-down-right-up';
 
-@import 'partials/fill/fill-up';
-@import 'partials/fill/fill-down';
-@import 'partials/fill/fill-left';
-@import 'partials/fill/fill-right';
-@import 'partials/fill/fill-opening-horizontal';
-@import 'partials/fill/fill-closing-horizontal';
-@import 'partials/fill/fill-closing-vertical';
+@import 'effects/fill/fill-up';
+@import 'effects/fill/fill-down';
+@import 'effects/fill/fill-left';
+@import 'effects/fill/fill-right';
+@import 'effects/fill/fill-opening-horizontal';
+@import 'effects/fill/fill-closing-horizontal';
+@import 'effects/fill/fill-closing-vertical';
 
-@import 'partials/fill-corners/fill-top-left';
-@import 'partials/fill-corners/fill-top-right';
-@import 'partials/fill-corners/fill-bottom-left';
-@import 'partials/fill-corners/fill-bottom-right';
+@import 'effects/fill-corners/fill-top-left';
+@import 'effects/fill-corners/fill-top-right';
+@import 'effects/fill-corners/fill-bottom-left';
+@import 'effects/fill-corners/fill-bottom-right';
 
-@import 'partials/corners-close/left-top';
-@import 'partials/corners-close/right-top';
-@import 'partials/corners-close/left-bottom';
-@import 'partials/corners-close/right-bottom';
+@import 'effects/corners-close/left-top';
+@import 'effects/corners-close/right-top';
+@import 'effects/corners-close/left-bottom';
+@import 'effects/corners-close/right-bottom';
 
-@import 'partials/corners-expand/top-right';
-@import 'partials/corners-expand/top-left';
-@import 'partials/corners-expand/bottom-left';
-@import 'partials/corners-expand/bottom-right';
+@import 'effects/corners-expand/top-right';
+@import 'effects/corners-expand/top-left';
+@import 'effects/corners-expand/bottom-left';
+@import 'effects/corners-expand/bottom-right';
 
-@import 'partials/one-side/left-down';
-@import 'partials/one-side/left-up';
-@import 'partials/one-side/right-up';
-@import 'partials/one-side/right-down';
+@import 'effects/one-side/left-down';
+@import 'effects/one-side/left-up';
+@import 'effects/one-side/right-up';
+@import 'effects/one-side/right-down';
 
-@import 'partials/linethrough/linethrough-opening';
-@import 'partials/linethrough/linethrough-closing';
-@import 'partials/linethrough/linethrough-left';
-@import 'partials/linethrough/linethrough-right';
+@import 'effects/linethrough/linethrough-opening';
+@import 'effects/linethrough/linethrough-closing';
+@import 'effects/linethrough/linethrough-left';
+@import 'effects/linethrough/linethrough-right';
 
-@import 'partials/overline-and-underline/overline-left-underline-right';
-@import 'partials/overline-and-underline/overline-right-underline-left';
+@import 'effects/overline-and-underline/overline-left-underline-right';
+@import 'effects/overline-and-underline/overline-right-underline-left';
 
-@import 'partials/double-underline/double-underline-left';
-@import 'partials/double-underline/double-underline-right';
-@import 'partials/double-underline/double-underline-opening';
-@import 'partials/double-underline/double-underline-left-right';
-@import 'partials/double-underline/double-underline-right-left';
+@import 'effects/double-underline/double-underline-left';
+@import 'effects/double-underline/double-underline-right';
+@import 'effects/double-underline/double-underline-opening';
+@import 'effects/double-underline/double-underline-left-right';
+@import 'effects/double-underline/double-underline-right-left';
 
-@import 'partials/double-linethrough/double-linethrough-left';
-@import 'partials/double-linethrough/double-linethrough-right';
-@import 'partials/double-linethrough/double-linethrough-left-right';
-@import 'partials/double-linethrough/double-linethrough-right-left';
-@import 'partials/double-linethrough/double-linethrough-opening';
+@import 'effects/double-linethrough/double-linethrough-left';
+@import 'effects/double-linethrough/double-linethrough-right';
+@import 'effects/double-linethrough/double-linethrough-left-right';
+@import 'effects/double-linethrough/double-linethrough-right-left';
+@import 'effects/double-linethrough/double-linethrough-opening';
 
-@import 'moves/move-down';
-@import 'moves/move-up';
-@import 'moves/move-right';
-@import 'moves/move-left';
-@import 'moves/move-vertical';
-@import 'moves/move-horizontal';
+@import 'effects/moves/move-down';
+@import 'effects/moves/move-up';
+@import 'effects/moves/move-right';
+@import 'effects/moves/move-left';
+@import 'effects/moves/move-vertical';
+@import 'effects/moves/move-horizontal';
