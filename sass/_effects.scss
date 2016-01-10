@@ -6,12 +6,6 @@
 @import 'effects/overline/overline-closing';
 @import 'effects/overline/overline-opening';
 
-@import 'effects/double-overline/double-overline-left';
-@import 'effects/double-overline/double-overline-right';
-@import 'effects/double-overline/double-overline-opening';
-@import 'effects/double-overline/double-overline-left-right';
-@import 'effects/double-overline/double-overline-right-left';
-
 @import 'effects/underline/underline-left';
 @import 'effects/underline/underline-closing';
 @import 'effects/underline/underline-opening';
@@ -24,6 +18,8 @@
 @import 'effects/both-side/both-left';
 @import 'effects/both-side/left-up-right-down';
 @import 'effects/both-side/left-down-right-up';
+@import 'effects/both-side/overline-left-underline-right';
+@import 'effects/both-side/overline-right-underline-left';
 
 @import 'effects/fill/fill-up';
 @import 'effects/fill/fill-down';
@@ -57,9 +53,6 @@
 @import 'effects/linethrough/linethrough-closing';
 @import 'effects/linethrough/linethrough-left';
 @import 'effects/linethrough/linethrough-right';
-
-@import 'effects/overline-and-underline/overline-left-underline-right';
-@import 'effects/overline-and-underline/overline-right-underline-left';
 
 @import 'effects/double-underline/double-underline-left';
 @import 'effects/double-underline/double-underline-right';
