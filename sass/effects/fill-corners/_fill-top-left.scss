@@ -1,7 +1,10 @@
 @mixin fill-top-left {
-  @include line-opt(pseudobefore);
-	 &:before {
-  top: 0%;
-  right: 0;
-  }
+	@include line-opt(pseudobefore);
+	&:hover {
+		color: $color !important;
+	}
+	&:before {
+		top: 0%;
+		right: 0;
+	}
 }

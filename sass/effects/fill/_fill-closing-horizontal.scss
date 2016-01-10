@@ -1,15 +1,17 @@
 @mixin fill-closing-horizontal{
   @include line-opt(pseudoafter, $height: $max-height, $transition-width: $half-width);
   @include line-opt(pseudobefore, $height: $max-height, $transition-width: $half-width);
-
-
+  &:hover {
+    color: $color !important;
+  }
+  
   &:before {
-  top: 0%;
-  left: 0;
+    top: 0%;
+    left: 0;
   }
 
   &:after {
-  top: 0%;
-  right: 0;
+    top: 0%;
+    right: 0;
   }
 }

@@ -1,6 +1,9 @@
 @mixin fill-opening-horizontal{
   @include line-opt(pseudobefore, $height: $max-height);
-
+   &:hover {
+    color: $color !important;
+  }
+  
   &:before {
   top: 0%;
   left: 0;
