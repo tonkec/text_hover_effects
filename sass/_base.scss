@@ -1,4 +1,14 @@
-@mixin transition-opt($hover-color: #fff, $display: inline, $transition-color: #fff, $transition-speed: 1s, $transition-easing: ease-in-out, $delay-after: 0s, $delay-before: 0s, $padding: 10px) {
+@mixin transition-opt(
+ 	/* to change defaults go to _defaults.scss */
+	$hover-color: $default-hover-color,
+	$display: $display,
+	$transition-color: $transition-color,
+	$transition-speed: $transition-speed,
+	$transition-easing: $easing,
+	$delay-after: $without-delay,
+	$delay-before: $without-delay,
+	$padding: $padding) {
+
 	display: $display;
 	position: relative;
 	z-index: 2;
@@ -74,8 +84,13 @@
 	
 }
 
-
-@mixin line-opt($type, $width: 3px, $height: 2%, $transition-width: 100%, $transition-height: 100%) {
+@mixin line-opt(
+	$type, 
+	$width: $default-width, 
+	$height:$default-height,
+	$transition-width: $max-width, 
+	$transition-height: $max-height) {
+	
 	@if $type == pseudoafter {
 		&:after {
 			content: "";

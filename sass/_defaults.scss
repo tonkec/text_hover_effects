@@ -1,18 +1,30 @@
-$default-width: 3px;
-$default-delay: 2s;
+/* defaults for transition-opt */
+$lightblue:#1B98E0;
+$darkblue: #2C3E50;
+
+$default-hover-color: $lightblue;
+$display: inline;
+$transition-color: $lightblue;
+$transition-speed: 1s;
+$easing: ease;
 $without-delay: 0s;
-$default-height: 2%;
+$padding: 10px;
+
+/* defaults for line-opt */
+$default-width: 3px;
+$default-height: 3px;
 $max-height: 100%;
 $max-width: 100%;
+
+/* defaults for transitions */
 $half-width: 50%;
 $half-height: 50%;
 $small-height: 1px;
 $linethrough-height: 5px;
-$color: #2C3E50;
+
+/* default delay */
+$default-delay: 2s;
+
+/* defaults for typograhpy element */
+$color: $darkblue; /* color when element is NOT hovered. */
 $font-size: 4em;
-$speed: 1s;
-$easing: ease;
-$transition-color: #fff;
-$hover-color: #fff;
-$padding: 10px;
-$default-background-color: #fff;
