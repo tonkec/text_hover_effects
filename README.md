@@ -20,7 +20,7 @@
 - Linethrough
 - Double Linethrough
 
-See all of them on [Demo](http://tonkec.github.io/text_hover_effects/demo.html)
+See all of them on [Demo](https://antonijasimic.bitbucket.io/text_hover_effects/demo.html)
 
 ### Getting Started
 Bower:
@@ -31,4 +31,4 @@ Git:
 ```
 git clone https://github.com/tonkec/text_hover_effects.git
 ```
-### Read the [Docs](http://tonkec.github.io/text_hover_effects/documentation.html)
+### Read the [Docs](https://antonijasimic.bitbucket.io/text_hover_effects/documentation.html)
