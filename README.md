@@ -1,4 +1,4 @@
-#[Text Hover Effects](http://tonkec.github.io/text_hover_effects/index.html)
+#Text Hover Effects
 
 ###About
  - Collection of effects for typography triggered on hover and focus <br />
