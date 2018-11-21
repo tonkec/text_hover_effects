@@ -1,6 +1,6 @@
-#Text Hover Effects
+# Text Hover Effects
 
-###About
+### About
  - Collection of effects for typography triggered on hover and focus <br />
  - Available in SCSS and CSS code
  - Easy to customize
