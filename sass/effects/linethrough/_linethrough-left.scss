@@ -1,5 +1,5 @@
 @mixin linethrough-left {
-  @include line-opt(pseudoafter, $default-width, $linethrough-height, $max-width, $linethrough-height);
+  @include line-options(pseudoafter, $default-width, $linethrough-height, $max-width, $linethrough-height);
 
   &:after {
   	right: 0;

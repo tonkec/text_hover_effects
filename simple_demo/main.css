@@ -1,5 +1,5 @@
-/* defaults for transition-opt */
-/* defaults for line-opt */
+/* defaults for transition-optionsionsions */
+/* defaults for line-options */
 /* defaults for transitions */
 /* default delay */
 /* defaults for typograhpy element */
@@ -3897,7 +3897,7 @@
     top: 0;
     left: 0; }
 
-/* include transition-opt mixin to initialize effects,
+/* include transition-optionsionsions mixin to initialize effects,
 to get the basic styles for effects */
 p {
   top: 50px;

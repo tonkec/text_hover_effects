@@ -1,5 +1,5 @@
 @mixin fill-left{
-  @include line-opt(pseudobefore, $height: $max-height);
+  @include line-options(pseudobefore, $height: $max-height);
   &:hover {
   	color: $color !important;
   }

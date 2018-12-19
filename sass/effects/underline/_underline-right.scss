@@ -1,5 +1,5 @@
 @mixin underline-right {
-  @include line-opt(pseudoafter, $transition-height: $default-height);
+  @include line-options(pseudoafter, $transition-height: $default-height);
   &:after {
     left: 0; 
     bottom: 0;

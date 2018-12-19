@@ -1,6 +1,6 @@
 @mixin move-vertical {
-  @include line-opt(pseudoafter, $width: $max-width, $transition-height: $default-height);
-  @include line-opt(pseudobefore, $width: $max-width, $transition-height: $default-height);
+  @include line-options(pseudoafter, $width: $max-width, $transition-height: $default-height);
+  @include line-options(pseudobefore, $width: $max-width, $transition-height: $default-height);
   
   &:after {
     top: 50%;

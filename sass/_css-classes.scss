@@ -113,59 +113,59 @@
 
 /* FILLS */
 .fill-up {
- @include transition-opt();
+ @include transition-options();
  @include fill-up;
 }
 
 .fill-down {
- @include transition-opt();
+ @include transition-options();
  @include fill-down;
 }
 
 .fill-left {
- @include transition-opt();
+ @include transition-options();
  @include fill-left;
 }
 
 .fill-right {
- @include transition-opt();
+ @include transition-options();
  @include fill-right;
 }
 
 .fill-opening-horizontal {
- @include transition-opt();
+ @include transition-options();
  @include fill-opening-horizontal; 
 }
 
 .fill-closing-horizontal {
- @include transition-opt();
+ @include transition-options();
  @include fill-closing-horizontal; 
 }
 
 .fill-closing-vertical {
- @include transition-opt();
+ @include transition-options();
  @include fill-closing-vertical; 
 }
 
 /* FILL CORNERS */
 
 .fill-top-left {
- @include transition-opt();
+ @include transition-options();
  @include fill-top-left;
 }
 
 .fill-top-right {
- @include transition-opt();
+ @include transition-options();
  @include fill-top-right;
 }
 
 .fill-bottom-left {
- @include transition-opt();
+ @include transition-options();
  @include fill-bottom-left;
 }
 
 .fill-bottom-right {
- @include transition-opt();
+ @include transition-options();
  @include fill-bottom-right;
 }
 
@@ -244,12 +244,12 @@
 }
 
 .double-underline-right-delayed {
-  @include transition-opt($delay-after: 1s);
+  @include transition-options($delay-after: 1s);
   @include double-underline-right;
 }
 
 .double-underline-opening-delayed {
- @include transition-opt($delay-after: 1s);
+ @include transition-options($delay-after: 1s);
  @include double-underline-opening;
 }
 
@@ -280,100 +280,100 @@
 
 /* SOME OF DELAYS */
 .left-bottom-delay {
-  @include transition-opt($delay-after: 1s);
+  @include transition-options($delay-after: 1s);
   @include left-bottom;
 }
 
 .right-top-delay {
-  @include transition-opt($delay-after: 1s);
+  @include transition-options($delay-after: 1s);
   @include right-top;
 }
 
 .left-bottom-delay {
-  @include transition-opt($delay-after: 1s);
+  @include transition-options($delay-after: 1s);
   @include left-bottom;
 }
 
 .right-bottom-delay {
-  @include transition-opt($delay-after: 1s);
+  @include transition-options($delay-after: 1s);
   @include right-bottom;
 }
 
 .left-top-delay {
-  @include transition-opt($delay-after: 1s);
+  @include transition-options($delay-after: 1s);
   @include left-top;
 }
 
 .right-top-delay {
-  @include transition-opt($delay-after: 1s);
+  @include transition-options($delay-after: 1s);
   @include right-top;
 }
 
 .left-bottom-delay {
-  @include transition-opt($delay-after: 1s);
+  @include transition-options($delay-after: 1s);
   @include left-bottom;
 }
 
 .right-bottom-delay {
-  @include transition-opt($delay-after: 1s);
+  @include transition-options($delay-after: 1s);
   @include right-bottom;
 }
 
 .double-linethrough-left-delayed {
-  @include transition-opt($delay-after: 1s);
+  @include transition-options($delay-after: 1s);
   @include double-linethrough-left;
 }
 
 .double-linethrough-right-delayed {
-  @include transition-opt($delay-after: 1s);
+  @include transition-options($delay-after: 1s);
   @include double-linethrough-right;
 }
 
 .double-linethrough-left-right-delayed {
-  @include transition-opt($delay-after: 1s);
+  @include transition-options($delay-after: 1s);
   @include double-linethrough-left-right;
 }
 
 .double-linethrough-right-left-delayed {
-  @include transition-opt($delay-after: 1s);
+  @include transition-options($delay-after: 1s);
   @include double-linethrough-right-left;
 }
 .double-linethrough-opening-delayed {
-  @include transition-opt($delay-after: 1s);
+  @include transition-options($delay-after: 1s);
   @include double-linethrough-opening;
 }
 
 .fill-closing-horizontal-delayed {
- @include transition-opt($delay-after: 1s);
+ @include transition-options($delay-after: 1s);
  @include fill-closing-horizontal; 
 }
 
 .both-left-delayed {
-  @include transition-opt($delay-after: 1s);
+  @include transition-options($delay-after: 1s);
   @include both-left;
 }
 
 .both-right-delayed {  
-  @include transition-opt($delay-after: 1s);
+  @include transition-options($delay-after: 1s);
   @include both-right;
 }
 
 .top-right-delay {
-  @include transition-opt($delay-after: 1s);
+  @include transition-options($delay-after: 1s);
   @include top-right;
 }
 
 .top-left-delay {
-  @include transition-opt($delay-after: 1s);
+  @include transition-options($delay-after: 1s);
   @include top-left;
 }
 
 .bottom-left-delay {
-  @include transition-opt($delay-after: 1s);
+  @include transition-options($delay-after: 1s);
   @include bottom-left;
 }
 
 .bottom-right-delay {
-  @include transition-opt($delay-after: 1s);
+  @include transition-options($delay-after: 1s);
   @include bottom-right;
 }

@@ -1,5 +1,5 @@
 @mixin left-down {
-    @include line-opt(pseudoafter, $transition-width: $default-width);
+    @include line-options(pseudoafter, $transition-width: $default-width);
 
     &:after {
         top: 0%;

@@ -1,5 +1,5 @@
 @mixin move-left {
-  @include line-opt(pseudoafter, $height: $max-height, $transition-width: $default-width);
+  @include line-options(pseudoafter, $height: $max-height, $transition-width: $default-width);
   
   &:after {
     top: 0;

@@ -1,4 +1,4 @@
-@mixin transition-opt(
+@mixin transition-options(
  	/* to change defaults go to _defaults.scss */
 	$hover-color: $default-hover-color,
 	$display: $display,
@@ -84,7 +84,7 @@
 	
 }
 
-@mixin line-opt(
+@mixin line-options(
 	$type, 
 	$width: $default-width, 
 	$height:$default-height,

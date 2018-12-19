@@ -1,6 +1,6 @@
 @mixin fill-closing-vertical{
-	@include line-opt(pseudobefore, $width: $max-width, $transition-height: $half-height);
-	@include line-opt(pseudoafter, $width: $max-width, $transition-height: $half-height);
+	@include line-options(pseudobefore, $width: $max-width, $transition-height: $half-height);
+	@include line-options(pseudoafter, $width: $max-width, $transition-height: $half-height);
 	&:hover {
 		color: $color !important;
 	}

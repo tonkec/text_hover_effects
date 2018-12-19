@@ -1,5 +1,5 @@
 @mixin move-up {
-  @include line-opt(pseudoafter, $width: $max-width, $transition-height: $default-height);
+  @include line-options(pseudoafter, $width: $max-width, $transition-height: $default-height);
   
   &:after {
     bottom: 50%;

@@ -1,6 +1,6 @@
 @mixin double-linethrough-right {
-   @include line-opt(pseudoafter, $height: $linethrough-height, $transition-height: $linethrough-height);
-  @include line-opt(pseudobefore, $height: $linethrough-height, $transition-height: $linethrough-height);
+   @include line-options(pseudoafter, $height: $linethrough-height, $transition-height: $linethrough-height);
+  @include line-options(pseudobefore, $height: $linethrough-height, $transition-height: $linethrough-height);
 
   &:after {
     left: 0%; 

@@ -1,6 +1,6 @@
 @mixin linethrough-closing {
-    @include line-opt(pseudoafter, $default-width, $linethrough-height, $half-width, $linethrough-height);
-    @include line-opt(pseudobefore, $default-width, $linethrough-height, $half-width, $linethrough-height);
+    @include line-options(pseudoafter, $default-width, $linethrough-height, $half-width, $linethrough-height);
+    @include line-options(pseudobefore, $default-width, $linethrough-height, $half-width, $linethrough-height);
 
   &:after {
     left: 0;
