@@ -1,9 +1,0 @@
-@import "../sass/css-classes";
-
-/* include transition-optionsionsions mixin to initialize effects,
-to get the basic styles for effects */
-p {
-	top: 50px;
-	left: 50px;  
-	@include transition-optionsionsions();
-}
