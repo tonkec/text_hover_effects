@@ -1,4 +1,4 @@
-@import 'effects';
+@import "base/imports";
 
 /* OVERLINES */
 .overline-right {
@@ -113,60 +113,60 @@
 
 /* FILLS */
 .fill-up {
- @include transition-options();
- @include fill-up;
+  @include transition-options();
+  @include fill-up;
 }
 
 .fill-down {
- @include transition-options();
- @include fill-down;
+  @include transition-options();
+  @include fill-down;
 }
 
 .fill-left {
- @include transition-options();
- @include fill-left;
+  @include transition-options();
+  @include fill-left;
 }
 
 .fill-right {
- @include transition-options();
- @include fill-right;
+  @include transition-options();
+  @include fill-right;
 }
 
 .fill-opening-horizontal {
- @include transition-options();
- @include fill-opening-horizontal; 
+  @include transition-options();
+  @include fill-opening-horizontal;
 }
 
 .fill-closing-horizontal {
- @include transition-options();
- @include fill-closing-horizontal; 
+  @include transition-options();
+  @include fill-closing-horizontal;
 }
 
 .fill-closing-vertical {
- @include transition-options();
- @include fill-closing-vertical; 
+  @include transition-options();
+  @include fill-closing-vertical;
 }
 
 /* FILL CORNERS */
 
 .fill-top-left {
- @include transition-options();
- @include fill-top-left;
+  @include transition-options();
+  @include fill-top-left;
 }
 
 .fill-top-right {
- @include transition-options();
- @include fill-top-right;
+  @include transition-options();
+  @include fill-top-right;
 }
 
 .fill-bottom-left {
- @include transition-options();
- @include fill-bottom-left;
+  @include transition-options();
+  @include fill-bottom-left;
 }
 
 .fill-bottom-right {
- @include transition-options();
- @include fill-bottom-right;
+  @include transition-options();
+  @include fill-bottom-right;
 }
 
 /* CORNERS CLOSE */
@@ -249,8 +249,8 @@
 }
 
 .double-underline-opening-delayed {
- @include transition-options($delay-after: 1s);
- @include double-underline-opening;
+  @include transition-options($delay-after: 1s);
+  @include double-underline-opening;
 }
 
 /* MOVES */
@@ -344,8 +344,8 @@
 }
 
 .fill-closing-horizontal-delayed {
- @include transition-options($delay-after: 1s);
- @include fill-closing-horizontal; 
+  @include transition-options($delay-after: 1s);
+  @include fill-closing-horizontal;
 }
 
 .both-left-delayed {
@@ -353,7 +353,7 @@
   @include both-left;
 }
 
-.both-right-delayed {  
+.both-right-delayed {
   @include transition-options($delay-after: 1s);
   @include both-right;
 }
