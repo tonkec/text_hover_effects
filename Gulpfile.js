@@ -3,6 +3,24 @@ const sass = require("gulp-sass");
 const autoprefixer = require("gulp-autoprefixer");
 const cleanCSS = require("gulp-clean-css");
 const rename = require("gulp-rename");
+const browserSync = require("browser-sync").create();
+
+gulp.task("serve", ["sass"], function() {
+  browserSync.init({
+    server: "./site"
+  });
+
+  gulp.watch("site/scss/*.scss", ["sass"]);
+  gulp.watch("site/*.html").on("change", browserSync.reload);
+});
+
+gulp.task("sass", function() {
+  return gulp
+    .src("site/scss/*.scss")
+    .pipe(sass())
+    .pipe(gulp.dest("site/css"))
+    .pipe(browserSync.stream());
+});
 
 gulp.task("css_classes", function() {
   gulp
