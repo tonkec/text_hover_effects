@@ -12,6 +12,7 @@ html {
   left: 0;
   right: 0;
   border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+  z-index: 9;
 }
 
 .section-options {
@@ -30,6 +31,11 @@ html {
 
 .effect {
   margin-bottom: 10px;
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+}
+.effect:hover {
+  opacity: 1;
 }
 
 .section-both-side span {
@@ -41,7 +47,7 @@ html {
 }
 
 .section-corners-expand span {
-  background-color: #cbd2d0;
+  background-color: #af0981;
 }
 
 .section-double-linethrough span {
@@ -57,7 +63,7 @@ html {
 }
 
 .section-fill-corners span {
-  background-color: #cbd2d0;
+  background-color: #af0981;
 }
 
 .section-linethrough span {
@@ -73,7 +79,7 @@ html {
 }
 
 .section-overline span {
-  background-color: #cbd2d0;
+  background-color: #af0981;
 }
 
 .section-underline span {
