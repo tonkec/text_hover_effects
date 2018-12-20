@@ -1,23 +1,88 @@
+$black: #000000;
 $yellow: #fcd400;
 $green: #4dabc8;
+$blue: #0b3c49;
+$red: #cbd2d0;
 p,
 body,
 html {
   margin: 0;
 }
-.section {
+.section-result {
   background-color: $yellow;
   padding: 70px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.2);
 }
 
 .section-options {
-  padding: 70px 0;
+  margin-top: 266px;
+}
+
+.section-effect {
+  padding: 40px 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: #fff;
+
+  h3 {
+    color: $black;
+    text-transform: uppercase;
+  }
+}
+
+.effect {
+  margin-bottom: 10px;
+}
+
+.section-both-side span {
   background-color: $green;
 }
 
-#root {
-  max-width: 1000px;
-  margin: 0 auto;
+.section-corners-close span {
+  background-color: $blue;
+}
+
+.section-corners-expand span {
+  background-color: $red;
+}
+
+.section-double-linethrough span {
+  background-color: $yellow;
+}
+
+.section-double-underline span {
+  background-color: $green;
+}
+
+.section-fill span {
+  background-color: $blue;
+}
+
+.section-fill-corners span {
+  background-color: $red;
+}
+
+.section-linethrough span {
+  background-color: $yellow;
+}
+
+.section-moves span {
+  background-color: $green;
+}
+
+.section-one-side span {
+  background-color: $blue;
+}
+
+.section-overline span {
+  background-color: $red;
+}
+
+.section-underline span {
+  background-color: $yellow;
 }
 
 .text-center {
@@ -25,7 +90,8 @@ html {
 }
 
 .effect {
-  padding: 5px;
+  padding: 7px 10px;
+  border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.8);
   cursor: pointer;
   display: inline-block;
