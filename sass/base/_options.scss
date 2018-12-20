@@ -54,6 +54,7 @@
   }
 }
 
+/* options for line below the element */
 @mixin line-options(
   $type,
   $width: $default-width,
