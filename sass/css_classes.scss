@@ -1,379 +1,379 @@
 @import "base/imports";
 
 /* OVERLINES */
-.overline-right {
+.text-hover-overline-right {
   @include overline-right;
 }
 
-.overline-left {
+.text-hover-overline-left {
   @include overline-left;
 }
 
-.overline-closing {
+.text-hover-overline-closing {
   @include overline-closing;
 }
 
-.overline-opening {
+.text-hover-overline-opening {
   @include overline-opening;
 }
 
 /* UNDERLINES */
 
-.underline-left {
+.text-hover-underline-left {
   @include underline-left;
 }
 
-.underline-closing {
+.text-hover-underline-closing {
   @include underline-closing;
 }
 
-.underline-opening {
+.text-hover-underline-opening {
   @include underline-opening;
 }
 
-.underline-right {
+.text-hover-underline-right {
   @include underline-right;
 }
 
 /* DOUBLE UNDERLINES */
-.double-underline-left {
+.text-hover-double-underline-left {
   @include double-underline-left;
 }
 
-.double-underline-right {
+.text-hover-double-underline-right {
   @include double-underline-right;
 }
 
-.double-underline-opening {
+.text-hover-double-underline-opening {
   @include double-underline-opening;
 }
 
-.double-underline-left-right {
+.text-hover-double-underline-left-right {
   @include double-underline-left-right;
 }
 
-.double-underline-right-left {
+.text-hover-double-underline-right-left {
   @include double-underline-right-left;
 }
 
 /* ONE SIDE */
 
-.left-down {
+.text-hover-left-down {
   @include left-down;
 }
 
-.left-up {
+.text-hover-left-up {
   @include left-up;
 }
 
-.right-up {
+.text-hover-right-up {
   @include right-up;
 }
 
-.right-down {
+.text-hover-right-down {
   @include right-down;
 }
 
 /* BOTH SIDES */
-.both-down {
+.text-hover-both-down {
   @include both-down;
 }
 
-.both-left {
+.text-hover-both-left {
   @include both-left;
 }
 
-.both-right {
+.text-hover-both-right {
   @include both-right;
 }
 
-.both-up {
+.text-hover-both-up {
   @include both-up;
 }
 
-.both-opening-horizontal {
+.text-hover-both-opening-horizontal {
   @include both-opening-horizontal;
 }
 
-.overline-left-underline-right {
+.text-hover-overline-left-underline-right {
   @include overline-left-underline-right;
 }
 
-.overline-right-underline-left {
+.text-hover-overline-right-underline-left {
   @include overline-right-underline-left;
 }
 
-.left-up-right-down {
+.text-hover-left-up-right-down {
   @include left-up-right-down;
 }
 
-.left-down-right-up {
+.text-hover-left-down-right-up {
   @include left-down-right-up;
 }
 
 /* FILLS */
-.fill-up {
+.text-hover-fill-up {
   @include transition-options();
   @include fill-up;
 }
 
-.fill-down {
+.text-hover-fill-down {
   @include transition-options();
   @include fill-down;
 }
 
-.fill-left {
+.text-hover-fill-left {
   @include transition-options();
   @include fill-left;
 }
 
-.fill-right {
+.text-hover-fill-right {
   @include transition-options();
   @include fill-right;
 }
 
-.fill-opening-horizontal {
+.text-hover-fill-opening-horizontal {
   @include transition-options();
   @include fill-opening-horizontal;
 }
 
-.fill-closing-horizontal {
+.text-hover-fill-closing-horizontal {
   @include transition-options();
   @include fill-closing-horizontal;
 }
 
-.fill-closing-vertical {
+.text-hover-fill-closing-vertical {
   @include transition-options();
   @include fill-closing-vertical;
 }
 
 /* FILL CORNERS */
 
-.fill-top-left {
+.text-hover-fill-top-left {
   @include transition-options();
   @include fill-top-left;
 }
 
-.fill-top-right {
+.text-hover-fill-top-right {
   @include transition-options();
   @include fill-top-right;
 }
 
-.fill-bottom-left {
+.text-hover-fill-bottom-left {
   @include transition-options();
   @include fill-bottom-left;
 }
 
-.fill-bottom-right {
+.text-hover-fill-bottom-right {
   @include transition-options();
   @include fill-bottom-right;
 }
 
 /* CORNERS CLOSE */
-.left-top {
+.text-hover-left-top {
   @include left-top;
 }
 
-.right-top {
+.text-hover-right-top {
   @include right-top;
 }
 
-.left-bottom {
+.text-hover-left-bottom {
   @include left-bottom;
 }
 
-.right-bottom {
+.text-hover-right-bottom {
   @include right-bottom;
 }
 
 /* CORNERS EXPAND */
-.top-right {
+.text-hover-top-right {
   @include top-right;
 }
 
-.top-left {
+.text-hover-top-left {
   @include top-left;
 }
 
-.bottom-left {
+.text-hover-bottom-left {
   @include bottom-left;
 }
 
-.bottom-right {
+.text-hover-bottom-right {
   @include bottom-right;
 }
 
 /* LINETHROUGH */
 
-.linethrough-opening {
+.text-hover-linethrough-opening {
   @include linethrough-opening;
 }
 
-.linethrough-closing {
+.text-hover-linethrough-closing {
   @include linethrough-closing;
 }
 
-.linethrough-left {
+.text-hover-linethrough-left {
   @include linethrough-left;
 }
 
-.linethrough-right {
+.text-hover-linethrough-right {
   @include linethrough-right;
 }
 
 /* DOUBLE LINETHROUGH */
 
-.double-linethrough-left {
+.text-hover-double-linethrough-left {
   @include double-linethrough-left;
 }
 
-.double-linethrough-right {
+.text-hover-double-linethrough-right {
   @include double-linethrough-right;
 }
 
-.double-linethrough-left-right {
+.text-hover-double-linethrough-left-right {
   @include double-linethrough-left-right;
 }
 
-.double-linethrough-right-left {
+.text-hover-double-linethrough-right-left {
   @include double-linethrough-right-left;
 }
 
-.double-linethrough-opening {
+.text-hover-double-linethrough-opening {
   @include double-linethrough-opening;
 }
 
-.double-underline-right-delayed {
+.text-hover-double-underline-right-delayed {
   @include transition-options($delay-after: 1s);
   @include double-underline-right;
 }
 
-.double-underline-opening-delayed {
+.text-hover-double-underline-opening-delayed {
   @include transition-options($delay-after: 1s);
   @include double-underline-opening;
 }
 
 /* MOVES */
-.move-down {
+.text-hover-move-down {
   @include move-down;
 }
 
-.move-up {
+.text-hover-move-up {
   @include move-up;
 }
 
-.move-right {
+.text-hover-move-right {
   @include move-right;
 }
 
-.move-left {
+.text-hover-move-left {
   @include move-left;
 }
 
-.move-vertical {
+.text-hover-move-vertical {
   @include move-vertical;
 }
 
-.move-horizontal {
+.text-hover-move-horizontal {
   @include move-horizontal;
 }
 
 /* SOME OF DELAYS */
-.left-bottom-delay {
+.text-hover-left-bottom-delay {
   @include transition-options($delay-after: 1s);
   @include left-bottom;
 }
 
-.right-top-delay {
+.text-hover-right-top-delay {
   @include transition-options($delay-after: 1s);
   @include right-top;
 }
 
-.left-bottom-delay {
+.text-hover-left-bottom-delay {
   @include transition-options($delay-after: 1s);
   @include left-bottom;
 }
 
-.right-bottom-delay {
+.text-hover-right-bottom-delay {
   @include transition-options($delay-after: 1s);
   @include right-bottom;
 }
 
-.left-top-delay {
+.text-hover-left-top-delay {
   @include transition-options($delay-after: 1s);
   @include left-top;
 }
 
-.right-top-delay {
+.text-hover-right-top-delay {
   @include transition-options($delay-after: 1s);
   @include right-top;
 }
 
-.left-bottom-delay {
+.text-hover-left-bottom-delay {
   @include transition-options($delay-after: 1s);
   @include left-bottom;
 }
 
-.right-bottom-delay {
+.text-hover-right-bottom-delay {
   @include transition-options($delay-after: 1s);
   @include right-bottom;
 }
 
-.double-linethrough-left-delayed {
+.text-hover-double-linethrough-left-delayed {
   @include transition-options($delay-after: 1s);
   @include double-linethrough-left;
 }
 
-.double-linethrough-right-delayed {
+.text-hover-double-linethrough-right-delayed {
   @include transition-options($delay-after: 1s);
   @include double-linethrough-right;
 }
 
-.double-linethrough-left-right-delayed {
+.text-hover-double-linethrough-left-right-delayed {
   @include transition-options($delay-after: 1s);
   @include double-linethrough-left-right;
 }
 
-.double-linethrough-right-left-delayed {
+.text-hover-double-linethrough-right-left-delayed {
   @include transition-options($delay-after: 1s);
   @include double-linethrough-right-left;
 }
-.double-linethrough-opening-delayed {
+.text-hover-double-linethrough-opening-delayed {
   @include transition-options($delay-after: 1s);
   @include double-linethrough-opening;
 }
 
-.fill-closing-horizontal-delayed {
+.text-hover-fill-closing-horizontal-delayed {
   @include transition-options($delay-after: 1s);
   @include fill-closing-horizontal;
 }
 
-.both-left-delayed {
+.text-hover-both-left-delayed {
   @include transition-options($delay-after: 1s);
   @include both-left;
 }
 
-.both-right-delayed {
+.text-hover-both-right-delayed {
   @include transition-options($delay-after: 1s);
   @include both-right;
 }
 
-.top-right-delay {
+.text-hover-top-right-delay {
   @include transition-options($delay-after: 1s);
   @include top-right;
 }
 
-.top-left-delay {
+.text-hover-top-left-delay {
   @include transition-options($delay-after: 1s);
   @include top-left;
 }
 
-.bottom-left-delay {
+.text-hover-bottom-left-delay {
   @include transition-options($delay-after: 1s);
   @include bottom-left;
 }
 
-.bottom-right-delay {
+.text-hover-bottom-right-delay {
   @include transition-options($delay-after: 1s);
   @include bottom-right;
 }
