@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "site": "gulp serve",
-    "generate_css_classes": "gulp css_classes",
-    "minify_css": "gulp minify_css"
+    "generate_css": "gulp generate_css",
+    "minify_css": "gulp generate_minified_css"
   },
   "keywords": [],
   "author": "",

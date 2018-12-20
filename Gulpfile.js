@@ -22,9 +22,9 @@ gulp.task("sass", function() {
     .pipe(browserSync.stream());
 });
 
-gulp.task("css_classes", function() {
+gulp.task("generate_css", function() {
   gulp
-    .src("./sass/css_classes.scss")
+    .src("./sass/text_hover.scss")
     .pipe(sass())
     .pipe(
       autoprefixer({
@@ -35,9 +35,9 @@ gulp.task("css_classes", function() {
     .pipe(gulp.dest("./css"));
 });
 
-gulp.task("minify_css", function() {
+gulp.task("generate_minified_css", function() {
   gulp
-    .src("./sass/css_classes.scss")
+    .src("./sass/text_hover.scss")
     .pipe(sass())
     .pipe(
       autoprefixer({
@@ -46,8 +46,8 @@ gulp.task("minify_css", function() {
       })
     )
     .pipe(cleanCSS({ compatibility: "ie8" }))
-    .pipe(rename("css_classes.min.css"))
+    .pipe(rename("text_hover.min.css"))
     .pipe(gulp.dest("./css"));
 });
 
-gulp.task("default", ["minify_css"]);
+gulp.task("default", ["generate_minified_css"]);
