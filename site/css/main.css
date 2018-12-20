@@ -1,9 +1,21 @@
-body {
+p,
+body,
+html {
+  margin: 0;
+}
+
+.section {
   background-color: #fcd400;
+  padding: 70px 0;
+}
+
+.section-options {
+  padding: 70px 0;
+  background-color: #4dabc8;
 }
 
 #root {
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -19,8 +31,10 @@ body {
 }
 
 h1 {
-  display: inline;
+  font-size: 70px;
+  display: inline-block;
   position: relative;
+  margin: 10px;
   z-index: 2;
   text-decoration: none;
   box-sizing: border-box;
