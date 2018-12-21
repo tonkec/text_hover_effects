@@ -1,17 +1,30 @@
-@mixin fill-closing-horizontal{
-  @include line-options(pseudoafter, $height: $max-height, $transition-width: $half-width);
-  @include line-options(pseudobefore, $height: $max-height, $transition-width: $half-width);
+@mixin fill-closing-horizontal {
+  @include line-options(
+    after,
+    $transition-property: width,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
+  @include line-options(
+    before,
+    $transition-property: width,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
+
   &:hover {
-    color: $color !important;
+    color: $hovered-text-color-for-fill-effects !important;
   }
-  
+
   &:before {
     top: 0%;
+    bottom: 0;
     left: 0;
+    height: 50%;
   }
 
   &:after {
+    height: 50%;
     top: 0%;
+    bottom: 0;
     right: 0;
   }
 }

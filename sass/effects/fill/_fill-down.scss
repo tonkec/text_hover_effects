@@ -1,11 +1,18 @@
-@mixin fill-down{
-  @include line-options(pseudobefore, $width: $max-width, $transition-height: $max-height);
+@mixin fill-down {
+  @include line-options(
+    after,
+    $transition-property: height,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
+
   &:hover {
-  	color: $color !important;
+    color: $hovered-text-color-for-fill-effects !important;
   }
 
-  &:before {
-  top: 0%;
-  right: 0;
+  &:after {
+    top: 0%;
+    right: 0;
+    left: 0;
+    width: 100%;
   }
 }

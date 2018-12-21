@@ -1,8 +1,11 @@
 @mixin right-up {
-    @include line-options(pseudoafter, $transition-width: $default-width);
-
-    &:after {
-        bottom: 0%;
-        right: 0%;
-    }
+  @include line-options(
+    after,
+    $transition-property: height,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
+  &:after {
+    bottom: 0%;
+    right: 0%;
+  }
 }

@@ -1,14 +1,22 @@
 @mixin overline-left-underline-right {
-    @include line-options(pseudoafter, $transition-height: $default-height);
-    @include line-options(pseudobefore, $transition-height: $default-height);
+  @include line-options(
+    after,
+    $transition-property: width,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
 
-    &:after {
-        top: 0%;
-        right: 0%;
-    }
+  @include line-options(
+    before,
+    $transition-property: width,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
+  &:after {
+    top: 0%;
+    right: 0%;
+  }
 
-    &:before {
-        bottom: 0%;
-        left: 0%; 
-    }
+  &:before {
+    bottom: 0%;
+    left: 0%;
+  }
 }

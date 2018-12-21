@@ -1,22 +1,27 @@
 @mixin move-horizontal {
-  @include line-options(pseudoafter, $height: $max-height, $transition-width: $default-width);
-  @include line-options(pseudobefore, $height: $max-height, $transition-width: $default-width);
-  
+  @include line-options(
+    after,
+    $transition-property: right,
+    $value-of-transitioned-property:
+      calc(#{$max-value-of-transitioned-property} - 100%)
+  );
+  @include line-options(
+    before,
+    $transition-property: left,
+    $value-of-transitioned-property:
+      calc(#{$max-value-of-transitioned-property} - 100%)
+  );
   &:after {
     top: 0;
+    bottom: 0;
     right: 50%;
-  }
-
-  &:hover:after {
-    right: 0;
+    width: $size-of-the-line;
   }
 
   &:before {
     top: 0;
+    bottom: 0;
     left: 50%;
-  }
-
-  &:hover:before {
-    left: 0;
+    width: $size-of-the-line;
   }
 }

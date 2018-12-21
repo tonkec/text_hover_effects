@@ -1,12 +1,15 @@
 @mixin move-right {
-	@include line-options(pseudoafter, $height: $max-height, $transition-width: $default-width);
-	
-	&:after {
-		top: 0;
-		right: 50%;
-	}
+  @include line-options(
+    after,
+    $transition-property: right,
+    $value-of-transitioned-property:
+      calc(#{$max-value-of-transitioned-property} - 100%)
+  );
 
-	&:hover:after {
-		right: 0;
-	}
+  &:after {
+    top: 0;
+    bottom: 0;
+    right: 50%;
+    width: $size-of-the-line;
+  }
 }

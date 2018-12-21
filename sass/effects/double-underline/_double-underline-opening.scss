@@ -1,18 +1,27 @@
 @mixin double-underline-opening {
-  @include line-options(pseudoafter, $transition-height: $default-height);
-  @include line-options(pseudobefore, $transition-height: $default-height);
+  @include line-options(
+    after,
+    $transition-property: width,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
 
- &:after {
-  right: 0%; 
-  bottom: 0;
-  margin: 0 auto;
-  left: 0; 
-} 
+  @include line-options(
+    before,
+    $transition-property: width,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
 
-&:before {
-  right: 0%; 
-  bottom: 10px;
-  margin: 0 auto;
-  left: 0;
-} 
+  &:after {
+    right: 0%;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+  }
+
+  &:before {
+    right: 0%;
+    bottom: 10px;
+    margin: 0 auto;
+    left: 0;
+  }
 }

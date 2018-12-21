@@ -1,17 +1,31 @@
-@mixin fill-closing-vertical{
-	@include line-options(pseudobefore, $width: $max-width, $transition-height: $half-height);
-	@include line-options(pseudoafter, $width: $max-width, $transition-height: $half-height);
-	&:hover {
-		color: $color !important;
-	}
+@mixin fill-closing-vertical {
+  @include line-options(
+    after,
+    $transition-property: height,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
 
-	&:before {
-		top: 0%;
-		right: 0;
-	}
+  @include line-options(
+    before,
+    $transition-property: height,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
 
-	&:after {
-		bottom: 0%;
-		left: 0;
-	}
+  &:hover {
+    color: $hovered-text-color-for-fill-effects !important;
+  }
+
+  &:before {
+    top: 0%;
+    right: 0;
+    left: 0;
+    width: 50%;
+  }
+
+  &:after {
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    width: 50%;
+  }
 }

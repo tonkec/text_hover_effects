@@ -1,13 +1,20 @@
-@mixin fill-opening-horizontal{
-  @include line-options(pseudobefore, $height: $max-height);
-   &:hover {
-    color: $color !important;
+@mixin fill-opening-horizontal {
+  @include line-options(
+    after,
+    $transition-property: width,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
+
+  &:hover {
+    color: $hovered-text-color-for-fill-effects !important;
   }
-  
-  &:before {
-  top: 0%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+
+  &:after {
+    top: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 100%;
   }
 }

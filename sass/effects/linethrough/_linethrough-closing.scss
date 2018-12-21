@@ -1,16 +1,25 @@
 @mixin linethrough-closing {
-    @include line-options(pseudoafter, $default-width, $linethrough-height, $half-width, $linethrough-height);
-    @include line-options(pseudobefore, $default-width, $linethrough-height, $half-width, $linethrough-height);
+  @include line-options(
+    after,
+    $transition-property: width,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
+
+  @include line-options(
+    before,
+    $transition-property: width,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
 
   &:after {
     left: 0;
-    top: 50%; 
-    z-index: 9; 
+    top: 50%;
+    z-index: 9;
   }
 
-    &:before {
-        top: 50%;
-        right: 0%; 
-        z-index: 9; 
-    }
+  &:before {
+    top: 50%;
+    right: 0%;
+    z-index: 9;
+  }
 }

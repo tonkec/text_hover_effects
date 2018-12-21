@@ -1,17 +1,26 @@
 @mixin underline-opening {
-  @include line-options(pseudoafter, $transition-height: $default-height);
-  @include line-options(pseudobefore, $transition-height: $default-height);
-    &:after {
-        bottom: 0%;
-        left: 0%;
-        right: 0;
-        margin: 0 auto;  
-    }
+  @include line-options(
+    after,
+    $transition-property: width,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
 
-    &:before {
-        bottom: 0%;
-        right: 0%; 
-        left: 0;
-        margin: 0 auto;
-    }
+  @include line-options(
+    before,
+    $transition-property: width,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
+  &:after {
+    bottom: 0%;
+    left: 0%;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  &:before {
+    bottom: 0%;
+    right: 0%;
+    left: 0;
+    margin: 0 auto;
+  }
 }

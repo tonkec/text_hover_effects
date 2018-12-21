@@ -1,22 +1,28 @@
 @mixin move-vertical {
-  @include line-options(pseudoafter, $width: $max-width, $transition-height: $default-height);
-  @include line-options(pseudobefore, $width: $max-width, $transition-height: $default-height);
-  
+  @include line-options(
+    after,
+    $transition-property: top,
+    $value-of-transitioned-property:
+      calc(#{$max-value-of-transitioned-property} - 100%)
+  );
+  @include line-options(
+    before,
+    $transition-property: bottom,
+    $value-of-transitioned-property:
+      calc(#{$max-value-of-transitioned-property} - 100%)
+  );
+
   &:after {
     top: 50%;
     left: 0;
-  }
-
-  &:hover:after {
-    top: 0;
+    right: 0;
+    height: $size-of-the-line;
   }
 
   &:before {
     bottom: 50%;
     left: 0;
-  }
-
-  &:hover:before {
-    bottom: 0;
+    right: 0;
+    height: $size-of-the-line;
   }
 }

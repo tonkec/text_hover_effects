@@ -1,8 +1,12 @@
 @mixin left-down {
-    @include line-options(pseudoafter, $transition-width: $default-width);
+  @include line-options(
+    after,
+    $transition-property: height,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
 
-    &:after {
-        top: 0%;
-        left: 0%;
-    }
+  &:after {
+    top: 0%;
+    left: 0%;
+  }
 }

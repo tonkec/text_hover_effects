@@ -1,11 +1,15 @@
 @mixin linethrough-opening {
-  @include line-options(pseudoafter, $default-width, $linethrough-height, $max-width, $linethrough-height);
+  @include line-options(
+    after,
+    $transition-property: width,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
 
   &:after {
-  	left: 0;
-  	top: 50%; 
-  	z-index: 9; 
-  	  right: 0;
-  margin: 0 auto;
+    left: 0;
+    top: 50%;
+    z-index: 9;
+    right: 0;
+    margin: 0 auto;
   }
 }

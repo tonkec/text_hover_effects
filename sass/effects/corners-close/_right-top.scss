@@ -1,13 +1,23 @@
 @mixin right-top {
-  @include line-options(pseudoafter, $transition-height: $default-height);
-  @include line-options(pseudobefore, $transition-height: $max-height, $transition-width: $default-width);
+  @include line-options(
+    after,
+    $transition-property: width,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
+
+  @include line-options(
+    before,
+    $transition-property: height,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
+
   &:before {
-      bottom: 0%;
-      right: 0;
+    bottom: 0%;
+    right: 0;
   }
 
   &:after {
-      top: 0;
-      left: 0; 
+    top: 0;
+    left: 0;
   }
 }

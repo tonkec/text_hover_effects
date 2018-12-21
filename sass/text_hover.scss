@@ -1,77 +1,51 @@
 @import "base/imports";
 
-/* OVERLINES */
-.text-hover-overline-right {
-  @include overline-right;
+.text-hover-left-bottom {
+  @include left-bottom;
 }
 
-.text-hover-overline-left {
-  @include overline-left;
+.text-hover-left-top {
+  @include left-top;
 }
 
-.text-hover-overline-closing {
-  @include overline-closing;
+.text-hover-right-bottom {
+  @include right-bottom;
 }
 
-.text-hover-overline-opening {
-  @include overline-opening;
+.text-hover-right-top {
+  @include right-top;
 }
 
-/* UNDERLINES */
-
-.text-hover-underline-left {
-  @include underline-left;
+.text-hover-bottom-left {
+  @include bottom-left;
 }
 
-.text-hover-underline-closing {
-  @include underline-closing;
+.text-hover-bottom-right {
+  @include bottom-right;
 }
 
-.text-hover-underline-opening {
-  @include underline-opening;
+.text-hover-top-left {
+  @include top-left;
 }
 
-.text-hover-underline-right {
-  @include underline-right;
+.text-hover-top-right {
+  @include top-right;
 }
 
-/* DOUBLE UNDERLINES */
-.text-hover-double-underline-left {
-  @include double-underline-left;
+.text-hover-top-right {
+  @include top-right;
 }
 
-.text-hover-double-underline-right {
-  @include double-underline-right;
+.text-hover-top-left {
+  @include top-left;
 }
 
-.text-hover-double-underline-opening {
-  @include double-underline-opening;
+.text-hover-bottom-left {
+  @include bottom-left;
 }
 
-.text-hover-double-underline-left-right {
-  @include double-underline-left-right;
-}
-
-.text-hover-double-underline-right-left {
-  @include double-underline-right-left;
-}
-
-/* ONE SIDE */
-
-.text-hover-left-down {
-  @include left-down;
-}
-
-.text-hover-left-up {
-  @include left-up;
-}
-
-.text-hover-right-up {
-  @include right-up;
-}
-
-.text-hover-right-down {
-  @include right-down;
+.text-hover-bottom-right {
+  @include bottom-right;
 }
 
 /* BOTH SIDES */
@@ -111,118 +85,28 @@
   @include left-down-right-up;
 }
 
-/* FILLS */
-.text-hover-fill-up {
-  @include transition-options();
-  @include fill-up;
+/* DOUBLE UNDERLINES */
+.text-hover-double-underline-left {
+  @include double-underline-left;
 }
 
-.text-hover-fill-down {
-  @include transition-options();
-  @include fill-down;
+.text-hover-double-underline-right {
+  @include double-underline-right;
 }
 
-.text-hover-fill-left {
-  @include transition-options();
-  @include fill-left;
+.text-hover-double-underline-opening {
+  @include double-underline-opening;
 }
 
-.text-hover-fill-right {
-  @include transition-options();
-  @include fill-right;
+.text-hover-double-underline-left-right {
+  @include double-underline-left-right;
 }
 
-.text-hover-fill-opening-horizontal {
-  @include transition-options();
-  @include fill-opening-horizontal;
-}
-
-.text-hover-fill-closing-horizontal {
-  @include transition-options();
-  @include fill-closing-horizontal;
-}
-
-.text-hover-fill-closing-vertical {
-  @include transition-options();
-  @include fill-closing-vertical;
-}
-
-/* FILL CORNERS */
-
-.text-hover-fill-top-left {
-  @include transition-options();
-  @include fill-top-left;
-}
-
-.text-hover-fill-top-right {
-  @include transition-options();
-  @include fill-top-right;
-}
-
-.text-hover-fill-bottom-left {
-  @include transition-options();
-  @include fill-bottom-left;
-}
-
-.text-hover-fill-bottom-right {
-  @include transition-options();
-  @include fill-bottom-right;
-}
-
-/* CORNERS CLOSE */
-.text-hover-left-top {
-  @include left-top;
-}
-
-.text-hover-right-top {
-  @include right-top;
-}
-
-.text-hover-left-bottom {
-  @include left-bottom;
-}
-
-.text-hover-right-bottom {
-  @include right-bottom;
-}
-
-/* CORNERS EXPAND */
-.text-hover-top-right {
-  @include top-right;
-}
-
-.text-hover-top-left {
-  @include top-left;
-}
-
-.text-hover-bottom-left {
-  @include bottom-left;
-}
-
-.text-hover-bottom-right {
-  @include bottom-right;
-}
-
-/* LINETHROUGH */
-
-.text-hover-linethrough-opening {
-  @include linethrough-opening;
-}
-
-.text-hover-linethrough-closing {
-  @include linethrough-closing;
-}
-
-.text-hover-linethrough-left {
-  @include linethrough-left;
-}
-
-.text-hover-linethrough-right {
-  @include linethrough-right;
+.text-hover-double-underline-right-left {
+  @include double-underline-right-left;
 }
 
 /* DOUBLE LINETHROUGH */
-
 .text-hover-double-linethrough-left {
   @include double-linethrough-left;
 }
@@ -242,15 +126,75 @@
 .text-hover-double-linethrough-opening {
   @include double-linethrough-opening;
 }
-
-.text-hover-double-underline-right-delayed {
-  @include transition-options($delay-after: 1s);
-  @include double-underline-right;
+/* OVERLINES  */
+.text-hover-overline-left {
+  @include overline-left;
 }
 
-.text-hover-double-underline-opening-delayed {
-  @include transition-options($delay-after: 1s);
-  @include double-underline-opening;
+.text-hover-overline-right {
+  @include overline-right;
+}
+
+.text-hover-overline-closing {
+  @include overline-closing;
+}
+
+.text-hover-overline-opening {
+  @include overline-opening;
+}
+
+/* UNDERLINES */
+
+.text-hover-underline-left {
+  @include underline-left;
+}
+
+.text-hover-underline-closing {
+  @include underline-closing;
+}
+
+.text-hover-underline-opening {
+  @include underline-opening;
+}
+
+.text-hover-underline-right {
+  @include underline-right;
+}
+
+/* one side */
+
+.text-hover-left-down {
+  @include left-down;
+}
+
+.text-hover-left-up {
+  @include left-up;
+}
+
+.text-hover-right-up {
+  @include right-up;
+}
+
+.text-hover-right-down {
+  @include right-down;
+}
+
+/* LINETHROUGH */
+
+.text-hover-linethrough-opening {
+  @include linethrough-opening;
+}
+
+.text-hover-linethrough-closing {
+  @include linethrough-closing;
+}
+
+.text-hover-linethrough-left {
+  @include linethrough-left;
+}
+
+.text-hover-linethrough-right {
+  @include linethrough-right;
 }
 
 /* MOVES */
@@ -278,102 +222,41 @@
   @include move-horizontal;
 }
 
-/* SOME OF DELAYS */
-.text-hover-left-bottom-delay {
-  @include transition-options($delay-after: 1s);
-  @include left-bottom;
+/* FILLS */
+.text-hover-fill-up {
+  @include transition-options();
+  @include fill-up;
 }
 
-.text-hover-right-top-delay {
-  @include transition-options($delay-after: 1s);
-  @include right-top;
+.text-hover-fill-down {
+  @include transition-options();
+  @include fill-down;
 }
 
-.text-hover-left-bottom-delay {
-  @include transition-options($delay-after: 1s);
-  @include left-bottom;
+.text-hover-fill-left {
+  @include fill-left;
 }
 
-.text-hover-right-bottom-delay {
-  @include transition-options($delay-after: 1s);
-  @include right-bottom;
+.text-hover-fill-right {
+  @include transition-options();
+  @include fill-right;
 }
 
-.text-hover-left-top-delay {
-  @include transition-options($delay-after: 1s);
-  @include left-top;
+.text-hover-fill-opening-horizontal {
+  @include transition-options();
+  @include fill-opening-horizontal;
 }
 
-.text-hover-right-top-delay {
-  @include transition-options($delay-after: 1s);
-  @include right-top;
-}
-
-.text-hover-left-bottom-delay {
-  @include transition-options($delay-after: 1s);
-  @include left-bottom;
-}
-
-.text-hover-right-bottom-delay {
-  @include transition-options($delay-after: 1s);
-  @include right-bottom;
-}
-
-.text-hover-double-linethrough-left-delayed {
-  @include transition-options($delay-after: 1s);
-  @include double-linethrough-left;
-}
-
-.text-hover-double-linethrough-right-delayed {
-  @include transition-options($delay-after: 1s);
-  @include double-linethrough-right;
-}
-
-.text-hover-double-linethrough-left-right-delayed {
-  @include transition-options($delay-after: 1s);
-  @include double-linethrough-left-right;
-}
-
-.text-hover-double-linethrough-right-left-delayed {
-  @include transition-options($delay-after: 1s);
-  @include double-linethrough-right-left;
-}
-.text-hover-double-linethrough-opening-delayed {
-  @include transition-options($delay-after: 1s);
-  @include double-linethrough-opening;
-}
-
-.text-hover-fill-closing-horizontal-delayed {
-  @include transition-options($delay-after: 1s);
+.text-hover-fill-closing-horizontal {
+  @include transition-options();
   @include fill-closing-horizontal;
 }
 
-.text-hover-both-left-delayed {
-  @include transition-options($delay-after: 1s);
-  @include both-left;
+.text-hover-fill-closing-vertical {
+  @include transition-options();
+  @include fill-closing-vertical;
 }
 
-.text-hover-both-right-delayed {
-  @include transition-options($delay-after: 1s);
-  @include both-right;
-}
-
-.text-hover-top-right-delay {
-  @include transition-options($delay-after: 1s);
-  @include top-right;
-}
-
-.text-hover-top-left-delay {
-  @include transition-options($delay-after: 1s);
-  @include top-left;
-}
-
-.text-hover-bottom-left-delay {
-  @include transition-options($delay-after: 1s);
-  @include bottom-left;
-}
-
-.text-hover-bottom-right-delay {
-  @include transition-options($delay-after: 1s);
-  @include bottom-right;
+.text-hover {
+  @include transition-options;
 }

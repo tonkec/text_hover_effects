@@ -1,10 +1,14 @@
 @mixin fill-bottom-left {
-	@include line-options(pseudobefore);
-	&:hover {
-		color: $color !important;
-	}
-	&:before {
-		bottom: 0%;
-		right: 0;
-	}
+  @include line-options(
+    after,
+    $transition-property: width,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
+  &:hover {
+    color: $hovered-text-color-for-fill-effects !important;
+  }
+  &:after {
+    bottom: 0%;
+    right: 0;
+  }
 }
