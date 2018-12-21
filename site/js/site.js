@@ -21,10 +21,10 @@ const effects = [
   },
   {
     "double-linethrough": [
-      "bottom-left",
-      "bottom-right",
-      "top-left",
-      "top-right"
+      "linethrough-closing",
+      "linethrough-opening",
+      "linethrough-left",
+      "linethrough-right"
     ]
   },
   {
