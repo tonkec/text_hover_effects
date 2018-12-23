@@ -10,11 +10,11 @@ gulp.task("serve", ["sass"], function() {
     server: "./site"
   });
 
-  gulp.watch("site/scss/*.scss", ["sass"]);
+  gulp.watch("site/scss/*.scss", ["scss"]);
   gulp.watch("site/*.html").on("change", browserSync.reload);
 });
 
-gulp.task("sass", function() {
+gulp.task("scss", function() {
   return gulp
     .src("site/scss/*.scss")
     .pipe(sass())
@@ -24,7 +24,7 @@ gulp.task("sass", function() {
 
 gulp.task("generate_css", function() {
   gulp
-    .src("./sass/text_hover.scss")
+    .src("./scss/text_hover.scss")
     .pipe(sass())
     .pipe(
       autoprefixer({
@@ -37,7 +37,7 @@ gulp.task("generate_css", function() {
 
 gulp.task("generate_minified_css", function() {
   gulp
-    .src("./sass/text_hover.scss")
+    .src("./scss/text_hover.scss")
     .pipe(sass())
     .pipe(
       autoprefixer({
