@@ -18,13 +18,13 @@
 .text-hover-left-bottom:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-left-bottom:before {
   content: "";
@@ -46,13 +46,13 @@
 .text-hover-left-bottom:hover:before {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-left-bottom:before {
   top: 0;
@@ -82,13 +82,13 @@
 .text-hover-left-top:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-left-top:before {
   content: "";
@@ -110,13 +110,13 @@
 .text-hover-left-top:hover:before {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-left-top:before {
   bottom: 0;
@@ -146,13 +146,13 @@
 .text-hover-right-bottom:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-right-bottom:before {
   content: "";
@@ -174,13 +174,13 @@
 .text-hover-right-bottom:hover:before {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-right-bottom:before {
   top: 0;
@@ -210,13 +210,13 @@
 .text-hover-right-top:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-right-top:before {
   content: "";
@@ -238,13 +238,13 @@
 .text-hover-right-top:hover:before {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-right-top:before {
   bottom: 0;
@@ -274,13 +274,13 @@
 .text-hover-bottom-left:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-bottom-left:before {
   content: "";
@@ -302,13 +302,13 @@
 .text-hover-bottom-left:hover:before {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-bottom-left:before {
   bottom: 0;
@@ -338,13 +338,13 @@
 .text-hover-bottom-right:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-bottom-right:before {
   content: "";
@@ -366,13 +366,13 @@
 .text-hover-bottom-right:hover:before {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-bottom-right:before {
   bottom: 0;
@@ -402,13 +402,13 @@
 .text-hover-top-left:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-top-left:before {
   content: "";
@@ -430,13 +430,13 @@
 .text-hover-top-left:hover:before {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-top-left:before {
   top: 0;
@@ -466,13 +466,13 @@
 .text-hover-top-right:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-top-right:before {
   content: "";
@@ -494,13 +494,13 @@
 .text-hover-top-right:hover:before {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-top-right:before {
   top: 0;
@@ -530,13 +530,13 @@
 .text-hover-top-right:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-top-right:before {
   content: "";
@@ -558,13 +558,13 @@
 .text-hover-top-right:hover:before {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-top-right:before {
   top: 0;
@@ -594,13 +594,13 @@
 .text-hover-top-left:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-top-left:before {
   content: "";
@@ -622,13 +622,13 @@
 .text-hover-top-left:hover:before {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-top-left:before {
   top: 0;
@@ -658,13 +658,13 @@
 .text-hover-bottom-left:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-bottom-left:before {
   content: "";
@@ -686,13 +686,13 @@
 .text-hover-bottom-left:hover:before {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-bottom-left:before {
   bottom: 0;
@@ -722,13 +722,13 @@
 .text-hover-bottom-right:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-bottom-right:before {
   content: "";
@@ -750,13 +750,13 @@
 .text-hover-bottom-right:hover:before {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-bottom-right:before {
   bottom: 0;
@@ -786,13 +786,13 @@
 .text-hover-both-down:hover:after {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-both-down:before {
   content: "";
@@ -814,13 +814,13 @@
 .text-hover-both-down:hover:before {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-both-down:after {
   top: 0;
@@ -850,13 +850,13 @@
 .text-hover-both-left:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-both-left:before {
   content: "";
@@ -878,13 +878,13 @@
 .text-hover-both-left:hover:before {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-both-left:after {
   top: 0;
@@ -914,13 +914,13 @@
 .text-hover-both-right:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-both-right:before {
   content: "";
@@ -942,13 +942,13 @@
 .text-hover-both-right:hover:before {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-both-right:after {
   top: 0;
@@ -978,13 +978,13 @@
 .text-hover-both-up:hover:after {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-both-up:before {
   content: "";
@@ -1006,13 +1006,13 @@
 .text-hover-both-up:hover:before {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-both-up:after {
   bottom: 0;
@@ -1042,13 +1042,13 @@
 .text-hover-both-opening-horizontal:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-both-opening-horizontal:before {
   content: "";
@@ -1070,13 +1070,13 @@
 .text-hover-both-opening-horizontal:hover:before {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-both-opening-horizontal:after {
   top: 0;
@@ -1110,13 +1110,13 @@
 .text-hover-overline-left-underline-right:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-overline-left-underline-right:before {
   content: "";
@@ -1138,13 +1138,13 @@
 .text-hover-overline-left-underline-right:hover:before {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-overline-left-underline-right:after {
   top: 0;
@@ -1174,13 +1174,13 @@
 .text-hover-overline-right-underline-left:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-overline-right-underline-left:before {
   content: "";
@@ -1202,13 +1202,13 @@
 .text-hover-overline-right-underline-left:hover:before {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-overline-right-underline-left:after {
   top: 0;
@@ -1238,13 +1238,13 @@
 .text-hover-left-up-right-down:hover:after {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-left-up-right-down:before {
   content: "";
@@ -1266,13 +1266,13 @@
 .text-hover-left-up-right-down:hover:before {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-left-up-right-down:after {
   bottom: 0;
@@ -1302,13 +1302,13 @@
 .text-hover-left-down-right-up:hover:after {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-left-down-right-up:before {
   content: "";
@@ -1330,13 +1330,13 @@
 .text-hover-left-down-right-up:hover:before {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-left-down-right-up:after {
   top: 0;
@@ -1366,13 +1366,13 @@
 .text-hover-double-underline-left:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-double-underline-left:before {
   content: "";
@@ -1394,13 +1394,13 @@
 .text-hover-double-underline-left:hover:before {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-double-underline-left:after {
   right: 0;
@@ -1430,13 +1430,13 @@
 .text-hover-double-underline-right:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-double-underline-right:before {
   content: "";
@@ -1458,13 +1458,13 @@
 .text-hover-double-underline-right:hover:before {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-double-underline-right:after {
   left: 0;
@@ -1494,13 +1494,13 @@
 .text-hover-double-underline-opening:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-double-underline-opening:before {
   content: "";
@@ -1522,13 +1522,13 @@
 .text-hover-double-underline-opening:hover:before {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-double-underline-opening:after {
   right: 0;
@@ -1562,13 +1562,13 @@
 .text-hover-double-underline-left-right:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-double-underline-left-right:before {
   content: "";
@@ -1590,13 +1590,13 @@
 .text-hover-double-underline-left-right:hover:before {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-double-underline-left-right:after {
   left: 0;
@@ -1626,13 +1626,13 @@
 .text-hover-double-underline-right-left:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-double-underline-right-left:before {
   content: "";
@@ -1654,13 +1654,13 @@
 .text-hover-double-underline-right-left:hover:before {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-double-underline-right-left:after {
   right: 0;
@@ -1690,13 +1690,13 @@
 .text-hover-double-linethrough-left:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-double-linethrough-left:before {
   content: "";
@@ -1718,13 +1718,13 @@
 .text-hover-double-linethrough-left:hover:before {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-double-linethrough-left:after {
   right: 0;
@@ -1757,13 +1757,13 @@
 .text-hover-double-linethrough-right:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-double-linethrough-right:before {
   content: "";
@@ -1785,13 +1785,13 @@
 .text-hover-double-linethrough-right:hover:before {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-double-linethrough-right:after {
   left: 0;
@@ -1824,13 +1824,13 @@
 .text-hover-double-linethrough-left-right:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-double-linethrough-left-right:before {
   content: "";
@@ -1852,13 +1852,13 @@
 .text-hover-double-linethrough-left-right:hover:before {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-double-linethrough-left-right:after {
   right: 0;
@@ -1891,13 +1891,13 @@
 .text-hover-double-linethrough-right-left:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-double-linethrough-right-left:before {
   content: "";
@@ -1919,13 +1919,13 @@
 .text-hover-double-linethrough-right-left:hover:before {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-double-linethrough-right-left:after {
   left: 0;
@@ -1958,13 +1958,13 @@
 .text-hover-double-linethrough-opening:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-double-linethrough-opening:before {
   content: "";
@@ -1986,13 +1986,13 @@
 .text-hover-double-linethrough-opening:hover:before {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-double-linethrough-opening:after {
   left: 0;
@@ -2028,13 +2028,13 @@
 .text-hover-overline-left:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-overline-left:after {
   right: 0;
@@ -2060,13 +2060,13 @@
 .text-hover-overline-right:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-overline-right:after {
   left: 0;
@@ -2092,13 +2092,13 @@
 .text-hover-overline-closing:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 50%;
 }
 .text-hover-overline-closing:before {
   content: "";
@@ -2120,13 +2120,13 @@
 .text-hover-overline-closing:hover:before {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 50%;
 }
 .text-hover-overline-closing:after {
   top: 0;
@@ -2156,13 +2156,13 @@
 .text-hover-overline-opening:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-overline-opening:before {
   content: "";
@@ -2184,13 +2184,13 @@
 .text-hover-overline-opening:hover:before {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-overline-opening:after {
   top: 0;
@@ -2224,13 +2224,13 @@
 .text-hover-underline-left:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-underline-left:after {
   right: 0;
@@ -2256,13 +2256,13 @@
 .text-hover-underline-closing:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 50%;
 }
 .text-hover-underline-closing:before {
   content: "";
@@ -2284,13 +2284,13 @@
 .text-hover-underline-closing:hover:before {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 50%;
 }
 .text-hover-underline-closing:after {
   bottom: 0;
@@ -2320,13 +2320,13 @@
 .text-hover-underline-opening:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-underline-opening:before {
   content: "";
@@ -2348,13 +2348,13 @@
 .text-hover-underline-opening:hover:before {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-underline-opening:after {
   bottom: 0;
@@ -2388,13 +2388,13 @@
 .text-hover-underline-right:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-underline-right:after {
   left: 0;
@@ -2420,13 +2420,13 @@
 .text-hover-left-down:hover:after {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-left-down:after {
   top: 0;
@@ -2452,13 +2452,13 @@
 .text-hover-left-up:hover:after {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-left-up:after {
   bottom: 0;
@@ -2484,13 +2484,13 @@
 .text-hover-right-up:hover:after {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-right-up:after {
   bottom: 0;
@@ -2516,13 +2516,13 @@
 .text-hover-right-down:hover:after {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-right-down:after {
   top: 0;
@@ -2548,13 +2548,13 @@
 .text-hover-linethrough-opening:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-linethrough-opening:after {
   left: 0;
@@ -2583,13 +2583,13 @@
 .text-hover-linethrough-closing:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 50%;
 }
 .text-hover-linethrough-closing:before {
   content: "";
@@ -2611,13 +2611,13 @@
 .text-hover-linethrough-closing:hover:before {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 50%;
 }
 .text-hover-linethrough-closing:after {
   left: 0;
@@ -2649,13 +2649,13 @@
 .text-hover-linethrough-left:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-linethrough-left:after {
   right: 0;
@@ -2682,13 +2682,13 @@
 .text-hover-linethrough-right:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-linethrough-right:after {
   left: 0;
@@ -2708,26 +2708,26 @@
   transition-timing-function: ease-in-out;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
-  width: auto;
-  height: auto;
+  width: 3px;
+  height: 3px;
 }
 .text-hover-move-down:focus:after,
 .text-hover-move-down:hover:after {
   outline: 0;
   background-color: #000;
-  top: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: top, background-color;
   transition-property: top, background-color;
+  top: 100%;
 }
 .text-hover-move-down:after {
   top: 50%;
   left: 0;
   right: 0;
-  height: 3px;
+  width: auto;
 }
 .text-hover-move-up:after {
   content: "";
@@ -2742,26 +2742,26 @@
   transition-timing-function: ease-in-out;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
-  width: auto;
-  height: auto;
+  width: 3px;
+  height: 3px;
 }
 .text-hover-move-up:focus:after,
 .text-hover-move-up:hover:after {
   outline: 0;
   background-color: #000;
-  bottom: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: bottom, background-color;
   transition-property: bottom, background-color;
+  bottom: 100%;
 }
 .text-hover-move-up:after {
   bottom: 50%;
   left: 0;
   right: 0;
-  height: 3px;
+  width: auto;
 }
 .text-hover-move-right:after {
   content: "";
@@ -2776,26 +2776,26 @@
   transition-timing-function: ease-in-out;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
-  width: auto;
-  height: auto;
+  width: 3px;
+  height: 3px;
 }
 .text-hover-move-right:focus:after,
 .text-hover-move-right:hover:after {
   outline: 0;
   background-color: #000;
-  right: calc(100% - 100%);
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: right, background-color;
   transition-property: right, background-color;
+  right: calc(100% - 100%);
 }
 .text-hover-move-right:after {
   top: 0;
   bottom: 0;
   right: 50%;
-  width: 3px;
+  height: auto;
 }
 .text-hover-move-left:after {
   content: "";
@@ -2810,26 +2810,26 @@
   transition-timing-function: ease-in-out;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
-  width: auto;
-  height: auto;
+  width: 3px;
+  height: 3px;
 }
 .text-hover-move-left:focus:after,
 .text-hover-move-left:hover:after {
   outline: 0;
   background-color: #000;
-  left: calc(100% - 100%);
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: left, background-color;
   transition-property: left, background-color;
+  left: calc(100% - 100%);
 }
 .text-hover-move-left:after {
   top: 0;
   bottom: 0;
   left: 50%;
-  width: 3px;
+  height: auto;
 }
 .text-hover-move-vertical:after {
   content: "";
@@ -2844,20 +2844,20 @@
   transition-timing-function: ease-in-out;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
-  width: auto;
-  height: auto;
+  width: 3px;
+  height: 3px;
 }
 .text-hover-move-vertical:focus:after,
 .text-hover-move-vertical:hover:after {
   outline: 0;
   background-color: #000;
-  top: calc(100% - 100%);
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: top, background-color;
   transition-property: top, background-color;
+  top: calc(100% - 100%);
 }
 .text-hover-move-vertical:before {
   content: "";
@@ -2872,32 +2872,32 @@
   transition-timing-function: ease-in-out;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
-  width: auto;
-  height: auto;
+  width: 3px;
+  height: 3px;
 }
 .text-hover-move-vertical:focus:before,
 .text-hover-move-vertical:hover:before {
   outline: 0;
   background-color: #000;
-  bottom: calc(100% - 100%);
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: bottom, background-color;
   transition-property: bottom, background-color;
+  bottom: calc(100% - 100%);
 }
 .text-hover-move-vertical:after {
   top: 50%;
   left: 0;
   right: 0;
-  height: 3px;
+  width: auto;
 }
 .text-hover-move-vertical:before {
   bottom: 50%;
   left: 0;
   right: 0;
-  height: 3px;
+  width: auto;
 }
 .text-hover-move-horizontal:after {
   content: "";
@@ -2912,20 +2912,20 @@
   transition-timing-function: ease-in-out;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
-  width: auto;
-  height: auto;
+  width: 3px;
+  height: 3px;
 }
 .text-hover-move-horizontal:focus:after,
 .text-hover-move-horizontal:hover:after {
   outline: 0;
   background-color: #000;
-  right: calc(100% - 100%);
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: right, background-color;
   transition-property: right, background-color;
+  right: calc(100% - 100%);
 }
 .text-hover-move-horizontal:before {
   content: "";
@@ -2940,66 +2940,32 @@
   transition-timing-function: ease-in-out;
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
-  width: auto;
-  height: auto;
+  width: 3px;
+  height: 3px;
 }
 .text-hover-move-horizontal:focus:before,
 .text-hover-move-horizontal:hover:before {
   outline: 0;
   background-color: #000;
-  left: calc(100% - 100%);
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: left, background-color;
   transition-property: left, background-color;
+  left: calc(100% - 100%);
 }
 .text-hover-move-horizontal:after {
   top: 0;
   bottom: 0;
   right: 50%;
-  width: 3px;
+  height: auto;
 }
 .text-hover-move-horizontal:before {
   top: 0;
   bottom: 0;
   left: 50%;
-  width: 3px;
-}
-.text-hover-fill-up {
-  display: inline;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-property: color;
-  transition-property: color;
-  white-space: nowrap;
-  overflow: hidden;
-  position: relative;
-  z-index: 2;
-  text-decoration: none;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.text-hover-fill-up:focus,
-.text-hover-fill-up:hover {
-  outline: 0;
-  cursor: pointer;
-  color: #000;
-  -webkit-transition: color 0.7s ease-in-out;
-  transition: color 0.7s ease-in-out;
+  height: auto;
 }
 .text-hover-fill-up:after {
   content: "";
@@ -3021,13 +2987,13 @@
 .text-hover-fill-up:hover:after {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-fill-up:hover {
   color: #fff !important;
@@ -3037,40 +3003,6 @@
   right: 0;
   left: 0;
   width: 100%;
-}
-.text-hover-fill-down {
-  display: inline;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-property: color;
-  transition-property: color;
-  white-space: nowrap;
-  overflow: hidden;
-  position: relative;
-  z-index: 2;
-  text-decoration: none;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.text-hover-fill-down:focus,
-.text-hover-fill-down:hover {
-  outline: 0;
-  cursor: pointer;
-  color: #000;
-  -webkit-transition: color 0.7s ease-in-out;
-  transition: color 0.7s ease-in-out;
 }
 .text-hover-fill-down:after {
   content: "";
@@ -3092,13 +3024,13 @@
 .text-hover-fill-down:hover:after {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 100%;
 }
 .text-hover-fill-down:hover {
   color: #fff !important;
@@ -3129,13 +3061,13 @@
 .text-hover-fill-left:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-fill-left:hover {
   color: #fff !important;
@@ -3145,40 +3077,6 @@
   right: 0;
   bottom: 0;
   height: 100%;
-}
-.text-hover-fill-right {
-  display: inline;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-property: color;
-  transition-property: color;
-  white-space: nowrap;
-  overflow: hidden;
-  position: relative;
-  z-index: 2;
-  text-decoration: none;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.text-hover-fill-right:focus,
-.text-hover-fill-right:hover {
-  outline: 0;
-  cursor: pointer;
-  color: #000;
-  -webkit-transition: color 0.7s ease-in-out;
-  transition: color 0.7s ease-in-out;
 }
 .text-hover-fill-right:after {
   content: "";
@@ -3200,13 +3098,13 @@
 .text-hover-fill-right:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-fill-right:hover {
   color: #fff !important;
@@ -3216,40 +3114,6 @@
   left: 0;
   bottom: 0;
   height: 100%;
-}
-.text-hover-fill-opening-horizontal {
-  display: inline;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-property: color;
-  transition-property: color;
-  white-space: nowrap;
-  overflow: hidden;
-  position: relative;
-  z-index: 2;
-  text-decoration: none;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.text-hover-fill-opening-horizontal:focus,
-.text-hover-fill-opening-horizontal:hover {
-  outline: 0;
-  cursor: pointer;
-  color: #000;
-  -webkit-transition: color 0.7s ease-in-out;
-  transition: color 0.7s ease-in-out;
 }
 .text-hover-fill-opening-horizontal:after {
   content: "";
@@ -3271,13 +3135,13 @@
 .text-hover-fill-opening-horizontal:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 100%;
 }
 .text-hover-fill-opening-horizontal:hover {
   color: #fff !important;
@@ -3288,41 +3152,7 @@
   left: 0;
   right: 0;
   margin: 0 auto;
-  height: 100%;
-}
-.text-hover-fill-closing-horizontal {
-  display: inline;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-property: color;
-  transition-property: color;
-  white-space: nowrap;
-  overflow: hidden;
-  position: relative;
-  z-index: 2;
-  text-decoration: none;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.text-hover-fill-closing-horizontal:focus,
-.text-hover-fill-closing-horizontal:hover {
-  outline: 0;
-  cursor: pointer;
-  color: #000;
-  -webkit-transition: color 0.7s ease-in-out;
-  transition: color 0.7s ease-in-out;
+  height: auto;
 }
 .text-hover-fill-closing-horizontal:after {
   content: "";
@@ -3344,13 +3174,13 @@
 .text-hover-fill-closing-horizontal:hover:after {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 50%;
 }
 .text-hover-fill-closing-horizontal:before {
   content: "";
@@ -3372,13 +3202,13 @@
 .text-hover-fill-closing-horizontal:hover:before {
   outline: 0;
   background-color: #000;
-  width: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
+  width: 50%;
 }
 .text-hover-fill-closing-horizontal:hover {
   color: #fff !important;
@@ -3387,47 +3217,13 @@
   top: 0;
   bottom: 0;
   left: 0;
-  height: 50%;
+  height: auto;
 }
 .text-hover-fill-closing-horizontal:after {
-  height: 50%;
   top: 0;
   bottom: 0;
   right: 0;
-}
-.text-hover-fill-closing-vertical {
-  display: inline;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-property: color;
-  transition-property: color;
-  white-space: nowrap;
-  overflow: hidden;
-  position: relative;
-  z-index: 2;
-  text-decoration: none;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-.text-hover-fill-closing-vertical:focus,
-.text-hover-fill-closing-vertical:hover {
-  outline: 0;
-  cursor: pointer;
-  color: #000;
-  -webkit-transition: color 0.7s ease-in-out;
-  transition: color 0.7s ease-in-out;
+  height: auto;
 }
 .text-hover-fill-closing-vertical:after {
   content: "";
@@ -3449,13 +3245,13 @@
 .text-hover-fill-closing-vertical:hover:after {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 50%;
 }
 .text-hover-fill-closing-vertical:before {
   content: "";
@@ -3477,13 +3273,13 @@
 .text-hover-fill-closing-vertical:hover:before {
   outline: 0;
   background-color: #000;
-  height: 100%;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
   -webkit-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
+  height: 50%;
 }
 .text-hover-fill-closing-vertical:hover {
   color: #fff !important;
@@ -3492,13 +3288,157 @@
   top: 0;
   right: 0;
   left: 0;
-  width: 50%;
+  width: auto;
 }
 .text-hover-fill-closing-vertical:after {
   bottom: 0;
   left: 0;
   right: 0;
-  width: 50%;
+  width: auto;
+}
+.text-hover-fill-top-left:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: transparent;
+  -webkit-transition-property: width, height, background-color;
+  transition-property: width, height, background-color;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  width: 3px;
+  height: 3px;
+}
+.text-hover-fill-top-left:focus:after,
+.text-hover-fill-top-left:hover:after {
+  outline: 0;
+  background-color: #000;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-property: width, height, background-color;
+  transition-property: width, height, background-color;
+  width: 100%;
+  height: 100%;
+}
+.text-hover-fill-top-left:hover {
+  color: #fff !important;
+}
+.text-hover-fill-top-left:after {
+  top: 0;
+  right: 0;
+}
+.text-hover-fill-top-right:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: transparent;
+  -webkit-transition-property: width, height, background-color;
+  transition-property: width, height, background-color;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  width: 3px;
+  height: 3px;
+}
+.text-hover-fill-top-right:focus:after,
+.text-hover-fill-top-right:hover:after {
+  outline: 0;
+  background-color: #000;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-property: width, height, background-color;
+  transition-property: width, height, background-color;
+  width: 100%;
+  height: 100%;
+}
+.text-hover-fill-top-right:hover {
+  color: #fff !important;
+}
+.text-hover-fill-top-right:after {
+  top: 0;
+  left: 0;
+}
+.text-hover-fill-bottom-left:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: transparent;
+  -webkit-transition-property: width, height, background-color;
+  transition-property: width, height, background-color;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  width: 3px;
+  height: 3px;
+}
+.text-hover-fill-bottom-left:focus:after,
+.text-hover-fill-bottom-left:hover:after {
+  outline: 0;
+  background-color: #000;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-property: width, height, background-color;
+  transition-property: width, height, background-color;
+  width: 100%;
+  height: 100%;
+}
+.text-hover-fill-bottom-left:hover {
+  color: #fff !important;
+}
+.text-hover-fill-bottom-left:after {
+  bottom: 0;
+  right: 0;
+}
+.text-hover-fill-bottom-right:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: transparent;
+  -webkit-transition-property: width, height, background-color;
+  transition-property: width, height, background-color;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  width: 3px;
+  height: 3px;
+}
+.text-hover-fill-bottom-right:focus:after,
+.text-hover-fill-bottom-right:hover:after {
+  outline: 0;
+  background-color: #000;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-property: width, height, background-color;
+  transition-property: width, height, background-color;
+  width: 100%;
+  height: 100%;
+}
+.text-hover-fill-bottom-right:hover {
+  color: #fff !important;
+}
+.text-hover-fill-bottom-right:after {
+  bottom: 0;
+  left: 0;
 }
 .text-hover {
   display: inline;

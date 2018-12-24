@@ -224,12 +224,10 @@
 
 /* FILLS */
 .text-hover-fill-up {
-  @include transition-options();
   @include fill-up;
 }
 
 .text-hover-fill-down {
-  @include transition-options();
   @include fill-down;
 }
 
@@ -238,23 +236,37 @@
 }
 
 .text-hover-fill-right {
-  @include transition-options();
   @include fill-right;
 }
 
 .text-hover-fill-opening-horizontal {
-  @include transition-options();
   @include fill-opening-horizontal;
 }
 
 .text-hover-fill-closing-horizontal {
-  @include transition-options();
   @include fill-closing-horizontal;
 }
 
 .text-hover-fill-closing-vertical {
-  @include transition-options();
   @include fill-closing-vertical;
+}
+
+/* FILL CORNERS */
+
+.text-hover-fill-top-left {
+  @include fill-top-left;
+}
+
+.text-hover-fill-top-right {
+  @include fill-top-right;
+}
+
+.text-hover-fill-bottom-left {
+  @include fill-bottom-left;
+}
+
+.text-hover-fill-bottom-right {
+  @include fill-bottom-right;
 }
 
 .text-hover {
