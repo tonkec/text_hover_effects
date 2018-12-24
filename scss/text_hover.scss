@@ -1,4 +1,7 @@
 @import "base/imports";
+.text-hover {
+  @include transition-options;
+}
 
 .text-hover-left-bottom {
   @include left-bottom;
@@ -269,6 +272,6 @@
   @include fill-bottom-right;
 }
 
-.text-hover {
-  @include transition-options;
+.text-hover-underline-left-delay {
+  @include transition-options($transition-delay: 1s) @include underline-left;
 }

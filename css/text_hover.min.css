@@ -1,3 +1,60 @@
+.text-hover {
+  display: inline;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-property: color;
+  transition-property: color;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.text-hover:focus,
+.text-hover:hover {
+  outline: 0;
+  cursor: pointer;
+  color: #000;
+  -webkit-transition: color 0.7s ease-in-out;
+  transition: color 0.7s ease-in-out;
+}
+.text-hover:after,
+.text-hover:before {
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+.text-hover:focus:after,
+.text-hover:focus:before,
+.text-hover:hover:after,
+.text-hover:hover:before {
+  background-color: #000;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
 .text-hover-left-bottom:after {
   content: "";
   position: absolute;
@@ -5,23 +62,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-left-bottom:focus:after,
 .text-hover-left-bottom:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -33,23 +79,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-left-bottom:focus:before,
 .text-hover-left-bottom:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -69,23 +104,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-left-top:focus:after,
 .text-hover-left-top:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -97,23 +121,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-left-top:focus:before,
 .text-hover-left-top:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -133,23 +146,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-right-bottom:focus:after,
 .text-hover-right-bottom:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -161,23 +163,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-right-bottom:focus:before,
 .text-hover-right-bottom:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -197,23 +188,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-right-top:focus:after,
 .text-hover-right-top:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -225,23 +205,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-right-top:focus:before,
 .text-hover-right-top:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -261,23 +230,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-bottom-left:focus:after,
 .text-hover-bottom-left:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -289,23 +247,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-bottom-left:focus:before,
 .text-hover-bottom-left:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -325,23 +272,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-bottom-right:focus:after,
 .text-hover-bottom-right:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -353,23 +289,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-bottom-right:focus:before,
 .text-hover-bottom-right:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -389,23 +314,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-top-left:focus:after,
 .text-hover-top-left:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -417,23 +331,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-top-left:focus:before,
 .text-hover-top-left:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -453,23 +356,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-top-right:focus:after,
 .text-hover-top-right:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -481,23 +373,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-top-right:focus:before,
 .text-hover-top-right:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -517,23 +398,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-top-right:focus:after,
 .text-hover-top-right:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -545,23 +415,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-top-right:focus:before,
 .text-hover-top-right:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -581,23 +440,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-top-left:focus:after,
 .text-hover-top-left:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -609,23 +457,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-top-left:focus:before,
 .text-hover-top-left:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -645,23 +482,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-bottom-left:focus:after,
 .text-hover-bottom-left:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -673,23 +499,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-bottom-left:focus:before,
 .text-hover-bottom-left:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -709,23 +524,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-bottom-right:focus:after,
 .text-hover-bottom-right:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -737,23 +541,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-bottom-right:focus:before,
 .text-hover-bottom-right:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -773,23 +566,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-both-down:focus:after,
 .text-hover-both-down:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -801,23 +583,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-both-down:focus:before,
 .text-hover-both-down:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -837,23 +608,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-both-left:focus:after,
 .text-hover-both-left:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -865,23 +625,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-both-left:focus:before,
 .text-hover-both-left:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -901,23 +650,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-both-right:focus:after,
 .text-hover-both-right:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -929,23 +667,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-both-right:focus:before,
 .text-hover-both-right:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -965,23 +692,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-both-up:focus:after,
 .text-hover-both-up:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -993,23 +709,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-both-up:focus:before,
 .text-hover-both-up:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -1029,23 +734,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-both-opening-horizontal:focus:after,
 .text-hover-both-opening-horizontal:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1057,23 +751,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-both-opening-horizontal:focus:before,
 .text-hover-both-opening-horizontal:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1097,23 +780,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-overline-left-underline-right:focus:after,
 .text-hover-overline-left-underline-right:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1125,23 +797,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-overline-left-underline-right:focus:before,
 .text-hover-overline-left-underline-right:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1161,23 +822,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-overline-right-underline-left:focus:after,
 .text-hover-overline-right-underline-left:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1189,23 +839,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-overline-right-underline-left:focus:before,
 .text-hover-overline-right-underline-left:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1225,23 +864,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-left-up-right-down:focus:after,
 .text-hover-left-up-right-down:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -1253,23 +881,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-left-up-right-down:focus:before,
 .text-hover-left-up-right-down:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -1289,23 +906,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-left-down-right-up:focus:after,
 .text-hover-left-down-right-up:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -1317,23 +923,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-left-down-right-up:focus:before,
 .text-hover-left-down-right-up:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -1353,23 +948,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-double-underline-left:focus:after,
 .text-hover-double-underline-left:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1381,23 +965,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-double-underline-left:focus:before,
 .text-hover-double-underline-left:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1417,23 +990,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-double-underline-right:focus:after,
 .text-hover-double-underline-right:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1445,23 +1007,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-double-underline-right:focus:before,
 .text-hover-double-underline-right:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1481,23 +1032,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-double-underline-opening:focus:after,
 .text-hover-double-underline-opening:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1509,23 +1049,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-double-underline-opening:focus:before,
 .text-hover-double-underline-opening:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1549,23 +1078,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-double-underline-left-right:focus:after,
 .text-hover-double-underline-left-right:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1577,23 +1095,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-double-underline-left-right:focus:before,
 .text-hover-double-underline-left-right:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1613,23 +1120,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-double-underline-right-left:focus:after,
 .text-hover-double-underline-right-left:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1641,23 +1137,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-double-underline-right-left:focus:before,
 .text-hover-double-underline-right-left:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1677,23 +1162,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-double-linethrough-left:focus:after,
 .text-hover-double-linethrough-left:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1705,23 +1179,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-double-linethrough-left:focus:before,
 .text-hover-double-linethrough-left:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1744,23 +1207,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-double-linethrough-right:focus:after,
 .text-hover-double-linethrough-right:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1772,23 +1224,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-double-linethrough-right:focus:before,
 .text-hover-double-linethrough-right:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1811,23 +1252,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-double-linethrough-left-right:focus:after,
 .text-hover-double-linethrough-left-right:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1839,23 +1269,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-double-linethrough-left-right:focus:before,
 .text-hover-double-linethrough-left-right:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1878,23 +1297,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-double-linethrough-right-left:focus:after,
 .text-hover-double-linethrough-right-left:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1906,23 +1314,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-double-linethrough-right-left:focus:before,
 .text-hover-double-linethrough-right-left:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1945,23 +1342,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-double-linethrough-opening:focus:after,
 .text-hover-double-linethrough-opening:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -1973,23 +1359,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-double-linethrough-opening:focus:before,
 .text-hover-double-linethrough-opening:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -2015,23 +1390,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-overline-left:focus:after,
 .text-hover-overline-left:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -2047,23 +1411,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-overline-right:focus:after,
 .text-hover-overline-right:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -2079,23 +1432,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-overline-closing:focus:after,
 .text-hover-overline-closing:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 50%;
@@ -2107,23 +1449,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-overline-closing:focus:before,
 .text-hover-overline-closing:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 50%;
@@ -2143,23 +1474,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-overline-opening:focus:after,
 .text-hover-overline-opening:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -2171,23 +1491,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-overline-opening:focus:before,
 .text-hover-overline-opening:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -2211,23 +1520,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-underline-left:focus:after,
 .text-hover-underline-left:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -2243,23 +1541,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-underline-closing:focus:after,
 .text-hover-underline-closing:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 50%;
@@ -2271,23 +1558,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-underline-closing:focus:before,
 .text-hover-underline-closing:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 50%;
@@ -2307,23 +1583,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-underline-opening:focus:after,
 .text-hover-underline-opening:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -2335,23 +1600,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-underline-opening:focus:before,
 .text-hover-underline-opening:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -2375,23 +1629,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-underline-right:focus:after,
 .text-hover-underline-right:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -2407,23 +1650,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-left-down:focus:after,
 .text-hover-left-down:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -2439,23 +1671,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-left-up:focus:after,
 .text-hover-left-up:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -2471,23 +1692,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-right-up:focus:after,
 .text-hover-right-up:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -2503,23 +1713,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-right-down:focus:after,
 .text-hover-right-down:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -2535,23 +1734,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-linethrough-opening:focus:after,
 .text-hover-linethrough-opening:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -2570,23 +1758,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-linethrough-closing:focus:after,
 .text-hover-linethrough-closing:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 50%;
@@ -2598,23 +1775,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-linethrough-closing:focus:before,
 .text-hover-linethrough-closing:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 50%;
@@ -2636,23 +1802,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-linethrough-left:focus:after,
 .text-hover-linethrough-left:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -2669,23 +1824,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-linethrough-right:focus:after,
 .text-hover-linethrough-right:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -2702,23 +1846,12 @@
   background-color: transparent;
   -webkit-transition-property: top, background-color;
   transition-property: top, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 3px;
   height: 3px;
 }
 .text-hover-move-down:focus:after,
 .text-hover-move-down:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: top, background-color;
   transition-property: top, background-color;
   top: 100%;
@@ -2736,23 +1869,12 @@
   background-color: transparent;
   -webkit-transition-property: bottom, background-color;
   transition-property: bottom, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 3px;
   height: 3px;
 }
 .text-hover-move-up:focus:after,
 .text-hover-move-up:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: bottom, background-color;
   transition-property: bottom, background-color;
   bottom: 100%;
@@ -2770,23 +1892,12 @@
   background-color: transparent;
   -webkit-transition-property: right, background-color;
   transition-property: right, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 3px;
   height: 3px;
 }
 .text-hover-move-right:focus:after,
 .text-hover-move-right:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: right, background-color;
   transition-property: right, background-color;
   right: calc(100% - 100%);
@@ -2804,23 +1915,12 @@
   background-color: transparent;
   -webkit-transition-property: left, background-color;
   transition-property: left, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 3px;
   height: 3px;
 }
 .text-hover-move-left:focus:after,
 .text-hover-move-left:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: left, background-color;
   transition-property: left, background-color;
   left: calc(100% - 100%);
@@ -2838,23 +1938,12 @@
   background-color: transparent;
   -webkit-transition-property: top, background-color;
   transition-property: top, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 3px;
   height: 3px;
 }
 .text-hover-move-vertical:focus:after,
 .text-hover-move-vertical:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: top, background-color;
   transition-property: top, background-color;
   top: calc(100% - 100%);
@@ -2866,23 +1955,12 @@
   background-color: transparent;
   -webkit-transition-property: bottom, background-color;
   transition-property: bottom, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 3px;
   height: 3px;
 }
 .text-hover-move-vertical:focus:before,
 .text-hover-move-vertical:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: bottom, background-color;
   transition-property: bottom, background-color;
   bottom: calc(100% - 100%);
@@ -2906,23 +1984,12 @@
   background-color: transparent;
   -webkit-transition-property: right, background-color;
   transition-property: right, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 3px;
   height: 3px;
 }
 .text-hover-move-horizontal:focus:after,
 .text-hover-move-horizontal:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: right, background-color;
   transition-property: right, background-color;
   right: calc(100% - 100%);
@@ -2934,23 +2001,12 @@
   background-color: transparent;
   -webkit-transition-property: left, background-color;
   transition-property: left, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 3px;
   height: 3px;
 }
 .text-hover-move-horizontal:focus:before,
 .text-hover-move-horizontal:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: left, background-color;
   transition-property: left, background-color;
   left: calc(100% - 100%);
@@ -2974,23 +2030,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-fill-up:focus:after,
 .text-hover-fill-up:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -3011,23 +2056,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-fill-down:focus:after,
 .text-hover-fill-down:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
@@ -3048,23 +2082,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-fill-left:focus:after,
 .text-hover-fill-left:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -3085,23 +2108,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-fill-right:focus:after,
 .text-hover-fill-right:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -3122,23 +2134,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-fill-opening-horizontal:focus:after,
 .text-hover-fill-opening-horizontal:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
@@ -3161,23 +2162,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-fill-closing-horizontal:focus:after,
 .text-hover-fill-closing-horizontal:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 50%;
@@ -3189,23 +2179,12 @@
   background-color: transparent;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 0;
   height: 3px;
 }
 .text-hover-fill-closing-horizontal:focus:before,
 .text-hover-fill-closing-horizontal:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 50%;
@@ -3232,23 +2211,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-fill-closing-vertical:focus:after,
 .text-hover-fill-closing-vertical:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 50%;
@@ -3260,23 +2228,12 @@
   background-color: transparent;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   height: 0;
   width: 3px;
 }
 .text-hover-fill-closing-vertical:focus:before,
 .text-hover-fill-closing-vertical:hover:before {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 50%;
@@ -3303,23 +2260,12 @@
   background-color: transparent;
   -webkit-transition-property: width, height, background-color;
   transition-property: width, height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 3px;
   height: 3px;
 }
 .text-hover-fill-top-left:focus:after,
 .text-hover-fill-top-left:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, height, background-color;
   transition-property: width, height, background-color;
   width: 100%;
@@ -3339,23 +2285,12 @@
   background-color: transparent;
   -webkit-transition-property: width, height, background-color;
   transition-property: width, height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 3px;
   height: 3px;
 }
 .text-hover-fill-top-right:focus:after,
 .text-hover-fill-top-right:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, height, background-color;
   transition-property: width, height, background-color;
   width: 100%;
@@ -3375,23 +2310,12 @@
   background-color: transparent;
   -webkit-transition-property: width, height, background-color;
   transition-property: width, height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 3px;
   height: 3px;
 }
 .text-hover-fill-bottom-left:focus:after,
 .text-hover-fill-bottom-left:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, height, background-color;
   transition-property: width, height, background-color;
   width: 100%;
@@ -3411,23 +2335,12 @@
   background-color: transparent;
   -webkit-transition-property: width, height, background-color;
   transition-property: width, height, background-color;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-transition-delay: 0s;
-  transition-delay: 0s;
   width: 3px;
   height: 3px;
 }
 .text-hover-fill-bottom-right:focus:after,
 .text-hover-fill-bottom-right:hover:after {
   outline: 0;
-  background-color: #000;
-  -webkit-transition-duration: 0.7s;
-  transition-duration: 0.7s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
   -webkit-transition-property: width, height, background-color;
   transition-property: width, height, background-color;
   width: 100%;
@@ -3440,7 +2353,7 @@
   bottom: 0;
   left: 0;
 }
-.text-hover {
+.text-hover-underline-left-delay {
   display: inline;
   padding-top: 5px;
   padding-bottom: 5px;
@@ -3450,6 +2363,8 @@
   transition-timing-function: ease-in-out;
   -webkit-transition-duration: 0.7s;
   transition-duration: 0.7s;
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
   -webkit-transition-property: color;
   transition-property: color;
   white-space: nowrap;
@@ -3466,11 +2381,53 @@
   -webkit-touch-callout: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-.text-hover:focus,
-.text-hover:hover {
+.text-hover-underline-left-delay:focus,
+.text-hover-underline-left-delay:hover {
   outline: 0;
   cursor: pointer;
   color: #000;
   -webkit-transition: color 0.7s ease-in-out;
   transition: color 0.7s ease-in-out;
+}
+.text-hover-underline-left-delay:after,
+.text-hover-underline-left-delay:before {
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+}
+.text-hover-underline-left-delay:focus:after,
+.text-hover-underline-left-delay:focus:before,
+.text-hover-underline-left-delay:hover:after,
+.text-hover-underline-left-delay:hover:before {
+  background-color: #000;
+  -webkit-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+}
+.text-hover-underline-left-delay:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: transparent;
+  -webkit-transition-property: width, background-color;
+  transition-property: width, background-color;
+  width: 0;
+  height: 3px;
+}
+.text-hover-underline-left-delay:focus:after,
+.text-hover-underline-left-delay:hover:after {
+  outline: 0;
+  -webkit-transition-property: width, background-color;
+  transition-property: width, background-color;
+  width: 100%;
+}
+.text-hover-underline-left-delay:after {
+  right: 0;
+  bottom: 0;
 }
