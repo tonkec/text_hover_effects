@@ -1,277 +1,277 @@
 @import "base/imports";
-.text-hover {
+.#{$name-of-the-class} {
   @include transition-options;
 }
 
-.text-hover-left-bottom {
+.#{$name-of-the-class}-left-bottom {
   @include left-bottom;
 }
 
-.text-hover-left-top {
+.#{$name-of-the-class}-left-top {
   @include left-top;
 }
 
-.text-hover-right-bottom {
+.#{$name-of-the-class}-right-bottom {
   @include right-bottom;
 }
 
-.text-hover-right-top {
+.#{$name-of-the-class}-right-top {
   @include right-top;
 }
 
-.text-hover-bottom-left {
+.#{$name-of-the-class}-bottom-left {
   @include bottom-left;
 }
 
-.text-hover-bottom-right {
+.#{$name-of-the-class}-bottom-right {
   @include bottom-right;
 }
 
-.text-hover-top-left {
+.#{$name-of-the-class}-top-left {
   @include top-left;
 }
 
-.text-hover-top-right {
+.#{$name-of-the-class}-top-right {
   @include top-right;
 }
 
-.text-hover-top-right {
+.#{$name-of-the-class}-top-right {
   @include top-right;
 }
 
-.text-hover-top-left {
+.#{$name-of-the-class}-top-left {
   @include top-left;
 }
 
-.text-hover-bottom-left {
+.#{$name-of-the-class}-bottom-left {
   @include bottom-left;
 }
 
-.text-hover-bottom-right {
+.#{$name-of-the-class}-bottom-right {
   @include bottom-right;
 }
 
 /* BOTH SIDES */
-.text-hover-both-down {
+.#{$name-of-the-class}-both-down {
   @include both-down;
 }
 
-.text-hover-both-left {
+.#{$name-of-the-class}-both-left {
   @include both-left;
 }
 
-.text-hover-both-right {
+.#{$name-of-the-class}-both-right {
   @include both-right;
 }
 
-.text-hover-both-up {
+.#{$name-of-the-class}-both-up {
   @include both-up;
 }
 
-.text-hover-both-opening-horizontal {
+.#{$name-of-the-class}-both-opening-horizontal {
   @include both-opening-horizontal;
 }
 
-.text-hover-overline-left-underline-right {
+.#{$name-of-the-class}-overline-left-underline-right {
   @include overline-left-underline-right;
 }
 
-.text-hover-overline-right-underline-left {
+.#{$name-of-the-class}-overline-right-underline-left {
   @include overline-right-underline-left;
 }
 
-.text-hover-left-up-right-down {
+.#{$name-of-the-class}-left-up-right-down {
   @include left-up-right-down;
 }
 
-.text-hover-left-down-right-up {
+.#{$name-of-the-class}-left-down-right-up {
   @include left-down-right-up;
 }
 
 /* DOUBLE UNDERLINES */
-.text-hover-double-underline-left {
+.#{$name-of-the-class}-double-underline-left {
   @include double-underline-left;
 }
 
-.text-hover-double-underline-right {
+.#{$name-of-the-class}-double-underline-right {
   @include double-underline-right;
 }
 
-.text-hover-double-underline-opening {
+.#{$name-of-the-class}-double-underline-opening {
   @include double-underline-opening;
 }
 
-.text-hover-double-underline-left-right {
+.#{$name-of-the-class}-double-underline-left-right {
   @include double-underline-left-right;
 }
 
-.text-hover-double-underline-right-left {
+.#{$name-of-the-class}-double-underline-right-left {
   @include double-underline-right-left;
 }
 
 /* DOUBLE LINETHROUGH */
-.text-hover-double-linethrough-left {
+.#{$name-of-the-class}-double-linethrough-left {
   @include double-linethrough-left;
 }
 
-.text-hover-double-linethrough-right {
+.#{$name-of-the-class}-double-linethrough-right {
   @include double-linethrough-right;
 }
 
-.text-hover-double-linethrough-left-right {
+.#{$name-of-the-class}-double-linethrough-left-right {
   @include double-linethrough-left-right;
 }
 
-.text-hover-double-linethrough-right-left {
+.#{$name-of-the-class}-double-linethrough-right-left {
   @include double-linethrough-right-left;
 }
 
-.text-hover-double-linethrough-opening {
+.#{$name-of-the-class}-double-linethrough-opening {
   @include double-linethrough-opening;
 }
 /* OVERLINES  */
-.text-hover-overline-left {
+.#{$name-of-the-class}-overline-left {
   @include overline-left;
 }
 
-.text-hover-overline-right {
+.#{$name-of-the-class}-overline-right {
   @include overline-right;
 }
 
-.text-hover-overline-closing {
+.#{$name-of-the-class}-overline-closing {
   @include overline-closing;
 }
 
-.text-hover-overline-opening {
+.#{$name-of-the-class}-overline-opening {
   @include overline-opening;
 }
 
 /* UNDERLINES */
 
-.text-hover-underline-left {
+.#{$name-of-the-class}-underline-left {
   @include underline-left;
 }
 
-.text-hover-underline-closing {
+.#{$name-of-the-class}-underline-closing {
   @include underline-closing;
 }
 
-.text-hover-underline-opening {
+.#{$name-of-the-class}-underline-opening {
   @include underline-opening;
 }
 
-.text-hover-underline-right {
+.#{$name-of-the-class}-underline-right {
   @include underline-right;
 }
 
 /* one side */
 
-.text-hover-left-down {
+.#{$name-of-the-class}-left-down {
   @include left-down;
 }
 
-.text-hover-left-up {
+.#{$name-of-the-class}-left-up {
   @include left-up;
 }
 
-.text-hover-right-up {
+.#{$name-of-the-class}-right-up {
   @include right-up;
 }
 
-.text-hover-right-down {
+.#{$name-of-the-class}-right-down {
   @include right-down;
 }
 
 /* LINETHROUGH */
 
-.text-hover-linethrough-opening {
+.#{$name-of-the-class}-linethrough-opening {
   @include linethrough-opening;
 }
 
-.text-hover-linethrough-closing {
+.#{$name-of-the-class}-linethrough-closing {
   @include linethrough-closing;
 }
 
-.text-hover-linethrough-left {
+.#{$name-of-the-class}-linethrough-left {
   @include linethrough-left;
 }
 
-.text-hover-linethrough-right {
+.#{$name-of-the-class}-linethrough-right {
   @include linethrough-right;
 }
 
 /* MOVES */
-.text-hover-move-down {
+.#{$name-of-the-class}-move-down {
   @include move-down;
 }
 
-.text-hover-move-up {
+.#{$name-of-the-class}-move-up {
   @include move-up;
 }
 
-.text-hover-move-right {
+.#{$name-of-the-class}-move-right {
   @include move-right;
 }
 
-.text-hover-move-left {
+.#{$name-of-the-class}-move-left {
   @include move-left;
 }
 
-.text-hover-move-vertical {
+.#{$name-of-the-class}-move-vertical {
   @include move-vertical;
 }
 
-.text-hover-move-horizontal {
+.#{$name-of-the-class}-move-horizontal {
   @include move-horizontal;
 }
 
 /* FILLS */
-.text-hover-fill-up {
+.#{$name-of-the-class}-fill-up {
   @include fill-up;
 }
 
-.text-hover-fill-down {
+.#{$name-of-the-class}-fill-down {
   @include fill-down;
 }
 
-.text-hover-fill-left {
+.#{$name-of-the-class}-fill-left {
   @include fill-left;
 }
 
-.text-hover-fill-right {
+.#{$name-of-the-class}-fill-right {
   @include fill-right;
 }
 
-.text-hover-fill-opening-horizontal {
+.#{$name-of-the-class}-fill-opening-horizontal {
   @include fill-opening-horizontal;
 }
 
-.text-hover-fill-closing-horizontal {
+.#{$name-of-the-class}-fill-closing-horizontal {
   @include fill-closing-horizontal;
 }
 
-.text-hover-fill-closing-vertical {
+.#{$name-of-the-class}-fill-closing-vertical {
   @include fill-closing-vertical;
 }
 
 /* FILL CORNERS */
 
-.text-hover-fill-top-left {
+.#{$name-of-the-class}-fill-top-left {
   @include fill-top-left;
 }
 
-.text-hover-fill-top-right {
+.#{$name-of-the-class}-fill-top-right {
   @include fill-top-right;
 }
 
-.text-hover-fill-bottom-left {
+.#{$name-of-the-class}-fill-bottom-left {
   @include fill-bottom-left;
 }
 
-.text-hover-fill-bottom-right {
+.#{$name-of-the-class}-fill-bottom-right {
   @include fill-bottom-right;
 }
 
-.text-hover-underline-left-delay {
+.#{$name-of-the-class}-underline-left-delay {
   @include transition-options($transition-delay: 1s) @include underline-left;
 }
