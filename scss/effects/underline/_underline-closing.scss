@@ -2,13 +2,13 @@
   @include line-options(
     after,
     $transition-property: width,
-    $value-of-transitioned-property: $max-value-of-transitioned-property
+    $value-of-transitioned-property: $max-value-of-transitioned-property / 2
   );
 
   @include line-options(
     before,
     $transition-property: width,
-    $value-of-transitioned-property: $max-value-of-transitioned-property
+    $value-of-transitioned-property: $max-value-of-transitioned-property / 2
   );
   &:after {
     bottom: 0%;

@@ -1,7 +1,8 @@
+$transitioned-properties: "width", "height";
 @mixin fill-bottom-left {
   @include line-options(
     after,
-    $transition-property: width,
+    $transition-property: $transitioned-properties,
     $value-of-transitioned-property: $max-value-of-transitioned-property
   );
   &:hover {

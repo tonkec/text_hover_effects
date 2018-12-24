@@ -16,13 +16,13 @@
     top: 50%;
     left: 0;
     right: 0;
-    height: $size-of-the-line;
+    width: auto;
   }
 
   &:before {
     bottom: 50%;
     left: 0;
     right: 0;
-    height: $size-of-the-line;
+    width: auto;
   }
 }

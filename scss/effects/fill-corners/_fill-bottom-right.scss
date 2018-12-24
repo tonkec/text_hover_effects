@@ -1,9 +1,14 @@
+$transitioned-properties: "width", "height";
 @mixin fill-bottom-right {
-  @include line-options(pseudobefore);
+  @include line-options(
+    after,
+    $transition-property: $transitioned-properties,
+    $value-of-transitioned-property: $max-value-of-transitioned-property
+  );
   &:hover {
-    color: $color !important;
+    color: $hovered-text-color-for-fill-effects !important;
   }
-  &:before {
+  &:after {
     bottom: 0%;
     left: 0;
   }

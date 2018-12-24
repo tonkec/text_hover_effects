@@ -2,12 +2,12 @@
   @include line-options(
     after,
     $transition-property: width,
-    $value-of-transitioned-property: $max-value-of-transitioned-property
+    $value-of-transitioned-property: $max-value-of-transitioned-property / 2
   );
   @include line-options(
     before,
     $transition-property: width,
-    $value-of-transitioned-property: $max-value-of-transitioned-property
+    $value-of-transitioned-property: $max-value-of-transitioned-property / 2
   );
 
   &:hover {
@@ -18,13 +18,13 @@
     top: 0%;
     bottom: 0;
     left: 0;
-    height: 50%;
+    height: auto;
   }
 
   &:after {
-    height: 50%;
     top: 0%;
     bottom: 0;
     right: 0;
+    height: auto;
   }
 }
