@@ -5,12 +5,12 @@ const cleanCSS = require("gulp-clean-css");
 const rename = require("gulp-rename");
 const browserSync = require("browser-sync").create();
 
-gulp.task("serve", ["sass"], function() {
+gulp.task("serve", ["scss"], function() {
   browserSync.init({
     server: "./site"
   });
 
-  gulp.watch("site/scss/*.scss", ["scss"]);
+  gulp.watch("site/scss/*.scss", ["scss"]).on("change", browserSync.reload);
   gulp.watch("site/*.html").on("change", browserSync.reload);
 });
 
