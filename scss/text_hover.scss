@@ -96,24 +96,24 @@
 }
 
 /* DOUBLE LINETHROUGH */
-.#{$name-of-the-class}-double-linethrough-left {
-  @include double-linethrough-left;
+.#{$name-of-the-class}-dl-goes-left {
+  @include dl-goes-left;
 }
 
-.#{$name-of-the-class}-double-linethrough-right {
-  @include double-linethrough-right;
+.#{$name-of-the-class}-dl-goes-right {
+  @include dl-goes-right;
 }
 
-.#{$name-of-the-class}-double-linethrough-left-right {
-  @include double-linethrough-left-right;
+.#{$name-of-the-class}-dl-reversed-lr {
+  @include dl-reversed-lr;
 }
 
-.#{$name-of-the-class}-double-linethrough-right-left {
-  @include double-linethrough-right-left;
+.#{$name-of-the-class}-dl-reversed-rl {
+  @include dl-reversed-rl;
 }
 
-.#{$name-of-the-class}-double-linethrough-opening {
-  @include double-linethrough-opening;
+.#{$name-of-the-class}-dl-opening {
+  @include dl-opening;
 }
 /* OVERLINES  */
 .#{$name-of-the-class}-overline-left {

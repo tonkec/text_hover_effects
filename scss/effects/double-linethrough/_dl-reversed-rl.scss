@@ -1,4 +1,4 @@
-@mixin double-linethrough-right {
+@mixin dl-reversed-rl {
   @include line-options(
     after,
     $transition-property: width,
@@ -18,7 +18,7 @@
   }
 
   &:before {
-    left: 0%;
+    right: 0%;
     bottom: 10px;
     z-index: 9;
     top: 54%;

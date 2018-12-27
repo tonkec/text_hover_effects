@@ -987,7 +987,7 @@
   left: 0;
   bottom: 10px;
 }
-.text-hover-double-linethrough-left:after {
+.text-hover-dl-goes-left:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -997,14 +997,14 @@
   width: 0;
   height: 3px;
 }
-.text-hover-double-linethrough-left:focus:after,
-.text-hover-double-linethrough-left:hover:after {
+.text-hover-dl-goes-left:focus:after,
+.text-hover-dl-goes-left:hover:after {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
-.text-hover-double-linethrough-left:before {
+.text-hover-dl-goes-left:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1014,25 +1014,25 @@
   width: 0;
   height: 3px;
 }
-.text-hover-double-linethrough-left:focus:before,
-.text-hover-double-linethrough-left:hover:before {
+.text-hover-dl-goes-left:focus:before,
+.text-hover-dl-goes-left:hover:before {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
-.text-hover-double-linethrough-left:after {
+.text-hover-dl-goes-left:after {
   right: 0;
   top: 45%;
   z-index: 9;
 }
-.text-hover-double-linethrough-left:before {
+.text-hover-dl-goes-left:before {
   right: 0;
   bottom: 45%;
   z-index: 9;
   top: 54%;
 }
-.text-hover-double-linethrough-right:after {
+.text-hover-dl-goes-right:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1042,14 +1042,14 @@
   width: 0;
   height: 3px;
 }
-.text-hover-double-linethrough-right:focus:after,
-.text-hover-double-linethrough-right:hover:after {
+.text-hover-dl-goes-right:focus:after,
+.text-hover-dl-goes-right:hover:after {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
-.text-hover-double-linethrough-right:before {
+.text-hover-dl-goes-right:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1059,25 +1059,25 @@
   width: 0;
   height: 3px;
 }
-.text-hover-double-linethrough-right:focus:before,
-.text-hover-double-linethrough-right:hover:before {
+.text-hover-dl-goes-right:focus:before,
+.text-hover-dl-goes-right:hover:before {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
-.text-hover-double-linethrough-right:after {
+.text-hover-dl-goes-right:after {
   left: 0;
   top: 44%;
   z-index: 9;
 }
-.text-hover-double-linethrough-right:before {
+.text-hover-dl-goes-right:before {
   left: 0;
   bottom: 10px;
   z-index: 9;
   top: 54%;
 }
-.text-hover-double-linethrough-left-right:after {
+.text-hover-dl-reversed-lr:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1087,14 +1087,14 @@
   width: 0;
   height: 3px;
 }
-.text-hover-double-linethrough-left-right:focus:after,
-.text-hover-double-linethrough-left-right:hover:after {
+.text-hover-dl-reversed-lr:focus:after,
+.text-hover-dl-reversed-lr:hover:after {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
-.text-hover-double-linethrough-left-right:before {
+.text-hover-dl-reversed-lr:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1104,25 +1104,25 @@
   width: 0;
   height: 3px;
 }
-.text-hover-double-linethrough-left-right:focus:before,
-.text-hover-double-linethrough-left-right:hover:before {
+.text-hover-dl-reversed-lr:focus:before,
+.text-hover-dl-reversed-lr:hover:before {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
-.text-hover-double-linethrough-left-right:after {
+.text-hover-dl-reversed-lr:after {
   right: 0;
   top: 44%;
   z-index: 9;
 }
-.text-hover-double-linethrough-left-right:before {
+.text-hover-dl-reversed-lr:before {
   left: 0;
   bottom: 10px;
   z-index: 9;
   top: 54%;
 }
-.text-hover-double-linethrough-right-left:after {
+.text-hover-dl-reversed-rl:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1132,14 +1132,14 @@
   width: 0;
   height: 3px;
 }
-.text-hover-double-linethrough-right-left:focus:after,
-.text-hover-double-linethrough-right-left:hover:after {
+.text-hover-dl-reversed-rl:focus:after,
+.text-hover-dl-reversed-rl:hover:after {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
-.text-hover-double-linethrough-right-left:before {
+.text-hover-dl-reversed-rl:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1149,25 +1149,25 @@
   width: 0;
   height: 3px;
 }
-.text-hover-double-linethrough-right-left:focus:before,
-.text-hover-double-linethrough-right-left:hover:before {
+.text-hover-dl-reversed-rl:focus:before,
+.text-hover-dl-reversed-rl:hover:before {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
-.text-hover-double-linethrough-right-left:after {
+.text-hover-dl-reversed-rl:after {
   left: 0;
   top: 44%;
   z-index: 9;
 }
-.text-hover-double-linethrough-right-left:before {
+.text-hover-dl-reversed-rl:before {
   right: 0;
   bottom: 10px;
   z-index: 9;
   top: 54%;
 }
-.text-hover-double-linethrough-opening:after {
+.text-hover-dl-opening:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1177,14 +1177,14 @@
   width: 0;
   height: 3px;
 }
-.text-hover-double-linethrough-opening:focus:after,
-.text-hover-double-linethrough-opening:hover:after {
+.text-hover-dl-opening:focus:after,
+.text-hover-dl-opening:hover:after {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
-.text-hover-double-linethrough-opening:before {
+.text-hover-dl-opening:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1194,21 +1194,21 @@
   width: 0;
   height: 3px;
 }
-.text-hover-double-linethrough-opening:focus:before,
-.text-hover-double-linethrough-opening:hover:before {
+.text-hover-dl-opening:focus:before,
+.text-hover-dl-opening:hover:before {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
-.text-hover-double-linethrough-opening:after {
+.text-hover-dl-opening:after {
   left: 0;
   top: 54%;
   z-index: 9;
   right: 0;
   margin: 0 auto;
 }
-.text-hover-double-linethrough-opening:before {
+.text-hover-dl-opening:before {
   left: 0;
   top: 44%;
   z-index: 9;

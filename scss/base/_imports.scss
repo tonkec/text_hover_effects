@@ -61,11 +61,11 @@
 @import "./../effects/double-underline/double-underline-left-right";
 @import "./../effects/double-underline/double-underline-right-left";
 
-@import "./../effects/double-linethrough/double-linethrough-left";
-@import "./../effects/double-linethrough/double-linethrough-right";
-@import "./../effects/double-linethrough/double-linethrough-left-right";
-@import "./../effects/double-linethrough/double-linethrough-right-left";
-@import "./../effects/double-linethrough/double-linethrough-opening";
+@import "./../effects/double-linethrough/dl-goes-left";
+@import "./../effects/double-linethrough/dl-goes-right";
+@import "./../effects/double-linethrough/dl-reversed-lr";
+@import "./../effects/double-linethrough/dl-reversed-rl";
+@import "./../effects/double-linethrough/dl-opening";
 
 @import "./../effects/moves/move-down";
 @import "./../effects/moves/move-up";

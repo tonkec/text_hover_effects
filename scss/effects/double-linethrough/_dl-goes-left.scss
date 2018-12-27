@@ -1,4 +1,4 @@
-@mixin double-linethrough-left-right {
+@mixin dl-goes-left($top: 45%, $bottom: 45%) {
   @include line-options(
     after,
     $transition-property: width,
@@ -13,13 +13,13 @@
 
   &:after {
     right: 0%;
-    top: 44%;
+    top: $top;
     z-index: 9;
   }
 
   &:before {
-    left: 0%;
-    bottom: 10px;
+    right: 0%;
+    bottom: $bottom;
     z-index: 9;
     top: 54%;
   }
