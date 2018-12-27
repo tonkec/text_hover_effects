@@ -1,4 +1,4 @@
-@mixin overline-right-underline-left {
+@mixin overline-goes-right-underline-goes-left {
   @include line-options(
     after,
     $transition-property: width,

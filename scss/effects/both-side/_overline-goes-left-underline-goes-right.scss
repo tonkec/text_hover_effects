@@ -1,23 +1,22 @@
-@mixin both-down {
+@mixin overline-goes-left-underline-goes-right {
   @include line-options(
     after,
-    $transition-property: height,
+    $transition-property: width,
     $value-of-transitioned-property: $max-value-of-transitioned-property
   );
 
   @include line-options(
     before,
-    $transition-property: height,
+    $transition-property: width,
     $value-of-transitioned-property: $max-value-of-transitioned-property
   );
-
   &:after {
     top: 0%;
-    left: 0%;
+    right: 0%;
   }
 
   &:before {
-    top: 0%;
-    right: 0%;
+    bottom: 0%;
+    left: 0%;
   }
 }

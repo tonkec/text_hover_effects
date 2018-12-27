@@ -1,13 +1,13 @@
-@mixin left-down-right-up {
+@mixin both-go-right {
   @include line-options(
     after,
-    $transition-property: height,
+    $transition-property: width,
     $value-of-transitioned-property: $max-value-of-transitioned-property
   );
 
   @include line-options(
     before,
-    $transition-property: height,
+    $transition-property: width,
     $value-of-transitioned-property: $max-value-of-transitioned-property
   );
 
@@ -18,6 +18,6 @@
 
   &:before {
     bottom: 0%;
-    right: 0%;
+    left: 0%;
   }
 }

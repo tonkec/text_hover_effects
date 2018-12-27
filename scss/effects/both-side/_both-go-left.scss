@@ -1,4 +1,4 @@
-@mixin both-right {
+@mixin both-go-left {
   @include line-options(
     after,
     $transition-property: width,
@@ -13,11 +13,11 @@
 
   &:after {
     top: 0%;
-    left: 0%;
+    right: 0%;
   }
 
   &:before {
     bottom: 0%;
-    left: 0%;
+    right: 0%;
   }
 }

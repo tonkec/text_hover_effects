@@ -52,40 +52,40 @@
 }
 
 /* BOTH SIDES */
-.#{$name-of-the-class}-both-down {
-  @include both-down;
+.#{$name-of-the-class}-both-go-down {
+  @include both-go-down;
 }
 
-.#{$name-of-the-class}-both-left {
-  @include both-left;
+.#{$name-of-the-class}-both-go-left {
+  @include both-go-left;
 }
 
-.#{$name-of-the-class}-both-right {
-  @include both-right;
+.#{$name-of-the-class}-both-go-right {
+  @include both-go-right;
 }
 
-.#{$name-of-the-class}-both-up {
-  @include both-up;
+.#{$name-of-the-class}-both-go-up {
+  @include both-go-up;
 }
 
 .#{$name-of-the-class}-both-opening-horizontal {
   @include both-opening-horizontal;
 }
 
-.#{$name-of-the-class}-overline-left-underline-right {
-  @include overline-left-underline-right;
+.#{$name-of-the-class}-overline-goes-left-underline-goes-right {
+  @include overline-goes-left-underline-goes-right;
 }
 
-.#{$name-of-the-class}-overline-right-underline-left {
-  @include overline-right-underline-left;
+.#{$name-of-the-class}-overline-goes-right-underline-goes-left {
+  @include overline-goes-right-underline-goes-left;
 }
 
-.#{$name-of-the-class}-left-up-right-down {
-  @include left-up-right-down;
+.#{$name-of-the-class}-left-goes-up-right-goes-down {
+  @include left-goes-up-right-goes-down;
 }
 
-.#{$name-of-the-class}-left-down-right-up {
-  @include left-down-right-up;
+.#{$name-of-the-class}-left-goes-down-right-goes-up {
+  @include left-goes-down-right-goes-up;
 }
 
 /* DOUBLE UNDERLINES */
