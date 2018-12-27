@@ -1,0 +1,49 @@
+@mixin setTransitions($transition-speed, $transition-easing, $hovered-color) {
+  outline: 0;
+  cursor: pointer;
+  color: $hovered-color;
+  transition: color $transition-speed $transition-easing;
+}
+
+@mixin setTransitionsForPseudoElements(
+  $background-line-color,
+  $transition-speed,
+  $transition-easing,
+  $transition-delay
+) {
+  background-color: $background-line-color;
+  transition-duration: $transition-speed;
+  transition-timing-function: $transition-easing;
+  transition-delay: $transition-delay;
+}
+
+/* some effects transition more than one property at the same time */
+@mixin checkTheLengthOfTransitionedProperties(
+  $transition-property,
+  $value-of-transitioned-property
+) {
+  @if length($transition-property) > 1 {
+    @each $property in $transition-property {
+      #{$property}: $value-of-transitioned-property;
+    }
+  } @else {
+    #{$transition-property}: $value-of-transitioned-property;
+  }
+}
+
+/* some effects transition height, some width, some both */
+@mixin checkTheTransitionProperty(
+  $transition-property,
+  $untransitioned-property
+) {
+  @if $transition-property == height {
+    height: 0;
+    width: $untransitioned-property;
+  } @else if $transition-property == width {
+    width: 0;
+    height: $untransitioned-property;
+  } @else {
+    width: $untransitioned-property;
+    height: $untransitioned-property;
+  }
+}

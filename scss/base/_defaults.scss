@@ -1,6 +1,9 @@
 $black: #000000;
 $white: #ffffff;
-$name-of-the-class: text-hover; // prefix all the effects with the custom name
+
+$event: "hover"; // event that will trigger the effect, you can choose between 'click' and 'hover'
+$name-of-the-class: text-hover; // prefix all the effects with your class
+$name-of-the-class-on-click: "active"; // use only when $event is set to "click", element with an effect will get the 'active' class on click that will trigger the effect
 $hovered-text-color: $black; // color of the text on hover
 $hovered-text-color-for-fill-effects: $white; // color on hover for fill and fill-corners
 $transitioned-line-bg-clr: $black; //bg color of the lines during the transition
