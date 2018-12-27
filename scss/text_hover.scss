@@ -3,52 +3,38 @@
   @include transition-options;
 }
 
-.#{$name-of-the-class}-left-bottom {
-  @include left-bottom;
+/* CORNERS CLOSE */
+.#{$name-of-the-class}-corner-close-left-bottom {
+  @include corner-close-left-bottom;
 }
 
-.#{$name-of-the-class}-left-top {
-  @include left-top;
+.#{$name-of-the-class}-corner-close-left-top {
+  @include corner-close-left-top;
 }
 
-.#{$name-of-the-class}-right-bottom {
-  @include right-bottom;
+.#{$name-of-the-class}-corner-close-right-bottom {
+  @include corner-close-right-bottom;
 }
 
-.#{$name-of-the-class}-right-top {
-  @include right-top;
+.#{$name-of-the-class}-corner-close-right-top {
+  @include corner-close-right-top;
 }
 
-.#{$name-of-the-class}-bottom-left {
-  @include bottom-left;
+/* CORNERS EXPAND */
+.#{$name-of-the-class}-corner-expand-bottom-left {
+  @include corner-expand-bottom-left;
 }
 
-.#{$name-of-the-class}-bottom-right {
-  @include bottom-right;
+.#{$name-of-the-class}-corner-expand-bottom-right {
+  @include corner-expand-bottom-right;
 }
 
-.#{$name-of-the-class}-top-left {
-  @include top-left;
+.#{$name-of-the-class}-corner-expand-top-left {
+  @include corner-expand-top-left;
 }
 
-.#{$name-of-the-class}-top-right {
-  @include top-right;
-}
-
-.#{$name-of-the-class}-top-right {
-  @include top-right;
-}
-
-.#{$name-of-the-class}-top-left {
-  @include top-left;
-}
-
-.#{$name-of-the-class}-bottom-left {
-  @include bottom-left;
-}
-
-.#{$name-of-the-class}-bottom-right {
-  @include bottom-right;
+.#{$name-of-the-class}-corner-expand-top-right {
+  @include corner-expand-top-right;
 }
 
 /* BOTH SIDES */

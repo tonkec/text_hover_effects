@@ -1,4 +1,4 @@
-@mixin bottom-right {
+@mixin corner-expand-top-left {
   @include line-options(
     after,
     $transition-property: width,
@@ -10,13 +10,14 @@
     $transition-property: height,
     $value-of-transitioned-property: $max-value-of-transitioned-property
   );
+
   &:before {
-    bottom: 0%;
-    right: 0;
+    top: 0%;
+    left: 0;
   }
 
   &:after {
-    bottom: 0;
-    right: 0;
+    top: 0;
+    left: 0;
   }
 }

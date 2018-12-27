@@ -35,15 +35,15 @@
 @import "./../effects/fill-corners/fill-bottom-left";
 @import "./../effects/fill-corners/fill-bottom-right";
 
-@import "./../effects/corners-close/left-top";
-@import "./../effects/corners-close/right-top";
-@import "./../effects/corners-close/left-bottom";
-@import "./../effects/corners-close/right-bottom";
+@import "./../effects/corners-closing/corner-close-left-top";
+@import "./../effects/corners-closing/corner-close-right-top";
+@import "./../effects/corners-closing/corner-close-left-bottom";
+@import "./../effects/corners-closing/corner-close-right-bottom";
 
-@import "./../effects/corners-expand/top-right";
-@import "./../effects/corners-expand/top-left";
-@import "./../effects/corners-expand/bottom-left";
-@import "./../effects/corners-expand/bottom-right";
+@import "./../effects/corners-expanding/corner-expand-top-right";
+@import "./../effects/corners-expanding/corner-expand-top-left";
+@import "./../effects/corners-expanding/corner-expand-bottom-left";
+@import "./../effects/corners-expanding/corner-expand-bottom-right";
 
 @import "./../effects/one-side/left-down";
 @import "./../effects/one-side/left-up";
