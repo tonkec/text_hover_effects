@@ -1,4 +1,4 @@
-@mixin corner-close-left-bottom {
+@mixin cc-right-bottom {
   @include line-options(
     after,
     $transition-property: width,
@@ -13,11 +13,11 @@
 
   &:before {
     top: 0%;
-    left: 0;
+    right: 0;
   }
 
   &:after {
     bottom: 0;
-    right: 0;
+    left: 0;
   }
 }

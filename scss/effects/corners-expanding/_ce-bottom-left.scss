@@ -1,4 +1,4 @@
-@mixin corner-expand-bottom-left {
+@mixin ce-bottom-left {
   @include line-options(
     after,
     $transition-property: width,
