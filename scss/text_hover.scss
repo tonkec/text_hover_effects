@@ -134,8 +134,8 @@
 
 /* UNDERLINES */
 
-.#{$name-of-the-class}-underline-left {
-  @include underline-left;
+.#{$name-of-the-class}-underline-goes-left {
+  @include underline-goes-left;
 }
 
 .#{$name-of-the-class}-underline-closing {
@@ -146,8 +146,8 @@
   @include underline-opening;
 }
 
-.#{$name-of-the-class}-underline-right {
-  @include underline-right;
+.#{$name-of-the-class}-underline-goes-right {
+  @include underline-goes-right;
 }
 
 /* one side */
@@ -259,5 +259,6 @@
 }
 
 .#{$name-of-the-class}-underline-left-delay {
-  @include transition-options($transition-delay: 1s) @include underline-left;
+  @include transition-options($transition-delay: 1s);
+  @include underline-goes-left;
 }

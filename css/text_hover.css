@@ -1535,7 +1535,7 @@
 }
 
 /* UNDERLINES */
-.text-hover-underline-left:after {
+.text-hover-underline-goes-left:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1546,15 +1546,15 @@
   height: 3px;
 }
 
-.text-hover-underline-left:hover:after,
-.text-hover-underline-left:focus:after {
+.text-hover-underline-goes-left:hover:after,
+.text-hover-underline-goes-left:focus:after {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
 
-.text-hover-underline-left:after {
+.text-hover-underline-goes-left:after {
   right: 0%;
   bottom: 0;
 }
@@ -1659,7 +1659,7 @@
   margin: 0 auto;
 }
 
-.text-hover-underline-right:after {
+.text-hover-underline-goes-right:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1670,15 +1670,15 @@
   height: 3px;
 }
 
-.text-hover-underline-right:hover:after,
-.text-hover-underline-right:focus:after {
+.text-hover-underline-goes-right:hover:after,
+.text-hover-underline-goes-right:focus:after {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
 
-.text-hover-underline-right:after {
+.text-hover-underline-goes-right:after {
   left: 0;
   bottom: 0;
 }

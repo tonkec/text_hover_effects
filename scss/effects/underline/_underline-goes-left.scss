@@ -1,4 +1,4 @@
-@mixin underline-right {
+@mixin underline-goes-left {
   @include line-options(
     after,
     $transition-property: width,
@@ -6,7 +6,7 @@
   );
 
   &:after {
-    left: 0;
+    right: 0%;
     bottom: 0;
   }
 }
