@@ -1627,7 +1627,7 @@
   right: 0;
   z-index: 9;
 }
-.text-hover-linethrough-left:after {
+.text-hover-linethrough-goes-left:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1637,19 +1637,19 @@
   width: 0;
   height: 3px;
 }
-.text-hover-linethrough-left:focus:after,
-.text-hover-linethrough-left:hover:after {
+.text-hover-linethrough-goes-left:focus:after,
+.text-hover-linethrough-goes-left:hover:after {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
-.text-hover-linethrough-left:after {
+.text-hover-linethrough-goes-left:after {
   right: 0;
   top: 50%;
   z-index: 9;
 }
-.text-hover-linethrough-right:after {
+.text-hover-linethrough-goes-right:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1659,14 +1659,14 @@
   width: 0;
   height: 3px;
 }
-.text-hover-linethrough-right:focus:after,
-.text-hover-linethrough-right:hover:after {
+.text-hover-linethrough-goes-right:focus:after,
+.text-hover-linethrough-goes-right:hover:after {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
-.text-hover-linethrough-right:after {
+.text-hover-linethrough-goes-right:after {
   left: 0;
   top: 50%;
   z-index: 9;

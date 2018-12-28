@@ -178,12 +178,12 @@
   @include linethrough-closing;
 }
 
-.#{$name-of-the-class}-linethrough-left {
-  @include linethrough-left;
+.#{$name-of-the-class}-linethrough-goes-left {
+  @include linethrough-goes-left;
 }
 
-.#{$name-of-the-class}-linethrough-right {
-  @include linethrough-right;
+.#{$name-of-the-class}-linethrough-goes-right {
+  @include linethrough-goes-right;
 }
 
 /* MOVES */
