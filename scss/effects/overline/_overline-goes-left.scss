@@ -1,11 +1,11 @@
-@mixin overline-right {
+@mixin overline-goes-left {
   @include line-options(
     after,
     $transition-property: width,
     $value-of-transitioned-property: $max-value-of-transitioned-property
   );
   &:after {
-    left: 0%;
+    right: 0%;
     top: 0;
   }
 }

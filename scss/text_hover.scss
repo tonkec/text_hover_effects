@@ -116,12 +116,12 @@
   @include dl-opening;
 }
 /* OVERLINES  */
-.#{$name-of-the-class}-overline-left {
-  @include overline-left;
+.#{$name-of-the-class}-overline-goes-left {
+  @include overline-goes-left;
 }
 
-.#{$name-of-the-class}-overline-right {
-  @include overline-right;
+.#{$name-of-the-class}-overline-goes-right {
+  @include overline-goes-right;
 }
 
 .#{$name-of-the-class}-overline-closing {
