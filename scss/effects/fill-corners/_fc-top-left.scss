@@ -1,4 +1,5 @@
-@mixin fill-top-right {
+$transitioned-properties: "width", "height";
+@mixin fc-top-left {
   @include line-options(
     after,
     $transition-property: $transitioned-properties,
@@ -9,6 +10,6 @@
   }
   &:after {
     top: 0%;
-    left: 0;
+    right: 0;
   }
 }

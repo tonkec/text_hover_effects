@@ -1,5 +1,4 @@
-$transitioned-properties: "width", "height";
-@mixin fill-bottom-right {
+@mixin fc-top-right {
   @include line-options(
     after,
     $transition-property: $transitioned-properties,
@@ -9,7 +8,7 @@ $transitioned-properties: "width", "height";
     color: $hovered-text-color-for-fill-effects !important;
   }
   &:after {
-    bottom: 0%;
+    top: 0%;
     left: 0;
   }
 }

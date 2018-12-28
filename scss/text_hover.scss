@@ -242,20 +242,20 @@
 
 /* FILL CORNERS */
 
-.#{$name-of-the-class}-fill-top-left {
-  @include fill-top-left;
+.#{$name-of-the-class}-fc-top-left {
+  @include fc-top-left;
 }
 
-.#{$name-of-the-class}-fill-top-right {
-  @include fill-top-right;
+.#{$name-of-the-class}-fc-top-right {
+  @include fc-top-right;
 }
 
-.#{$name-of-the-class}-fill-bottom-left {
-  @include fill-bottom-left;
+.#{$name-of-the-class}-fc-bottom-left {
+  @include fc-bottom-left;
 }
 
-.#{$name-of-the-class}-fill-bottom-right {
-  @include fill-bottom-right;
+.#{$name-of-the-class}-fc-bottom-right {
+  @include fc-bottom-right;
 }
 
 .#{$name-of-the-class}-underline-left-delay {

@@ -1,5 +1,5 @@
 $transitioned-properties: "width", "height";
-@mixin fill-bottom-left {
+@mixin fc-bottom-left {
   @include line-options(
     after,
     $transition-property: $transitioned-properties,

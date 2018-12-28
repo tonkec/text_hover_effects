@@ -2383,7 +2383,7 @@
 }
 
 /* FILL CORNERS */
-.text-hover-fill-top-left:after {
+.text-hover-fc-top-left:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -2394,8 +2394,8 @@
   height: 3px;
 }
 
-.text-hover-fill-top-left:hover:after,
-.text-hover-fill-top-left:focus:after {
+.text-hover-fc-top-left:hover:after,
+.text-hover-fc-top-left:focus:after {
   outline: 0;
   -webkit-transition-property: "width", "height", background-color;
   transition-property: "width", "height", background-color;
@@ -2403,16 +2403,16 @@
   height: 100%;
 }
 
-.text-hover-fill-top-left:hover {
+.text-hover-fc-top-left:hover {
   color: #ffffff !important;
 }
 
-.text-hover-fill-top-left:after {
+.text-hover-fc-top-left:after {
   top: 0%;
   right: 0;
 }
 
-.text-hover-fill-top-right:after {
+.text-hover-fc-top-right:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -2423,8 +2423,8 @@
   height: 3px;
 }
 
-.text-hover-fill-top-right:hover:after,
-.text-hover-fill-top-right:focus:after {
+.text-hover-fc-top-right:hover:after,
+.text-hover-fc-top-right:focus:after {
   outline: 0;
   -webkit-transition-property: "width", "height", background-color;
   transition-property: "width", "height", background-color;
@@ -2432,16 +2432,16 @@
   height: 100%;
 }
 
-.text-hover-fill-top-right:hover {
+.text-hover-fc-top-right:hover {
   color: #ffffff !important;
 }
 
-.text-hover-fill-top-right:after {
+.text-hover-fc-top-right:after {
   top: 0%;
   left: 0;
 }
 
-.text-hover-fill-bottom-left:after {
+.text-hover-fc-bottom-left:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -2452,8 +2452,8 @@
   height: 3px;
 }
 
-.text-hover-fill-bottom-left:hover:after,
-.text-hover-fill-bottom-left:focus:after {
+.text-hover-fc-bottom-left:hover:after,
+.text-hover-fc-bottom-left:focus:after {
   outline: 0;
   -webkit-transition-property: "width", "height", background-color;
   transition-property: "width", "height", background-color;
@@ -2461,16 +2461,16 @@
   height: 100%;
 }
 
-.text-hover-fill-bottom-left:hover {
+.text-hover-fc-bottom-left:hover {
   color: #ffffff !important;
 }
 
-.text-hover-fill-bottom-left:after {
+.text-hover-fc-bottom-left:after {
   bottom: 0%;
   right: 0;
 }
 
-.text-hover-fill-bottom-right:after {
+.text-hover-fc-bottom-right:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -2481,8 +2481,8 @@
   height: 3px;
 }
 
-.text-hover-fill-bottom-right:hover:after,
-.text-hover-fill-bottom-right:focus:after {
+.text-hover-fc-bottom-right:hover:after,
+.text-hover-fc-bottom-right:focus:after {
   outline: 0;
   -webkit-transition-property: "width", "height", background-color;
   transition-property: "width", "height", background-color;
@@ -2490,11 +2490,11 @@
   height: 100%;
 }
 
-.text-hover-fill-bottom-right:hover {
+.text-hover-fc-bottom-right:hover {
   color: #ffffff !important;
 }
 
-.text-hover-fill-bottom-right:after {
+.text-hover-fc-bottom-right:after {
   bottom: 0%;
   left: 0;
 }
