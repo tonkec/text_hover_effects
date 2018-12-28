@@ -2118,7 +2118,7 @@
 }
 
 /* FILLS */
-.text-hover-fill-up:after {
+.text-hover-fill-goes-up:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -2129,26 +2129,26 @@
   width: 3px;
 }
 
-.text-hover-fill-up:hover:after,
-.text-hover-fill-up:focus:after {
+.text-hover-fill-goes-up:hover:after,
+.text-hover-fill-goes-up:focus:after {
   outline: 0;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
 }
 
-.text-hover-fill-up:hover {
+.text-hover-fill-goes-up:hover {
   color: #ffffff !important;
 }
 
-.text-hover-fill-up:after {
+.text-hover-fill-goes-up:after {
   bottom: 0%;
   right: 0;
   left: 0;
   width: 100%;
 }
 
-.text-hover-fill-down:after {
+.text-hover-fill-goes-down:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -2159,26 +2159,26 @@
   width: 3px;
 }
 
-.text-hover-fill-down:hover:after,
-.text-hover-fill-down:focus:after {
+.text-hover-fill-goes-down:hover:after,
+.text-hover-fill-goes-down:focus:after {
   outline: 0;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
 }
 
-.text-hover-fill-down:hover {
+.text-hover-fill-goes-down:hover {
   color: #ffffff !important;
 }
 
-.text-hover-fill-down:after {
+.text-hover-fill-goes-down:after {
   top: 0%;
   right: 0;
   left: 0;
   width: 100%;
 }
 
-.text-hover-fill-left:after {
+.text-hover-fill-goes-left:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -2189,26 +2189,26 @@
   height: 3px;
 }
 
-.text-hover-fill-left:hover:after,
-.text-hover-fill-left:focus:after {
+.text-hover-fill-goes-left:hover:after,
+.text-hover-fill-goes-left:focus:after {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
 
-.text-hover-fill-left:hover {
+.text-hover-fill-goes-left:hover {
   color: #ffffff !important;
 }
 
-.text-hover-fill-left:after {
+.text-hover-fill-goes-left:after {
   top: 0%;
   right: 0;
   bottom: 0;
   height: 100%;
 }
 
-.text-hover-fill-right:after {
+.text-hover-fill-goes-right:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -2219,19 +2219,19 @@
   height: 3px;
 }
 
-.text-hover-fill-right:hover:after,
-.text-hover-fill-right:focus:after {
+.text-hover-fill-goes-right:hover:after,
+.text-hover-fill-goes-right:focus:after {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
 
-.text-hover-fill-right:hover {
+.text-hover-fill-goes-right:hover {
   color: #ffffff !important;
 }
 
-.text-hover-fill-right:after {
+.text-hover-fill-goes-right:after {
   top: 0%;
   left: 0;
   bottom: 0;

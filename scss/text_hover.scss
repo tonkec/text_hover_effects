@@ -212,20 +212,20 @@
 }
 
 /* FILLS */
-.#{$name-of-the-class}-fill-up {
-  @include fill-up;
+.#{$name-of-the-class}-fill-goes-up {
+  @include fill-goes-up;
 }
 
-.#{$name-of-the-class}-fill-down {
-  @include fill-down;
+.#{$name-of-the-class}-fill-goes-down {
+  @include fill-goes-down;
 }
 
-.#{$name-of-the-class}-fill-left {
-  @include fill-left;
+.#{$name-of-the-class}-fill-goes-left {
+  @include fill-goes-left;
 }
 
-.#{$name-of-the-class}-fill-right {
-  @include fill-right;
+.#{$name-of-the-class}-fill-goes-right {
+  @include fill-goes-right;
 }
 
 .#{$name-of-the-class}-fill-opening-horizontal {

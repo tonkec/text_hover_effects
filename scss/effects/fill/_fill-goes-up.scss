@@ -1,4 +1,4 @@
-@mixin fill-up {
+@mixin fill-goes-up {
   @include line-options(
     after,
     $transition-property: height,
