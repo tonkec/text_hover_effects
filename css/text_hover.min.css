@@ -773,7 +773,7 @@
   bottom: 0;
   right: 0;
 }
-.text-hover-double-underline-left:after {
+.text-hover-du-goes-left:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -783,14 +783,14 @@
   width: 0;
   height: 3px;
 }
-.text-hover-double-underline-left:focus:after,
-.text-hover-double-underline-left:hover:after {
+.text-hover-du-goes-left:focus:after,
+.text-hover-du-goes-left:hover:after {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
-.text-hover-double-underline-left:before {
+.text-hover-du-goes-left:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -800,22 +800,22 @@
   width: 0;
   height: 3px;
 }
-.text-hover-double-underline-left:focus:before,
-.text-hover-double-underline-left:hover:before {
+.text-hover-du-goes-left:focus:before,
+.text-hover-du-goes-left:hover:before {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
-.text-hover-double-underline-left:after {
+.text-hover-du-goes-left:after {
   right: 0;
   bottom: 0;
 }
-.text-hover-double-underline-left:before {
+.text-hover-du-goes-left:before {
   right: 0;
   bottom: 10px;
 }
-.text-hover-double-underline-right:after {
+.text-hover-du-goes-right:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -825,14 +825,14 @@
   width: 0;
   height: 3px;
 }
-.text-hover-double-underline-right:focus:after,
-.text-hover-double-underline-right:hover:after {
+.text-hover-du-goes-right:focus:after,
+.text-hover-du-goes-right:hover:after {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
-.text-hover-double-underline-right:before {
+.text-hover-du-goes-right:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -842,22 +842,22 @@
   width: 0;
   height: 3px;
 }
-.text-hover-double-underline-right:focus:before,
-.text-hover-double-underline-right:hover:before {
+.text-hover-du-goes-right:focus:before,
+.text-hover-du-goes-right:hover:before {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
-.text-hover-double-underline-right:after {
+.text-hover-du-goes-right:after {
   left: 0;
   bottom: 0;
 }
-.text-hover-double-underline-right:before {
+.text-hover-du-goes-right:before {
   left: 0;
   bottom: 10px;
 }
-.text-hover-double-underline-opening:after {
+.text-hover-du-opening:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -867,14 +867,14 @@
   width: 0;
   height: 3px;
 }
-.text-hover-double-underline-opening:focus:after,
-.text-hover-double-underline-opening:hover:after {
+.text-hover-du-opening:focus:after,
+.text-hover-du-opening:hover:after {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
-.text-hover-double-underline-opening:before {
+.text-hover-du-opening:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -884,26 +884,26 @@
   width: 0;
   height: 3px;
 }
-.text-hover-double-underline-opening:focus:before,
-.text-hover-double-underline-opening:hover:before {
+.text-hover-du-opening:focus:before,
+.text-hover-du-opening:hover:before {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
-.text-hover-double-underline-opening:after {
+.text-hover-du-opening:after {
   right: 0;
   bottom: 0;
   margin: 0 auto;
   left: 0;
 }
-.text-hover-double-underline-opening:before {
+.text-hover-du-opening:before {
   right: 0;
   bottom: 10px;
   margin: 0 auto;
   left: 0;
 }
-.text-hover-double-underline-left-right:after {
+.text-hover-du-reversed-lr:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -913,14 +913,14 @@
   width: 0;
   height: 3px;
 }
-.text-hover-double-underline-left-right:focus:after,
-.text-hover-double-underline-left-right:hover:after {
+.text-hover-du-reversed-lr:focus:after,
+.text-hover-du-reversed-lr:hover:after {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
-.text-hover-double-underline-left-right:before {
+.text-hover-du-reversed-lr:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -930,22 +930,22 @@
   width: 0;
   height: 3px;
 }
-.text-hover-double-underline-left-right:focus:before,
-.text-hover-double-underline-left-right:hover:before {
+.text-hover-du-reversed-lr:focus:before,
+.text-hover-du-reversed-lr:hover:before {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
-.text-hover-double-underline-left-right:after {
+.text-hover-du-reversed-lr:after {
   left: 0;
   bottom: 0;
 }
-.text-hover-double-underline-left-right:before {
+.text-hover-du-reversed-lr:before {
   right: 0;
   bottom: 10px;
 }
-.text-hover-double-underline-right-left:after {
+.text-hover-du-reversed-rl:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -955,14 +955,14 @@
   width: 0;
   height: 3px;
 }
-.text-hover-double-underline-right-left:focus:after,
-.text-hover-double-underline-right-left:hover:after {
+.text-hover-du-reversed-rl:focus:after,
+.text-hover-du-reversed-rl:hover:after {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
-.text-hover-double-underline-right-left:before {
+.text-hover-du-reversed-rl:before {
   content: "";
   position: absolute;
   z-index: -1;
@@ -972,18 +972,18 @@
   width: 0;
   height: 3px;
 }
-.text-hover-double-underline-right-left:focus:before,
-.text-hover-double-underline-right-left:hover:before {
+.text-hover-du-reversed-rl:focus:before,
+.text-hover-du-reversed-rl:hover:before {
   outline: 0;
   -webkit-transition-property: width, background-color;
   transition-property: width, background-color;
   width: 100%;
 }
-.text-hover-double-underline-right-left:after {
+.text-hover-du-reversed-rl:after {
   right: 0;
   bottom: 0;
 }
-.text-hover-double-underline-right-left:before {
+.text-hover-du-reversed-rl:before {
   left: 0;
   bottom: 10px;
 }

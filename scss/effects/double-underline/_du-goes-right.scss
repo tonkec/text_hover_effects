@@ -1,4 +1,4 @@
-@mixin double-underline-right {
+@mixin du-goes-right {
   @include line-options(
     after,
     $transition-property: width,

@@ -75,24 +75,24 @@
 }
 
 /* DOUBLE UNDERLINES */
-.#{$name-of-the-class}-double-underline-left {
-  @include double-underline-left;
+.#{$name-of-the-class}-du-goes-left {
+  @include du-goes-left;
 }
 
-.#{$name-of-the-class}-double-underline-right {
-  @include double-underline-right;
+.#{$name-of-the-class}-du-goes-right {
+  @include du-goes-right;
 }
 
-.#{$name-of-the-class}-double-underline-opening {
-  @include double-underline-opening;
+.#{$name-of-the-class}-du-opening {
+  @include du-opening;
 }
 
-.#{$name-of-the-class}-double-underline-left-right {
-  @include double-underline-left-right;
+.#{$name-of-the-class}-du-reversed-lr {
+  @include du-reversed-lr;
 }
 
-.#{$name-of-the-class}-double-underline-right-left {
-  @include double-underline-right-left;
+.#{$name-of-the-class}-du-reversed-rl {
+  @include du-reversed-rl;
 }
 
 /* DOUBLE LINETHROUGH */

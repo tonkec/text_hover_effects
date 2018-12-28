@@ -1,4 +1,4 @@
-@mixin double-underline-opening {
+@mixin du-goes-left {
   @include line-options(
     after,
     $transition-property: width,
@@ -10,18 +10,13 @@
     $transition-property: width,
     $value-of-transitioned-property: $max-value-of-transitioned-property
   );
-
   &:after {
     right: 0%;
     bottom: 0;
-    margin: 0 auto;
-    left: 0;
   }
 
   &:before {
     right: 0%;
     bottom: 10px;
-    margin: 0 auto;
-    left: 0;
   }
 }
