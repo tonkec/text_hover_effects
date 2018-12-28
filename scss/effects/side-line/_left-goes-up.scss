@@ -1,4 +1,4 @@
-@mixin right-up {
+@mixin left-goes-up {
   @include line-options(
     after,
     $transition-property: height,
@@ -6,6 +6,6 @@
   );
   &:after {
     bottom: 0%;
-    right: 0%;
+    left: 0%;
   }
 }

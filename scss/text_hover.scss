@@ -152,20 +152,20 @@
 
 /* one side */
 
-.#{$name-of-the-class}-left-down {
-  @include left-down;
+.#{$name-of-the-class}-left-goes-down {
+  @include left-goes-down;
 }
 
-.#{$name-of-the-class}-left-up {
-  @include left-up;
+.#{$name-of-the-class}-left-goes-up {
+  @include left-goes-up;
 }
 
-.#{$name-of-the-class}-right-up {
-  @include right-up;
+.#{$name-of-the-class}-right-goes-up {
+  @include right-goes-up;
 }
 
-.#{$name-of-the-class}-right-down {
-  @include right-down;
+.#{$name-of-the-class}-right-goes-down {
+  @include right-goes-down;
 }
 
 /* LINETHROUGH */

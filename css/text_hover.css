@@ -1684,7 +1684,7 @@
 }
 
 /* one side */
-.text-hover-left-down:after {
+.text-hover-left-goes-down:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1695,20 +1695,20 @@
   width: 3px;
 }
 
-.text-hover-left-down:hover:after,
-.text-hover-left-down:focus:after {
+.text-hover-left-goes-down:hover:after,
+.text-hover-left-goes-down:focus:after {
   outline: 0;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
 }
 
-.text-hover-left-down:after {
+.text-hover-left-goes-down:after {
   top: 0%;
   left: 0%;
 }
 
-.text-hover-left-up:after {
+.text-hover-left-goes-up:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1719,20 +1719,20 @@
   width: 3px;
 }
 
-.text-hover-left-up:hover:after,
-.text-hover-left-up:focus:after {
+.text-hover-left-goes-up:hover:after,
+.text-hover-left-goes-up:focus:after {
   outline: 0;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
 }
 
-.text-hover-left-up:after {
+.text-hover-left-goes-up:after {
   bottom: 0%;
   left: 0%;
 }
 
-.text-hover-right-up:after {
+.text-hover-right-goes-up:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1743,20 +1743,20 @@
   width: 3px;
 }
 
-.text-hover-right-up:hover:after,
-.text-hover-right-up:focus:after {
+.text-hover-right-goes-up:hover:after,
+.text-hover-right-goes-up:focus:after {
   outline: 0;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
 }
 
-.text-hover-right-up:after {
+.text-hover-right-goes-up:after {
   bottom: 0%;
   right: 0%;
 }
 
-.text-hover-right-down:after {
+.text-hover-right-goes-down:after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -1767,15 +1767,15 @@
   width: 3px;
 }
 
-.text-hover-right-down:hover:after,
-.text-hover-right-down:focus:after {
+.text-hover-right-goes-down:hover:after,
+.text-hover-right-goes-down:focus:after {
   outline: 0;
   -webkit-transition-property: height, background-color;
   transition-property: height, background-color;
   height: 100%;
 }
 
-.text-hover-right-down:after {
+.text-hover-right-goes-down:after {
   top: 0%;
   right: 0%;
 }
