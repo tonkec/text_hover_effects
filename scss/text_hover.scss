@@ -1,15 +1,35 @@
 @import "base/imports";
 .#{$name-of-the-class} {
-  @include transition-options;
+  @include transition-options(
+    $transition-speed: 0.3s,
+    $padding-bottom: 10px,
+    $transition-easing: ease-in
+  );
+}
+
+.#{$name-of-the-class}-halfline-bottom-goes-right {
+  @include halfline-bottom-goes-right;
+}
+
+.#{$name-of-the-class}-halfline-bottom-goes-left {
+  @include halfline-bottom-goes-left;
+}
+
+.#{$name-of-the-class}-halfline-top-goes-right {
+  @include halfline-top-goes-right;
+}
+
+.#{$name-of-the-class}-halfline-top-goes-left {
+  @include halfline-top-goes-left;
 }
 
 /* CORNERS CLOSE */
 .#{$name-of-the-class}-cc-left-bottom {
-  @include cc-left-bottom;
+  @include transition-options($hovered-color: $white) @include cc-left-bottom;
 }
 
 .#{$name-of-the-class}-cc-left-top {
-  @include cc-left-top;
+  @include transition-options($hovered-color: $white) @include cc-left-top;
 }
 
 .#{$name-of-the-class}-cc-right-bottom {
@@ -213,51 +233,55 @@
 
 /* FILLS */
 .#{$name-of-the-class}-fill-goes-up {
-  @include fill-goes-up;
+  @include transition-options($hovered-color: $white) @include fill-goes-up;
 }
 
 .#{$name-of-the-class}-fill-goes-down {
-  @include fill-goes-down;
+  @include transition-options($hovered-color: $white) @include fill-goes-down;
 }
 
 .#{$name-of-the-class}-fill-goes-left {
-  @include fill-goes-left;
+  @include transition-options($hovered-color: $white) @include fill-goes-left;
 }
 
 .#{$name-of-the-class}-fill-goes-right {
-  @include fill-goes-right;
+  @include transition-options($hovered-color: $white) @include fill-goes-right;
 }
 
 .#{$name-of-the-class}-fill-opening-horizontal {
-  @include fill-opening-horizontal;
+  @include transition-options($hovered-color: $white) @include
+    fill-opening-horizontal;
 }
 
 .#{$name-of-the-class}-fill-closing-horizontal {
-  @include fill-closing-horizontal;
+  @include transition-options($hovered-color: $white) @include
+    fill-closing-horizontal;
 }
 
 .#{$name-of-the-class}-fill-closing-vertical {
-  @include fill-closing-vertical;
+  @include transition-options($hovered-color: $white) @include
+    fill-closing-vertical;
 }
 
 /* FILL CORNERS */
 
 .#{$name-of-the-class}-fc-top-left {
-  @include fc-top-left;
+  @include transition-options($hovered-color: $white) @include fc-top-left;
 }
 
 .#{$name-of-the-class}-fc-top-right {
-  @include fc-top-right;
+  @include transition-options($hovered-color: $white) @include fc-top-right;
 }
 
 .#{$name-of-the-class}-fc-bottom-left {
-  @include fc-bottom-left;
+  @include transition-options($hovered-color: $white) @include fc-bottom-left;
 }
 
 .#{$name-of-the-class}-fc-bottom-right {
-  @include fc-bottom-right;
+  @include transition-options($hovered-color: $white) @include fc-bottom-right;
 }
 
+/* DELAYS */
 .#{$name-of-the-class}-underline-left-delay {
   @include transition-options($transition-delay: 1s);
   @include underline-goes-left;

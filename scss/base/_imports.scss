@@ -1,6 +1,6 @@
+@import "defaults";
 @import "helpers";
 @import "options";
-@import "defaults";
 
 @import "./../effects/overline/overline-goes-right";
 @import "./../effects/overline/overline-goes-left";
@@ -73,3 +73,8 @@
 @import "./../effects/moves/move-left";
 @import "./../effects/moves/move-vertical";
 @import "./../effects/moves/move-horizontal";
+
+@import "./../effects/halfline/halfline-bottom-goes-right";
+@import "./../effects/halfline/halfline-bottom-goes-left";
+@import "./../effects/halfline/halfline-top-goes-right";
+@import "./../effects/halfline/halfline-top-goes-left";

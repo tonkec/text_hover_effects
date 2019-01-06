@@ -1,0 +1,34 @@
+@mixin halfline-bottom-goes-right {
+  @include line-options(
+    after,
+    $transition-property: none,
+    $value-of-transitioned-property: $max-value-of-transitioned-property,
+    $untransitioned-width: 100%,
+    $untransitioned-height: $size-of-the-line
+  );
+
+  @include line-options(
+    before,
+    $transition-property: left,
+    $value-of-transitioned-property: $max-value-of-transitioned-property / 2,
+    $untransitioned-width: 50%
+  );
+  &:after {
+    right: 0%;
+    left: 0;
+    bottom: 0;
+    background-color: $after-bg-color;
+  }
+
+  &:before {
+    z-index: 1;
+    left: 0%;
+    bottom: 0;
+    background-color: $before-bg-color;
+  }
+
+  &:hover:before,
+  &:hover:focus {
+    background-color: $before-bg-color;
+  }
+}
