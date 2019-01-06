@@ -1,6 +1,5 @@
 @mixin transition-options(
   $hovered-color: $hovered-text-color,
-  $background-line-color: $transitioned-line-bg-clr,
   $transition-speed: $transition-speed,
   $transition-easing: $transition-easing,
   $transition-delay: $transition-delay,
@@ -36,6 +35,14 @@
     transition-delay: $transition-delay;
   }
 
+  &:after {
+    background-color: $after-bg-color;
+  }
+
+  &:before {
+    background-color: $before-bg-color;
+  }
+
   @if $event == hover {
     &:hover,
     &:focus {
@@ -47,11 +54,20 @@
     }
 
     &:hover:after,
+    &:focus:after {
+      background-color: $after-bg-color;
+    }
+
+    &:hover:before,
+    &:focus:before {
+      background-color: $before-bg-color;
+    }
+
+    &:hover:after,
     &:focus:after,
     &:hover:before,
     &:focus:before {
       @include setTransitionsForPseudoElements(
-        $background-line-color,
         $transition-speed,
         $transition-easing,
         $transition-delay
@@ -64,10 +80,18 @@
         $transition-easing,
         $hovered-color
       );
+
+      &:after {
+        background-color: $after-bg-color;
+      }
+
+      &:before {
+        background-color: $before-bg-color;
+      }
+
       &:after,
       &:before {
         @include setTransitionsForPseudoElements(
-          $background-line-color,
           $transition-speed,
           $transition-easing,
           $transition-delay
@@ -82,38 +106,43 @@ $max-value-of-transitioned-property: 100%;
   $type-of-pseudoelement,
   $transition-property,
   $value-of-transitioned-property,
-  $untransitioned-property: $size-of-the-line
+  $untransitioned-height: $size-of-the-line,
+  $untransitioned-width: $size-of-the-line
 ) {
   &:#{$type-of-pseudoelement} {
     content: "";
     position: absolute;
     z-index: -1;
     background-color: transparent;
-    transition-property: $transition-property, background-color;
-    @include checkTheTransitionProperty(
-      $transition-property,
-      $untransitioned-property
-    );
+    @include checkTheExistenceOfTransitionProperty($transition-property) {
+      @include checkTheTransitionProperty(
+        $transition-property,
+        $untransitioned-height,
+        $untransitioned-width
+      );
+    }
   }
 
   @if $event == hover {
     &:hover:#{$type-of-pseudoelement},
     &:focus:#{$type-of-pseudoelement} {
       outline: 0;
-      transition-property: $transition-property, background-color;
-      @include checkTheLengthOfTransitionedProperties(
-        $transition-property,
-        $value-of-transitioned-property
-      );
+      @include checkTheExistenceOfTransitionProperty($transition-property) {
+        @include checkTheLengthOfTransitionedProperties(
+          $transition-property,
+          $value-of-transitioned-property
+        );
+      }
     }
   } @else {
     &.#{$name-of-the-class-on-click}:#{$type-of-pseudoelement} {
       outline: 0;
-      transition-property: $transition-property, background-color;
-      @include checkTheLengthOfTransitionedProperties(
-        $transition-property,
-        $value-of-transitioned-property
-      );
+      @include checkTheExistenceOfTransitionProperty($transition-property) {
+        @include checkTheLengthOfTransitionedProperties(
+          $transition-property,
+          $value-of-transitioned-property
+        );
+      }
     }
   }
 }
