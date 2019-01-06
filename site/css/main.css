@@ -1,3 +1,156 @@
-body {
-  background-color: green;
+p,
+body,
+html {
+  margin: 0;
+}
+
+.section-result {
+  background-color: #fcd400;
+  padding: 70px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.2);
+  z-index: 9;
+}
+
+.section-options {
+  margin-top: 266px;
+}
+
+.section-effect {
+  padding: 40px 50px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+.section-effect h3 {
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.effect {
+  margin-bottom: 10px;
+  opacity: 0.7;
+  transition: opacity 0.5s ease-in-out;
+}
+.effect:hover {
+  opacity: 1;
+}
+
+.section-both-side span {
+  background-color: #4dabc8;
+}
+
+.section-corners-close span {
+  background-color: #0b3c49;
+}
+
+.section-corners-expand span {
+  background-color: #af0981;
+}
+
+.section-double-linethrough span {
+  background-color: #fcd400;
+}
+
+.section-double-underline span {
+  background-color: #4dabc8;
+}
+
+.section-fill span {
+  background-color: #0b3c49;
+}
+
+.section-fill-corners span {
+  background-color: #af0981;
+}
+
+.section-linethrough span {
+  background-color: #fcd400;
+}
+
+.section-moves span {
+  background-color: #4dabc8;
+}
+
+.section-one-side span {
+  background-color: #0b3c49;
+}
+
+.section-overline span {
+  background-color: #af0981;
+}
+
+.section-underline span {
+  background-color: #fcd400;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.effect {
+  padding: 7px 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 70px;
+  display: inline-block;
+  position: relative;
+  margin: 10px;
+  z-index: 2;
+  text-decoration: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  padding: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+h1:hover,
+h1:focus {
+  outline: 0;
+  color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  cursor: pointer;
+}
+h1::before,
+h1::after {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+h1:focus::after,
+h1:hover::after,
+h1:focus::before,
+h1:hover::before {
+  outline: 0;
+  background-color: #fff;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }

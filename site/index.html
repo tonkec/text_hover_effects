@@ -4,10 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/text_hover.min.css" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Text Hover Effects</title>
   </head>
   <body>
-    <main><h1>Welcome</h1></main>
+    <main class="text-center">
+      <section class="section-result">
+        <h1 id="result" class="text-hover text-hover-halfline-top-goes-left">
+          Hover me
+        </h1>
+      </section>
+      <section class="section-options"><div id="root"></div></section>
+    </main>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+    ></script>
+    <script type="text/javascript" src="js/effects.js"></script>
+    <script type="text/javascript" src="js/site.js"></script>
   </body>
 </html>
