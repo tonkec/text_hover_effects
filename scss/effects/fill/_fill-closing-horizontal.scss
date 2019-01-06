@@ -10,10 +10,6 @@
     $value-of-transitioned-property: $max-value-of-transitioned-property / 2
   );
 
-  &:hover {
-    color: $hovered-text-color-for-fill-effects !important;
-  }
-
   &:before {
     top: 0%;
     bottom: 0;

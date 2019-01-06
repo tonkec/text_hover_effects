@@ -5,10 +5,6 @@
     $value-of-transitioned-property: $max-value-of-transitioned-property
   );
 
-  &:hover {
-    color: $hovered-text-color-for-fill-effects !important;
-  }
-
   &:after {
     top: 0%;
     bottom: 0;

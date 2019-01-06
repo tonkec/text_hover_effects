@@ -1,12 +1,10 @@
+$transitioned-properties: width, height;
 @mixin fc-top-right {
   @include line-options(
     after,
     $transition-property: $transitioned-properties,
     $value-of-transitioned-property: $max-value-of-transitioned-property
   );
-  &:hover {
-    color: $hovered-text-color-for-fill-effects !important;
-  }
   &:after {
     top: 0%;
     left: 0;
