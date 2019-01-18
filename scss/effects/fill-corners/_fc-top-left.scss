@@ -3,7 +3,9 @@ $transitioned-properties: width, height;
   @include line-options(
     after,
     $transition-property: $transitioned-properties,
-    $value-of-transitioned-property: $max-value-of-transitioned-property
+    $value-of-transitioned-property: $max-value-of-transitioned-property,
+    $untransitioned-width: 0,
+    $untransitioned-height: 0
   );
 
   &:after {
