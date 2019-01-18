@@ -13,23 +13,14 @@
     $value-of-transitioned-property: $max-value-of-transitioned-property / 2,
     $untransitioned-width: 50%
   );
-
   &:after {
-    right: 0%;
     left: 0;
     top: 0;
-    background-color: $after-bg-color;
   }
 
   &:before {
     z-index: 1;
     left: 0%;
     top: 0;
-    background-color: $before-bg-color;
-  }
-
-  &:hover:before,
-  &:hover:focus {
-    background-color: $before-bg-color;
   }
 }

@@ -1,5 +1,4 @@
 @mixin transition-options(
-  $hovered-color: $hovered-text-color,
   $transition-speed: $transition-speed,
   $transition-easing: $transition-easing,
   $transition-delay: $transition-delay,
@@ -7,7 +6,10 @@
   $padding-bottom: $space-below-the-text,
   $padding-right: $space-on-the-right-side,
   $padding-left: $space-on-the-left-side,
-  $display: $display
+  $display: $display,
+  $hovered-color: $hovered-text-color,
+  $after-bg-color: $after-bg-color,
+  $before-bg-color: $before-bg-color
 ) {
   display: $display;
   padding-top: $padding-top;
@@ -113,7 +115,6 @@ $max-value-of-transitioned-property: 100%;
     content: "";
     position: absolute;
     z-index: -1;
-    background-color: transparent;
     @include checkTheExistenceOfTransitionProperty($transition-property) {
       @include checkTheTransitionProperty(
         $transition-property,
