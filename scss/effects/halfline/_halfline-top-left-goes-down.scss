@@ -1,0 +1,28 @@
+@mixin halfline-top-left-goes-down {
+  @include line-options(
+    after,
+    $transition-property: none,
+    $value-of-transitioned-property: $max-value-of-transitioned-property,
+    $untransitioned-width: $size-of-the-line,
+    $untransitioned-height: 100%
+  );
+
+  @include line-options(
+    before,
+    $transition-property: transform,
+    $value-of-transitioned-property: translateY(100%),
+    $untransitioned-height: 50%
+  );
+
+  &:after {
+    left: 0;
+    top: 0;
+  }
+
+  &:before {
+    z-index: 1;
+    left: 0%;
+    top: 0;
+    transform: translateY(0);
+  }
+}
