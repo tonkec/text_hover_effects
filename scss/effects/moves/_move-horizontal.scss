@@ -12,6 +12,7 @@
       calc(#{$max-value-of-transitioned-property} - 100%)
   );
   &:after {
+    background-color: transparent;
     top: 0;
     bottom: 0;
     right: 50%;
@@ -19,6 +20,7 @@
   }
 
   &:before {
+    background-color: transparent;
     top: 0;
     bottom: 0;
     left: 50%;

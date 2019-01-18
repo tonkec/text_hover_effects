@@ -5,6 +5,7 @@
     $value-of-transitioned-property: $max-value-of-transitioned-property
   );
   &:after {
+    background-color: transparent;
     bottom: 50%;
     left: 0;
     right: 0;

@@ -13,6 +13,7 @@
   );
 
   &:after {
+    background-color: transparent;
     top: 50%;
     left: 0;
     right: 0;
@@ -20,6 +21,7 @@
   }
 
   &:before {
+    background-color: transparent;
     bottom: 50%;
     left: 0;
     right: 0;
