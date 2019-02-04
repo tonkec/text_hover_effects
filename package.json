@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "site": "gulp serve",
+    "start": "gulp serve",
     "generate_css": "gulp generate_css",
     "minify_css": "gulp generate_minified_css"
   },
