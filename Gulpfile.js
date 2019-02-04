@@ -33,6 +33,7 @@ gulp.task("generate_css", function() {
         cascade: false
       })
     )
+    // .pipe(rename("text_hover_on_click.css"))
     .pipe(gulp.dest("./css"));
 });
 
@@ -47,6 +48,7 @@ gulp.task("generate_minified_css", function() {
       })
     )
     .pipe(cleanCSS({ compatibility: "ie8" }))
+    // .pipe(rename("text_hover_on_click.min.css"))
     .pipe(rename("text_hover.min.css"))
     .pipe(gulp.dest("./css"));
 });
