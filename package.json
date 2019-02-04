@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp serve",
-    "generate_css": "gulp generate_css",
-    "minify_css": "gulp generate_minified_css"
+    "generate_css": "gulp generate_css && gulp generate_minified_css"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +18,6 @@
     "gulp-cli": "^2.0.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "husky": "^1.3.0",
     "prettier": "^1.15.3",
     "pretty-quick": "^1.8.0"
   },
