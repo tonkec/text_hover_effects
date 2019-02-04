@@ -5,42 +5,42 @@
 
 /* HALFLINE */
 .#{$name-of-the-class}-halfline-bottom-goes-left {
-  @include transition-options($before-bg-color: $red);
+  @include transition-options($before-bg-color: $green);
   @include halfline-bottom-goes-left;
 }
 
 .#{$name-of-the-class}-halfline-bottom-goes-right {
-  @include transition-options($before-bg-color: $red);
+  @include transition-options($before-bg-color: $green);
   @include halfline-bottom-goes-right;
 }
 
 .#{$name-of-the-class}-halfline-top-goes-left {
-  @include transition-options($before-bg-color: $red);
+  @include transition-options($before-bg-color: $green);
   @include halfline-top-goes-left;
 }
 
 .#{$name-of-the-class}-halfline-top-goes-right {
-  @include transition-options($before-bg-color: $red);
+  @include transition-options($before-bg-color: $green);
   @include halfline-top-goes-right;
 }
 
 .#{$name-of-the-class}-halfline-bottom-left-goes-up {
-  @include transition-options($before-bg-color: $red);
+  @include transition-options($before-bg-color: $green);
   @include halfline-bottom-left-goes-up;
 }
 
 .#{$name-of-the-class}-halfline-bottom-right-goes-up {
-  @include transition-options($before-bg-color: $red);
+  @include transition-options($before-bg-color: $green);
   @include halfline-bottom-right-goes-up;
 }
 
 .#{$name-of-the-class}-halfline-top-left-goes-down {
-  @include transition-options($before-bg-color: $red);
+  @include transition-options($before-bg-color: $green);
   @include halfline-top-left-goes-down;
 }
 
 .#{$name-of-the-class}-halfline-top-right-goes-down {
-  @include transition-options($before-bg-color: $red);
+  @include transition-options($before-bg-color: $green);
   @include halfline-top-right-goes-down;
 }
 
