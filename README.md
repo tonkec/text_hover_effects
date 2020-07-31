@@ -9,7 +9,7 @@
  - Cross browser support
  - Mobile support
 
-See all of them on [Demo](https://text-hover-effects.herokuapp.com/)
+See all of them on [Demo](https://codepen.io/tonkec/full/zbRKKK)
 
 ### Getting Started
 Git:
